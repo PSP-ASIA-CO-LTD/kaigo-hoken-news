@@ -60,6 +60,30 @@ Japanese text (日本語) renders correctly.
 | `series_order` | No | Position in the series (1, 2, 3, …). Posts display "Part N of M" and prev/next links |
 | `categories` | No | List of categories (shown in main menu: Basics, Providers, Technology, Budget & Policy, News) |
 
+### Analysis / Opinion Callout
+
+Use the `analysis` shortcode to insert a clearly-labeled opinion or analysis section, distinct from cited facts:
+
+```markdown
+{{< analysis >}}
+Your analysis in **Markdown**. Footnotes[^1] work inside.
+
+[^1]: So do inline references.
+{{< /analysis >}}
+```
+
+Override the default title:
+
+```markdown
+{{< analysis title="My custom title" >}}
+Content here...
+{{< /analysis >}}
+```
+
+Default title: *Tako-San's take: what this means for PSP Asia*
+
+The callout displays a monochrome Tako-San avatar, a small-caps "ANALYSIS / OPINION" label, and renders the inner content as Markdown.
+
 ## Local Development
 
 ### Prerequisites

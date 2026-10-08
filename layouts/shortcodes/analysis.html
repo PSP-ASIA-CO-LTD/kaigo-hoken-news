@@ -1,0 +1,13 @@
+{{- $title := .Get "title" | default "Tako-San's take: what this means for PSP Asia" -}}
+<aside class="analysis-callout">
+  <header class="analysis-header">
+    <img class="analysis-avatar" src="{{ "images/tako-san-bw.png" | absURL }}" alt="Tako-San" width="44" height="44" loading="lazy">
+    <div class="analysis-heading">
+      <span class="analysis-label">Analysis / Opinion</span>
+      <span class="analysis-title">{{ $title }}</span>
+    </div>
+  </header>
+  <div class="analysis-body">
+    {{ .Inner | markdownify }}
+  </div>
+</aside>
