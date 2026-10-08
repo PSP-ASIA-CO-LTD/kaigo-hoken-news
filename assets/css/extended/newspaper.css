@@ -185,49 +185,80 @@ body {
 }
 
 /* ============================================
-   CARD GRID LAYOUT (List/Home pages only)
+   CARD GRID LAYOUT (Homepage only)
    ============================================ */
-/* Grid layout only applies to list pages (body.list), not single post pages */
+/* Grid layout ONLY applies to homepage (identified by .start-here-box or .first-entry presence) */
+/* Other list pages (series, tags, categories, archive) get block layout */
 
-/* On tablet: 2 columns */
+/* Homepage grid: use :has() to detect homepage-specific elements */
 @media (min-width: 640px) {
-  .list .main {
+  .list .main:has(.start-here-box),
+  .list .main:has(.first-entry) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--card-gap);
     align-items: start;
   }
   
-  /* Full-width elements in grid */
-  .list .main > .page-header,
-  .list .main > header,
-  .list .main > .home-info,
-  .list .main > .start-here-box,
-  .list .main > section,
-  .list .main > .first-entry {
+  /* Full-width elements in homepage grid */
+  .list .main:has(.start-here-box) > .page-header,
+  .list .main:has(.start-here-box) > header,
+  .list .main:has(.start-here-box) > .home-info,
+  .list .main:has(.start-here-box) > .start-here-box,
+  .list .main:has(.start-here-box) > section,
+  .list .main:has(.start-here-box) > .first-entry,
+  .list .main:has(.first-entry) > .page-header,
+  .list .main:has(.first-entry) > header,
+  .list .main:has(.first-entry) > .home-info,
+  .list .main:has(.first-entry) > .start-here-box,
+  .list .main:has(.first-entry) > section,
+  .list .main:has(.first-entry) > .first-entry {
     grid-column: 1 / -1;
   }
   
-  .list .post-entry {
+  .list .main:has(.start-here-box) .post-entry,
+  .list .main:has(.first-entry) .post-entry {
     margin-bottom: 0;
   }
 }
 
-/* On desktop: 3 columns for post cards */
+/* On desktop: 3 columns for homepage post cards */
 @media (min-width: 1024px) {
-  .list .main {
+  .list .main:has(.start-here-box),
+  .list .main:has(.first-entry) {
     grid-template-columns: repeat(3, 1fr);
   }
-  
-  /* Full-width elements stay full width */
-  .list .main > .page-header,
-  .list .main > header,
-  .list .main > .home-info,
-  .list .main > .start-here-box,
-  .list .main > section,
-  .list .main > .first-entry {
-    grid-column: 1 / -1;
-  }
+}
+
+/* ============================================
+   HOMEPAGE FEATURED POST - Reduce large gaps
+   ============================================ */
+/* Override PaperMod's large margins on .first-entry */
+.first-entry {
+  margin: var(--space-4) 0;
+  min-height: auto;
+}
+
+/* Reduce start-here-box margins */
+.start-here-box {
+  margin: var(--space-4) 0;
+}
+
+/* ============================================
+   NON-HOME LIST PAGES (series, tags, categories, archive)
+   ============================================ */
+/* These pages get centered block layout with readable width */
+.list .main {
+  display: block;
+}
+
+/* Series term page styling */
+.series-toc,
+.series-list,
+.series-cta {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ============================================
@@ -578,13 +609,16 @@ body:not(.list) .main {
    JAPANESE TERMS - Shortcode styling
    ============================================ */
 .ja-term-wrapper {
-  white-space: nowrap;
   display: inline;
+  /* Allow normal wrapping - no white-space: nowrap */
 }
 
 .ja-term {
   font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
   font-weight: 500;
+  /* Allow long Japanese strings to break if needed */
+  overflow-wrap: anywhere;
+  word-break: auto-phrase; /* modern browsers: break at phrase boundaries */
 }
 
 .ja-term-link {
@@ -612,14 +646,17 @@ body:not(.list) .main {
   justify-content: center;
   background: none;
   border: none;
-  padding: 0 0.2em;
-  margin-left: 0.15em;
+  /* Larger tap target via padding (min 28px touch target) */
+  padding: 6px;
+  margin-left: 0.1em;
   cursor: pointer;
   color: var(--secondary);
   vertical-align: middle;
   line-height: 1;
-  opacity: 0.6;
+  opacity: 0.8;
   transition: opacity 0.15s ease, color 0.15s ease;
+  /* Keep button attached to last word - don't break before it */
+  white-space: nowrap;
 }
 
 .ja-speak-btn:hover,
@@ -640,15 +677,19 @@ body:not(.list) .main {
 }
 
 .ja-speak-icon {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
 }
 
-/* Slightly smaller on mobile */
+/* Mobile: slightly larger icon for visibility */
 @media (max-width: 639px) {
   .ja-speak-icon {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
+  }
+  
+  .ja-speak-btn {
+    padding: 8px;
   }
 }
 
