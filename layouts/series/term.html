@@ -1,0 +1,28 @@
+{{- define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  <p class="series-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}part{{ else }}parts{{ end }} in this series</p>
+</header>
+
+<div class="series-toc">
+  <h2>Reading Order</h2>
+  <ol class="series-parts">
+    {{- range .Pages.ByParam "series_order" }}
+    <li class="series-part">
+      <span class="part-number">Part {{ .Params.series_order }}</span>
+      <a href="{{ .Permalink }}" class="part-title">{{ .Title }}</a>
+      {{- with .Params.summary }}
+      <p class="part-summary">{{ . }}</p>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ol>
+</div>
+
+<div class="series-cta">
+  {{- $firstPost := index (.Pages.ByParam "series_order") 0 }}
+  {{- if $firstPost }}
+  <a href="{{ $firstPost.Permalink }}" class="start-reading-btn">Start Reading →</a>
+  {{- end }}
+</div>
+{{- end }}

@@ -56,6 +56,9 @@ Japanese text (日本語) renders correctly.
 | `summary` | No | Short description for listings and RSS |
 | `draft` | No | Set to `true` to hide from production builds |
 | `weight` | No | Lower numbers sort first (used to pin the executive summary) |
+| `series` | No | Name of the series this post belongs to (e.g. `"Japan LTC Basics"`) |
+| `series_order` | No | Position in the series (1, 2, 3, …). Posts display "Part N of M" and prev/next links |
+| `categories` | No | List of categories (shown in main menu: Basics, Providers, Technology, Budget & Policy, News) |
 
 ## Local Development
 

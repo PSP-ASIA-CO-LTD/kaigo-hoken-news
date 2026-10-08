@@ -3,6 +3,9 @@ title: "Who provides care in Japan, and what the per-resident budget really is"
 date: 2026-10-08
 tags: ["japan", "long-term-care", "providers", "facilities"]
 summary: "Home visits, day care, short stay, and residential facilities, who owns them, how many there are, and why there is no fixed budget per resident."
+series: "Japan LTC Basics"
+series_order: 3
+categories: ["Providers"]
 ---
 
 Japanese care is a menu of designated services, not a single "nursing home" product. A provider is an office or a facility that a prefecture or a municipality has designated under the Long-Term Care Insurance Act. Counts below are from the national Survey of Long-term Care Service Facilities and Offices as of **1 October 2024**, unless noted. An office that offers two services is counted twice. Sources: [overview](https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/service24/dl/gaikyo.pdf) and [reference table](https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/service24/dl/sankouhyou.pdf).
