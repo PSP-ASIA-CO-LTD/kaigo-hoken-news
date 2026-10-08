@@ -1,0 +1,615 @@
+# Glossary of Japanese Long-Term Care Insurance Terms
+# Sorted alphabetically by romaji
+# Key format: lowercase, hyphens for spaces, no special characters
+
+chiiki-hōkatsu-shien-sentā:
+  ja: 地域包括支援センター
+  romaji: chiiki hōkatsu shien sentā
+  en: community general support centre
+  def: "Municipal centre providing care consultation, prevention services, and care-manager coordination for local residents."
+
+chiiki-iryō-kaigo-sōgō-kakuho-kikin:
+  ja: 地域医療介護総合確保基金
+  romaji: chiiki iryō kaigo sōgō kakuho kikin
+  en: regional medical and long-term care fund
+  def: "Prefectural fund for building care facilities, securing staff, and subsidising robots and ICT."
+
+chiiki-micchaku-gata-kaigo-rōjin-fukushi-shisetsu:
+  ja: 地域密着型介護老人福祉施設
+  romaji: chiiki micchaku-gata kaigo rōjin fukushi shisetsu
+  en: community-based special nursing home
+  def: "Small special nursing home (29 beds or fewer) designated by the municipality."
+
+chiiki-micchaku-gata-tsūsho-kaigo:
+  ja: 地域密着型通所介護
+  romaji: chiiki micchaku-gata tsūsho kaigo
+  en: community-based day care
+  def: "Smaller day-care centre designated by the municipality rather than the prefecture."
+
+dai-ichi-gō-hi-hoken-sha:
+  ja: 第1号被保険者
+  romaji: dai-ichi-gō hi-hoken-sha
+  en: Category 1 insured person
+  def: "Everyone aged 65 and over; can use insurance services for any cause once certified."
+
+dai-ni-gō-hi-hoken-sha:
+  ja: 第2号被保険者
+  romaji: dai-ni-gō hi-hoken-sha
+  en: Category 2 insured person
+  def: "People aged 40–64 in medical insurance; can use services only for designated age-related diseases."
+
+dei-sābisu:
+  ja: デイサービス
+  romaji: dei sābisu
+  en: day service
+  def: "Common name for day care (tsūsho kaigo); the user is picked up, spends the day at a centre, and returns home."
+
+densō:
+  ja: 伝送
+  romaji: densō
+  en: electronic transmission
+  def: "The standard method for submitting care-benefit claims to the prefectural federation."
+
+eiri-hōjin:
+  ja: 営利法人
+  romaji: eiri hōjin
+  en: for-profit corporation
+  def: "Stock company or similar commercial entity; dominates home-visit care, day care, and fee-charging homes."
+
+fukushi-yōgu-taiyo:
+  ja: 福祉用具貸与
+  romaji: fukushi yōgu taiyo
+  en: welfare equipment rental
+  def: "Insurance-covered rental of wheelchairs, beds, and other assistive devices."
+
+hi-hoken-sha:
+  ja: 被保険者
+  romaji: hi-hoken-sha
+  en: insured person
+  def: "A person enrolled in long-term care insurance (Category 1 or 2)."
+
+hiyō-gaku:
+  ja: 費用額
+  romaji: hiyō-gaku
+  en: cost amount
+  def: "Total reviewed cost including insurance payment, public shares, and user co-payment."
+
+hoken-iryō-fukushi-jōhō-shisutemu-kōgyō-kai:
+  ja: 保健医療福祉情報システム工業会
+  romaji: hoken iryō fukushi jōhō shisutemu kōgyō-kai
+  en: JAHIS
+  def: "Japanese Association of Healthcare Information Systems Industry; circulates LIFE interface notices."
+
+hoken-sha:
+  ja: 保険者
+  romaji: hoken-sha
+  en: insurer
+  def: "The municipality (or Tokyo special ward) that runs local long-term care insurance."
+
+hōmon-kaigo:
+  ja: 訪問介護
+  romaji: hōmon kaigo
+  en: home-visit care
+  def: "A helper visits the home for body care (bathing, toileting) or living assistance (cleaning, cooking)."
+
+hōmon-kango:
+  ja: 訪問看護
+  romaji: hōmon kango
+  en: home-visit nursing
+  def: "A nurse visits the home; separate profession and fee table from helper care."
+
+hōmon-nyūyoku-kaigo:
+  ja: 訪問入浴介護
+  romaji: hōmon nyūyoku kaigo
+  en: home-visit bathing care
+  def: "A team brings a portable bath to the user's home."
+
+honobono-nekusuto:
+  ja: ほのぼのNEXT
+  romaji: honobono nekusuto
+  en: Honobono NEXT
+  def: "Care software from ND Software; records, claims, voice input, sensors, AI care-plan tools."
+
+hosoku-kyūfu:
+  ja: 補足給付
+  romaji: hosoku kyūfu
+  en: supplementary benefit
+  def: "Benefit toward room and meal costs for low-income facility and short-stay users."
+
+hyōjun-shiyō-sho:
+  ja: 標準仕様書
+  romaji: hyōjun shiyō-sho
+  en: standard specification
+  def: "The national specification for municipal care-insurance systems linking to the information platform."
+
+ichiji-hantei:
+  ja: 一次判定
+  romaji: ichiji hantei
+  en: primary judgement
+  def: "Computer-based initial assessment that estimates care minutes from the 74-item survey."
+
+ikkyū-chi:
+  ja: 1級地
+  romaji: ikkyū-chi
+  en: grade 1 region
+  def: "The highest regional price band (Tokyo special wards); unit price up to 11.40 yen."
+
+iryō-hōjin:
+  ja: 医療法人
+  romaji: iryō hōjin
+  en: medical corporation
+  def: "Legal form that dominates health facilities (rōken) and care medical centres."
+
+jiritsu-shien:
+  ja: 自立支援
+  romaji: jiritsu shien
+  en: support for independence
+  def: "Core principle of the Long-Term Care Insurance Act: helping users live independently."
+
+kabushiki-gaisha-esu-emu-esu:
+  ja: 株式会社エス・エム・エス
+  romaji: kabushiki-gaisha esu emu esu
+  en: SMS Co., Ltd.
+  def: "Company that makes Kaipoke cloud care software."
+
+kabushiki-gaisha-kea-konekuto-japan:
+  ja: 株式会社ケアコネクトジャパン
+  romaji: kabushiki-gaisha kea konekuto japan
+  en: Care Connect Japan Co., Ltd.
+  def: "Company that makes Carekarte care software."
+
+kagakuteki-kaigo-jōhō-shisutemu:
+  ja: 科学的介護情報システム
+  romaji: kagakuteki kaigo jōhō shisutemu
+  en: LIFE
+  def: "Long-term care Information system For Evidence; national data platform for quality add-ons."
+
+kagakuteki-kaigo-suishin-taisei-kasan:
+  ja: 科学的介護推進体制加算
+  romaji: kagakuteki kaigo suishin taisei kasan
+  en: scientific-care system add-on
+  def: "Fee add-on (40–50 units/month) for facilities submitting LIFE data and running PDCA cycles."
+
+kaigo:
+  ja: 介護
+  romaji: kaigo
+  en: care / long-term care
+  def: "The Japanese word for caregiving; the root of most insurance-related terms."
+
+kaigo-densō-sofuto:
+  ja: 介護伝送ソフト
+  romaji: kaigo densō sofuto
+  en: care claim transmission software
+  def: "Free software from the National Health Insurance Central Association for submitting claims."
+
+kaigo-hoken:
+  ja: 介護保険
+  romaji: kaigo hoken
+  en: long-term care insurance
+  def: "Japan's social insurance system for elderly care, started April 2000."
+
+kaigo-hoken-hō:
+  ja: 介護保険法
+  romaji: kaigo hoken-hō
+  en: Long-Term Care Insurance Act
+  def: "The 1997 law (effective April 2000) establishing Japan's care insurance system."
+
+kaigo-hoken-jigyō-jōkyō-hōkoku:
+  ja: 介護保険事業状況報告
+  romaji: kaigo hoken jigyō jōkyō hōkoku
+  en: long-term care insurance business status report
+  def: "Monthly and annual statistical reports on insurance enrolment and service use."
+
+kaigo-hoken-jigyō-keikaku:
+  ja: 介護保険事業計画
+  romaji: kaigo hoken jigyō keikaku
+  en: municipal care-insurance plan
+  def: "Three-year plan each municipality creates to forecast services and set premiums."
+
+kaigo-hoken-shikaku-kakunin-tō-webu-sābisu:
+  ja: 介護保険資格確認等WEBサービス
+  romaji: kaigo hoken shikaku kakunin tō webu sābisu
+  en: care insurance eligibility web service
+  def: "Online service for offices to check user eligibility via the information platform."
+
+kaigo-hoken-sōgō-dētabēsu:
+  ja: 介護保険総合データベース
+  romaji: kaigo hoken sōgō dētabēsu
+  en: Long-term Care Insurance Comprehensive Database
+  def: "National database storing claim data submitted through prefectural federations."
+
+kaigo-hōshū:
+  ja: 介護報酬
+  romaji: kaigo hōshū
+  en: care fee / care benefit fee
+  def: "The fee schedule for long-term care services, revised every three years."
+
+kaigo-iryō-in:
+  ja: 介護医療院
+  romaji: kaigo iryō-in
+  en: long-term care medical centre
+  def: "Facility for people needing both daily care and ongoing medical care, created in 2018."
+
+kaigo-jōhō-kiban:
+  ja: 介護情報基盤
+  romaji: kaigo jōhō kiban
+  en: care information platform
+  def: "National platform (rolling out 2026–2028) for sharing care data across municipalities and providers."
+
+kaigo-jōhō-kiban-pōtaru:
+  ja: 介護情報基盤ポータル
+  romaji: kaigo jōhō kiban pōtaru
+  en: care information platform portal
+  def: "Web portal operated by the National Health Insurance Central Association for platform access."
+
+kaigo-kiroku:
+  ja: 介護記録
+  romaji: kaigo kiroku
+  en: care record
+  def: "Daily documentation of care provided: meals, excretion, bathing, vitals, incidents."
+
+kaigo-kyūfu-hi:
+  ja: 介護給付費
+  romaji: kaigo kyūfu-hi
+  en: care benefit expenditure
+  def: "Insurance payment for covered care services (excluding user co-payment)."
+
+kaigo-kyūfu-hi-meisai-sho:
+  ja: 介護給付費明細書
+  romaji: kaigo kyūfu-hi meisai-sho
+  en: care-benefit claim statement
+  def: "The detailed claim form providers submit monthly to the prefectural federation."
+
+kaigo-kyūfu-hi-seikyū:
+  ja: 介護給付費請求
+  romaji: kaigo kyūfu-hi seikyū
+  en: care benefit claim
+  def: "The monthly billing process from provider to prefectural federation."
+
+kaigo-kyūfu-hi-tō-jittai-tōkei:
+  ja: 介護給付費等実態統計
+  romaji: kaigo kyūfu-hi tō jittai tōkei
+  en: Long-Term Care Benefit Expenditures Survey
+  def: "MHLW survey of actual reviewed care costs and recipient counts."
+
+kaigo-nintei-shinsa-kai:
+  ja: 介護認定審査会
+  romaji: kaigo nintei shinsa-kai
+  en: care certification review committee
+  def: "Committee of health/medical/welfare professionals that makes secondary judgements."
+
+kaigo-rōjin-fukushi-shisetsu:
+  ja: 介護老人福祉施設
+  romaji: kaigo rōjin fukushi shisetsu
+  en: long-term care welfare facility
+  def: "Legal name for special nursing homes (toku-yō) with 30+ beds."
+
+kaigo-rōjin-hoken-shisetsu:
+  ja: 介護老人保健施設
+  romaji: kaigo rōjin hoken shisetsu
+  en: long-term care health facility
+  def: "Rehabilitation and medical-oversight facility, often called rōken; meant as bridge back home."
+
+kaigo-ryōyō-gata-iryō-shisetsu:
+  ja: 介護療養型医療施設
+  romaji: kaigo ryōyō-gata iryō shisetsu
+  en: long-term care beds in hospitals
+  def: "Old facility type abolished March 2024; replaced by care medical centres (kaigo iryō-in)."
+
+kaigo-shien-senmon-in:
+  ja: 介護支援専門員
+  romaji: "kaigo shien senmon'in"
+  en: care-support specialist
+  def: "Formal title for care managers; writes care plans and coordinates providers."
+
+kaigo-shokuin-tō-shogū-kaizen-kasan:
+  ja: 介護職員等処遇改善加算
+  romaji: kaigo shokuin tō shogū kaizen kasan
+  en: care worker treatment improvement add-on
+  def: "Unified wage add-on created in fiscal 2024 by merging older wage add-ons."
+
+kaigo-yobō-nichijō-seikatsu-shien-sōgō-jigyō:
+  ja: 介護予防・日常生活支援総合事業
+  romaji: kaigo yobō nichijō seikatsu shien sōgō jigyō
+  en: comprehensive prevention and daily-life support programme
+  def: "Municipal programme for lighter-need users (yō-shien 1–2) moved from insurance services."
+
+kaipoke:
+  ja: カイポケ
+  romaji: kaipoke
+  en: Kaipoke
+  def: "Cloud care software from SMS Co., Ltd.; records, claims, federation transmission."
+
+kanamikku:
+  ja: カナミック
+  romaji: kanamikku
+  en: Canamic
+  def: "Care software from Canamic Network Co., Ltd.; cloud records, claims, cross-organisation sharing."
+
+kasan:
+  ja: 加算
+  romaji: kasan
+  en: add-on / surcharge
+  def: "Extra fee units for staffing, night work, LIFE reporting, productivity, etc."
+
+kea-karute:
+  ja: ケアカルテ
+  romaji: kea karute
+  en: Carekarte
+  def: "Care software from Care Connect Japan; records, plans, claims with tablet and voice input."
+
+kea-manejā:
+  ja: ケアマネジャー
+  romaji: kea manejā
+  en: care manager
+  def: "Common name for care-support specialist (kaigo shien senmon'in); writes care plans."
+
+kea-puran:
+  ja: ケアプラン
+  romaji: kea puran
+  en: care plan
+  def: "The plan listing services to be provided; written by the care manager."
+
+kea-puran-dēta-renkei-shisutemu:
+  ja: ケアプランデータ連携システム
+  romaji: kea puran dēta renkei shisutemu
+  en: care-plan data exchange system
+  def: "System for sending care plans electronically between care managers and service providers."
+
+kokuho-chūō-kai:
+  ja: 国保中央会
+  romaji: kokuho chūō-kai
+  en: National Health Insurance Central Association (short form)
+  def: "Short name for kokumin kenkō hoken chūō-kai; publishes claim interfaces and transmission tools."
+
+kokuho-ren:
+  ja: 国保連
+  romaji: kokuho-ren
+  en: NHI federation (short form)
+  def: "Short name for prefectural National Health Insurance federation; processes claims."
+
+kokuho-rengō-kai:
+  ja: 国保連合会
+  romaji: kokuho rengō-kai
+  en: National Health Insurance federation
+  def: "Prefectural organisation that receives, checks, and pays care-benefit claims."
+
+kokumin-kenkō-hoken-chūō-kai:
+  ja: 国民健康保険中央会
+  romaji: kokumin kenkō hoken chūō-kai
+  en: National Health Insurance Central Association
+  def: "National body that publishes claim interfaces and the care transmission software."
+
+kōsei-rōdō-shō:
+  ja: 厚生労働省
+  romaji: kōsei rōdō shō
+  en: Ministry of Health, Labour and Welfare (MHLW)
+  def: "National ministry that writes long-term care rules through its Bureau for the Elderly."
+
+kōsei-shō-kokuji-dai-sanjū-san-gō:
+  ja: 厚生省告示第33号
+  romaji: kōsei-shō kokuji dai-sanjū-san-gō
+  en: Ministerial Notice No. 33
+  def: "The notice setting monthly unit caps by care level; last amended October 2019."
+
+kubun-shikyū-gendo-kijun-gaku:
+  ja: 区分支給限度基準額
+  romaji: kubun shikyū gendo kijun-gaku
+  en: category benefit limit
+  def: "Monthly cap in units for home and community services, varying by care level."
+
+kyotaku-kaigo-shien:
+  ja: 居宅介護支援
+  romaji: kyotaku kaigo shien
+  en: home-care support
+  def: "Care-management service; fully covered by insurance (no user co-payment)."
+
+kyotaku-kaigo-shien-jigyō-sho:
+  ja: 居宅介護支援事業所
+  romaji: kyotaku kaigo shien jigyō-sho
+  en: home-care support office
+  def: "Office where care managers work; designated by the municipality."
+
+kyotaku-sābisu-keikaku:
+  ja: 居宅サービス計画
+  romaji: kyotaku sābisu keikaku
+  en: home-service plan
+  def: "Formal name for the care plan for users living at home."
+
+kyūfu-kanri-hyō:
+  ja: 給付管理票
+  romaji: kyūfu kanri-hyō
+  en: benefit-management form
+  def: "Form the care manager files showing units used against the monthly cap."
+
+mai-nanbā-kādo:
+  ja: マイナンバーカード
+  romaji: mai nanbā kādo
+  en: My Number card
+  def: "National ID card used for identity checks on the care information platform."
+
+nendo-matsu:
+  ja: 年度末
+  romaji: nendo-matsu
+  en: fiscal year-end
+  def: "End of the Japanese fiscal year (31 March); statistics often reported at this point."
+
+niji-hantei:
+  ja: 二次判定
+  romaji: niji hantei
+  en: secondary judgement
+  def: "Review by the certification committee after the computer primary judgement."
+
+ninchi-shō-taiō-gata-kyōdō-seikatsu-kaigo:
+  ja: 認知症対応型共同生活介護
+  romaji: ninchi-shō taiō-gata kyōdō seikatsu kaigo
+  en: dementia group-living care
+  def: "Small shared houses for people with dementia; designated by the municipality."
+
+nintei-chōsa:
+  ja: 認定調査
+  romaji: nintei chōsa
+  en: certification survey
+  def: "Standardised 74-item assessment conducted by a municipal surveyor."
+
+reseputo:
+  ja: レセプト
+  romaji: reseputo
+  en: claim (colloquial)
+  def: "Borrowed from medical claims; staff commonly use this for care-benefit statements."
+
+riyōsha-hon-i:
+  ja: 利用者本位
+  romaji: "riyōsha hon'i"
+  en: user-centred / user choice
+  def: "Core principle: users choose among designated providers rather than being assigned."
+
+rōken:
+  ja: 老健
+  romaji: rōken
+  en: health facility (short form)
+  def: "Short name for long-term care health facility (kaigo rōjin hoken shisetsu)."
+
+rōken-kyoku:
+  ja: 老健局
+  romaji: rōken-kyoku
+  en: Health and Welfare Bureau for the Elderly
+  def: "MHLW bureau that writes national long-term care rules."
+
+sābisu-teikyō-hyō:
+  ja: サービス提供票
+  romaji: sābisu teikyō-hyō
+  en: service provision table
+  def: "Schedule showing which helper visits on which day; derived from the care plan."
+
+sābisu-tsuki-kōreisha-muke-jūtaku:
+  ja: サービス付き高齢者向け住宅
+  romaji: sābisu-tsuki kōreisha-muke jūtaku
+  en: serviced senior housing
+  def: "Registered senior housing with staff presence; not automatically an insurance facility."
+
+sa-kō-jū:
+  ja: サ高住
+  romaji: sa-kō-jū
+  en: serviced senior housing (short form)
+  def: "Abbreviation for sābisu-tsuki kōreisha-muke jūtaku."
+
+seisansei-kōjō-suishin-taisei-kasan:
+  ja: 生産性向上推進体制加算
+  romaji: seisansei kōjō suishin taisei kasan
+  en: productivity improvement system add-on
+  def: "Fee add-on (10–100 units/month) for offices using technology and following MHLW guidelines."
+
+shakai-fukushi-hōjin:
+  ja: 社会福祉法人
+  romaji: shakai fukushi hōjin
+  en: social-welfare corporation
+  def: "Non-profit legal form that dominates special nursing homes (96% of operators)."
+
+shakai-hoken-hōshiki:
+  ja: 社会保険方式
+  romaji: shakai hoken hōshiki
+  en: social insurance system
+  def: "Financing model linking contributions to benefits; half premiums, half tax."
+
+shi-chō-son:
+  ja: 市町村
+  romaji: shi-chō-son
+  en: municipality
+  def: "City, town, or village; the insurer for long-term care insurance."
+
+shōto-sutei:
+  ja: ショートステイ
+  romaji: shōto sutei
+  en: short stay
+  def: "Respite care in a facility for a few nights; gives family carers a break."
+
+shuji-i-ikensho:
+  ja: 主治医意見書
+  romaji: shuji-i ikensho
+  en: attending doctor's opinion
+  def: "Medical opinion collected during the certification process."
+
+tanki-nyūsho-seikatsu-kaigo:
+  ja: 短期入所生活介護
+  romaji: tanki nyūsho seikatsu kaigo
+  en: short-term residential care
+  def: "Formal name for short stay (daily-life type)."
+
+teiki-junkei-zuiji-taiō-gata-hōmon-kaigo-kango:
+  ja: 定期巡回・随時対応型訪問介護看護
+  romaji: teiki junkei zuiji taiō-gata hōmon kaigo kango
+  en: regular visiting and on-call care
+  def: "Combined 24-hour visit-and-nursing service for a neighbourhood."
+
+tokubetsu-yōgo-rōjin-hōmu:
+  ja: 特別養護老人ホーム
+  romaji: tokubetsu yōgo rōjin hōmu
+  en: special nursing home
+  def: "Classic public-insurance residential facility; heavy care, long stay, high occupancy."
+
+tokutei-shippei:
+  ja: 特定疾病
+  romaji: tokutei shippei
+  en: designated disease
+  def: "Age-related diseases (e.g., late-stage cancer, rheumatoid arthritis) that qualify Category 2 users."
+
+tokutei-shisetsu:
+  ja: 特定施設
+  romaji: tokutei shisetsu
+  en: specified facility
+  def: "Insurance designation that lets a fee-charging home bill for care delivered inside."
+
+tokutei-shisetsu-nyūkyo-sha-seikatsu-kaigo:
+  ja: 特定施設入居者生活介護
+  romaji: tokutei shisetsu nyūkyo-sha seikatsu kaigo
+  en: specified facility resident care
+  def: "Insurance service provided in fee-charging homes with specified-facility designation."
+
+toku-yō:
+  ja: 特養
+  romaji: toku-yō
+  en: special nursing home (short form)
+  def: "Abbreviation for tokubetsu yōgo rōjin hōmu."
+
+tsūsho-kaigo:
+  ja: 通所介護
+  romaji: tsūsho kaigo
+  en: day care
+  def: "User is picked up, spends the day at a centre, and returns home; commonly called day service."
+
+tsūsho-rihabiritēshon:
+  ja: 通所リハビリテーション
+  romaji: tsūsho rihabiritēshon
+  en: day rehabilitation
+  def: "Medical-side day service focused on rehabilitation; separate fee table from day care."
+
+waizuman:
+  ja: ワイズマン
+  romaji: waizuman
+  en: Wiseman
+  def: "Care software from Wiseman Co., Ltd.; home, facility, and disability services."
+
+yō-kaigo:
+  ja: 要介護
+  romaji: yō-kaigo
+  en: care needed
+  def: "Care levels 1–5 (1 lightest, 5 heaviest); qualifies for full range of insurance services."
+
+yōkaigo-nintei:
+  ja: 要介護認定
+  romaji: yōkaigo nintei
+  en: care-need certification
+  def: "Municipal process that assigns a care level (yō-shien 1–2 or yō-kaigo 1–5)."
+
+yō-shien:
+  ja: 要支援
+  romaji: yō-shien
+  en: support needed
+  def: "Support levels 1–2 (lighter need); aimed at prevention services."
+
+yūryō-rōjin-hōmu:
+  ja: 有料老人ホーム
+  romaji: yūryō rōjin hōmu
+  en: fee-charging home
+  def: "Private senior residence; may or may not have specified-facility designation."

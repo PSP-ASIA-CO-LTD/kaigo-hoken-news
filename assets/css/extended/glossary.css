@@ -1,0 +1,292 @@
+/* Glossary page styles */
+
+.glossary-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.glossary-header {
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-6);
+  border-bottom: 2px solid var(--newspaper-rule);
+}
+
+.glossary-title {
+  font-family: var(--newspaper-headline);
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0 0 var(--space-3);
+}
+
+.glossary-description {
+  color: var(--secondary);
+  margin: 0 0 var(--space-2);
+}
+
+.glossary-count {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  margin: 0;
+}
+
+/* Letter navigation */
+.glossary-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  padding: var(--space-3);
+  background: var(--tertiary);
+  border-radius: 4px;
+}
+
+.glossary-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--card-bg);
+}
+
+.glossary-nav a:hover {
+  background: var(--tertiary);
+  border-color: var(--newspaper-rule);
+}
+
+/* Letter headings */
+.glossary-letter {
+  font-family: var(--newspaper-headline);
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: var(--space-8) 0 var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.glossary-letter:first-of-type {
+  margin-top: 0;
+}
+
+/* Entry list */
+.glossary-list {
+  margin: 0;
+  padding: 0;
+}
+
+.glossary-entry {
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px dotted var(--border);
+  scroll-margin-top: var(--space-8);
+}
+
+.glossary-entry:last-child {
+  border-bottom: none;
+}
+
+.glossary-entry:target {
+  animation: highlight-fade 2s ease-out;
+}
+
+@keyframes highlight-fade {
+  from { background: rgba(139, 0, 0, 0.1); }
+  to { background: transparent; }
+}
+
+/* Term line */
+.glossary-term {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-2);
+  font-weight: normal;
+}
+
+.glossary-ja {
+  font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.glossary-romaji {
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.glossary-en {
+  font-weight: 600;
+}
+
+.glossary-en::before {
+  content: "—";
+  margin-right: var(--space-2);
+  color: var(--secondary);
+}
+
+/* Definition */
+.glossary-def {
+  margin: 0;
+  padding-left: 0;
+  line-height: 1.7;
+  color: var(--content);
+}
+
+.glossary-search {
+  display: inline-block;
+  margin-left: var(--space-3);
+  font-size: 0.85rem;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.glossary-search:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .glossary-title {
+    font-size: 1.5rem;
+  }
+  
+  .glossary-nav {
+    gap: var(--space-1);
+    padding: var(--space-2);
+  }
+  
+  .glossary-nav a {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .glossary-ja {
+    font-size: 1.1rem;
+  }
+  
+  .glossary-term {
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+  
+  .glossary-en::before {
+    display: none;
+  }
+}
+
+/* ============================================
+   TOOLTIP STYLES (for ja shortcode)
+   WCAG 1.4.13 compliant
+   ============================================ */
+.ja-term-wrapper {
+  position: relative;
+  display: inline;
+}
+
+.ja-term-wrapper[data-tooltip] {
+  cursor: help;
+}
+
+/* Dotted underline for terms with definitions */
+.ja-term-wrapper[data-tooltip] .ja-term {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--secondary);
+  text-underline-offset: 3px;
+}
+
+/* Tooltip element (created by JS) */
+.ja-tooltip {
+  position: absolute;
+  z-index: 1000;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 300px;
+  padding: var(--space-3);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--content);
+  white-space: normal;
+  pointer-events: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+}
+
+.ja-tooltip.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Arrow */
+.ja-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--card-bg);
+}
+
+.ja-tooltip::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 7px solid transparent;
+  border-top-color: var(--border);
+}
+
+/* Reposition if near screen edge (handled by JS) */
+.ja-tooltip.tooltip-left {
+  left: 0;
+  transform: translateX(0);
+}
+
+.ja-tooltip.tooltip-left::after,
+.ja-tooltip.tooltip-left::before {
+  left: 20px;
+}
+
+.ja-tooltip.tooltip-right {
+  left: auto;
+  right: 0;
+  transform: translateX(0);
+}
+
+.ja-tooltip.tooltip-right::after,
+.ja-tooltip.tooltip-right::before {
+  left: auto;
+  right: 20px;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .ja-tooltip {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Link styling in ja shortcode */
+.ja-term-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ja-term-link:hover .ja-term {
+  color: var(--newspaper-accent);
+}
