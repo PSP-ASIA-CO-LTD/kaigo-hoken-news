@@ -1,0 +1,3 @@
+{{- /* Load Japanese term read-aloud script */ -}}
+{{ $jaSpeak := resources.Get "js/ja-speak.js" | minify | fingerprint }}
+<script src="{{ $jaSpeak.Permalink }}" defer></script>

@@ -592,11 +592,21 @@ body:not(.list) .main {
    ============================================ */
 .ja-term-wrapper {
   white-space: nowrap;
+  display: inline;
 }
 
 .ja-term {
   font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
   font-weight: 500;
+}
+
+.ja-term-link {
+  text-decoration: none;
+  border-bottom: 1px dotted var(--secondary);
+}
+
+.ja-term-link:hover {
+  border-bottom-color: var(--newspaper-accent);
 }
 
 .ja-romaji {
@@ -606,6 +616,53 @@ body:not(.list) .main {
 
 .ja-meaning {
   color: var(--secondary);
+}
+
+/* Speaker button for read-aloud */
+.ja-speak-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0 0.2em;
+  margin-left: 0.15em;
+  cursor: pointer;
+  color: var(--secondary);
+  vertical-align: middle;
+  line-height: 1;
+  opacity: 0.6;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+.ja-speak-btn:hover,
+.ja-speak-btn:focus {
+  opacity: 1;
+  color: var(--newspaper-accent);
+  outline: none;
+}
+
+.ja-speak-btn:focus-visible {
+  outline: 2px solid var(--newspaper-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.ja-speak-btn:active {
+  transform: scale(0.95);
+}
+
+.ja-speak-icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* Slightly smaller on mobile */
+@media (max-width: 639px) {
+  .ja-speak-icon {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 /* Screen reader only text */
