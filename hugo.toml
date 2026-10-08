@@ -1,0 +1,72 @@
+baseURL = 'https://psp-asia-co-ltd.github.io/kaigo-hoken-news/'
+languageCode = 'en'
+defaultContentLanguage = 'en'
+title = 'Kaigo Hoken News'
+theme = 'PaperMod'
+[pagination]
+  pagerSize = 10
+
+enableRobotsTXT = true
+enableEmoji = true
+buildDrafts = false
+buildFuture = true
+buildExpired = false
+
+[params]
+  env = "production"
+  description = "Japan long-term care insurance research and updates — insights into 介護保険 (kaigo hoken) for international care technology companies"
+  author = "PSP Asia Co., Ltd."
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecialCharacters = true
+  displayFullLangName = true
+  ShowToc = true
+  TocOpen = false
+  
+  [params.homeInfoParams]
+    Title = "Kaigo Hoken News"
+    Content = "Japan long-term care insurance research and updates — insights into 介護保険 for international care technology companies. Published by PSP Asia Co., Ltd."
+  
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "/archive/"
+    weight = 30
