@@ -185,16 +185,13 @@ body {
 }
 
 /* ============================================
-   CARD GRID LAYOUT
+   CARD GRID LAYOUT (List pages only)
    ============================================ */
-/* Container for posts - use CSS Grid */
-.main > article.post-entry {
-  /* Individual cards in the flow */
-}
+/* Grid layout only applies to list pages (body.list), not single post pages */
 
 /* On tablet: 2 columns */
 @media (min-width: 640px) {
-  .main {
+  .list .main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--card-gap);
@@ -202,33 +199,33 @@ body {
   }
   
   /* Make page headers span full width */
-  .main > .page-header,
-  .main > header {
+  .list .main > .page-header,
+  .list .main > header {
     grid-column: 1 / -1;
   }
   
-  .post-entry {
+  .list .post-entry {
     margin-bottom: 0;
   }
   
   /* Lead story - full width */
-  .main > .post-entry:first-of-type {
+  .list .main > .post-entry:first-of-type {
     grid-column: 1 / -1;
   }
   
-  .main > .post-entry:first-of-type h2 {
+  .list .main > .post-entry:first-of-type h2 {
     font-size: 1.6rem;
   }
 }
 
 /* On desktop: 3 columns for secondary stories */
 @media (min-width: 900px) {
-  .main {
+  .list .main {
     grid-template-columns: repeat(3, 1fr);
   }
   
   /* Lead story still full width */
-  .main > .post-entry:first-of-type {
+  .list .main > .post-entry:first-of-type {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -236,20 +233,20 @@ body {
     padding: var(--space-8);
   }
   
-  .main > .post-entry:first-of-type .entry-header {
+  .list .main > .post-entry:first-of-type .entry-header {
     margin-bottom: 0;
   }
   
-  .main > .post-entry:first-of-type h2 {
+  .list .main > .post-entry:first-of-type h2 {
     font-size: 2rem;
     line-height: 1.2;
   }
   
-  .main > .post-entry:first-of-type .entry-content {
+  .list .main > .post-entry:first-of-type .entry-content {
     margin-bottom: 0;
   }
   
-  .main > .post-entry:first-of-type .entry-footer {
+  .list .main > .post-entry:first-of-type .entry-footer {
     grid-column: 1 / -1;
     border-top: 1px solid var(--border);
     padding-top: var(--space-4);
@@ -578,36 +575,16 @@ a:hover {
 }
 
 /* ============================================
-   POSTS LIST PAGE (not home)
+   SINGLE POST PAGE - Centered article layout
    ============================================ */
-.list .main {
+/* Single posts (no .list class) get block layout with centered content */
+body:not(.list) .main {
   display: block;
 }
 
-.list .post-entry {
-  margin-bottom: var(--space-4);
-}
-
-@media (min-width: 640px) {
-  .list .main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--card-gap);
-  }
-  
-  .list .main > header.page-header {
-    grid-column: 1 / -1;
-  }
-  
-  .list .post-entry {
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 900px) {
-  .list .main {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* Ensure post-single uses full width of main container */
+.post-single {
+  max-width: 100%;
 }
 
 /* ============================================
