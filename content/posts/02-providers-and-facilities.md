@@ -5,7 +5,7 @@ tags: ["japan", "long-term-care", "providers", "facilities"]
 summary: "Home visits, day care, short stay, and residential facilities, who owns them, how many there are, and why there is no fixed budget per resident."
 ---
 
-Japanese care is a menu of designated services, not a single "nursing home" product. A provider is an office or a facility that a prefecture or a municipality has designated under the Long-Term Care Insurance Act. Counts below are from the national Survey of Long-term Care Service Facilities and Offices as of **1 October 2024**, unless noted. An office that offers two services is counted twice. Sources: [overview](https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/service24/dl/gaikyo.pdf) and [reference table](https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/service24/dl/sankouhyou.pdf).
+Japanese care is a menu of designated services, not a single "nursing home" product. A provider is an office or a facility that a prefecture or a municipality has designated under the Long-Term Care Insurance Act. Counts below are from the national Survey of Long-term Care Service Facilities and Offices as of **1 October 2024**, unless noted. An office that offers two services is counted twice.[^1] [^2]
 
 ## Home, day, and short stay
 
@@ -41,7 +41,7 @@ Other home-side services a software suite eventually meets: welfare-equipment re
 
 ## Who runs them
 
-Ownership is split by service, not by a single "public versus private" label. Shares below are from the detailed sample of the 1 October 2024 survey ([overview, table 4 and table 5](https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/service24/dl/gaikyo.pdf)).
+Ownership is split by service, not by a single "public versus private" label. Shares below are from the detailed sample of the 1 October 2024 survey.[^1]
 
 | Setting | Largest operator type |
 | --- | --- |
@@ -63,9 +63,9 @@ Staffing on the same date, from the detailed tables: **299,123** care workers in
 
 Thai public homes often think in terms of a support budget allocated per resident. Japan does not work that way. Three different mechanisms get confused:
 
-1. **Home and community services.** The person's care level sets a **monthly ceiling in units** (the caps in the previous post: 16,765 units for {{< ja "要介護" "yō-kaigo" >}}1 up to 36,217 for 要介護5, unchanged in the notice since 1 October 2019). The care manager spends that ceiling across visit care, day care, short stay, equipment, and so on. Unused units are not cash. They expire at month end. Units over the cap are private pay. This is the nearest thing to a "per person budget," and it belongs to the **user**, not to the facility.
+1. **Home and community services.** The person's care level sets a **monthly ceiling in units** (the caps in the previous post: 16,765 units for {{< ja "要介護" "yō-kaigo" >}}1 up to 36,217 for 要介護5, unchanged in the notice since 1 October 2019).[^3] The care manager spends that ceiling across visit care, day care, short stay, equipment, and so on. Unused units are not cash. They expire at month end. Units over the cap are private pay. This is the nearest thing to a "per person budget," and it belongs to the **user**, not to the facility.
 
-2. **Designated facilities ({{< ja "特養" "toku-yō" >}}, {{< ja "老健" "rōken" >}}, {{< ja "介護医療院" "kaigo iryō-in" >}}).** Revenue is a **per-day fee** that depends on care level, room type, and staffing, plus add-ons. The July 2025 MHLW overview illustrates a unit-type private room in a special nursing home at 670 units a day for 要介護1 and 955 units a day for 要介護5. Multiply by the regional unit price (10.00 to 10.90 yen for these facilities) and by days in the month, then subtract the user's 10/20/30 percent and add whatever room and meal charges insurance does not cover. A full building's income is residents × days × that formula. There is no envelope handed to the director each April labelled "budget per bed."
+2. **Designated facilities ({{< ja "特養" "toku-yō" >}}, {{< ja "老健" "rōken" >}}, {{< ja "介護医療院" "kaigo iryō-in" >}}).** Revenue is a **per-day fee** that depends on care level, room type, and staffing, plus add-ons. The July 2025 MHLW overview illustrates a unit-type private room in a special nursing home at 670 units a day for 要介護1 and 955 units a day for 要介護5.[^4] Multiply by the regional unit price (10.00 to 10.90 yen for these facilities) and by days in the month, then subtract the user's 10/20/30 percent and add whatever room and meal charges insurance does not cover. A full building's income is residents × days × that formula. There is no envelope handed to the director each April labelled "budget per bed."
 
 3. **Municipal premiums and plans.** Every three years the municipality forecasts how much service it will pay for and sets the premium for people aged 65 and over so the books balance. That is a budget for the **insurer**, not a cap on an individual home. The national average premium for fiscal 2024–2026 is 6,225 yen a month.
 
@@ -75,4 +75,18 @@ Add-ons sit on top of both the home cap and the facility per-diem, and many of t
 
 Prefectures, designated cities, and core cities designate and supervise most home services and the three facility types. Municipalities designate and supervise community-based services (the small homes, group homes, neighbourhood day care, 24-hour visiting) and the care-manager offices. A product sold nationally still has to survive local designation rules, local unit prices, and a claim sent to that prefecture's federation.
 
-Market size, in money rather than buildings: reviewed care costs in fiscal 2025 were **12.2208 trillion yen** ([MHLW, 30 September 2026](https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/25/dl/10.pdf)). That is the flow through claims. It is not a count of private-pay fees in non-designated residences, and it is not a software market size. No official software-market figure was verified for this brief.
+Market size, in money rather than buildings: reviewed care costs in fiscal 2025 were **12.2208 trillion yen**.[^5] That is the flow through claims. It is not a count of private-pay fees in non-designated residences, and it is not a software market size. No official software-market figure was verified for this brief.
+
+---
+
+## References
+
+[^1]: Ministry of Health, Labour and Welfare. "Survey of Long-Term Care Service Facilities and Offices, October 2024: Overview (令和6年介護サービス施設・事業所調査の概況)." https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/service24/dl/gaikyo.pdf
+
+[^2]: Ministry of Health, Labour and Welfare. "Survey of Long-Term Care Service Facilities and Offices, October 2024: Reference Tables (令和6年介護サービス施設・事業所調査 参考表)." https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/service24/dl/sankouhyou.pdf
+
+[^3]: Ministry of Health, Labour and Welfare. "Ministerial Notice No. 33 on Category Benefit Limit Standard Amounts (厚生省告示第33号)." Last amended 1 October 2019. https://www.mhlw.go.jp/web/t_doc?dataId=82aa0267&dataType=0
+
+[^4]: Ministry of Health, Labour and Welfare. "Long-Term Care Insurance System Overview (介護保険制度をめぐる最近の動向について)." July 2025. https://www.mhlw.go.jp/content/001512842.pdf
+
+[^5]: Ministry of Health, Labour and Welfare. "Fiscal 2025 Long-Term Care Benefit Expenditures Survey Results (令和7年度 介護給付費等実態統計の概況)." Press release, 30 September 2026. https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/25/dl/10.pdf
