@@ -86,48 +86,48 @@ The callout displays a monochrome Tako-San avatar, a small-caps "ANALYSIS / OPIN
 
 ## Japanese Terms Shortcode
 
-This site uses a custom shortcode `{{< ja >}}` to render Japanese terms with romaji pronunciation and an optional read-aloud button. The shortcode is designed for non-Japanese readers who cannot read kanji.
+This site uses a custom shortcode `{{< ja >}}` to render Japanese terms with romaji pronunciation, a read-aloud button, and tooltips. Terms link to the glossary.
 
-### Basic Usage
+### Usage by Glossary Key (Preferred)
+
+```hugo
+{{< ja key="kaigo-hoken" >}}
+```
+
+**Output:** 介護保険 (kaigo hoken, long-term care insurance) 🔊 — with tooltip and link to `/glossary/#kaigo-hoken`
+
+The key looks up the term in `data/glossary.yaml` and auto-fills:
+- Japanese text (`ja`)
+- Romaji pronunciation (`romaji`)
+- English meaning (`en`)
+- Definition (`def`) — shown in tooltip on hover/focus
+
+### Override Parameters
+
+```hugo
+{{< ja key="kaigo-hoken" en="LTC insurance" >}}
+```
+
+The `en` parameter overrides the glossary's English meaning.
+
+### Explicit Values (Backwards Compatible)
 
 ```hugo
 {{< ja "介護保険" "kaigo hoken" >}}
-```
-
-**Output:** 介護保険 (kaigo hoken) 🔊
-
-### With English Meaning
-
-```hugo
-{{< ja "要介護認定" "yōkaigo nintei" "care-need certification" >}}
-```
-
-**Output:** 要介護認定 (yōkaigo nintei, care-need certification) 🔊
-
-### Named Parameters (Alternative Syntax)
-
-```hugo
+{{< ja "介護保険" "kaigo hoken" "long-term care insurance" >}}
 {{< ja term="介護保険" romaji="kaigo hoken" en="long-term care insurance" >}}
-```
-
-### With Glossary Link (Future Feature)
-
-```hugo
-{{< ja term="介護保険" romaji="kaigo hoken" link="/glossary/kaigo-hoken" >}}
 ```
 
 ### Features
 
+- **Glossary lookup** — `key="..."` pulls data from `data/glossary.yaml`
 - **Kanji display** with serif Japanese font (Noto Serif JP)
 - **Romaji pronunciation** in italics for non-Japanese readers
-- **Optional English gloss** for key terms
-- **Speaker button (🔊)** uses [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) to read the term aloud in Japanese
-  - Uses `ja-JP` language with a slightly slower rate (0.85) for clarity
-  - Feature-detected: button is hidden on browsers that don't support speech synthesis
-  - Keyboard accessible (focus, Enter/Space to activate)
-  - Works on desktop Chrome/Firefox/Safari and mobile Safari/Chrome
-- **Accessible** — screen readers get the romaji and meaning
-- **Link-ready** — `link` parameter for future wiki-style glossary linking
+- **Tooltip** on hover/focus/tap with English meaning and definition (WCAG 1.4.13 compliant — Escape to dismiss, hover-persistent)
+- **Speaker button (🔊)** reads term aloud via Web Speech API (`ja-JP`, rate 0.85)
+- **Glossary link** — terms link to their entry on `/glossary/`
+- **Dotted underline** indicates interactive tooltip
+- **Accessible** — keyboard navigation, screen reader support
 
 ### Romanization
 
@@ -136,6 +136,37 @@ Use Hepburn romanization with macrons for long vowels:
 - ū (long u) — e.g., 要支援 → yō-shien
 
 For consistency, use lowercase romaji except for proper nouns.
+
+## Glossary
+
+The glossary (`/glossary/`) lists all Japanese terms alphabetically by romaji. Each entry shows:
+- Japanese text with read-aloud button
+- Romaji pronunciation
+- English meaning
+- Short definition
+- Link to search posts for that term
+
+### Adding a Glossary Entry
+
+Edit `data/glossary.yaml`:
+
+```yaml
+kaigo-hoken:
+  ja: 介護保険
+  romaji: kaigo hoken
+  en: long-term care insurance
+  def: "Japan's social insurance system for elderly care, started April 2000."
+```
+
+**Key format:** lowercase, hyphens for spaces, no special characters (e.g., `kaigo-hoken`, `yō-shien`).
+
+**Fields:**
+| Field | Required | Description |
+|-------|----------|-------------|
+| `ja` | Yes | Japanese text (kanji/kana) |
+| `romaji` | Yes | Hepburn romanization with macrons |
+| `en` | Yes | Short English translation |
+| `def` | Yes | One-line definition (quote if it contains colons) |
 
 ## Local Development
 

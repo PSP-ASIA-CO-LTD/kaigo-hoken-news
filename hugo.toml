@@ -89,6 +89,11 @@ buildExpired = false
     url = "/series/"
     weight = 70
   [[menu.main]]
+    identifier = "nav-glossary"
+    name = "Glossary"
+    url = "/glossary/"
+    weight = 75
+  [[menu.main]]
     identifier = "nav-about"
     name = "About"
     url = "/about/"
