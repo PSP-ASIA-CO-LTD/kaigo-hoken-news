@@ -57,6 +57,30 @@ Japanese text (日本語) renders correctly.
 | `draft` | No | Set to `true` to hide from production builds |
 | `weight` | No | Lower numbers sort first (used to pin the executive summary) |
 
+### Analysis / Opinion Callout
+
+Use the `analysis` shortcode to insert a clearly-labeled opinion or analysis section, distinct from cited facts:
+
+```markdown
+{{< analysis >}}
+Your analysis in **Markdown**. Footnotes[^1] work inside.
+
+[^1]: So do inline references.
+{{< /analysis >}}
+```
+
+Override the default title:
+
+```markdown
+{{< analysis title="My custom title" >}}
+Content here...
+{{< /analysis >}}
+```
+
+Default title: *Tako-San's take: what this means for PSP Asia*
+
+The callout displays a monochrome Tako-San avatar, a small-caps "ANALYSIS / OPINION" label, and renders the inner content as Markdown.
+
 ## Local Development
 
 ### Prerequisites
