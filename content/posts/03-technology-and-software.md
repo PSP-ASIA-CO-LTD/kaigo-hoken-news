@@ -3,6 +3,9 @@ title: "Technology in Japanese care: from the daily record to the claim and to L
 date: 2026-10-09T00:00:00+07:00
 tags: ["japan", "long-term-care", "software", "LIFE", "dx"]
 summary: "How a Japanese provider records care, bills the federation, and submits LIFE data, and who already sells the software that does it."
+series: "Japan LTC Basics"
+series_order: 4
+categories: ["Technology"]
 ---
 
 Japanese care software is not a blank market. Billing has been electronic for years. The live fight is everything around the claim: the daily record, the roster, the add-on evidence, and a new national data platform that is switching on unevenly from 2026.

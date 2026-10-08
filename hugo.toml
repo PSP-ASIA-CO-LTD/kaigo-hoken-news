@@ -42,6 +42,8 @@ buildExpired = false
 
 [taxonomies]
   tag = "tags"
+  series = "series"
+  category = "categories"
 
 [markup]
   [markup.goldmark]
@@ -52,22 +54,42 @@ buildExpired = false
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "All Articles"
-    url = "/posts/"
+    identifier = "cat-basics"
+    name = "Basics"
+    url = "/categories/basics/"
     weight = 10
   [[menu.main]]
-    identifier = "tags"
-    name = "Topics"
-    url = "/tags/"
+    identifier = "cat-providers"
+    name = "Providers"
+    url = "/categories/providers/"
     weight = 20
   [[menu.main]]
-    identifier = "archive"
-    name = "Archive"
-    url = "/archive/"
+    identifier = "cat-technology"
+    name = "Technology"
+    url = "/categories/technology/"
     weight = 30
   [[menu.main]]
-    identifier = "about"
+    identifier = "cat-budget-policy"
+    name = "Budget & Policy"
+    url = "/categories/budget-policy/"
+    weight = 40
+  [[menu.main]]
+    identifier = "cat-news"
+    name = "News"
+    url = "/categories/news/"
+    weight = 50
+  [[menu.main]]
+    identifier = "all-articles"
+    name = "All Articles"
+    url = "/posts/"
+    weight = 60
+  [[menu.main]]
+    identifier = "nav-series"
+    name = "Series"
+    url = "/series/"
+    weight = 70
+  [[menu.main]]
+    identifier = "nav-about"
     name = "About"
     url = "/about/"
-    weight = 40
+    weight = 80

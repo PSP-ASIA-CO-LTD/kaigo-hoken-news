@@ -3,6 +3,9 @@ title: "How Japan's Long-Term Care Insurance works"
 date: 2026-10-09T00:00:00+07:00
 tags: ["japan", "long-term-care", "kaigo-hoken", "billing"]
 summary: "The basics of 介護保険: who is covered, who pays, how need is certified, what the monthly caps are, and how a provider gets paid."
+series: "Japan LTC Basics"
+series_order: 2
+categories: ["Basics"]
 ---
 
 This is the foundation for anyone selling care software in Japan. The system is social insurance, not a grant programme and not a copy of medical insurance, though the billing machinery looks similar.

@@ -1,0 +1,26 @@
+{{- define "main" }}
+<header class="page-header">
+  <h1>Article Series</h1>
+  <p>Multi-part deep dives into Japan's long-term care system</p>
+</header>
+
+<div class="series-list">
+  {{- range .Data.Terms.Alphabetical }}
+  {{- $seriesPages := .Pages.ByParam "series_order" }}
+  <article class="series-card">
+    <h2 class="series-title">
+      <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+    </h2>
+    <p class="series-meta">{{ len .Pages }} {{ if eq (len .Pages) 1 }}part{{ else }}parts{{ end }}</p>
+    <ol class="series-parts-preview">
+      {{- range first 3 $seriesPages }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{- end }}
+      {{- if gt (len .Pages) 3 }}
+      <li class="more-parts">…and {{ sub (len .Pages) 3 }} more</li>
+      {{- end }}
+    </ol>
+  </article>
+  {{- end }}
+</div>
+{{- end }}

@@ -1,0 +1,53 @@
+{{- with .Params.series }}
+{{- $currentPage := $ }}
+{{- $seriesName := . }}
+{{- $seriesOrder := $currentPage.Params.series_order | default 999 }}
+{{- $seriesPages := where site.RegularPages "Params.series" $seriesName }}
+{{- $sortedPages := $seriesPages.ByParam "series_order" }}
+{{- $totalParts := len $sortedPages }}
+
+{{- if gt $totalParts 0 }}
+<nav class="series-nav" aria-label="Series navigation">
+  <div class="series-nav-header">
+    <span class="series-label">Series:</span>
+    <a href="{{ (site.GetPage (printf "/series/%s" ($seriesName | urlize))).Permalink }}" class="series-name">{{ $seriesName }}</a>
+    <span class="series-position">Part {{ $seriesOrder }} of {{ $totalParts }}</span>
+  </div>
+  
+  <div class="series-nav-links">
+    {{- $prevPage := false }}
+    {{- $nextPage := false }}
+    {{- range $i, $page := $sortedPages }}
+      {{- if eq $page.Permalink $currentPage.Permalink }}
+        {{- if gt $i 0 }}
+          {{- $prevPage = index $sortedPages (sub $i 1) }}
+        {{- end }}
+        {{- if lt (add $i 1) $totalParts }}
+          {{- $nextPage = index $sortedPages (add $i 1) }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+    
+    {{- if $prevPage }}
+    <a href="{{ $prevPage.Permalink }}" class="series-prev" rel="prev">
+      <span class="nav-arrow">←</span>
+      <span class="nav-label">Previous</span>
+      <span class="nav-title">{{ $prevPage.Title }}</span>
+    </a>
+    {{- else }}
+    <span class="series-prev disabled"></span>
+    {{- end }}
+    
+    {{- if $nextPage }}
+    <a href="{{ $nextPage.Permalink }}" class="series-next" rel="next">
+      <span class="nav-label">Next</span>
+      <span class="nav-arrow">→</span>
+      <span class="nav-title">{{ $nextPage.Title }}</span>
+    </a>
+    {{- else }}
+    <span class="series-next disabled"></span>
+    {{- end }}
+  </div>
+</nav>
+{{- end }}
+{{- end }}

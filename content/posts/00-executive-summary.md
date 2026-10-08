@@ -4,6 +4,9 @@ date: 2026-10-09T00:00:00+07:00
 tags: ["japan", "long-term-care", "briefing"]
 summary: "How Japanese long-term care is paid for, where software sits, and what blocks a straight export of a Thai public-nursing-home system."
 weight: 1
+series: "Japan LTC Basics"
+series_order: 1
+categories: ["Basics"]
 cover:
   hidden: true
 ---

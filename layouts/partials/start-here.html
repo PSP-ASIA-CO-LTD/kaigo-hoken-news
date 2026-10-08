@@ -1,0 +1,36 @@
+{{- $startHereSeries := "Japan LTC Basics" }}
+{{- $seriesPages := where site.RegularPages "Params.series" $startHereSeries }}
+{{- $sortedPages := $seriesPages.ByParam "series_order" }}
+{{- $totalParts := len $sortedPages }}
+{{- $firstPost := index $sortedPages 0 }}
+
+{{- if gt $totalParts 0 }}
+<section class="start-here-box" aria-label="Start here">
+  <div class="start-here-content">
+    <h2 class="start-here-title">📚 New to Japan's Long-Term Care System?</h2>
+    <p class="start-here-text">
+      Our <strong>{{ $totalParts }}-part introductory series</strong> covers everything a Thai care-software company needs to know about 介護保険 (kaigo hoken).
+    </p>
+    <div class="start-here-actions">
+      {{- if $firstPost }}
+      <a href="{{ $firstPost.Permalink }}" class="start-here-btn primary">
+        Start with the Executive Summary →
+      </a>
+      {{- end }}
+      <a href="{{ (site.GetPage (printf "/series/%s" ($startHereSeries | urlize))).Permalink }}" class="start-here-btn secondary">
+        View Series Overview
+      </a>
+    </div>
+    <div class="start-here-series-preview">
+      <h3>Reading Path:</h3>
+      <ol class="start-here-toc">
+        {{- range $sortedPages }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{- end }}
+      </ol>
+    </div>
+  </div>
+</section>
+{{- end }}
