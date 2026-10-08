@@ -1,6 +1,6 @@
 ---
 title: "Japan long-term care: what a Thai care-software company needs to know"
-date: 2026-10-08
+date: 2026-10-09T00:00:00+07:00
 tags: ["japan", "long-term-care", "briefing"]
 summary: "How Japanese long-term care is paid for, where software sits, and what blocks a straight export of a Thai public-nursing-home system."
 weight: 1

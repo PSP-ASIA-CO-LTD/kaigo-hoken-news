@@ -1,6 +1,6 @@
 ---
 title: "Who provides care in Japan, and what the per-resident budget really is"
-date: 2026-10-08
+date: 2026-10-09T00:00:00+07:00
 tags: ["japan", "long-term-care", "providers", "facilities"]
 summary: "Home visits, day care, short stay, and residential facilities, who owns them, how many there are, and why there is no fixed budget per resident."
 ---

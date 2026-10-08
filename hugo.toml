@@ -3,6 +3,7 @@ languageCode = 'en'
 defaultContentLanguage = 'en'
 title = 'Kaigo Hoken News'
 theme = 'PaperMod'
+timeZone = 'Asia/Bangkok'
 [pagination]
   pagerSize = 10
 
@@ -30,13 +31,8 @@ buildExpired = false
   ShowToc = true
   TocOpen = false
   
-  [params.homeInfoParams]
-    Title = "Kaigo Hoken News"
-    Content = "Japan's Long-Term Care Insurance Research & Analysis — Published by PSP Asia Co., Ltd."
-  
-  [[params.socialIcons]]
-    name = "rss"
-    url = "index.xml"
+  # Home info hidden via CSS - tagline moved to footer
+  # RSS link in footer instead
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

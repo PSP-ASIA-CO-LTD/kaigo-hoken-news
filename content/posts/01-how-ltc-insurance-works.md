@@ -1,6 +1,6 @@
 ---
 title: "How Japan's Long-Term Care Insurance works"
-date: 2026-10-08
+date: 2026-10-09T00:00:00+07:00
 tags: ["japan", "long-term-care", "kaigo-hoken", "billing"]
 summary: "The basics of 介護保険: who is covered, who pays, how need is certified, what the monthly caps are, and how a provider gets paid."
 ---

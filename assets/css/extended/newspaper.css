@@ -1,4 +1,5 @@
 /* Newspaper-style theme overrides for Kaigo Hoken News */
+/* Spacing scale: 4px base (0.25rem) - 4, 8, 12, 16, 20, 24, 32, 40, 48 */
 
 /* Import serif font for headlines */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@400;500&family=Playfair+Display:wght@700;900&display=swap');
@@ -10,6 +11,22 @@
   --newspaper-rule: #333;
   --newspaper-bg: #faf8f5;
   --newspaper-text: #1a1a1a;
+  
+  /* Spacing scale */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+  --space-12: 3rem;    /* 48px */
+  
+  /* Card padding */
+  --card-padding-desktop: var(--space-6);  /* 24px */
+  --card-padding-mobile: var(--space-4);   /* 16px */
+  --card-gap: var(--space-5);              /* 20px */
 }
 
 /* Light mode newspaper colors */
@@ -21,6 +38,7 @@ html:not([data-theme="dark"]) {
   --tertiary: #e8e4df;
   --content: var(--newspaper-text);
   --border: #d4d0c8;
+  --card-bg: #fff;
 }
 
 /* Dark mode - softer contrast for readability */
@@ -33,6 +51,7 @@ html[data-theme="dark"] {
   --border: #3a3a3a;
   --newspaper-accent: #c44;
   --newspaper-rule: #555;
+  --card-bg: #242424;
 }
 
 /* Base typography */
@@ -43,233 +62,344 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Masthead styling */
+/* ============================================
+   MASTHEAD - Compact newspaper header
+   ============================================ */
 .header {
-  border-bottom: 3px double var(--newspaper-rule);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--newspaper-rule);
+  padding: var(--space-3) 0;
+  margin-bottom: var(--space-4);
+}
+
+.header-nav {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-2);
 }
 
 .logo a {
   font-family: var(--newspaper-headline);
   font-weight: 900;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
   .logo a {
-    font-size: 2.8rem;
+    font-size: 1.75rem;
   }
 }
 
-/* Date line under masthead */
-.header::after {
-  content: '';
-  display: block;
-  border-top: 1px solid var(--newspaper-rule);
-  margin-top: 0.5rem;
-}
-
-/* Navigation - simple, newspaper-like */
-.header-nav {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
+/* Navigation - inline with logo */
 .menu {
-  margin-top: 0.5rem;
-  gap: 1.5rem;
-  font-size: 0.9rem;
+  margin: 0;
+  gap: var(--space-4);
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
-/* Headlines - serif, bold */
+.menu li a {
+  padding: var(--space-2);
+}
+
+/* Remove the extra border line */
+.header::after {
+  display: none;
+}
+
+/* ============================================
+   HOME INFO - Minimal or hidden
+   ============================================ */
+/* Hide the large home intro section - tagline moves to footer */
+.home-info {
+  display: none;
+}
+
+/* ============================================
+   MAIN CONTENT AREA
+   ============================================ */
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* ============================================
+   POST CARDS - Proper padding and grid
+   ============================================ */
+.post-entry {
+  background: var(--card-bg);
+  border-radius: 4px;
+  padding: var(--card-padding-desktop);
+  margin-bottom: var(--card-gap);
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Remove old border-bottom styling */
+.post-entry {
+  border-bottom: none;
+}
+
+/* Card header (headline) */
+.post-entry .entry-header {
+  margin-bottom: var(--space-3);
+}
+
+.post-entry h2 {
+  font-family: var(--newspaper-headline);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Card content (summary) */
+.post-entry .entry-content {
+  flex: 1;
+  margin-bottom: var(--space-3);
+}
+
+.post-entry .entry-content p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--secondary);
+  margin: 0;
+}
+
+/* Card footer (metadata) */
+.post-entry .entry-footer {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--secondary);
+  margin-top: auto;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border);
+}
+
+/* ============================================
+   CARD GRID LAYOUT
+   ============================================ */
+/* Container for posts - use CSS Grid */
+.main > article.post-entry {
+  /* Individual cards in the flow */
+}
+
+/* On tablet: 2 columns */
+@media (min-width: 640px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--card-gap);
+    align-items: start;
+  }
+  
+  /* Make page headers span full width */
+  .main > .page-header,
+  .main > header {
+    grid-column: 1 / -1;
+  }
+  
+  .post-entry {
+    margin-bottom: 0;
+  }
+  
+  /* Lead story - full width */
+  .main > .post-entry:first-of-type {
+    grid-column: 1 / -1;
+  }
+  
+  .main > .post-entry:first-of-type h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* On desktop: 3 columns for secondary stories */
+@media (min-width: 900px) {
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Lead story still full width */
+  .main > .post-entry:first-of-type {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+    padding: var(--space-8);
+  }
+  
+  .main > .post-entry:first-of-type .entry-header {
+    margin-bottom: 0;
+  }
+  
+  .main > .post-entry:first-of-type h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .main > .post-entry:first-of-type .entry-content {
+    margin-bottom: 0;
+  }
+  
+  .main > .post-entry:first-of-type .entry-footer {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--border);
+    padding-top: var(--space-4);
+    margin-top: var(--space-4);
+  }
+}
+
+/* ============================================
+   MOBILE ADJUSTMENTS
+   ============================================ */
+@media (max-width: 639px) {
+  .header-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .logo a {
+    font-size: 1.4rem;
+  }
+  
+  .menu {
+    gap: var(--space-3);
+    font-size: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .main {
+    padding: 0 var(--space-3);
+  }
+  
+  .post-entry {
+    padding: var(--card-padding-mobile);
+  }
+  
+  .post-entry h2 {
+    font-size: 1.1rem;
+  }
+  
+  .post-entry .entry-content p {
+    font-size: 0.85rem;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+}
+
+/* ============================================
+   HEADLINES - Typography
+   ============================================ */
 h1, h2, h3, h4, h5, h6,
 .entry-header h1,
 .entry-header h2,
 .post-title {
   font-family: var(--newspaper-headline);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: -0.01em;
 }
 
 .entry-header h1,
 .post-title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 900;
+  margin-bottom: var(--space-4);
 }
 
 @media (min-width: 768px) {
   .entry-header h1,
   .post-title {
-    font-size: 2.5rem;
-  }
-}
-
-/* Home page info section - Editorial intro */
-.home-info {
-  text-align: center;
-  padding: 2rem 1rem;
-  border-bottom: 2px solid var(--newspaper-rule);
-  margin-bottom: 2rem;
-}
-
-.home-info h1 {
-  font-family: var(--newspaper-headline);
-  font-size: 2.5rem;
-  font-weight: 900;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-}
-
-@media (min-width: 768px) {
-  .home-info h1 {
-    font-size: 3.5rem;
-  }
-}
-
-.home-info .entry-content {
-  font-style: italic;
-  color: var(--secondary);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* Post listing - newspaper column style */
-.post-entry {
-  border-bottom: 1px solid var(--border);
-  padding: 1.25rem 0;
-}
-
-.post-entry:first-of-type {
-  border-top: none;
-}
-
-/* Lead story styling (first post) */
-.main > .post-entry:first-of-type,
-article.post-entry:first-of-type {
-  padding: 1.5rem 0 2rem;
-  border-bottom: 2px solid var(--newspaper-rule);
-}
-
-.main > .post-entry:first-of-type h2,
-article.post-entry:first-of-type h2 {
-  font-size: 1.75rem;
-  font-weight: 900;
-}
-
-@media (min-width: 768px) {
-  .main > .post-entry:first-of-type h2,
-  article.post-entry:first-of-type h2 {
     font-size: 2.25rem;
   }
 }
 
-/* Secondary stories - grid on larger screens */
-@media (min-width: 768px) {
-  .main {
-    display: block;
-  }
-  
-  /* After the first post, create a 2-column grid for secondary stories */
-  .post-entry:not(:first-of-type) {
-    display: inline-block;
-    vertical-align: top;
-    width: calc(50% - 1rem);
-    margin-right: 1rem;
-    border-bottom: none;
-    border-right: 1px solid var(--border);
-    padding-right: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .post-entry:not(:first-of-type):nth-of-type(odd) {
-    border-right: none;
-    padding-right: 0;
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .post-entry:not(:first-of-type) {
-    width: calc(33.333% - 1rem);
-  }
-  
-  .post-entry:not(:first-of-type):nth-of-type(odd) {
-    border-right: 1px solid var(--border);
-    padding-right: 1rem;
-    margin-right: 1rem;
-  }
-  
-  .post-entry:not(:first-of-type):nth-of-type(3n+1) {
-    border-right: none;
-    padding-right: 0;
-    margin-right: 0;
-  }
-}
-
-/* Post entry headlines */
-.post-entry h2 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Summary text */
-.post-entry .entry-content p,
-.entry-content {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--secondary);
-}
-
-/* Metadata - date line style */
-.entry-footer {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--secondary);
-  margin-top: 0.5rem;
-}
-
-/* Article content */
+/* ============================================
+   ARTICLE PAGE - Readable line length
+   ============================================ */
 .post-content {
+  max-width: 65ch; /* ~60-75 characters */
+  margin: 0 auto;
   font-size: 1.05rem;
   line-height: 1.8;
+  padding: 0 var(--space-4);
 }
 
 .post-content p {
-  margin-bottom: 1.25rem;
-  text-align: justify;
-  hyphens: auto;
+  margin-bottom: var(--space-5);
 }
 
 @media (max-width: 600px) {
+  .post-content {
+    font-size: 1rem;
+    line-height: 1.75;
+    padding: 0 var(--space-3);
+  }
+  
   .post-content p {
     text-align: left;
-    hyphens: none;
   }
 }
 
-/* Block quotes - editorial style */
+/* Article header spacing */
+.post-header {
+  max-width: 65ch;
+  margin: 0 auto var(--space-8);
+  padding: 0 var(--space-4);
+}
+
+/* Post metadata */
+.post-meta {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: var(--space-4);
+  padding: 0 var(--space-4);
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================
+   BLOCK QUOTES
+   ============================================ */
 .post-content blockquote {
   border-left: 3px solid var(--newspaper-accent);
-  padding-left: 1.5rem;
+  padding-left: var(--space-5);
   font-style: italic;
-  margin: 1.5rem 0;
+  margin: var(--space-6) 0;
   color: var(--secondary);
 }
 
-/* Tables - clean newspaper style */
+/* ============================================
+   TABLES
+   ============================================ */
 .post-content table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.5rem 0;
+  margin: var(--space-6) 0;
   font-size: 0.9rem;
 }
 
@@ -279,18 +409,27 @@ article.post-entry:first-of-type h2 {
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.03em;
-  padding: 0.75rem;
+  padding: var(--space-3);
   text-align: left;
   border-bottom: 2px solid var(--newspaper-rule);
 }
 
 .post-content td {
-  padding: 0.75rem;
+  padding: var(--space-3);
   border-bottom: 1px solid var(--border);
   vertical-align: top;
 }
 
-/* Links - subtle accent */
+/* Ensure tables scroll on mobile */
+.post-content table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
 a {
   color: inherit;
   text-decoration-color: var(--newspaper-accent);
@@ -305,24 +444,38 @@ a:hover {
   text-decoration: none;
 }
 
-/* Tags page */
+.post-entry a:hover h2 {
+  color: var(--newspaper-accent);
+}
+
+/* ============================================
+   TAGS PAGE
+   ============================================ */
 .terms-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: var(--space-2);
 }
 
 .terms-tags a {
-  padding: 0.25rem 0.75rem;
+  padding: var(--space-2) var(--space-3);
   border: 1px solid var(--border);
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  background: var(--card-bg);
+  border-radius: 2px;
 }
 
-/* Archive page - clean listing */
+.terms-tags a:hover {
+  border-color: var(--newspaper-accent);
+}
+
+/* ============================================
+   ARCHIVE PAGE
+   ============================================ */
 .archive-entry {
-  padding: 0.5rem 0;
+  padding: var(--space-3) 0;
   border-bottom: 1px dotted var(--border);
 }
 
@@ -331,102 +484,39 @@ a:hover {
   font-weight: 700;
 }
 
-/* Footer - simple, newspaper style */
+/* ============================================
+   FOOTER - Now includes tagline
+   ============================================ */
 .footer {
-  border-top: 3px double var(--newspaper-rule);
-  margin-top: 3rem;
-  padding-top: 1rem;
-  font-size: 0.85rem;
+  border-top: 2px solid var(--newspaper-rule);
+  margin-top: var(--space-12);
+  padding: var(--space-6) var(--space-4);
   text-align: center;
+  font-size: 0.85rem;
+  color: var(--secondary);
 }
 
-/* Mobile-first responsive adjustments */
-@media (max-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-  
-  .logo a {
-    font-size: 1.8rem;
-  }
-  
-  .home-info h1 {
-    font-size: 2rem;
-  }
-  
-  .entry-header h1,
-  .post-title {
-    font-size: 1.6rem;
-  }
-  
-  .menu {
-    gap: 1rem;
-    font-size: 0.85rem;
-  }
-  
-  /* Single column on mobile */
-  .post-entry:not(:first-of-type) {
-    display: block;
-    width: 100%;
-    border-right: none;
-    padding-right: 0;
-    margin-right: 0;
-    border-bottom: 1px solid var(--border);
-  }
-  
-  .main {
-    padding: 0 1rem;
-  }
-  
-  .post-content {
-    font-size: 1rem;
-    line-height: 1.75;
-  }
-  
-  /* Ensure no horizontal scroll */
-  .post-content pre,
-  .post-content table {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  /* Tap-friendly navigation */
-  .menu li a {
-    padding: 0.5rem 0.75rem;
-    display: block;
-  }
+/* Add tagline to footer via CSS (or we'll update config) */
+.footer::before {
+  content: "Japan's Long-Term Care Insurance Research & Analysis";
+  display: block;
+  font-style: italic;
+  margin-bottom: var(--space-3);
+  font-size: 0.9rem;
 }
 
-/* Comfortable reading width */
-.main {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.post-content {
-  max-width: 720px;
-}
-
-/* Japanese text optimization */
-:lang(ja),
-[lang="ja"] {
-  line-height: 1.9;
-  word-break: keep-all;
-  overflow-wrap: break-word;
-}
-
-/* Ensure CJK characters display well */
-.post-content,
-.entry-content {
-  font-feature-settings: "palt" 1;
-}
-
-/* Table of contents */
+/* ============================================
+   TABLE OF CONTENTS
+   ============================================ */
 .toc {
   background: var(--tertiary);
-  padding: 1rem;
+  padding: var(--space-4);
   border: 1px solid var(--border);
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-6);
+  border-radius: 4px;
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .toc details summary {
@@ -435,26 +525,39 @@ a:hover {
   cursor: pointer;
 }
 
-/* Reading time and other metadata */
-.post-meta {
-  font-size: 0.85rem;
-  color: var(--secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
+/* ============================================
+   PAGE HEADERS (for list pages)
+   ============================================ */
+.page-header {
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
   border-bottom: 1px solid var(--border);
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
 }
 
-/* Breadcrumbs */
-.breadcrumbs {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  margin-bottom: 1rem;
+.page-header h1 {
+  font-family: var(--newspaper-headline);
+  font-size: 1.5rem;
+  margin: 0;
 }
 
-/* Print styles for newspaper feel */
+/* ============================================
+   JAPANESE TEXT
+   ============================================ */
+:lang(ja),
+[lang="ja"] {
+  line-height: 1.9;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.post-content,
+.entry-content {
+  font-feature-settings: "palt" 1;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
 @media print {
   body {
     font-size: 11pt;
@@ -467,5 +570,42 @@ a:hover {
   
   .post-content {
     max-width: 100%;
+  }
+  
+  .post-entry {
+    break-inside: avoid;
+  }
+}
+
+/* ============================================
+   POSTS LIST PAGE (not home)
+   ============================================ */
+.list .main {
+  display: block;
+}
+
+.list .post-entry {
+  margin-bottom: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .list .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--card-gap);
+  }
+  
+  .list .main > header.page-header {
+    grid-column: 1 / -1;
+  }
+  
+  .list .post-entry {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .list .main {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

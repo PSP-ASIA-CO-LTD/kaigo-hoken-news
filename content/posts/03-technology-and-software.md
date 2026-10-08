@@ -1,6 +1,6 @@
 ---
 title: "Technology in Japanese care: from the daily record to the claim and to LIFE"
-date: 2026-10-08
+date: 2026-10-09T00:00:00+07:00
 tags: ["japan", "long-term-care", "software", "LIFE", "dx"]
 summary: "How a Japanese provider records care, bills the federation, and submits LIFE data, and who already sells the software that does it."
 ---
