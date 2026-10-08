@@ -1,39 +1,74 @@
 {{- /*
-  Japanese term shortcode with romaji and accessible read-aloud
+  Japanese term shortcode with glossary lookup, romaji, and read-aloud
   
-  Positional usage (backwards compatible):
+  Usage by glossary key (preferred):
+    {{< ja key="kaigo-hoken" >}}
+    {{< ja key="kaigo-hoken" en="long-term care insurance" >}}  (override English)
+  
+  Usage by explicit values (backwards compatible):
     {{< ja "介護保険" "kaigo hoken" >}}
     {{< ja "介護保険" "kaigo hoken" "long-term care insurance" >}}
-  
-  Named usage (new):
     {{< ja term="介護保険" romaji="kaigo hoken" en="long-term care insurance" >}}
-    {{< ja term="介護保険" romaji="kaigo hoken" en="long-term care insurance" link="/glossary/kaigo-hoken" >}}
   
   Output:
     介護保険 (kaigo hoken) [🔊]
-    介護保険 (kaigo hoken, long-term care insurance) [🔊]
+    with tooltip showing English meaning and definition
   
   Features:
+    - Looks up term from data/glossary.yaml by key
     - Displays kanji with romaji in parentheses
-    - Optional English meaning
+    - Accessible tooltip with English meaning and definition
     - Speaker button for Web Speech API read-aloud (ja-JP)
-    - Accessible: aria-label, keyboard focusable
-    - Optional link parameter for future glossary linking
-    - Feature detection hides button if speech unsupported
+    - Links to glossary entry at /glossary/#key
+    - WCAG 1.4.13 compliant tooltip (Escape to dismiss, hover-persistent)
 */ -}}
-{{- /* Support both positional and named parameters */ -}}
-{{- $kanji := .Get "term" | default (.Get 0) -}}
-{{- $romaji := .Get "romaji" | default (.Get 1) -}}
-{{- $meaning := .Get "en" | default (.Get 2) -}}
-{{- $link := .Get "link" -}}
-{{- /* Generate unique ID for this term instance */ -}}
+{{- $key := .Get "key" -}}
+{{- $kanji := "" -}}
+{{- $romaji := "" -}}
+{{- $meaning := "" -}}
+{{- $def := "" -}}
+{{- $glossaryLink := "" -}}
+
+{{- /* Key-based lookup from glossary */ -}}
+{{- if $key -}}
+  {{- $entry := index site.Data.glossary $key -}}
+  {{- if $entry -}}
+    {{- $kanji = $entry.ja -}}
+    {{- $romaji = $entry.romaji -}}
+    {{- $meaning = .Get "en" | default $entry.en -}}
+    {{- $def = $entry.def -}}
+    {{- $glossaryLink = printf "/glossary/#%s" $key -}}
+  {{- else -}}
+    {{- errorf "Glossary key '%s' not found in data/glossary.yaml" $key -}}
+  {{- end -}}
+{{- else -}}
+  {{- /* Fallback to explicit parameters */ -}}
+  {{- $kanji = .Get "term" | default (.Get 0) -}}
+  {{- $romaji = .Get "romaji" | default (.Get 1) -}}
+  {{- $meaning = .Get "en" | default (.Get 2) -}}
+  {{- $glossaryLink = .Get "link" -}}
+{{- end -}}
+
+{{- /* Build tooltip content */ -}}
+{{- $tooltipText := "" -}}
+{{- if $meaning -}}
+  {{- $tooltipText = $meaning -}}
+  {{- if $def -}}
+    {{- $tooltipText = printf "%s — %s" $meaning $def -}}
+  {{- end -}}
+{{- else if $def -}}
+  {{- $tooltipText = $def -}}
+{{- end -}}
+
+{{- /* Generate unique ID */ -}}
 {{- $id := printf "ja-%s" (md5 (printf "%s-%s" $kanji (now.UnixNano))) | truncate 16 "" -}}
-<span class="ja-term-wrapper" id="{{ $id }}">
-  {{- if $link -}}
-    <a href="{{ $link }}" class="ja-term-link">
+
+<span class="ja-term-wrapper" id="{{ $id }}"{{ if $tooltipText }} data-tooltip="{{ $tooltipText }}"{{ end }}>
+  {{- if $glossaryLink -}}
+    <a href="{{ $glossaryLink | relURL }}" class="ja-term-link">
   {{- end -}}
   <span class="ja-term" lang="ja" aria-hidden="true">{{ $kanji }}</span>
-  {{- if $link -}}
+  {{- if $glossaryLink -}}
     </a>
   {{- end -}}
   {{- if $romaji }} (<span class="ja-romaji">{{ $romaji }}</span>{{ if $meaning }}, <span class="ja-meaning">{{ $meaning }}</span>{{ end }}){{- end -}}
