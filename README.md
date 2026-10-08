@@ -57,6 +57,59 @@ Japanese text (日本語) renders correctly.
 | `draft` | No | Set to `true` to hide from production builds |
 | `weight` | No | Lower numbers sort first (used to pin the executive summary) |
 
+## Japanese Terms Shortcode
+
+This site uses a custom shortcode `{{< ja >}}` to render Japanese terms with romaji pronunciation and an optional read-aloud button. The shortcode is designed for non-Japanese readers who cannot read kanji.
+
+### Basic Usage
+
+```hugo
+{{< ja "介護保険" "kaigo hoken" >}}
+```
+
+**Output:** 介護保険 (kaigo hoken) 🔊
+
+### With English Meaning
+
+```hugo
+{{< ja "要介護認定" "yōkaigo nintei" "care-need certification" >}}
+```
+
+**Output:** 要介護認定 (yōkaigo nintei, care-need certification) 🔊
+
+### Named Parameters (Alternative Syntax)
+
+```hugo
+{{< ja term="介護保険" romaji="kaigo hoken" en="long-term care insurance" >}}
+```
+
+### With Glossary Link (Future Feature)
+
+```hugo
+{{< ja term="介護保険" romaji="kaigo hoken" link="/glossary/kaigo-hoken" >}}
+```
+
+### Features
+
+- **Kanji display** with serif Japanese font (Noto Serif JP)
+- **Romaji pronunciation** in italics for non-Japanese readers
+- **Optional English gloss** for key terms
+- **Speaker button (🔊)** uses [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) to read the term aloud in Japanese
+  - Uses `ja-JP` language with a slightly slower rate (0.85) for clarity
+  - Feature-detected: button is hidden on browsers that don't support speech synthesis
+  - Keyboard accessible (focus, Enter/Space to activate)
+  - Works on desktop Chrome/Firefox/Safari and mobile Safari/Chrome
+- **Accessible** — screen readers get the romaji and meaning
+- **Link-ready** — `link` parameter for future wiki-style glossary linking
+
+### Romanization
+
+Use Hepburn romanization with macrons for long vowels:
+- ō (long o) — e.g., 厚生労働省 → kōsei rōdō shō
+- ū (long u) — e.g., 要支援 → yō-shien
+
+For consistency, use lowercase romaji except for proper nouns.
+
 ## Local Development
 
 ### Prerequisites
