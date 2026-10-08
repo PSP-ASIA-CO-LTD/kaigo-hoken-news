@@ -1,8 +1,18 @@
 # Kaigo Hoken News
 
-A research and news blog about Japan's long-term care insurance system (介護保険 / kaigo hoken) for [PSP Asia Co., Ltd.](https://pspasia.com), a Thai company that builds caregiving management software and is studying the Japanese market.
+A research publication about Japan's long-term care insurance system (介護保険 / kaigo hoken) for [PSP Asia Co., Ltd.](https://pspasia.com), a Thai company that builds caregiving management software and is studying the Japanese market.
 
 **Live site:** https://psp-asia-co-ltd.github.io/kaigo-hoken-news/
+
+## Design
+
+The site uses a **newspaper/editorial style** with:
+- Masthead with serif typography (Playfair Display for headlines, Noto Sans/Serif JP for body)
+- Lead story featured prominently, secondary stories in columns on desktop
+- Clean date lines and topic navigation
+- Responsive: single-column on mobile, multi-column grid on larger screens
+- Dark/light mode with warm, newsprint-inspired colors
+- Optimized for Japanese text (Noto fonts, proper line height)
 
 ## Adding a New Post
 
@@ -73,12 +83,14 @@ The development server runs at http://localhost:1313/kaigo-hoken-news/ by defaul
 
 ```
 .
-├── .github/workflows/   # GitHub Actions deployment workflow
+├── .github/workflows/      # GitHub Actions deployment workflow
+├── assets/css/extended/    # Custom newspaper-style CSS
 ├── content/
-│   ├── archive.md       # Archive page
-│   └── posts/           # Blog posts (add new posts here)
-├── themes/PaperMod/     # Hugo theme (git submodule)
-├── hugo.toml            # Site configuration
+│   ├── about.md            # About page
+│   ├── archive.md          # Archive page
+│   └── posts/              # Blog posts (add new posts here)
+├── themes/PaperMod/        # Hugo theme (git submodule)
+├── hugo.toml               # Site configuration
 └── README.md
 ```
 

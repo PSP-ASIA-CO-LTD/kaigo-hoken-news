@@ -32,7 +32,7 @@ buildExpired = false
   
   [params.homeInfoParams]
     Title = "Kaigo Hoken News"
-    Content = "Japan long-term care insurance research and updates — insights into 介護保険 for international care technology companies. Published by PSP Asia Co., Ltd."
+    Content = "Japan's Long-Term Care Insurance Research & Analysis — Published by PSP Asia Co., Ltd."
   
   [[params.socialIcons]]
     name = "rss"
@@ -57,12 +57,12 @@ buildExpired = false
 [menu]
   [[menu.main]]
     identifier = "posts"
-    name = "Posts"
+    name = "All Articles"
     url = "/posts/"
     weight = 10
   [[menu.main]]
     identifier = "tags"
-    name = "Tags"
+    name = "Topics"
     url = "/tags/"
     weight = 20
   [[menu.main]]
@@ -70,3 +70,8 @@ buildExpired = false
     name = "Archive"
     url = "/archive/"
     weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40

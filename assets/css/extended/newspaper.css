@@ -1,0 +1,471 @@
+/* Newspaper-style theme overrides for Kaigo Hoken News */
+
+/* Import serif font for headlines */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@400;500&family=Playfair+Display:wght@700;900&display=swap');
+
+:root {
+  --newspaper-headline: 'Playfair Display', 'Noto Serif JP', Georgia, serif;
+  --newspaper-body: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+  --newspaper-accent: #8b0000;
+  --newspaper-rule: #333;
+  --newspaper-bg: #faf8f5;
+  --newspaper-text: #1a1a1a;
+}
+
+/* Light mode newspaper colors */
+html[data-theme="light"],
+html:not([data-theme="dark"]) {
+  --theme: var(--newspaper-bg);
+  --primary: var(--newspaper-text);
+  --secondary: #444;
+  --tertiary: #e8e4df;
+  --content: var(--newspaper-text);
+  --border: #d4d0c8;
+}
+
+/* Dark mode - softer contrast for readability */
+html[data-theme="dark"] {
+  --theme: #1a1a1a;
+  --primary: #e8e4df;
+  --secondary: #b0a89e;
+  --tertiary: #2a2a2a;
+  --content: #d4d0c8;
+  --border: #3a3a3a;
+  --newspaper-accent: #c44;
+  --newspaper-rule: #555;
+}
+
+/* Base typography */
+body {
+  font-family: var(--newspaper-body);
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Masthead styling */
+.header {
+  border-bottom: 3px double var(--newspaper-rule);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.logo a {
+  font-family: var(--newspaper-headline);
+  font-weight: 900;
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .logo a {
+    font-size: 2.8rem;
+  }
+}
+
+/* Date line under masthead */
+.header::after {
+  content: '';
+  display: block;
+  border-top: 1px solid var(--newspaper-rule);
+  margin-top: 0.5rem;
+}
+
+/* Navigation - simple, newspaper-like */
+.header-nav {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu {
+  margin-top: 0.5rem;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Headlines - serif, bold */
+h1, h2, h3, h4, h5, h6,
+.entry-header h1,
+.entry-header h2,
+.post-title {
+  font-family: var(--newspaper-headline);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.entry-header h1,
+.post-title {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  .entry-header h1,
+  .post-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Home page info section - Editorial intro */
+.home-info {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid var(--newspaper-rule);
+  margin-bottom: 2rem;
+}
+
+.home-info h1 {
+  font-family: var(--newspaper-headline);
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 768px) {
+  .home-info h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.home-info .entry-content {
+  font-style: italic;
+  color: var(--secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Post listing - newspaper column style */
+.post-entry {
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 0;
+}
+
+.post-entry:first-of-type {
+  border-top: none;
+}
+
+/* Lead story styling (first post) */
+.main > .post-entry:first-of-type,
+article.post-entry:first-of-type {
+  padding: 1.5rem 0 2rem;
+  border-bottom: 2px solid var(--newspaper-rule);
+}
+
+.main > .post-entry:first-of-type h2,
+article.post-entry:first-of-type h2 {
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  .main > .post-entry:first-of-type h2,
+  article.post-entry:first-of-type h2 {
+    font-size: 2.25rem;
+  }
+}
+
+/* Secondary stories - grid on larger screens */
+@media (min-width: 768px) {
+  .main {
+    display: block;
+  }
+  
+  /* After the first post, create a 2-column grid for secondary stories */
+  .post-entry:not(:first-of-type) {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 1rem);
+    margin-right: 1rem;
+    border-bottom: none;
+    border-right: 1px solid var(--border);
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .post-entry:not(:first-of-type):nth-of-type(odd) {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .post-entry:not(:first-of-type) {
+    width: calc(33.333% - 1rem);
+  }
+  
+  .post-entry:not(:first-of-type):nth-of-type(odd) {
+    border-right: 1px solid var(--border);
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .post-entry:not(:first-of-type):nth-of-type(3n+1) {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+/* Post entry headlines */
+.post-entry h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Summary text */
+.post-entry .entry-content p,
+.entry-content {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--secondary);
+}
+
+/* Metadata - date line style */
+.entry-footer {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--secondary);
+  margin-top: 0.5rem;
+}
+
+/* Article content */
+.post-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.post-content p {
+  margin-bottom: 1.25rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+@media (max-width: 600px) {
+  .post-content p {
+    text-align: left;
+    hyphens: none;
+  }
+}
+
+/* Block quotes - editorial style */
+.post-content blockquote {
+  border-left: 3px solid var(--newspaper-accent);
+  padding-left: 1.5rem;
+  font-style: italic;
+  margin: 1.5rem 0;
+  color: var(--secondary);
+}
+
+/* Tables - clean newspaper style */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.post-content th {
+  background: var(--tertiary);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 2px solid var(--newspaper-rule);
+}
+
+.post-content td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+/* Links - subtle accent */
+a {
+  color: inherit;
+  text-decoration-color: var(--newspaper-accent);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--newspaper-accent);
+}
+
+.post-entry a {
+  text-decoration: none;
+}
+
+/* Tags page */
+.terms-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.terms-tags a {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Archive page - clean listing */
+.archive-entry {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted var(--border);
+}
+
+.archive-entry .archive-entry-title {
+  font-family: var(--newspaper-headline);
+  font-weight: 700;
+}
+
+/* Footer - simple, newspaper style */
+.footer {
+  border-top: 3px double var(--newspaper-rule);
+  margin-top: 3rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .logo a {
+    font-size: 1.8rem;
+  }
+  
+  .home-info h1 {
+    font-size: 2rem;
+  }
+  
+  .entry-header h1,
+  .post-title {
+    font-size: 1.6rem;
+  }
+  
+  .menu {
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+  
+  /* Single column on mobile */
+  .post-entry:not(:first-of-type) {
+    display: block;
+    width: 100%;
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .main {
+    padding: 0 1rem;
+  }
+  
+  .post-content {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  
+  /* Ensure no horizontal scroll */
+  .post-content pre,
+  .post-content table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Tap-friendly navigation */
+  .menu li a {
+    padding: 0.5rem 0.75rem;
+    display: block;
+  }
+}
+
+/* Comfortable reading width */
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.post-content {
+  max-width: 720px;
+}
+
+/* Japanese text optimization */
+:lang(ja),
+[lang="ja"] {
+  line-height: 1.9;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* Ensure CJK characters display well */
+.post-content,
+.entry-content {
+  font-feature-settings: "palt" 1;
+}
+
+/* Table of contents */
+.toc {
+  background: var(--tertiary);
+  padding: 1rem;
+  border: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.toc details summary {
+  font-family: var(--newspaper-headline);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Reading time and other metadata */
+.post-meta {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+}
+
+/* Print styles for newspaper feel */
+@media print {
+  body {
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+  
+  .header, .footer, .toc {
+    display: none;
+  }
+  
+  .post-content {
+    max-width: 100%;
+  }
+}
