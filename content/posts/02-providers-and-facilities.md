@@ -80,6 +80,10 @@ Prefectures, designated cities, and core cities designate and supervise most hom
 
 Market size, in money rather than buildings: reviewed care costs in fiscal 2025 were **12.2208 trillion yen**.[^5] That is the flow through claims. It is not a count of private-pay fees in non-designated residences, and it is not a software market size. No official software-market figure was verified for this brief.
 
+{{< analysis >}}
+The ownership split points PSP toward two distinct sales motions. For home-visit and day care (73% and 55% company-run), the buyer is often a for-profit operator with multiple sites, faster procurement, and sensitivity to SaaS pricing — closer to a Thai private-care company than a government hospital. For special nursing homes (96% social-welfare corporations), the buyer is a non-profit board with longer budget cycles and a preference for established vendors. A foreign entrant will find the company segment more accessible. Within that segment, the 18,000+ home-visit nursing stations (growing 10% a year) are worth watching: nursing is a different fee table and a different workflow, but growth suggests less entrenched software and more willingness to try new tools. If PSP's Thai product already handles nursing records, that could be a faster localisation path than helper-visit care.
+{{< /analysis >}}
+
 ---
 
 ## References

@@ -78,6 +78,10 @@ This is the public mood that matters commercially, more than a social-media inde
 - LIFE's next simplification. The September 2026 committee paper treats overlapping items across 17 add-ons as an open problem. Vendors who hard-code today's forms will rebuild them.
 - Bankruptcies and office closures in visit care through 2026. If the small-office segment keeps shrinking, the buyer is a larger corporation with many sites, and the product has to run a headquarters view, not one site at a time.
 
+{{< analysis >}}
+The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone) reshapes the buyer landscape. Survivors are consolidating into multi-site operators who need *headquarters-level* dashboards — staff utilisation across branches, LIFE compliance rates by site, add-on capture analytics. PSP should design for this from day one: multi-facility data models, role-based access, and reporting that a regional manager can act on. The productivity add-on (up to 100 units/month) is under-claimed precisely because small offices lack the systems to prove eligibility. A product that *demonstrates* productivity gains — documented task splits, tech-use logs, committee minutes — and auto-generates the evidence could pay for itself in captured add-ons. Position PSP not as "cheaper software" but as "the system that unlocks the wage and productivity add-ons your staff deserve."
+{{< /analysis >}}
+
 ---
 
 ## References

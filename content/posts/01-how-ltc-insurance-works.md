@@ -122,6 +122,10 @@ The next **regular** revision is fiscal 2027, with the 10th municipal plan perio
 
 Any product that bills Japanese care has to treat the fee schedule as a dataset that changes on a known calendar, not as a screen someone edits by hand once a year.
 
+{{< analysis >}}
+For PSP Asia, the fee-schedule machinery creates both a barrier and an opportunity. The barrier: any product that touches billing must ingest MHLW's service-code tables (which change mid-year, as fiscal 2026 showed), apply the correct regional unit price (10.00–11.40 yen), and distinguish which add-ons count toward the monthly cap. Hard-coding any of this is fatal. The opportunity: many small offices struggle with exactly this complexity — the care manager's cap math, the add-on eligibility, the claim-file format. A well-designed UI that *explains* what the user owes before the month ends, rather than after the claim is rejected, would be a genuine differentiator. If PSP cannot build federation-compliant claim generation quickly, consider a middleware play: pull records from PSP's workflow app, export to a partner's billing engine, and compete on the user-facing experience rather than the file spec.
+{{< /analysis >}}
+
 ---
 
 ## References
