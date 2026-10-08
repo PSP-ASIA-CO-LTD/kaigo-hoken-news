@@ -123,9 +123,9 @@ body {
    MAIN CONTENT AREA
    ============================================ */
 .main {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-4);
+  padding: 0 var(--space-6);
 }
 
 /* ============================================
@@ -185,7 +185,7 @@ body {
 }
 
 /* ============================================
-   CARD GRID LAYOUT (List pages only)
+   CARD GRID LAYOUT (List/Home pages only)
    ============================================ */
 /* Grid layout only applies to list pages (body.list), not single post pages */
 
@@ -198,60 +198,47 @@ body {
     align-items: start;
   }
   
-  /* Make page headers span full width */
+  /* Full-width elements in grid */
   .list .main > .page-header,
-  .list .main > header {
+  .list .main > header,
+  .list .main > .home-info,
+  .list .main > .start-here-box,
+  .list .main > section,
+  .list .main > .first-entry {
     grid-column: 1 / -1;
   }
   
   .list .post-entry {
     margin-bottom: 0;
   }
-  
-  /* Lead story - full width */
-  .list .main > .post-entry:first-of-type {
-    grid-column: 1 / -1;
-  }
-  
-  .list .main > .post-entry:first-of-type h2 {
-    font-size: 1.6rem;
-  }
 }
 
-/* On desktop: 3 columns for secondary stories */
-@media (min-width: 900px) {
+/* On desktop: 3 columns for post cards */
+@media (min-width: 1024px) {
   .list .main {
     grid-template-columns: repeat(3, 1fr);
   }
   
-  /* Lead story still full width */
-  .list .main > .post-entry:first-of-type {
+  /* Full-width elements stay full width */
+  .list .main > .page-header,
+  .list .main > header,
+  .list .main > .home-info,
+  .list .main > .start-here-box,
+  .list .main > section,
+  .list .main > .first-entry {
     grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-6);
-    padding: var(--space-8);
   }
-  
-  .list .main > .post-entry:first-of-type .entry-header {
-    margin-bottom: 0;
-  }
-  
-  .list .main > .post-entry:first-of-type h2 {
-    font-size: 2rem;
-    line-height: 1.2;
-  }
-  
-  .list .main > .post-entry:first-of-type .entry-content {
-    margin-bottom: 0;
-  }
-  
-  .list .main > .post-entry:first-of-type .entry-footer {
-    grid-column: 1 / -1;
-    border-top: 1px solid var(--border);
-    padding-top: var(--space-4);
-    margin-top: var(--space-4);
-  }
+}
+
+/* ============================================
+   SINGLE POST PAGE - Block layout
+   ============================================ */
+body:not(.list) .main {
+  display: block;
+}
+
+.post-single {
+  max-width: 100%;
 }
 
 /* ============================================
