@@ -1,0 +1,24 @@
+{{- /*
+  Japanese term shortcode with romaji and accessible read-aloud
+  
+  Usage:
+    {{< ja "介護保険" "kaigo hoken" >}}           → 介護保険 (kaigo hoken)
+    {{< ja "介護保険" "kaigo hoken" "long-term care insurance" >}} → with English meaning
+    {{< ja "厚生労働省" "kōsei rōdō shō" >}}      → handles macrons
+  
+  Output:
+    <span class="ja-term" lang="ja">介護保険</span> (<span class="ja-romaji">kaigo hoken</span>)
+  
+  Screen readers will read the romaji (more accessible than kanji for non-Japanese speakers)
+*/ -}}
+{{- $kanji := .Get 0 -}}
+{{- $romaji := .Get 1 -}}
+{{- $meaning := .Get 2 -}}
+<span class="ja-term-wrapper">
+  {{- if $romaji -}}
+    <span class="ja-term" lang="ja" aria-hidden="true">{{ $kanji }}</span><span class="ja-sr-only"> ({{ $romaji }}{{ if $meaning }}, {{ $meaning }}{{ end }})</span>
+  {{- else -}}
+    <span class="ja-term" lang="ja">{{ $kanji }}</span>
+  {{- end -}}
+  {{- if $romaji }} (<span class="ja-romaji">{{ $romaji }}</span>{{ if $meaning }}, <span class="ja-meaning">{{ $meaning }}</span>{{ end }}){{- end -}}
+</span>

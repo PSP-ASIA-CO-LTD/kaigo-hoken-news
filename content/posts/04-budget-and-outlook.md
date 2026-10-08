@@ -13,9 +13,9 @@ Keep these apart. Mixing them is how market slides go wrong.
 
 | What | Amount | When | What it includes |
 | --- | --- | --- | --- |
-| National general-account line labelled 介護 | **3.7901 trillion yen** in the fiscal 2026 budget bill, up from 3.7374 trillion in the fiscal 2025 initial budget (＋1.4 percent) | Fiscal 2026 bill | The **national budget appropriation**, not total system spending. Source: [MHLW budget-bill summary](https://www.mhlw.go.jp/wp/yosan/yosan/26syokanyosan/dl/01-01.pdf). This brief uses the bill, not a separate enacted-budget text. |
+| National general-account line labelled {{< ja "介護" "kaigo" >}} | **3.7901 trillion yen** in the fiscal 2026 budget bill, up from 3.7374 trillion in the fiscal 2025 initial budget (＋1.4 percent) | Fiscal 2026 bill | The **national budget appropriation**, not total system spending. Source: [MHLW budget-bill summary](https://www.mhlw.go.jp/wp/yosan/yosan/26syokanyosan/dl/01-01.pdf). This brief uses the bill, not a separate enacted-budget text. |
 | Care benefit in the fiscal 2025 budget picture | **13.2 trillion yen** benefit, **14.3 trillion** on a total-cost basis | Fiscal 2025 budget, as printed in July 2025 | The financing diagram in the [MHLW overview](https://www.mhlw.go.jp/content/001512842.pdf). Includes the premium and tax shares discussed in the insurance post. |
-| Reviewed cost (費用額) | **12.2208 trillion yen**, ＋2.4 percent on fiscal 2024 | Fiscal 2025, published 30 September 2026 | Insurance payment plus public shares plus user co-payment. Excludes municipal direct payments such as equipment purchases and home modifications. Source: [MHLW](https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/25/dl/10.pdf). |
+| Reviewed cost ({{< ja "費用額" "hiyō-gaku" >}}) | **12.2208 trillion yen**, ＋2.4 percent on fiscal 2024 | Fiscal 2025, published 30 September 2026 | Insurance payment plus public shares plus user co-payment. Excludes municipal direct payments such as equipment purchases and home modifications. Source: [MHLW](https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/25/dl/10.pdf). |
 
 An older series in the July 2025 overview, insurance benefit plus community-support projects and **excluding** user charges, is drawn through fiscal 2022 and labelled around **11.0 trillion yen** at the right-hand side of the chart. Use it only as history. The fiscal 2025 reviewed-cost figure is the one to quote for "how big the claim flow is now."
 
@@ -32,7 +32,7 @@ The same budget bill does not wait for the regular fee revision. It states a mid
 
 Source: fiscal 2026 MHLW budget-bill summary, the points section. Prefectural claim pages already carry service-code tables headed "Reiwa 8, June and August," so the mid-cycle change did not land as a single code drop ([Miyagi federation](https://www.miyagi-kokuho.or.jp/kaigo/seikyu.html)). This brief does not pin the whole ＋2.03 percent on one effective date beyond what those tables show.
 
-Wage add-ons are only useful if the software can calculate them and prove the office met the conditions. The fiscal 2024 revision had already merged several older wage add-ons into 介護職員等処遇改善加算. Offices that cannot document the rules lose the units. Tokyo Shoko Research, writing on 9 January 2026 about calendar-2025 bankruptcies, said plainly that small operators often fail to use the productivity-linked wage add-on. That is a software and operations problem, not only a wage problem.
+Wage add-ons are only useful if the software can calculate them and prove the office met the conditions. The fiscal 2024 revision had already merged several older wage add-ons into {{< ja "介護職員等処遇改善加算" "kaigo shokuin tō shogū kaizen kasan" >}}. Offices that cannot document the rules lose the units. Tokyo Shoko Research, writing on 9 January 2026 about calendar-2025 bankruptcies, said plainly that small operators often fail to use the productivity-linked wage add-on. That is a software and operations problem, not only a wage problem.
 
 ## What fiscal 2027 is expected to decide
 

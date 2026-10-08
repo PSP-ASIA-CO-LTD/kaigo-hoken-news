@@ -609,3 +609,37 @@ a:hover {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ============================================
+   JAPANESE TERMS - Shortcode styling
+   ============================================ */
+.ja-term-wrapper {
+  white-space: nowrap;
+}
+
+.ja-term {
+  font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+  font-weight: 500;
+}
+
+.ja-romaji {
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.ja-meaning {
+  color: var(--secondary);
+}
+
+/* Screen reader only text */
+.ja-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
