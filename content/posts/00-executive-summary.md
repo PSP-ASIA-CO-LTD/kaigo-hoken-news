@@ -19,6 +19,10 @@ Providers bill the prefectural National Health Insurance federation ({{< ja "国
 
 The claim flow is large: reviewed care costs in fiscal 2025 were 12.22 trillion yen.[^5] As of 1 October 2024 there were 37,264 home-visit offices, mostly companies, and 8,621 special nursing homes, almost all run by social-welfare corporations.[^6] Software must be in Japanese, emit national claim files and LIFE submissions, and absorb fee changes quickly. No product licence was found that makes a foreign package legal to bill with. Conformance is the test. The opening is workflow — records, rosters, LIFE, and claim preparation — not a new payment rail. Language, format lock-in, and incumbents such as Kaipoke, Honobono, Wiseman, Canamic, and Carekarte are the barriers.
 
+{{< analysis >}}
+PSP Asia's Thai public-nursing-home software assumes a per-resident budget the facility controls. Japan doesn't work that way — money flows through insurance to the *user*, and facilities bill per-diem fees to a prefectural federation, not a ministry. That means the core billing logic would need a ground-up rewrite, not a localisation. The realistic entry point is *workflow software* — shift rostering, daily care records, LIFE data prep — that sits alongside an incumbent's claim module, rather than trying to replace Kaipoke or Wiseman on day one. Partnership with a local vendor who already transmits claims could get PSP into the market faster than building federation-compliant file generation from scratch. The 37,000+ home-visit offices (mostly companies) are a more accessible first segment than the 8,600 special nursing homes (almost all social-welfare corporations with long procurement cycles).
+{{< /analysis >}}
+
 ---
 
 ## References

@@ -77,6 +77,10 @@ This research did not find a government certificate that a billing product must 
 
 A Thai package can be excellent at residential workflow and still be unsellable until it emits these files in Japanese, on the Japanese calendar, with Japanese service codes. Partnering with a company that already transmits, or licensing their claim module, is a more realistic first step than re-creating {{< ja "国保連" "kokuho-ren" >}} logic.
 
+{{< analysis >}}
+LIFE is both a compliance burden and PSP's clearest product opportunity. The quarterly submission rhythm, the 17 overlapping add-ons, and the CSV spec that vendors must implement — all of this is pain that offices feel today. A well-designed LIFE module that auto-populates from daily care records (ADL, nutrition, oral health, continence) and reminds staff when submission is due could be sold as a standalone add-on before PSP tackles claims. The LIFE interface spec (version 3.10) is public; building against it does not require a federation relationship. If PSP can also consume the upcoming care-plan data exchange standard, it becomes a bridge between the care manager and the service provider — a position none of the incumbents fully owns yet. Start with LIFE extraction, prove reliability, then expand into claims via partnership.
+{{< /analysis >}}
+
 ---
 
 ## References
