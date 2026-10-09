@@ -15,10 +15,3 @@ sources:
 ---
 
 {{< infographic-calculator >}}
-
-<div class="diagram-opinion">
-<div class="diagram-opinion-header">Tako-San's view</div>
-<div class="diagram-opinion-body">
-<p>Most providers I've spoken with underestimate the ~2-month payment lag. For a new office, the first three months are cash-negative even if clients are on-boarded day one. Factor this into your PSP Asia market-entry planning.</p>
-</div>
-</div>

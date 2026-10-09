@@ -22,7 +22,7 @@ On **11 May 2026**, operation of LIFE moved from the Ministry of Health, Labour 
 4. Users log in from the LIFE home page.
 5. A new function checks that user (care recipient) information is accurate.
 
-Some of the data submitted to the new LIFE flows on to the care information platform. Related care offices can then view it through the Kaigo WEB Service ({{< ja "介護保険資格確認等WEBサービス" "kaigo hoken shikaku kakunin tō webu sābisu" "care-insurance eligibility check web service" >}}).[^2] Our [Kaigo WEB Service guide](../kaigo-web-service-api/) explains that service and its API.
+Some of the data submitted to the new LIFE flows on to the care information platform. Related care offices can then view it through the Kaigo WEB Service ({{< ja "介護保険資格確認等WEBサービス" "kaigo hoken shikaku kakunin tō webu sābisu" "care-insurance eligibility check web service" >}}).[^2] Our [Kaigo WEB Service guide]({{< relref "kaigo-web-service-api" >}}) explains that service and its API.
 
 **Migration deadline.** Each office had to migrate between **11 May and 31 July 2026**. Account IDs, passwords and office details carried over to the new LIFE. User information and submitted forms did not, so offices had to register their users again.[^2] MHLW sent out repeated reminders on 2 July and 23 July 2026, saying that some offices still had not migrated.[^3][^4] The 2 July notice set the consequences:[^3]
 
@@ -72,7 +72,7 @@ MHLW said the item definitions did not change, so care software does not need to
 - geriatric health facilities
 - integrated care hospitals
 
-Home-care software faces a separate test, linked to the Care Plan Data Exchange. That test is covered in the [Care Plan Data Exchange guide](../care-plan-data-exchange/).
+Home-care software faces a separate test, linked to the Care Plan Data Exchange. That test is covered in the [Care Plan Data Exchange guide]({{< relref "care-plan-data-exchange" >}}).
 
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: the May 2026 handover matters more to vendors than the CSV changes. Kokuho Chūōkai now operates LIFE, the care information platform and the Care Plan Data Exchange. Its certificates, help desk and test accounts are becoming the single gate a care-software vendor must pass. A foreign entrant should not treat LIFE as a side feature. The 17 overlapping add-ons and the item review that is still open mean that any LIFE module has to be built to change. The CSV mapping should be a maintained table, not code that is hard to update. For special nursing homes, the gap between type I and type II billing rates looks to me like the place where good software support could show measurable value. That is an opinion, not a tested finding.

@@ -19,7 +19,7 @@ This guide is for vendors. It covers four things:
 - what the API requires;
 - what is still unknown.
 
-For the office-side details of the January 2027 move, see our [Care Plan Data Exchange guide](../care-plan-data-exchange/). That guide covers registration, the end of the ¥21,000 fee, and the money tied to the exchange. This guide does not repeat them.
+For the office-side details of the January 2027 move, see our [Care Plan Data Exchange guide]({{< relref "care-plan-data-exchange" >}}). That guide covers registration, the end of the ¥21,000 fee, and the money tied to the exchange. This guide does not repeat them.
 
 ## What the service is, and who runs it
 

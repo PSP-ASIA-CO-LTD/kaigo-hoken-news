@@ -32,17 +32,10 @@ sources:
     note: "LIFE-focused day-care specialist"
   - title: "ZEST profile"
     url: "competitors/zest/"
-    note: "Day-care scheduling"
+    note: "Visit scheduling and routing"
   - title: "SmaCare profile"
     url: "competitors/smacare/"
-    note: "Homenet's home-visit entry"
+    note: "Regular-visit records"
 ---
 
 {{< infographic-competitors >}}
-
-<div class="diagram-opinion">
-<div class="diagram-opinion-header">Tako-San's view</div>
-<div class="diagram-opinion-body">
-<p>The market clusters into three tiers: <strong>billing suites</strong> (Kaipoke, Honobono, Kanamic, Wiseman, CAREKARTE) that aim to own the whole workflow; <strong>records front-ends</strong> (Care-wing, SmaCare) that pair with billing software; and <strong>specialists</strong> (Rehab Cloud, ZEST) that solve one vertical problem well. M3's two-product strategy — Wiseman for facility billing, Care-wing for home-visit records — shows that even large players do not try to cover everything in a single product.</p>
-</div>
-</div>

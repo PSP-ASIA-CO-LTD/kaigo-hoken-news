@@ -15,7 +15,7 @@ A Japanese care office that wants public money towards care software has two nat
 - **METI's route.** The Digital and AI Adoption Subsidy 2026 ({{< ja "デジタル化・AI導入補助金2026" "dejitaru-ka, AI dōnyū hojokin nisen-nijūroku" "Digital and AI Adoption Subsidy 2026" >}}), formerly the IT Introduction Subsidy ({{< ja "IT導入補助金" "IT dōnyū hojokin" "IT Introduction Subsidy" >}}).[^5] It is open to small and medium businesses in every industry.
 - **MHLW's route.** The care-technology retention support project ({{< ja "介護テクノロジー定着支援事業" "kaigo tekunorojī teichaku shien jigyō" "care-technology retention support project" >}}), which prefectures run for care offices only.[^1]
 
-This guide compares the two. Our [subsidy guide](../subsidies-and-software-buying/) covers MHLW's route in more detail, including the software conditions and the staff-based caps.
+This guide compares the two. Our [subsidy guide]({{< relref "subsidies-and-software-buying" >}}) covers MHLW's route in more detail, including the software conditions and the staff-based caps.
 
 ## At a glance
 
@@ -111,7 +111,7 @@ Being a registered operator does not by itself show which products are registere
 - **Home-based and care-management offices.** The vendor test results and MHLW's function survey must confirm the Care Plan Data Exchange conditions.
 - **Facility services.** The function survey must confirm LIFE CSV output.
 
-Our [function survey guide](../care-software-function-survey/) covers the survey.
+Our [function survey guide]({{< relref "care-software-function-survey" >}}) covers the survey.
 
 TAIS is run by the Association for Technical Aids ({{< ja "テクノエイド協会" "tekunoeido kyōkai" "Association for Technical Aids" >}}):[^13]
 

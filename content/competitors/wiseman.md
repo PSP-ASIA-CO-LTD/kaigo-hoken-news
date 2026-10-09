@@ -10,7 +10,7 @@ weight: 4
 
 *Last updated: 9 Oct 2026*
 
-Wiseman ({{< ja "ワイズマン" "waizuman" "Wiseman" >}}) is a software company based in Morioka, Iwate Prefecture. Founded in June 1983, it develops, sells and supports systems for care and welfare offices, medical institutions and local governments.[^1] On **5 June 2026**, M3, Inc. ({{< ja "エムスリー株式会社" "emu surī kabushiki-gaisha" "M3, Inc." >}}, TSE Prime 2413) signed an agreement to buy all of Wiseman's shares. The transfer was scheduled for **1 July 2026**.[^1][^2] M3's Report for Investors 2026, dated 30 September 2026, says Wiseman was consolidated as a subsidiary "from July" 2026. None of the documents we opened gives the exact day.[^7] Our page on [the M3 group in care](../m3-group/) covers the deal terms and M3's other care companies.
+Wiseman ({{< ja "ワイズマン" "waizuman" "Wiseman" >}}) is a software company based in Morioka, Iwate Prefecture. Founded in June 1983, it develops, sells and supports systems for care and welfare offices, medical institutions and local governments.[^1] On **5 June 2026**, M3, Inc. ({{< ja "エムスリー株式会社" "emu surī kabushiki-gaisha" "M3, Inc." >}}, TSE Prime 2413) signed an agreement to buy all of Wiseman's shares. The transfer was scheduled for **1 July 2026**.[^1][^2] M3's Report for Investors 2026, dated 30 September 2026, says Wiseman was consolidated as a subsidiary "from July" 2026. None of the documents we opened gives the exact day.[^7] Our page on [the M3 group in care]({{< relref "m3-group" >}}) covers the deal terms and M3's other care companies.
 
 ## At a glance
 
@@ -88,7 +88,7 @@ Kokuho Chūōkai's V4 vendor-test list shows "Wiseman SP System" as having compl
 
 M3's deck sets out plans to:[^2]
 
-- use M3's AI to add value to Wiseman products, extending AI results from "Care-wing", a product of Logic ({{< ja "ロジック" "rojikku" "Logic" >}}), which M3 lists among its group's care services (see our [Care-wing profile](../care-wing/))
+- use M3's AI to add value to Wiseman products, extending AI results from "Care-wing", a product of Logic ({{< ja "ロジック" "rojikku" "Logic" >}}), which M3 lists among its group's care services (see our [Care-wing profile]({{< relref "care-wing" >}}))
 - link Wiseman's MeLL+ with M3's cloud electronic health record, "M3 Digikar" ({{< ja "エムスリーデジカル" "emu surī dejikaru" "M3 Digikar" >}})
 - use M3's marketing to help sell Wiseman products
 

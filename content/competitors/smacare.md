@@ -28,7 +28,7 @@ SmaCare ({{< ja "スマケア" "sumakea" "SmaCare" >}}) is a business-support sy
 
 ## Pricing
 
-We did not find a price list on the SmaCare site. Homenet's FAQ says offices can use prefectural and municipal ICT subsidies to keep the initial cost down. It adds that call windows and conditions vary by local government.[^7] On 1 September 2026, Homenet announced that SmaCare had been registered in the Welfare Equipment Information System (TAIS) ({{< ja "福祉用具情報システム" "fukushi yōgu jōhō shisutemu" "Welfare Equipment Information System" >}}). Homenet says this makes SmaCare easier to use as a system eligible for ICT subsidies.[^8] Our [subsidy guide](../../guides/subsidies-and-software-buying/) explains how TAIS listing relates to the subsidy.
+We did not find a price list on the SmaCare site. Homenet's FAQ says offices can use prefectural and municipal ICT subsidies to keep the initial cost down. It adds that call windows and conditions vary by local government.[^7] On 1 September 2026, Homenet announced that SmaCare had been registered in the Welfare Equipment Information System (TAIS) ({{< ja "福祉用具情報システム" "fukushi yōgu jōhō shisutemu" "Welfare Equipment Information System" >}}). Homenet says this makes SmaCare easier to use as a system eligible for ICT subsidies.[^8] Our [subsidy guide]({{< relref "guides/subsidies-and-software-buying" >}}) explains how TAIS listing relates to the subsidy.
 
 ## Main features
 

@@ -6,7 +6,7 @@
 </div>
 <div class="diagram-wrapper" role="region" aria-label="Interactive diagram: Claims and Care Records Flow">
 <div class="diagram-scroll-hint">← Scroll horizontally to see full diagram →</div>
-<svg class="diagram-svg" viewBox="0 0 900 650" role="img" aria-label="Timeline diagram showing the monthly claim cycle from care plan to payment">
+<svg class="diagram-svg" viewBox="0 0 900 620" role="img" aria-label="Timeline diagram showing the monthly claim cycle from care plan to payment">
 <title>How Claims and Care Records Flow</title>
 <defs><marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="currentColor"/></marker></defs>
 <text class="node-text" x="450" y="25" font-weight="bold" font-size="14">MONTHLY CLAIM CYCLE</text>
@@ -67,8 +67,9 @@
 <path d="M250 405 L320 420" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow)"/>
 <g id="flow-life" class="flow-step" data-step="3">
 <rect class="node-rect" x="490" y="280" width="180" height="80" rx="4" fill="#e8f5e9" stroke="#388e3c"/>
-<text class="node-text" x="580" y="298" font-size="11" fill="#388e3c">LIFE Submission</text>
-<text class="node-text node-text--ja" x="580" y="314" font-size="9">科学的介護情報システム</text>
+<text class="node-text" x="580" y="296" font-size="11" fill="#388e3c">LIFE Submission</text>
+<text class="node-text node-text--ja" x="580" y="310" font-size="8">科学的介護情報システム</text>
+<text class="node-text node-text--small" x="580" y="322" font-size="6">(kagakuteki kaigo jōhō shisutemu)</text>
 <text class="node-text node-text--small" x="580" y="332">Scientific-care add-on:</text>
 <text class="node-text node-text--small" x="580" y="346">40–60 units/mo (fac./day)</text>
 <path d="M460 320 L490 320" stroke="#388e3c" stroke-width="2" stroke-dasharray="4 3"/>
@@ -95,10 +96,11 @@
 <path d="M690 425 L710 425" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow)"/>
 <g transform="translate(690, 280)">
 <rect x="0" y="0" width="170" height="70" rx="4" fill="#fce4ec" stroke="#c2185b"/>
-<text class="node-text" x="85" y="18" font-size="10" fill="#c2185b" font-weight="bold">COMING JAN 2027 (planned)</text>
-<text class="node-text" x="85" y="35" font-size="10">Kaigo WEB Service</text>
-<text class="node-text node-text--ja" x="85" y="50" font-size="8">介護保険資格確認等WEBサービス</text>
-<text class="node-text node-text--small" x="85" y="64">Care Plan Exchange merges in</text>
+<text class="node-text" x="85" y="15" font-size="9" fill="#c2185b" font-weight="bold">COMING JAN 2027 (planned)</text>
+<text class="node-text" x="85" y="30" font-size="9">Kaigo WEB Service</text>
+<text class="node-text node-text--ja" x="85" y="43" font-size="6">介護保険資格確認等WEBサービス</text>
+<text class="node-text node-text--small" x="85" y="53" font-size="6">(kaigo hoken shikaku kakunin tō</text>
+<text class="node-text node-text--small" x="85" y="62" font-size="6">webu sābisu)</text>
 </g>
 <g transform="translate(50, 530)">
 <rect x="0" y="0" width="400" height="60" rx="4" fill="#f5f5f5" stroke="#666"/>
@@ -107,11 +109,10 @@
 <text class="node-text node-text--small" x="200" y="50">Some municipalities (e.g. Kawasaki): 5 years</text>
 </g>
 <g transform="translate(500, 530)">
-<rect x="0" y="0" width="350" height="60" rx="4" fill="#e3f2fd" stroke="#1976d2"/>
-<text class="node-text" x="175" y="18" font-size="11" fill="#1976d2" font-weight="bold">WHERE SOFTWARE TYPICALLY HELPS</text>
-<text class="node-text node-text--small" x="175" y="35">• Records → claim data (e.g. CAREKARTE)</text>
-<text class="node-text node-text--small" x="175" y="50">• Provision tables via Data Exchange</text>
-<text class="node-text node-text--small" x="175" y="65">• LIFE CSV export • Transmission</text>
+<rect x="0" y="0" width="350" height="55" rx="4" fill="#e3f2fd" stroke="#1976d2"/>
+<text class="node-text" x="175" y="15" font-size="10" fill="#1976d2" font-weight="bold">WHERE SOFTWARE TYPICALLY HELPS</text>
+<text class="node-text node-text--small" x="175" y="30" font-size="9">Records → claim data • Provision tables via Exchange</text>
+<text class="node-text node-text--small" x="175" y="45" font-size="9">LIFE CSV export • Transmission</text>
 </g>
 <path d="M150 170 L150 190" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow)"/>
 <path d="M150 250 L150 280" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow)"/>
@@ -131,17 +132,17 @@ The care manager sends the service provision table (サービス提供票, sābi
 </div>
 <div data-explain="3" style="display:none;">
 <strong>Step 3: Services Delivered & Recorded</strong><br>
-During the month, providers deliver services and record each one: date, time, service type, staff, and content. Care software (介護記録ソフト, kaigo kiroku sofuto) typically links these records to claim data (for example, CAREKARTE creates claim data automatically from records). For the scientific-care system add-on (科学的介護推進体制加算), facilities and day-care services submit data to LIFE (科学的介護情報システム, kagakuteki kaigo jōhō shisutemu) at least every 3 months; the add-on is 40–60 units/month depending on service type.
+During the month, providers deliver services and record each one: date, time, service type, staff, and content. Care software (介護記録ソフト, kaigo kiroku sofuto) typically links these records to claim data (for example, CAREKARTE creates claim data automatically from records). For the scientific-care system add-on (科学的介護推進体制加算, kagakuteki kaigo suishin taisei kasan), facilities and day-care services submit data to LIFE (科学的介護情報システム, kagakuteki kaigo jōhō shisutemu) at least every 3 months; the add-on is 40–60 units/month depending on service type.
 <div class="info-panel-source">Source: <a href="{{ "guides/life-scientific-care-data/" | relURL }}">LIFE Guide</a></div>
 </div>
 <div data-explain="4" style="display:none;">
 <strong>Step 4: Actuals Table Returned</strong><br>
-Every month, care-management offices and providers exchange the planned and the actual use (サービス利用票・提供票). By the 10th of the following month, the care manager files the benefit-management form (給付管理票, kyūfu kanri-hyō).
+Every month, care-management offices and providers exchange the planned and the actual use (サービス利用票・提供票, sābisu riyō-hyō, teikyō-hyō). By the 10th of the following month, the care manager files the benefit-management form (給付管理票, kyūfu kanri-hyō).
 <div class="info-panel-source">Source: <a href="{{ "guides/monthly-cycle-plan-to-payment/#step-2-each-month-the-provision-table-goes-out-actuals-come-back" | relURL }}">Monthly Cycle Guide</a></div>
 </div>
 <div data-explain="5" style="display:none;">
 <strong>Step 5: Claims Filed by the 10th</strong><br>
-By the <strong>10th of M+1</strong> (hard deadline, even on weekends), two filings are due:
+By the <strong>10th of M+1</strong> (hard deadline), two filings are due:
 <ul><li>The provider's claim (介護給付費請求, kaigo kyūfu-hi seikyū) to the kokuho-ren</li><li>The care manager's benefit-management form (給付管理票, kyūfu kanri-hyō)</li></ul>
 Miyagi kokuho-ren: electronic claims accepted until 17:15 on the 10th, including weekends and holidays. Late claims are treated as next month's.
 <div class="info-panel-source">Source: <a href="{{ "guides/monthly-cycle-plan-to-payment/#step-4-by-the-10th-of-the-next-month-two-filings" | relURL }}">Monthly Cycle Guide</a></div>

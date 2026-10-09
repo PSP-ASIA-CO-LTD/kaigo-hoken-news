@@ -22,15 +22,15 @@ This page compares the nine products in our competitor profiles on features that
 
 The products are:
 
-- [Kaipoke](../kaipoke/)
-- [Honobono NEXT](../honobono-next/)
-- [Kanamic](../kanamic/)
-- [Wiseman](../wiseman/)
-- [Rehab Cloud](../rehab-cloud/)
-- [CAREKARTE](../carekarte/)
-- [ZEST](../zest/)
-- [SmaCare](../smacare/)
-- [Care-wing](../care-wing/)
+- [Kaipoke]({{< relref "kaipoke" >}})
+- [Honobono NEXT]({{< relref "honobono-next" >}})
+- [Kanamic]({{< relref "kanamic" >}})
+- [Wiseman]({{< relref "wiseman" >}})
+- [Rehab Cloud]({{< relref "rehab-cloud" >}})
+- [CAREKARTE]({{< relref "carekarte" >}})
+- [ZEST]({{< relref "zest" >}})
+- [SmaCare]({{< relref "smacare" >}})
+- [Care-wing]({{< relref "care-wing" >}})
 
 ZEST is a visit-scheduling product, SmaCare a records system for one service type, and Care-wing a records system for home-visit services. Some rows, such as claims, are therefore not their job. Our profiles explain each product in full.
 
@@ -43,7 +43,7 @@ ZEST is a visit-scheduling product, SmaCare a records system for one service typ
 | In MHLW care-software function survey, 24 Aug 2026 edition | Listed[^3] | Listed[^3] | Listed[^3] | Listed[^3] | Not listed[^3] | Not listed[^3]; listed in the Oct 2025 edition[^4] | Not listed[^3] | Not listed[^3] | Not listed[^3]; listed in the Oct 2025 edition[^4] |
 | Survey entry: standard 4.1 supported and 5.0 planned | Yes[^3] | Yes[^3] | Yes[^3] | Yes[^3] | | Oct 2025 edition: 3.2 tested, 4.1 planned[^4] | | | Oct 2025 edition: 3.2 tested, 4.1 planned[^4] |
 
-The vendor test is run by Kokuho Chūōkai ({{< ja "国民健康保険中央会" "kokumin kenkō hoken chūōkai" "National Health Insurance Central Association" >}}). The list itself says completion does not mean Kokuho Chūōkai guarantees the vendor's software or data, and that CSV import and export functions may differ between vendors.[^1] Why the survey and the vendor test matter for subsidies is explained in our [subsidy guide](../../guides/subsidies-and-software-buying/). Our [function survey guide](../../guides/care-software-function-survey/) explains what the survey asks and compares its two editions.
+The vendor test is run by Kokuho Chūōkai ({{< ja "国民健康保険中央会" "kokumin kenkō hoken chūōkai" "National Health Insurance Central Association" >}}). The list itself says completion does not mean Kokuho Chūōkai guarantees the vendor's software or data, and that CSV import and export functions may differ between vendors.[^1] Why the survey and the vendor test matter for subsidies is explained in our [subsidy guide]({{< relref "guides/subsidies-and-software-buying" >}}). Our [function survey guide]({{< relref "guides/care-software-function-survey" >}}) explains what the survey asks and compares its two editions.
 
 ## 2. LIFE, claims and scheduling
 

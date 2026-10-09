@@ -67,9 +67,9 @@ The notice adds conditions that depend on the office type:[^1]
 The two sources are public:
 
 - **Vendor-test results.** Kokuho Chūōkai publishes the products that have completed each pattern of the version 4 test.[^3]
-- **Function survey.** MHLW publishes the survey results on its care-technology page. The current edition is dated 24 August 2026, and the page labels it as the edition in use from 1 April 2026.[^4] That edition has 53 entries; a few products appear twice. For each entry it shows support for standard version 4.1, a manual and help-desk support for the exchange, planned support for version 5.0, and the status of LIFE CSV support.[^5] Our [function survey guide](../care-software-function-survey/) explains what the survey asks, compares it with the October 2025 edition, and shows which profiled vendors are listed.
+- **Function survey.** MHLW publishes the survey results on its care-technology page. The current edition is dated 24 August 2026, and the page labels it as the edition in use from 1 April 2026.[^4] That edition has 53 entries; a few products appear twice. For each entry it shows support for standard version 4.1, a manual and help-desk support for the exchange, planned support for version 5.0, and the status of LIFE CSV support.[^5] Our [function survey guide]({{< relref "care-software-function-survey" >}}) explains what the survey asks, compares it with the October 2025 edition, and shows which profiled vendors are listed.
 
-For background on the two systems, see our guides to the [Care Plan Data Exchange](../care-plan-data-exchange/) and [LIFE](../life-scientific-care-data/).
+For background on the two systems, see our guides to the [Care Plan Data Exchange]({{< relref "care-plan-data-exchange" >}}) and [LIFE]({{< relref "life-scientific-care-data" >}}).
 
 ## The conditions on the office
 
@@ -109,9 +109,9 @@ Some care-software vendors are registered under a different programme, the **Dig
 - **Rate.** Up to **1/2**, or 2/3 for firms that meet a minimum-wage condition.
 - **Amount.** ¥50,000 to under ¥1.5 million for software covering one or more business processes, and ¥1.5 million to ¥4.5 million for four or more.
 
-Our guide [METI or MHLW?](../meti-vs-mhlw-software-subsidies/) compares the two routes in full, including vendor registration, dates and whether they can be combined.
+Our guide [METI or MHLW?]({{< relref "meti-vs-mhlw-software-subsidies" >}}) compares the two routes in full, including vendor registration, dates and whether they can be combined.
 
-ZEST, a scheduling product profiled in our [Competitors](../../competitors/) section, says it is a registered tool under this programme. ZEST's guide to the programme says that ordering, contracting and paying must wait until the grant decision.[^9]
+ZEST, a scheduling product profiled in our [Competitors]({{< relref "competitors" >}}) section, says it is a registered tool under this programme. ZEST's guide to the programme says that ordering, contracting and paying must wait until the grant decision.[^9]
 
 ## Reading vendor subsidy claims
 

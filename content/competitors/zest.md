@@ -28,7 +28,7 @@ ZEST ({{< ja "ゼスト" "zesuto" "ZEST" >}}) is a cloud service that builds and
 
 ## Pricing
 
-ZEST charges by usage according to the size of the office, with no initial, base or renewal fee. Prices differ by office, and ZEST gives estimates on request.[^4] ZEST says it is a registered tool under METI's Digital and AI Adoption Subsidy 2026, which can cover up to 50% of the cost.[^6] For how this differs from the care-technology subsidy, see our [subsidy guide](../../guides/subsidies-and-software-buying/).
+ZEST charges by usage according to the size of the office, with no initial, base or renewal fee. Prices differ by office, and ZEST gives estimates on request.[^4] ZEST says it is a registered tool under METI's Digital and AI Adoption Subsidy 2026, which can cover up to 50% of the cost.[^6] For how this differs from the care-technology subsidy, see our [subsidy guide]({{< relref "guides/subsidies-and-software-buying" >}}).
 
 ## Main features
 
@@ -50,11 +50,11 @@ ZEST charges by usage according to the size of the office, with no initial, base
 
 ZEST's site shows six linked systems as examples:[^1]
 
-- [Kaipoke](../kaipoke/) Home-Visit Nursing and Kaipoke Home-Visit Care
-- [Wiseman](../wiseman/)
-- [Care-wing](../care-wing/)
+- [Kaipoke]({{< relref "kaipoke" >}}) Home-Visit Nursing and Kaipoke Home-Visit Care
+- [Wiseman]({{< relref "wiseman" >}})
+- [Care-wing]({{< relref "care-wing" >}})
 - the home-medical EHR "Movacal.net"
-- [CAREKARTE](../carekarte/)
+- [CAREKARTE]({{< relref "carekarte" >}})
 
 Two of these links are described in detail:
 

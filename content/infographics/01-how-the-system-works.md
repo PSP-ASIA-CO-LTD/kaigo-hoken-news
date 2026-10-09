@@ -19,6 +19,6 @@ sources:
 <div class="diagram-opinion">
 <div class="diagram-opinion-header">Tako-San's view</div>
 <div class="diagram-opinion-body">
-<p>For PSP Asia, the key insight is that money flows through the <strong>municipality</strong> (as insurer) to the <strong>prefectural kokuho-ren</strong> (as payment processor) — not to a central ministry. This means billing compliance is local and claim files must follow national formats published by Kokuho Chūōkai. The two-month payment lag (service → claim by 10th → payment end of M+2) also affects cash flow for any provider you might partner with.</p>
+<p>For PSP Asia, the key insight is that money flows through the <strong>municipality</strong> (as insurer) to the <strong>prefectural kokuho-ren</strong> (as payment processor) — not to a central ministry. This means billing compliance is local and claim files must follow national formats published by Kokuho Chūōkai. The two-month payment lag (service → claim by 10th → payment end of M+2 on the Miyagi schedule) also affects cash flow for any provider you might partner with.</p>
 </div>
 </div>
