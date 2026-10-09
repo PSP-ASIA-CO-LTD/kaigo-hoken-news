@@ -1,12 +1,15 @@
 ---
 title: "Who provides care in Japan, and what the per-resident budget really is"
 date: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-09T09:00:00+07:00
 tags: ["japan", "long-term-care", "providers", "facilities"]
 summary: "Home visits, day care, short stay, and residential facilities, who owns them, how many there are, and why there is no fixed budget per resident."
 series: "Japan LTC Basics"
 series_order: 3
 categories: ["Providers"]
 ---
+
+*Last updated: 9 Oct 2026*
 
 Japanese care is a menu of designated services, not a single "nursing home" product. A provider is an office or a facility that a prefecture or a municipality has designated under the Long-Term Care Insurance Act. Counts below are from the national Survey of Long-term Care Service Facilities and Offices as of **1 October 2024**, unless noted. An office that offers two services is counted twice.[^1] [^2]
 
@@ -40,7 +43,7 @@ Other home-side services a software suite eventually meets: welfare-equipment re
 
 **Specified facility ({{< ja "特定施設入居者生活介護" "tokutei shisetsu nyūkyo-sha seikatsu kaigo" >}}).** This is not a building type. It is a designation that lets a fee-charging home ({{< ja "有料老人ホーム" "yūryō rōjin hōmu" >}}) or similar residence bill insurance for the care delivered inside it. **5,969** such offices, up 1.7 percent. Many private senior residences are **not** specified facilities. Residents there buy care from home-visit or day providers under the ordinary monthly cap, or pay privately.
 
-**Serviced senior housing ({{< ja "サービス付き高齢者向け住宅" "sābisu-tsuki kōreisha-muke jūtaku" >}}, {{< ja "サ高住" "sa-kō-jū" >}})** is a housing registration, mainly under housing law, with a staff presence. It is not automatically an insurance facility. This brief does **not** cite a national building count, because a current primary total was not opened and verified here. Treat サ高住 as housing-plus, and check in each case whether care is billed as {{< ja "特定施設" "tokutei shisetsu" >}} or as ordinary home services.
+**Serviced senior housing ({{< ja "サービス付き高齢者向け住宅" "sābisu-tsuki kōreisha-muke jūtaku" "serviced housing for older people" >}}, {{< ja "サ高住" "sa-kō-jū" "serviced housing" >}})** is a housing registration, mainly under housing law, with a staff presence. It is not automatically an insurance facility. At the end of August 2026, **8,312** buildings with **290,950** units were registered as serviced housing nationwide.[^6] For the law, the counts and how serviced housing bills care insurance, see the guide [Private elderly housing](../../guides/private-pay-elderly-housing/). Treat {{< ja "サ高住" "sa-kō-jū" "serviced housing" >}} as housing-plus, and check in each case whether care is billed as {{< ja "特定施設" "tokutei shisetsu" "specified facility" >}} or as ordinary home services.
 
 ## Who runs them
 
@@ -84,6 +87,11 @@ Market size, in money rather than buildings: reviewed care costs in fiscal 2025 
 The ownership split points PSP toward two distinct sales motions. For home-visit and day care (73% and 55% company-run), the buyer is often a for-profit operator with multiple sites, faster procurement, and sensitivity to SaaS pricing — closer to a Thai private-care company than a government hospital. For special nursing homes (96% social-welfare corporations), the buyer is a non-profit board with longer budget cycles and a preference for established vendors. A foreign entrant will find the company segment more accessible. Within that segment, the 18,000+ home-visit nursing stations (growing 10% a year) are worth watching: nursing is a different fee table and a different workflow, but growth suggests less entrenched software and more willingness to try new tools. If PSP's Thai product already handles nursing records, that could be a faster localisation path than helper-visit care.
 {{< /analysis >}}
 
+## Changelog
+
+- 9 Oct 2026: first published
+- 9 Oct 2026: replaced the note that no national serviced-housing count was cited with the MLIT registration total at end-August 2026 (reference 6), linked the private elderly housing guide, and gave the Japanese terms in that paragraph their English glosses
+
 ---
 
 ## References
@@ -97,3 +105,5 @@ The ownership split points PSP toward two distinct sales motions. For home-visit
 [^4]: Ministry of Health, Labour and Welfare. "Long-Term Care Insurance System Overview (介護保険制度をめぐる最近の動向について)." July 2025. https://www.mhlw.go.jp/content/001512842.pdf
 
 [^5]: Ministry of Health, Labour and Welfare. "Fiscal 2025 Long-Term Care Benefit Expenditures Survey Results (令和7年度 介護給付費等実態統計の概況)." Press release, 30 September 2026. https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/25/dl/10.pdf
+
+[^6]: Serviced Housing for Older People Information System (MLIT). "Registration Status of Serviced Housing for Older People, End of August 2026 (サービス付き高齢者向け住宅の登録状況（R8.8末時点）)." https://www.satsuki-jutaku.mlit.go.jp/doc/system_registration_01.pdf
