@@ -32,7 +32,7 @@ The notice covers four kinds of spending:[^1]
 - **Equivalent and other items.** Equipment not yet in TAIS that the prefecture judges to be of the same standard, and back-office software such as electronic signature, payroll and attendance systems.
 - **Business-improvement support.** Third-party consulting on the adoption, or training and consultation through the prefecture's productivity support centre.
 
-Products must have a published price and be generally on sale. Development costs are not eligible, and communication charges are excluded.[^1]
+Products must have a published price and be generally on sale. Development costs are not eligible, and communication charges are excluded.[^1] MHLW's fiscal 2026 Q&A says the eligible amount is what is paid in the fiscal year. A multi-year licence, lease or subscription paid in full in the first year counts in full; a yearly payment counts as one year.[^12]
 
 **What counts as "care software".** The software must handle records, information sharing and billing end to end without re-keying. Information sharing includes exchanging care plans and service use tables with other offices. The notice also says the software should preferably export and import records in an easily converted format such as CSV or JSON, so that offices can switch systems quickly.[^1]
 
@@ -80,7 +80,7 @@ An office that receives the subsidy also takes on obligations:[^1]
 - **Wages.** If the technology improves productivity and finances, return the gains to staff wages and tell staff so.
 - **LIFE and evaluation.** Cooperate with LIFE data collection and, as far as possible, with MHLW's evaluation studies.
 - **Committee (residential and facility services).** Short stays, group homes, facilities and some other services must set up a committee on safety, quality and staff burden.
-- **Exchange (home and community services).** A long list of home and community services must have started using the Care Plan Data Exchange or an MHLW-approved equivalent. The notice text, carried over from fiscal 2025, says "within fiscal 2025".
+- **Exchange (home and community services).** A long list of home and community services must have started using the Care Plan Data Exchange or an MHLW-approved equivalent. The notice text, carried over from fiscal 2025, says "within fiscal 2025". MHLW's fiscal 2026 Q&A says that from this year an actual record of data exchange is required.[^12]
 - **No double funding.** Spending already funded by another subsidy, such as the fund-based care-technology adoption project or METI's IT subsidy, is not eligible.
 
 ## The link to the wage add-on
@@ -109,6 +109,8 @@ Some care-software vendors are registered under a different programme, the **Dig
 - **Rate.** Up to **1/2**, or 2/3 for firms that meet a minimum-wage condition.
 - **Amount.** ¥50,000 to under ¥1.5 million for software covering one or more business processes, and ¥1.5 million to ¥4.5 million for four or more.
 
+Our guide [METI or MHLW?](../meti-vs-mhlw-software-subsidies/) compares the two routes in full, including vendor registration, dates and whether they can be combined.
+
 ZEST, a scheduling product profiled in our [Competitors](../../competitors/) section, says it is a registered tool under this programme. ZEST's guide to the programme says that ordering, contracting and paying must wait until the grant decision.[^9]
 
 ## Reading vendor subsidy claims
@@ -127,6 +129,7 @@ Tako-San's view: for a vendor, the fiscal 2026 rules turn two public lists into 
 
 - 9 Oct 2026: first published
 - 9 Oct 2026: described the August 2026 survey edition as 53 entries rather than 53 products, added its 1 April 2026 start label, and linked the new function survey guide
+- 9 Oct 2026: added MHLW's fiscal 2026 Q&A on multi-year payments and the data-exchange record, and linked the new METI and MHLW comparison guide
 
 ---
 
@@ -153,3 +156,5 @@ Tako-San's view: for a vendor, the fiscal 2026 rules turn two public lists into 
 [^10]: Care Connect Japan Co., Ltd. "Subsidy Support (補助金対応について)." Accessed 9 October 2026. https://www.carekarte.jp/subsidy/
 
 [^11]: Homenet Co., Ltd. "SmaCare Registered in the Welfare Equipment Information System (TAIS) (「スマケア」が福祉用具情報システム（TAIS）に登録されました)." Notice, 1 September 2026. https://www.smacare.jp/blog/notice/a586
+
+[^12]: Ministry of Health, Labour and Welfare, Office for Care Work Efficiency and Productivity. "Care Technology Retention Support Project Q&A (FY2026) (介護テクノロジー定着支援事業 Ｑ＆Ａ（令和８年度）)." Administrative notice, 15 June 2026, questions 9 and 12, as republished by Shimane Prefecture. https://www.pref.shimane.lg.jp/medical/fukushi/kourei/kaigo_hoken/hojokin/kaigo-tech.data/r8qa.pdf
