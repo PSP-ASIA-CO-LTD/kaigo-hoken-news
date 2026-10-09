@@ -65,6 +65,10 @@ body {
 /* ============================================
    MASTHEAD - Compact newspaper header
    ============================================ */
+:root {
+  --nav-width: 1200px;
+}
+
 .header {
   border-bottom: 2px solid var(--newspaper-rule);
   padding: var(--space-3) 0;
@@ -96,10 +100,13 @@ body {
 /* Navigation - inline with logo */
 .menu {
   margin: 0;
-  gap: var(--space-4);
+  gap: var(--space-3);
   font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
+  overflow-x: visible;
+  white-space: normal;
+  flex-wrap: wrap;
 }
 
 .menu li a {
@@ -252,10 +259,17 @@ body {
   display: block;
 }
 
-/* Series term page styling */
+/* Series term page styling - centered column */
 .series-toc,
 .series-list,
 .series-cta {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Align page header with series content when it's followed by series-toc */
+.main:has(.series-toc) .page-header {
   max-width: 65ch;
   margin-left: auto;
   margin-right: auto;
@@ -276,20 +290,55 @@ body:not(.list) .main {
    MOBILE ADJUSTMENTS
    ============================================ */
 @media (max-width: 639px) {
+  .header {
+    padding: var(--space-2) 0;
+    margin-bottom: var(--space-3);
+  }
+  
   .header-nav {
     flex-direction: column;
     text-align: center;
+    gap: var(--space-1);
   }
   
   .logo a {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
   
+  .logo-switches {
+    margin-left: var(--space-2);
+  }
+  
+  /* Mobile nav: horizontal scroll with fade hint */
   .menu {
-    gap: var(--space-3);
-    font-size: 0.75rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: var(--space-1);
+    padding: var(--space-1) var(--space-2);
+    margin: 0 calc(-1 * var(--gap));
+    width: calc(100% + 2 * var(--gap));
+    font-size: 0.7rem;
+    letter-spacing: 0.02em;
+    justify-content: flex-start;
+    mask-image: linear-gradient(to right, transparent, black 8px, black calc(100% - 24px), transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8px, black calc(100% - 24px), transparent);
+  }
+  
+  .menu::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .menu li {
+    flex-shrink: 0;
+  }
+  
+  .menu li a {
+    padding: var(--space-1) var(--space-2);
+    white-space: nowrap;
   }
   
   .main {

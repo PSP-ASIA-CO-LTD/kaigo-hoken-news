@@ -10,12 +10,16 @@
     {{< ja "介護保険" "kaigo hoken" "long-term care insurance" >}}
     {{< ja term="介護保険" romaji="kaigo hoken" en="long-term care insurance" >}}
   
+  AUTO-LOOKUP: When using positional/explicit syntax, the shortcode automatically
+  looks up the Japanese term in data/glossary.yaml and adds the tooltip/link
+  if a matching entry is found.
+  
   Output:
     介護保険 (kaigo hoken) [🔊]
-    with tooltip showing English meaning and definition
+    with tooltip showing English meaning and definition (if in glossary)
   
   Features:
-    - Looks up term from data/glossary.yaml by key
+    - Looks up term from data/glossary.yaml by key OR by Japanese term
     - Displays kanji with romaji in parentheses
     - Accessible tooltip with English meaning and definition
     - Speaker button for Web Speech API read-aloud (ja-JP)
@@ -28,6 +32,7 @@
 {{- $meaning := "" -}}
 {{- $def := "" -}}
 {{- $glossaryLink := "" -}}
+{{- $foundKey := "" -}}
 
 {{- /* Key-based lookup from glossary */ -}}
 {{- if $key -}}
@@ -38,6 +43,7 @@
     {{- $meaning = .Get "en" | default $entry.en -}}
     {{- $def = $entry.def -}}
     {{- $glossaryLink = printf "/glossary/#%s" $key -}}
+    {{- $foundKey = $key -}}
   {{- else -}}
     {{- errorf "Glossary key '%s' not found in data/glossary.yaml" $key -}}
   {{- end -}}
@@ -47,6 +53,20 @@
   {{- $romaji = .Get "romaji" | default (.Get 1) -}}
   {{- $meaning = .Get "en" | default (.Get 2) -}}
   {{- $glossaryLink = .Get "link" -}}
+  
+  {{- /* Auto-lookup: search glossary for matching Japanese term */ -}}
+  {{- if and $kanji (not $glossaryLink) -}}
+    {{- range $k, $entry := site.Data.glossary -}}
+      {{- if eq $entry.ja $kanji -}}
+        {{- $foundKey = $k -}}
+        {{- if not $meaning -}}
+          {{- $meaning = $entry.en -}}
+        {{- end -}}
+        {{- $def = $entry.def -}}
+        {{- $glossaryLink = printf "/glossary/#%s" $k -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
 {{- end -}}
 
 {{- /* Build tooltip content */ -}}
