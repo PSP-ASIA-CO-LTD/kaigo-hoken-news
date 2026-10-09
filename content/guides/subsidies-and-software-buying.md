@@ -1,7 +1,7 @@
 ---
 title: "Subsidies and how care offices buy software: the fiscal 2026 rules"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-09T09:00:00+07:00
 tags: ["japan", "long-term-care", "subsidy", "software", "care-plan", "guide"]
 summary: "The fiscal 2026 care-technology subsidy at four fifths of cost, what software and offices must do to qualify, how it links to the Care Plan Data Exchange and the wage add-on, and the separate METI subsidy that some vendors use instead."
 categories: ["Guides"]
@@ -67,7 +67,7 @@ The notice adds conditions that depend on the office type:[^1]
 The two sources are public:
 
 - **Vendor-test results.** Kokuho Chūōkai publishes the products that have completed each pattern of the version 4 test.[^3]
-- **Function survey.** MHLW publishes the survey results on its care-technology page. The current edition is dated 24 August 2026.[^4] That edition lists 53 products, and for each one shows support for standard version 4.1, help-desk support for the exchange, planned support for version 5.0, and the status of LIFE CSV support.[^5]
+- **Function survey.** MHLW publishes the survey results on its care-technology page. The current edition is dated 24 August 2026, and the page labels it as the edition in use from 1 April 2026.[^4] That edition has 53 entries; a few products appear twice. For each entry it shows support for standard version 4.1, a manual and help-desk support for the exchange, planned support for version 5.0, and the status of LIFE CSV support.[^5] Our [function survey guide](../care-software-function-survey/) explains what the survey asks, compares it with the October 2025 edition, and shows which profiled vendors are listed.
 
 For background on the two systems, see our guides to the [Care Plan Data Exchange](../care-plan-data-exchange/) and [LIFE](../life-scientific-care-data/).
 
@@ -126,6 +126,7 @@ Tako-San's view: for a vendor, the fiscal 2026 rules turn two public lists into 
 ## Changelog
 
 - 9 Oct 2026: first published
+- 9 Oct 2026: described the August 2026 survey edition as 53 entries rather than 53 products, added its 1 April 2026 start label, and linked the new function survey guide
 
 ---
 
