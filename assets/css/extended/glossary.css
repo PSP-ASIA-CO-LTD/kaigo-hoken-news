@@ -100,20 +100,34 @@
   to { background: transparent; }
 }
 
-/* Term line */
+/* Term line - structured layout */
 .glossary-term {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: var(--space-2);
+  flex-direction: column;
+  gap: var(--space-1);
   margin: 0 0 var(--space-2);
   font-weight: normal;
+}
+
+/* Line 1: Japanese + speaker + romaji (inline) */
+.glossary-term-line {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
 }
 
 .glossary-ja {
   font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
   font-size: 1.25rem;
   font-weight: 500;
+  white-space: nowrap;
+}
+
+.glossary-term-line .ja-speak-btn {
+  margin-left: 0.15em;
+  margin-right: 0.35em;
+  flex-shrink: 0;
 }
 
 .glossary-romaji {
@@ -121,17 +135,14 @@
   color: var(--secondary);
 }
 
+/* Line 2: English meaning */
 .glossary-en {
+  display: block;
   font-weight: 600;
+  margin-top: var(--space-1);
 }
 
-.glossary-en::before {
-  content: "—";
-  margin-right: var(--space-2);
-  color: var(--secondary);
-}
-
-/* Definition */
+/* Definition block */
 .glossary-def {
   margin: 0;
   padding-left: 0;
@@ -139,9 +150,12 @@
   color: var(--content);
 }
 
+.glossary-def-text {
+  margin: 0 0 var(--space-2);
+}
+
 .glossary-search {
   display: inline-block;
-  margin-left: var(--space-3);
   font-size: 0.85rem;
   color: var(--secondary);
   text-decoration: none;
@@ -171,15 +185,6 @@
   
   .glossary-ja {
     font-size: 1.1rem;
-  }
-  
-  .glossary-term {
-    flex-direction: column;
-    gap: var(--space-1);
-  }
-  
-  .glossary-en::before {
-    display: none;
   }
 }
 
@@ -211,7 +216,8 @@
   bottom: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%);
-  max-width: 300px;
+  width: max-content;
+  max-width: min(280px, 90vw);
   padding: var(--space-3);
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -221,6 +227,7 @@
   line-height: 1.5;
   color: var(--content);
   white-space: normal;
+  word-wrap: break-word;
   pointer-events: auto;
   opacity: 0;
   visibility: hidden;

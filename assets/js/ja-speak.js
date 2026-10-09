@@ -92,27 +92,40 @@
     tooltip.textContent = text;
     wrapper.appendChild(tooltip);
     
-    // Position check - avoid overflow
+    return tooltip;
+  }
+  
+  function positionTooltip(tooltip) {
+    if (!tooltip) return;
+    
+    tooltip.classList.remove('tooltip-left', 'tooltip-right');
+    tooltip.style.left = '';
+    tooltip.style.right = '';
+    tooltip.style.transform = '';
+    
     requestAnimationFrame(function() {
       var rect = tooltip.getBoundingClientRect();
-      var wrapperRect = wrapper.getBoundingClientRect();
+      var vw = window.innerWidth;
+      var margin = 8;
       
-      // Check left overflow
-      if (rect.left < 8) {
+      if (rect.left < margin) {
         tooltip.classList.add('tooltip-left');
-      }
-      // Check right overflow
-      else if (rect.right > window.innerWidth - 8) {
+        var shift = margin - rect.left;
+        tooltip.style.left = '0';
+        tooltip.style.transform = 'translateX(' + shift + 'px)';
+      } else if (rect.right > vw - margin) {
         tooltip.classList.add('tooltip-right');
+        var shift = rect.right - (vw - margin);
+        tooltip.style.left = '';
+        tooltip.style.right = '0';
+        tooltip.style.transform = 'translateX(-' + shift + 'px)';
       }
     });
-    
-    return tooltip;
   }
   
   function showTooltip(wrapper) {
     if (activeTooltip && activeTooltip.parentElement !== wrapper) {
-      hideTooltip(activeTooltip);
+      hideTooltip(activeTooltip, true);
     }
     
     var tooltip = wrapper.querySelector('.ja-tooltip');
@@ -123,6 +136,7 @@
       clearTimeout(tooltipTimeout);
       tooltip.classList.add('visible');
       activeTooltip = tooltip;
+      positionTooltip(tooltip);
     }
   }
   
@@ -183,13 +197,28 @@
   // Touch events for mobile
   document.addEventListener('touchstart', function(e) {
     var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip]');
-    if (wrapper) {
+    var isTooltip = e.target.closest('.ja-tooltip');
+    var isSpeakBtn = e.target.closest('.ja-speak-btn');
+    
+    if (wrapper && !isSpeakBtn) {
       e.preventDefault();
       showTooltip(wrapper);
-    } else if (activeTooltip) {
+    } else if (!isTooltip && activeTooltip) {
       hideTooltip(activeTooltip, true);
     }
   }, { passive: false });
+  
+  // Click outside to dismiss (for desktop clicks and touch fallback)
+  document.addEventListener('click', function(e) {
+    if (!activeTooltip) return;
+    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip]');
+    var isTooltip = e.target.closest('.ja-tooltip');
+    var isSpeakBtn = e.target.closest('.ja-speak-btn');
+    
+    if (!wrapper && !isTooltip && !isSpeakBtn) {
+      hideTooltip(activeTooltip, true);
+    }
+  });
   
   // Escape to dismiss (WCAG 1.4.13)
   document.addEventListener('keydown', function(e) {
