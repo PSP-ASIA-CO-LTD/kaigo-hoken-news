@@ -55,47 +55,32 @@ buildExpired = false
 
 [menu]
   [[menu.main]]
-    identifier = "cat-basics"
-    name = "Basics"
-    url = "/categories/basics/"
+    identifier = "nav-series"
+    name = "Start Here"
+    url = "/series/"
     weight = 10
   [[menu.main]]
-    identifier = "cat-providers"
-    name = "Providers"
-    url = "/categories/providers/"
+    identifier = "nav-posts"
+    name = "Posts"
+    url = "/posts/"
     weight = 20
   [[menu.main]]
-    identifier = "cat-technology"
-    name = "Technology"
-    url = "/categories/technology/"
+    identifier = "nav-guides"
+    name = "Guides"
+    url = "/guides/"
     weight = 30
   [[menu.main]]
-    identifier = "cat-budget-policy"
-    name = "Budget & Policy"
-    url = "/categories/budget-policy/"
+    identifier = "nav-competitors"
+    name = "Competitors"
+    url = "/competitors/"
     weight = 40
-  [[menu.main]]
-    identifier = "cat-news"
-    name = "News"
-    url = "/categories/news/"
-    weight = 50
-  [[menu.main]]
-    identifier = "all-articles"
-    name = "All Articles"
-    url = "/posts/"
-    weight = 60
-  [[menu.main]]
-    identifier = "nav-series"
-    name = "Series"
-    url = "/series/"
-    weight = 70
   [[menu.main]]
     identifier = "nav-glossary"
     name = "Glossary"
     url = "/glossary/"
-    weight = 75
+    weight = 50
   [[menu.main]]
     identifier = "nav-about"
     name = "About"
     url = "/about/"
-    weight = 80
+    weight = 60

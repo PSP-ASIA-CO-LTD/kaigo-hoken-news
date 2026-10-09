@@ -459,3 +459,105 @@
   border-left: 3px solid var(--primary);
   padding-left: 1rem;
 }
+
+/* ==========================================================================
+   SECTION LIST PAGES (Guides, Competitors)
+   - Centered block layout, not affected by homepage grid
+   ========================================================================== */
+
+.section-header,
+.section-intro,
+.section-entries {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-intro {
+  margin-bottom: 2rem;
+}
+
+.section-entries {
+  display: block;
+}
+
+.section-entry {
+  margin-bottom: 1.25rem;
+}
+
+/* ==========================================================================
+   DEEP DIVE SECTIONS (Homepage - Guides & Competitors links)
+   ========================================================================== */
+
+.deep-dive-sections {
+  margin: 1.5rem 0 2rem 0;
+}
+
+.deep-dive-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.deep-dive-card {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.deep-dive-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary);
+}
+
+.dark .deep-dive-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.deep-dive-title {
+  font-family: 'Playfair Display', 'Noto Serif JP', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: var(--primary);
+}
+
+.deep-dive-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--secondary);
+  margin: 0 0 0.75rem 0;
+}
+
+.deep-dive-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.deep-dive-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile: stack the cards */
+@media (max-width: 640px) {
+  .deep-dive-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .deep-dive-card {
+    padding: 1rem;
+  }
+  
+  .deep-dive-title {
+    font-size: 1.05rem;
+  }
+  
+  .deep-dive-text {
+    font-size: 0.85rem;
+  }
+}
