@@ -14,6 +14,7 @@ buildFuture = true
 buildExpired = false
 
 [params]
+  mainSections = ["posts"]
   env = "production"
   description = "Japan long-term care insurance research and updates — insights into 介護保険 (kaigo hoken) for international care technology companies"
   author = "PSP Asia Co., Ltd."
