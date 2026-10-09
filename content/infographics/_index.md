@@ -6,5 +6,5 @@ summary: "Interactive diagrams explaining Japan's long-term care insurance syste
 layout: "infographics-list"
 ---
 
-Visual guides to Japan's {{< ja "介護保険" "kaigo hoken" "long-term care insurance" >}} system. Each diagram is interactive: tap or click nodes for details and sources. Every number comes from a published source on this site.
+Visual guides to Japan's {{< ja "介護保険" "kaigo hoken" "long-term care insurance" >}} system. Each diagram is interactive: tap or click nodes for details and sources. Each panel names its source; example values are labelled EXAMPLE.
 

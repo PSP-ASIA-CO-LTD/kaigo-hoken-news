@@ -42,7 +42,7 @@
     {{- $romaji = $entry.romaji -}}
     {{- $meaning = .Get "en" | default $entry.en -}}
     {{- $def = $entry.def -}}
-    {{- $glossaryLink = printf "/glossary/#%s" $key -}}
+    {{- $glossaryLink = printf "glossary/#%s" $key -}}
     {{- $foundKey = $key -}}
   {{- else -}}
     {{- errorf "Glossary key '%s' not found in data/glossary.yaml" $key -}}
@@ -63,7 +63,7 @@
           {{- $meaning = $entry.en -}}
         {{- end -}}
         {{- $def = $entry.def -}}
-        {{- $glossaryLink = printf "/glossary/#%s" $k -}}
+        {{- $glossaryLink = printf "glossary/#%s" $k -}}
       {{- end -}}
     {{- end -}}
   {{- end -}}
