@@ -1,4 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect width="64" height="64" fill="#000" rx="8"/>
-  <text x="32" y="44" font-family="serif" font-size="36" fill="#fff" text-anchor="middle">介</text>
+  <!-- Tako-san octopus silhouette -->
+  <ellipse cx="32" cy="22" rx="18" ry="14" fill="#000"/>
+  <ellipse cx="24" cy="20" rx="3" ry="4" fill="#000"/>
+  <ellipse cx="40" cy="20" rx="3" ry="4" fill="#000"/>
+  <!-- Tentacles -->
+  <path d="M14 32 Q8 48 12 56" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M20 34 Q16 50 20 60" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M28 35 Q28 52 30 62" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M36 35 Q36 52 34 62" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M44 34 Q48 50 44 60" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M50 32 Q56 48 52 56" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
 </svg>
