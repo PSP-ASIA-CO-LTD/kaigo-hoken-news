@@ -25,6 +25,8 @@ The Japanese word users reach for is {{< ja "レセプト" "reseputo" >}}, borro
 
 ## LIFE, the scientific-care system
 
+> **Update, 9 Oct 2026:** Since **11 May 2026**, LIFE has been operated by the National Health Insurance Central Association ({{< ja "国保中央会" "kokuho chūō-kai" >}}) instead of MHLW. Offices had to migrate to the new system between 11 May and 31 July 2026 to keep claiming LIFE-linked add-ons.[^14] Details are in the [LIFE guide](../../guides/life-scientific-care-data/).
+
 LIFE ({{< ja "科学的介護情報システム" "kagakuteki kaigo jōhō shisutemu" >}}, Long-term care Information system For Evidence) started on **1 April 2021**. It merged two earlier collections, VISIT (rehabilitation, from 2017) and CHASE (status and events, from 2020). Offices that want certain add-ons submit structured data — ADL, nutrition, oral health, dementia, continence, pressure ulcers, drugs — and receive feedback: a person's score over time, and the office compared with others in the prefecture. The add-on rules require a PDCA cycle. Uploading a file and ignoring the feedback is not enough.[^2]
 
 The headline add-on is {{< ja "科学的介護推進体制加算" "kagakuteki kaigo suishin taisei kasan" >}}, the scientific-care system add-on. In that September 2026 paper, for special nursing homes and for fees in force since June 2024, type I is **40 units a month** and type II is **50 units a month**. On the November 2025 review month (October 2025 services), type II was billed by **51.9 percent** of special-nursing-home offices that billed that month, and type I by **23.6 percent**. Those two rates should not be added: an office is in one type or the other. The same paper says that, as of **April 2025**, about **70 percent** of facility-type services and about **50 percent** of day and residential-type services were using LIFE. LIFE-linked add-ons number 17, and several ask for the same items twice. That duplication is an official complaint, not a vendor's sales line.
@@ -61,7 +63,7 @@ No official market-share table was found. The figures below are what the compani
 - **Kaipoke ({{< ja "カイポケ" "kaipoke" >}}),** from SMS Co., Ltd. ({{< ja "株式会社エス・エム・エス" "kabushiki-gaisha esu emu esu" >}}). Cloud software for care, home nursing, and disability services. Records on a phone or tablet flow into the claim, including federation transmission. The company says **more than 60,000** introductions as of April 2026, a count that includes its "Kabenashi Cloud" members. It advertises care-plan data-exchange support.[^8]
 - **Honobono NEXT ({{< ja "ほのぼのNEXT" "honobono nekusuto" >}}),** from ND Software. Care records through to claims, plus voice input, sensors, and an AI care-plan tool. The company says **more than 72,300** offices as of April 2026, on its own count.[^9]
 - **Wiseman ({{< ja "ワイズマン" "waizuman" >}}),** Wiseman Co., Ltd. A broad package across home, facility, and disability services, including LIFE forms, sold as an ASP. The company says **more than 61,200** care and welfare offices, excluding disability offices, on its own count (page undated when fetched on 9 October 2026).[^10]
-- **Canamic ({{< ja "カナミック" "kanamikku" >}}),** Canamic Network Co., Ltd., listed on the Tokyo Stock Exchange Prime market. Cloud records, claims, and cross-organisation sharing aimed at community-based integrated care. The company says **57,763** offices and **376,972** users as of March 2026.[^11]
+- **Kanamic ({{< ja "カナミック" "kanamikku" >}}),** Kanamic Network Co., Ltd., listed on the Tokyo Stock Exchange Prime market. Cloud records, claims, and cross-organisation sharing aimed at community-based integrated care. The company says **57,763** offices and **376,972** users as of March 2026.[^11]
 - **Carekarte ({{< ja "ケアカルテ" "kea karute" >}}),** Care Connect Japan Co., Ltd. ({{< ja "株式会社ケアコネクトジャパン" "kabushiki-gaisha kea konekuto japan" >}}). Records, plans, and claims for care and disability services, with tablet and voice input and office-specific forms. The company says about **19,000** offices (page undated when fetched).[^12]
 
 Smaller and specialist tools exist, including visit-care mobile records and packages tied to a single device maker. The pattern of the five above is the same: one database feeds the record, the roster, the claim, and as much of LIFE as the vendor has finished. Switching costs are data migration plus staff habit plus the fear of a rejected claim on the 10th. Price is not a verified comparison here. Kaipoke publishes a no-initial-fee monthly model; others quote by office size. Do not plan against a single price point scraped from a ranking blog.
@@ -80,6 +82,10 @@ A Thai package can be excellent at residential workflow and still be unsellable 
 {{< analysis >}}
 LIFE is both a compliance burden and PSP's clearest product opportunity. The quarterly submission rhythm, the 17 overlapping add-ons, and the CSV spec that vendors must implement — all of this is pain that offices feel today. A well-designed LIFE module that auto-populates from daily care records (ADL, nutrition, oral health, continence) and reminds staff when submission is due could be sold as a standalone add-on before PSP tackles claims. The LIFE interface spec (version 3.10) is public; building against it does not require a federation relationship. If PSP can also consume the upcoming care-plan data exchange standard, it becomes a bridge between the care manager and the service provider — a position none of the incumbents fully owns yet. Start with LIFE extraction, prove reliability, then expand into claims via partnership.
 {{< /analysis >}}
+
+## Changelog
+
+- 9 Oct 2026: Added an update note that LIFE has been operated by Kokuho Chūōkai since 11 May 2026. Corrected the company name "Canamic" to "Kanamic".
 
 ---
 
@@ -105,8 +111,10 @@ LIFE is both a compliance burden and PSP's clearest product opportunity. The qua
 
 [^10]: Wiseman Co., Ltd. "Care and Welfare System Products." Accessed October 2026. https://www.wiseman.co.jp/products/welfare/
 
-[^11]: Canamic Network Co., Ltd. "Company Overview." Accessed October 2026. https://www.kanamic.net/
+[^11]: Kanamic Network Co., Ltd. "Company Overview." Accessed October 2026. https://www.kanamic.net/
 
 [^12]: Care Connect Japan Co., Ltd. "Carekarte Product Page." Accessed October 2026. https://www.carekarte.jp/carekarteabout/
 
 [^13]: National Health Insurance Central Association. "Long-Term Care Claim Transmission Software (介護伝送ソフト)." Version 10. https://www.kokuho.or.jp/kaigosoft/jigyosho_ver10/
+
+[^14]: Ministry of Health, Labour and Welfare, Health and Welfare Bureau for the Elderly. "Notice on the Transfer of LIFE's Operating Body (科学的介護情報システム（LIFE）の運営主体の移管に係る周知について)." Administrative notice, 23 March 2026 (Care Insurance Latest Information Vol.1484). https://www.mhlw.go.jp/content/12301000/001677722.pdf
