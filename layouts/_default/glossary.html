@@ -53,7 +53,7 @@
         </dt>
         <dd class="glossary-def">
           <p class="glossary-def-text">{{ .def }}</p>
-          <a href="/posts/?q={{ .ja | urlquery }}" class="glossary-search" title="Search posts for this term">Search posts →</a>
+          <a href="{{ "posts/" | relURL }}?q={{ .ja | urlquery }}" class="glossary-search" title="Search posts for this term">Search posts →</a>
         </dd>
       </div>
     {{- end }}
