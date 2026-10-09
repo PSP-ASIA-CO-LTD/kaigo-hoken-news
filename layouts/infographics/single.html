@@ -1,0 +1,41 @@
+{{- define "main" }}
+<article class="infographic-page">
+  <header class="infographic-header">
+    {{- partial "breadcrumbs.html" . }}
+    <h1 class="infographic-title">{{ .Title }}</h1>
+    {{- if .Description }}
+    <p class="infographic-subtitle">{{ .Description }}</p>
+    {{- end }}
+    <div class="infographic-meta">
+      <span class="infographic-meta-item">
+        <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+          <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-1h2v1zm0-3H9V6h2v4z"/>
+        </svg>
+        Tap or click nodes for details
+      </span>
+      <span class="infographic-meta-item">
+        <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+          <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V6h2v4z"/>
+        </svg>
+        Every number links to its source
+      </span>
+    </div>
+  </header>
+
+  <div class="infographic-container">
+    {{ .Content }}
+  </div>
+
+  {{- if .Params.sources }}
+  <footer class="infographic-sources">
+    <h2>Sources</h2>
+    <p>All data comes from articles on this site. Click any number in the diagram to jump to its source.</p>
+    <ul>
+      {{- range .Params.sources }}
+      <li><a href="{{ .url }}">{{ .title }}</a>{{ if .note }} — {{ .note }}{{ end }}</li>
+      {{- end }}
+    </ul>
+  </footer>
+  {{- end }}
+</article>
+{{- end }}

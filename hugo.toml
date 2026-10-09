@@ -75,6 +75,11 @@ buildExpired = false
     url = "/competitors/"
     weight = 40
   [[menu.main]]
+    identifier = "nav-infographics"
+    name = "Infographics"
+    url = "/infographics/"
+    weight = 45
+  [[menu.main]]
     identifier = "nav-glossary"
     name = "Glossary"
     url = "/glossary/"
