@@ -17,7 +17,7 @@
         <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
           <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V6h2v4z"/>
         </svg>
-        Every number links to its source
+        Each panel names its source
       </span>
     </div>
   </header>
@@ -29,10 +29,10 @@
   {{- if .Params.sources }}
   <footer class="infographic-sources">
     <h2>Sources</h2>
-    <p>All data comes from articles on this site. Click any number in the diagram to jump to its source.</p>
+    <p>All data comes from articles on this site. Example values are labelled EXAMPLE.</p>
     <ul>
       {{- range .Params.sources }}
-      <li><a href="{{ .url }}">{{ .title }}</a>{{ if .note }} — {{ .note }}{{ end }}</li>
+      <li><a href="{{ .url | relURL }}">{{ .title }}</a>{{ if .note }} — {{ .note }}{{ end }}</li>
       {{- end }}
     </ul>
   </footer>
