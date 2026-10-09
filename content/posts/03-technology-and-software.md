@@ -25,7 +25,7 @@ The Japanese word users reach for is {{< ja "レセプト" "reseputo" >}}, borro
 
 ## LIFE, the scientific-care system
 
-> **Update, 9 Oct 2026:** Since **11 May 2026**, LIFE has been operated by the National Health Insurance Central Association ({{< ja "国保中央会" "kokuho chūō-kai" >}}) instead of MHLW. Offices had to migrate to the new system between 11 May and 31 July 2026 to keep claiming LIFE-linked add-ons.[^14] Details are in the [LIFE guide](../../guides/life-scientific-care-data/).
+> **Update, 9 Oct 2026:** Since **11 May 2026**, LIFE has been operated by the National Health Insurance Central Association ({{< ja "国保中央会" "kokuho chūō-kai" >}}) instead of MHLW. Offices had to migrate to the new system between 11 May and 31 July 2026 to keep claiming LIFE-linked add-ons.[^14] Details are in the [LIFE guide]({{< relref "guides/life-scientific-care-data" >}}).
 
 LIFE ({{< ja "科学的介護情報システム" "kagakuteki kaigo jōhō shisutemu" >}}, Long-term care Information system For Evidence) started on **1 April 2021**. It merged two earlier collections, VISIT (rehabilitation, from 2017) and CHASE (status and events, from 2020). Offices that want certain add-ons submit structured data — ADL, nutrition, oral health, dementia, continence, pressure ulcers, drugs — and receive feedback: a person's score over time, and the office compared with others in the prefecture. The add-on rules require a PDCA cycle. Uploading a file and ignoring the feedback is not enough.[^2]
 

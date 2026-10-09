@@ -10,7 +10,7 @@ weight: 10
 
 *Last updated: 9 Oct 2026*
 
-Care-wing ({{< ja "Care-wing 介護の翼" "kea uingu kaigo no tsubasa" "Care-wing, 'wings of care'" >}}) is a records and office-management system for home-visit care and home-visit nursing offices. Staff touch a smartphone to an IC tag at the user's home to confirm the day's tasks and create the care record without typing.[^1][^2] It is a **records** system. Care-wing does not make insurance claims itself; it passes actuals to linked billing software.[^3] The vendor is Logic Inc. ({{< ja "株式会社ロジック" "kabushiki-gaisha rojikku" "Logic Inc." >}}) of Kanazawa, Ishikawa Prefecture. Logic has been a subsidiary of M3, Inc. since **1 April 2022**.[^4][^5] For the wider group, see our page on [the M3 group in care](../m3-group/).
+Care-wing ({{< ja "Care-wing 介護の翼" "kea uingu kaigo no tsubasa" "Care-wing, 'wings of care'" >}}) is a records and office-management system for home-visit care and home-visit nursing offices. Staff touch a smartphone to an IC tag at the user's home to confirm the day's tasks and create the care record without typing.[^1][^2] It is a **records** system. Care-wing does not make insurance claims itself; it passes actuals to linked billing software.[^3] The vendor is Logic Inc. ({{< ja "株式会社ロジック" "kabushiki-gaisha rojikku" "Logic Inc." >}}) of Kanazawa, Ishikawa Prefecture. Logic has been a subsidiary of M3, Inc. since **1 April 2022**.[^4][^5] For the wider group, see our page on [the M3 group in care]({{< relref "m3-group" >}}).
 
 ## At a glance
 
@@ -77,7 +77,7 @@ Care-wing does not send claims to the federation ({{< ja "国保連" "kokuho-ren
 
 ## Care Plan Data Exchange
 
-On 2 October 2026, Logic announced that Care-wing had completed Kokuho Chūōkai's vendor test. It reported no problems with sending, receiving or the import test.[^10] Kokuho Chūōkai's V4 vendor-test list shows Care-wing as having completed patterns **D2, D3, D6 and D7**.[^11] These are the planned and actual use tables for care management and for preventive care support; our [Care Plan Data Exchange guide](../../guides/care-plan-data-exchange/) explains the patterns. In MHLW's October 2025 survey, Logic marked standard version 3.2 as supported with the vendor test done, and version 4.1 as planned.[^13]
+On 2 October 2026, Logic announced that Care-wing had completed Kokuho Chūōkai's vendor test. It reported no problems with sending, receiving or the import test.[^10] Kokuho Chūōkai's V4 vendor-test list shows Care-wing as having completed patterns **D2, D3, D6 and D7**.[^11] These are the planned and actual use tables for care management and for preventive care support; our [Care Plan Data Exchange guide]({{< relref "guides/care-plan-data-exchange" >}}) explains the patterns. In MHLW's October 2025 survey, Logic marked standard version 3.2 as supported with the vendor test done, and version 4.1 as planned.[^13]
 
 ## Under M3
 

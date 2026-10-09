@@ -46,7 +46,7 @@ The example uses home-visit care ({{< ja "訪問介護" "hōmon kaigo" "home-vis
 
 ## Step 2. Each month: the provision table goes out, actuals come back
 
-Every month, care-management offices and service providers exchange part of the care plan: the **planned** use for the month and, after it, the **actual** use.[^4] On paper these are the service use and provision tables ({{< ja "サービス利用票・提供票" "sābisu riyō-hyō, teikyō-hyō" "service use table and provision table" >}}). The Care Plan Data Exchange lets offices send the same tables as data; see our [Care Plan Data Exchange guide](../care-plan-data-exchange/).
+Every month, care-management offices and service providers exchange part of the care plan: the **planned** use for the month and, after it, the **actual** use.[^4] On paper these are the service use and provision tables ({{< ja "サービス利用票・提供票" "sābisu riyō-hyō, teikyō-hyō" "service use table and provision table" >}}). The Care Plan Data Exchange lets offices send the same tables as data; see our [Care Plan Data Exchange guide]({{< relref "care-plan-data-exchange" >}}).
 
 ## Step 3. During the month: service, records and monitoring
 

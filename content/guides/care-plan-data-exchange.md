@@ -41,7 +41,7 @@ MHLW announced on 29 July 2026 that the exchange will be merged into the care in
 - Release of the care-plan standard into that environment is planned for **around late March 2027**.[^7]
 - A vendor test for the API will be announced separately. The API link function itself will go live only after the merger.[^6][^7]
 
-What the API requires of care software is covered in our separate guide, [Kaigo WEB Service and its API](../kaigo-web-service-api/). It explains standard 5.0, certificates and login, the enhanced and API vendor tests, and the open questions.
+What the API requires of care software is covered in our separate guide, [Kaigo WEB Service and its API]({{< relref "kaigo-web-service-api" >}}). It explains standard 5.0, certificates and login, the enhanced and API vendor tests, and the open questions.
 
 ## Vendor tests: what "compatible" means
 
@@ -57,7 +57,7 @@ The list says only that a vendor completed the test patterns in Kokuho Chūōkai
 - Kokuho Chūōkai is now accepting applications for an "enhanced vendor test" ({{< ja "強化ベンダ試験" "kyōka benda shiken" "enhanced vendor test" >}}) against standard 4.1. Results will be published as tests are completed.
 - On 1 September 2026, MHLW asked vendors to help reduce import errors in the exchange.
 
-All five products profiled in our [Competitors](../../competitors/) section completed all seven V4 patterns:[^8]
+All five products profiled in our [Competitors]({{< relref "competitors" >}}) section completed all seven V4 patterns:[^8]
 
 - Kaipoke
 - Honobono NEXT

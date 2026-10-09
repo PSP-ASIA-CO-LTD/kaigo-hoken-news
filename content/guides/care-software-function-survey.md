@@ -131,15 +131,15 @@ The 4.1 timing options start at "by April 2025", six months before the date prin
 
 | Product | October 2025 edition | August 2026 edition |
 |---|---|---|
-| [Kaipoke](../../competitors/kaipoke/) (SMS) | Listed. 3.2 supported, vendor test not completed; 4.1 planned April–September 2025. Function marks in home-visit, day and care-management columns.[^3] | Listed. ①–④ all marked; LIFE CSV supported; monthly payment. Functions for home-visit, day and care management.[^2] |
-| [Honobono NEXT](../../competitors/honobono-next/) (ND Software) | Listed. 3.2 vendor test completed; 4.1 planned by April 2025; licence with a time limit.[^3] | Listed. ①–④ all marked; LIFE CSV supported; licence with a time limit. Functions for all five service types.[^2] |
-| [Kanamic](../../competitors/kanamic/) (Kanamic Network) | Listed. 3.2 vendor test completed; 4.1 planned by April 2025.[^3] | Listed. ①–④ all marked; LIFE CSV supported; monthly payment. Functions for all five service types.[^2] |
-| [Wiseman](../../competitors/wiseman/) ("Wiseman System SP") | Listed. 3.2 vendor test completed; 4.1 planned April–September 2025; sales form "other".[^3] | Listed twice. Both entries: ①–④ all marked; LIFE CSV supported; functions for all five service types. Sales form shows "0" in one entry and "licence (monthly or multi-year units)" in the other.[^2] |
-| [CAREKARTE](../../competitors/carekarte/) (Care Connect Japan) | Listed twice. 3.2 vendor test completed; 4.1 planned by April 2025; annual payment.[^3] | Not listed[^2] |
-| [Care-wing](../../competitors/care-wing/) (Logic) | Listed. 3.2 vendor test completed; 4.1 planned by April 2025; monthly payment. Function marks in the home-visit column only; the claim-statement, invoice and transmission rows show a dash.[^3] | Not listed[^2] |
-| [Rehab Cloud](../../competitors/rehab-cloud/) (Rehab for JAPAN) | Not listed[^3] | Not listed[^2] |
-| [ZEST](../../competitors/zest/) | Not listed[^3] | Not listed[^2] |
-| [SmaCare](../../competitors/smacare/) (Homenet) | Not listed[^3] | Not listed[^2] |
+| [Kaipoke]({{< relref "competitors/kaipoke" >}}) (SMS) | Listed. 3.2 supported, vendor test not completed; 4.1 planned April–September 2025. Function marks in home-visit, day and care-management columns.[^3] | Listed. ①–④ all marked; LIFE CSV supported; monthly payment. Functions for home-visit, day and care management.[^2] |
+| [Honobono NEXT]({{< relref "competitors/honobono-next" >}}) (ND Software) | Listed. 3.2 vendor test completed; 4.1 planned by April 2025; licence with a time limit.[^3] | Listed. ①–④ all marked; LIFE CSV supported; licence with a time limit. Functions for all five service types.[^2] |
+| [Kanamic]({{< relref "competitors/kanamic" >}}) (Kanamic Network) | Listed. 3.2 vendor test completed; 4.1 planned by April 2025.[^3] | Listed. ①–④ all marked; LIFE CSV supported; monthly payment. Functions for all five service types.[^2] |
+| [Wiseman]({{< relref "competitors/wiseman" >}}) ("Wiseman System SP") | Listed. 3.2 vendor test completed; 4.1 planned April–September 2025; sales form "other".[^3] | Listed twice. Both entries: ①–④ all marked; LIFE CSV supported; functions for all five service types. Sales form shows "0" in one entry and "licence (monthly or multi-year units)" in the other.[^2] |
+| [CAREKARTE]({{< relref "competitors/carekarte" >}}) (Care Connect Japan) | Listed twice. 3.2 vendor test completed; 4.1 planned by April 2025; annual payment.[^3] | Not listed[^2] |
+| [Care-wing]({{< relref "competitors/care-wing" >}}) (Logic) | Listed. 3.2 vendor test completed; 4.1 planned by April 2025; monthly payment. Function marks in the home-visit column only; the claim-statement, invoice and transmission rows show a dash.[^3] | Not listed[^2] |
+| [Rehab Cloud]({{< relref "competitors/rehab-cloud" >}}) (Rehab for JAPAN) | Not listed[^3] | Not listed[^2] |
+| [ZEST]({{< relref "competitors/zest" >}}) | Not listed[^3] | Not listed[^2] |
+| [SmaCare]({{< relref "competitors/smacare" >}}) (Homenet) | Not listed[^3] | Not listed[^2] |
 
 Being absent from the survey is not the same as failing the vendor test. Rehab Cloud, CAREKARTE and SmaCare have completed all seven V4 test patterns, and Care-wing has completed patterns D2, D3, D6 and D7, on Kokuho Chūōkai's list of 6 October 2026.[^6] None of them is in the August 2026 survey edition.[^2]
 

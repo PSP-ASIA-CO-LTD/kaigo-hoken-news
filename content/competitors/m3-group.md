@@ -12,7 +12,7 @@ weight: 11
 
 M3, Inc. ({{< ja "エムスリー株式会社" "emu surī kabushiki-gaisha" "M3, Inc." >}}, TSE Prime 2413) runs "m3.com", a website for medical professionals. M3 says more than 350,000 doctors in Japan, over 90% of the country's physicians, are registered.[^1] Since 2022 it has bought three companies that sell to care providers: **Logic** (Care-wing records software, 2022), **Elan** (the "CS set" of clothing and daily supplies for hospital patients and care residents, 2024) and **Wiseman** (care and medical software, 2026).[^2][^3][^1] M3's listed subsidiary **CUC** also runs home-visit nursing, hospices and housing for people who need care.[^4]
 
-This page sets out what is on public record. Every figure comes from M3's filings and investor documents, from TDnet, or from the companies' own releases. Statements of strategy are M3's own words, in our translation, and are labelled as such. For the products, see our profiles of [Wiseman](../wiseman/) and [Care-wing](../care-wing/).
+This page sets out what is on public record. Every figure comes from M3's filings and investor documents, from TDnet, or from the companies' own releases. Statements of strategy are M3's own words, in our translation, and are labelled as such. For the products, see our profiles of [Wiseman]({{< relref "wiseman" >}}) and [Care-wing]({{< relref "care-wing" >}}).
 
 ## At a glance
 

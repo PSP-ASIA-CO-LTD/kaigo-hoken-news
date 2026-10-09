@@ -10,7 +10,7 @@ weight: 4
 
 *Last updated: 9 Oct 2026*
 
-Japanese long-term care is a chain of people and bodies, each with duties set in law. A care-software product does not serve "a care office". It serves particular roles inside and around that office, and each role has a legal job to do and leaves records behind. This guide lists 13 roles around a user of home-based services. For each one it gives what the rules require and the records or data that requirement creates. The [monthly cycle guide](../monthly-cycle-plan-to-payment/) shows how these roles hand work to each other over a month.
+Japanese long-term care is a chain of people and bodies, each with duties set in law. A care-software product does not serve "a care office". It serves particular roles inside and around that office, and each role has a legal job to do and leaves records behind. This guide lists 13 roles around a user of home-based services. For each one it gives what the rules require and the records or data that requirement creates. The [monthly cycle guide]({{< relref "monthly-cycle-plan-to-payment" >}}) shows how these roles hand work to each other over a month.
 
 ## The user and the family
 
