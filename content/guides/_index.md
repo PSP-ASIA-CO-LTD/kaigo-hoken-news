@@ -7,4 +7,4 @@ These guides cover the national systems and rules that decide whether a care-sof
 
 Every fact in a guide has a numbered footnote that points to a source we opened, and each guide ends with a References list. Opinion appears only in the "Tako-San's take" box.
 
-Start with the LIFE guide, then read the Care Plan Data Exchange guide. The competitor profiles are in the [Competitors](../competitors/) section.
+Start with the LIFE guide, then read the Care Plan Data Exchange guide. For how the system works month to month, read [the monthly cycle from plan to payment](monthly-cycle-plan-to-payment/), [who does what](who-does-what/), and [subsidies and how offices buy software](subsidies-and-software-buying/). The competitor profiles are in the [Competitors](../competitors/) section.
