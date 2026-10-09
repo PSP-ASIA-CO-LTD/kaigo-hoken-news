@@ -168,7 +168,7 @@ kagakuteki-kaigo-suishin-taisei-kasan:
   ja: 科学的介護推進体制加算
   romaji: kagakuteki kaigo suishin taisei kasan
   en: scientific-care system add-on
-  def: "Fee add-on (40–50 units/month) for facilities submitting LIFE data and running PDCA cycles."
+  def: "Fee add-on (40 units for type I; type II is 50 units at special nursing homes and 60 units at geriatric health facilities and integrated care hospitals) for facilities submitting LIFE data and running PDCA cycles."
 
 kaigo:
   ja: 介護
@@ -323,8 +323,8 @@ kaipoke:
 kanamikku:
   ja: カナミック
   romaji: kanamikku
-  en: Canamic
-  def: "Care software from Canamic Network Co., Ltd.; cloud records, claims, cross-organisation sharing."
+  en: Kanamic
+  def: "Care software from Kanamic Network Co., Ltd.; cloud records, claims, cross-organisation sharing."
 
 kasan:
   ja: 加算
