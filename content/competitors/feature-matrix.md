@@ -1,16 +1,16 @@
 ---
-title: "Feature matrix: eight Japanese care-software products compared"
+title: "Feature matrix: nine Japanese care-software products compared"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-09T09:00:00+07:00
 tags: ["japan", "competitors", "comparison", "software"]
-summary: "A sourced side-by-side view of the eight products we profile, from Kaipoke to SmaCare: government test and survey listings, LIFE and claims, scheduling, AI and voice, family access, service coverage, pricing and links. Every filled cell is cited; a blank cell means we did not find it in public sources."
+summary: "A sourced side-by-side view of the nine products we profile, from Kaipoke to Care-wing: government test and survey listings, LIFE and claims, scheduling, AI and voice, family access, service coverage, pricing and links. Every filled cell is cited; a blank cell means we did not find it in public sources."
 categories: ["Competitors"]
 weight: 9
 ---
 
 *Last updated: 9 Oct 2026*
 
-This page compares the eight products in our competitor profiles on features that each vendor, or a government body, describes in public. It is a reading aid for the profiles, not a score.
+This page compares the nine products in our competitor profiles on features that each vendor, or a government body, describes in public. It is a reading aid for the profiles, not a score.
 
 **How to read the tables.**
 
@@ -30,61 +30,63 @@ The products are:
 - [CAREKARTE](../carekarte/)
 - [ZEST](../zest/)
 - [SmaCare](../smacare/)
+- [Care-wing](../care-wing/)
 
-ZEST is a visit-scheduling product and SmaCare a records system for one service type. Some rows, such as claims, are therefore not their job. Our profiles explain each product in full.
+ZEST is a visit-scheduling product, SmaCare a records system for one service type, and Care-wing a records system for home-visit services. Some rows, such as claims, are therefore not their job. Our profiles explain each product in full.
 
 ## 1. Government tests and lists
 
-| Item | Kaipoke | Honobono NEXT | Kanamic | Wiseman | Rehab Cloud | CAREKARTE | ZEST | SmaCare |
-|---|---|---|---|---|---|---|---|---|
-| Care Plan Data Exchange V4 vendor test: patterns D1–D7 completed | Yes[^1] | Yes[^1] | Yes[^1] | Yes ("Wiseman SP System")[^1] | Yes[^1] | Yes[^1] | | Yes[^1] |
-| Accepted by MHLW as equivalent to the exchange (care-management fee II) | Not on list[^2] | Not on list[^2] | Yes[^2] | Not on list[^2] | Not on list[^2] | Not on list[^2] | Not on list[^2] | Not on list[^2] |
-| In MHLW care-software function survey, 24 Aug 2026 edition | Listed[^3] | Listed[^3] | Listed[^3] | Listed[^3] | Not listed[^3] | Not listed[^3]; listed in the Oct 2025 edition[^4] | Not listed[^3] | Not listed[^3] |
-| Survey entry: standard 4.1 supported and 5.0 planned | Yes[^3] | Yes[^3] | Yes[^3] | Yes[^3] | | Oct 2025 edition: 3.2 tested, 4.1 planned[^4] | | |
+| Item | Kaipoke | Honobono NEXT | Kanamic | Wiseman | Rehab Cloud | CAREKARTE | ZEST | SmaCare | Care-wing |
+|---|---|---|---|---|---|---|---|---|---|
+| Care Plan Data Exchange V4 vendor test: patterns D1–D7 completed | Yes[^1] | Yes[^1] | Yes[^1] | Yes ("Wiseman SP System")[^1] | Yes[^1] | Yes[^1] | | Yes[^1] | D2, D3, D6 and D7 completed[^1] |
+| Accepted by MHLW as equivalent to the exchange (care-management fee II) | Not on list[^2] | Not on list[^2] | Yes[^2] | Not on list[^2] | Not on list[^2] | Not on list[^2] | Not on list[^2] | Not on list[^2] | Not on list[^2] |
+| In MHLW care-software function survey, 24 Aug 2026 edition | Listed[^3] | Listed[^3] | Listed[^3] | Listed[^3] | Not listed[^3] | Not listed[^3]; listed in the Oct 2025 edition[^4] | Not listed[^3] | Not listed[^3] | Not listed[^3]; listed in the Oct 2025 edition[^4] |
+| Survey entry: standard 4.1 supported and 5.0 planned | Yes[^3] | Yes[^3] | Yes[^3] | Yes[^3] | | Oct 2025 edition: 3.2 tested, 4.1 planned[^4] | | | Oct 2025 edition: 3.2 tested, 4.1 planned[^4] |
 
-The vendor test is run by Kokuho Chūōkai ({{< ja "国民健康保険中央会" "kokumin kenkō hoken chūōkai" "National Health Insurance Central Association" >}}). The list itself says completion does not mean Kokuho Chūōkai guarantees the vendor's software or data, and that CSV import and export functions may differ between vendors.[^1] Why the survey and the vendor test matter for subsidies is explained in our [subsidy guide](../../guides/subsidies-and-software-buying/).
+The vendor test is run by Kokuho Chūōkai ({{< ja "国民健康保険中央会" "kokumin kenkō hoken chūōkai" "National Health Insurance Central Association" >}}). The list itself says completion does not mean Kokuho Chūōkai guarantees the vendor's software or data, and that CSV import and export functions may differ between vendors.[^1] Why the survey and the vendor test matter for subsidies is explained in our [subsidy guide](../../guides/subsidies-and-software-buying/). Our [function survey guide](../../guides/care-software-function-survey/) explains what the survey asks and compares its two editions.
 
 ## 2. LIFE, claims and scheduling
 
-| Item | Kaipoke | Honobono NEXT | Kanamic | Wiseman | Rehab Cloud | CAREKARTE | ZEST | SmaCare |
-|---|---|---|---|---|---|---|---|---|
-| LIFE output | CSV for LIFE (day-care functional-training forms)[^5] | "LIFE" menu with CSV output[^6] | LIFE support advertised[^7]; LIFE CSV supported in MHLW survey[^3] | LIFE form input and output[^8] | LIFE forms built from records, CSV output[^9] | All MHLW LIFE forms, CSV output with error check[^10] | | |
-| Claims to kokuho-ren | Electronic transmission included, ¥0 extra[^11] | Records linked to care claims[^12] | Claim data downloaded in bulk and transmitted[^13] | Claims for all benefit types[^8] | Records linked to claims[^9] | Claim data created from service records[^14] | Not a claims system; schedules go to linked records and billing software[^15] | Records system; billing data comes from linked billing software[^16][^17] |
-| Scheduling or visit routing | Shift creation and schedule management[^18] | | AI visit-route option[^19] | | | | Automatic visit schedules and routes (core product)[^15] | Schedules and actuals on a smartphone[^20] |
+| Item | Kaipoke | Honobono NEXT | Kanamic | Wiseman | Rehab Cloud | CAREKARTE | ZEST | SmaCare | Care-wing |
+|---|---|---|---|---|---|---|---|---|---|
+| LIFE output | CSV for LIFE (day-care functional-training forms)[^5] | "LIFE" menu with CSV output[^6] | LIFE support advertised[^7]; LIFE CSV supported in MHLW survey[^3] | LIFE form input and output[^8] | LIFE forms built from records, CSV output[^9] | All MHLW LIFE forms, CSV output with error check[^10] | | | "Full support" for LIFE claimed[^41] |
+| Claims to kokuho-ren | Electronic transmission included, ¥0 extra[^11] | Records linked to care claims[^12] | Claim data downloaded in bulk and transmitted[^13] | Claims for all benefit types[^8] | Records linked to claims[^9] | Claim data created from service records[^14] | Not a claims system; schedules go to linked records and billing software[^15] | Records system; billing data comes from linked billing software[^16][^17] | Not a claims system; actuals pass to linked billing software[^40] |
+| Scheduling or visit routing | Shift creation and schedule management[^18] | | AI visit-route option[^19] | | | | Automatic visit schedules and routes (core product)[^15] | Schedules and actuals on a smartphone[^20] | Shift management linked to the service-use table[^40] |
 
 ## 3. AI, voice, family access and languages
 
-| Item | Kaipoke | Honobono NEXT | Kanamic | Wiseman | Rehab Cloud | CAREKARTE | ZEST | SmaCare |
-|---|---|---|---|---|---|---|---|---|
-| AI functions | Welmo AI services on a separate contract (from Mar 2026)[^21] | AI care plan[^12] | AI visit-route option[^19] | Voice-record AI option (Mar 2026)[^22] | AI motion analysis[^9] | "Hanasuto" voice AI[^23] | AI assistant (Jul 2026)[^24] | "SmaCare AI" option[^25] |
-| Voice input for records | Via Welmo AI transcription (partner)[^21] | Voice input[^12] | Voice input[^7] | Voice-record AI option[^22] | | Hands-free voice records[^23] | | |
-| Access for families | | "Tsunagaru Kazoku" family app[^12] | | "MeLL+" family-link solution[^8] | | "Careconne" chat[^26] | | Accounts for families and care managers[^27] |
-| Multilingual staff app | | | | | | | | 17 languages[^28] |
+| Item | Kaipoke | Honobono NEXT | Kanamic | Wiseman | Rehab Cloud | CAREKARTE | ZEST | SmaCare | Care-wing |
+|---|---|---|---|---|---|---|---|---|---|
+| AI functions | Welmo AI services on a separate contract (from Mar 2026)[^21] | AI care plan[^12] | AI visit-route option[^19] | Voice-record AI option (Mar 2026)[^22] | AI motion analysis[^9] | "Hanasuto" voice AI[^23] | AI assistant (Jul 2026)[^24] | "SmaCare AI" option[^25] | "AI functions" in M3's modelled time-saving example[^46] |
+| Voice input for records | Via Welmo AI transcription (partner)[^21] | Voice input[^12] | Voice input[^7] | Voice-record AI option[^22] | | Hands-free voice records[^23] | | | Voice input for special notes[^40] |
+| Access for families | | "Tsunagaru Kazoku" family app[^12] | | "MeLL+" family-link solution[^8] | | "Careconne" chat[^26] | | Accounts for families and care managers[^27] | |
+| Multilingual staff app | | | | | | | | 17 languages[^28] | |
 
 ## 4. Service coverage
 
-| Item | Kaipoke | Honobono NEXT | Kanamic | Wiseman | Rehab Cloud | CAREKARTE | ZEST | SmaCare |
-|---|---|---|---|---|---|---|---|---|
-| Disability-welfare services | Yes[^11] | Yes (series lineup)[^12] | Yes[^7] | Yes[^8] | | Yes, including services for children[^14] | | |
-| Facility services | No, per SMS[^29] | Used in facilities, per SOMPO's share estimates[^30] | Yes[^7] | Yes[^8] | Special nursing homes and specified facilities from summer 2026[^31] | Yes[^14] | Scheduling for residential homes[^15] | |
-| 24-hour regular-visit service (teiki junkai) | | | Yes[^7] | | | Yes[^14] | | Core product[^20] |
+| Item | Kaipoke | Honobono NEXT | Kanamic | Wiseman | Rehab Cloud | CAREKARTE | ZEST | SmaCare | Care-wing |
+|---|---|---|---|---|---|---|---|---|---|
+| Disability-welfare services | Yes[^11] | Yes (series lineup)[^12] | Yes[^7] | Yes[^8] | | Yes, including services for children[^14] | | | Yes, home care and other visit services[^40] |
+| Facility services | No, per SMS[^29] | Used in facilities, per SOMPO's share estimates[^30] | Yes[^7] | Yes[^8] | Special nursing homes and specified facilities from summer 2026[^31] | Yes[^14] | Scheduling for residential homes[^15] | | Page for serviced housing and paid homes[^43] |
+| 24-hour regular-visit service (teiki junkai) | | | Yes[^7] | | | Yes[^14] | | Core product[^20] | Yes, dedicated page[^42] |
 
 ## 5. Pricing, delivery and links
 
-| Item | Kaipoke | Honobono NEXT | Kanamic | Wiseman | Rehab Cloud | CAREKARTE | ZEST | SmaCare |
-|---|---|---|---|---|---|---|---|---|
-| Pricing model | Flat monthly fee per office; ¥0 initial fee[^11] | Five-year software licence[^12] | Initial fee plus monthly fee[^32] | Initial fee plus five-year usage-right pack[^33] | No initial fee; base fee by plan[^34] | Initial fee plus annual maintenance[^35] | Usage-based; ¥0 initial and base fee[^36] | |
-| Price published | Yes: ¥1,000–25,000 a month per service[^11] | No: quoted on request[^12] | | No: quoted per office[^33] | In a downloadable price list[^34] | No: quoted after a hearing[^35] | No: estimate on request[^36] | |
-| Cloud delivery | Cloud[^18] | Cloud version available[^12] | Cloud service[^7] | ASP (hosted) service[^8] | | | Cloud service[^15] | |
-| Third-party links | "Kaipoke Connect" hub planned[^37]; link with ZEST[^38] | Sensor links through IoT cloud[^12] | | | | "CAREKARTE Link" API; 54 partner pages[^39] | Links with Kaipoke, Wiseman, Care-wing, CAREKARTE and others[^15] | Links with TriCare-Tops, CAREKARTE, QuaLink, Quick Care[^17] |
+| Item | Kaipoke | Honobono NEXT | Kanamic | Wiseman | Rehab Cloud | CAREKARTE | ZEST | SmaCare | Care-wing |
+|---|---|---|---|---|---|---|---|---|---|
+| Pricing model | Flat monthly fee per office; ¥0 initial fee[^11] | Five-year software licence[^12] | Initial fee plus monthly fee[^32] | Initial fee plus five-year usage-right pack[^33] | No initial fee; base fee by plan[^34] | Initial fee plus annual maintenance[^35] | Usage-based; ¥0 initial and base fee[^36] | | Monthly system-use fee; first contract three years[^40] |
+| Price published | Yes: ¥1,000–25,000 a month per service[^11] | No: quoted on request[^12] | | No: quoted per office[^33] | In a downloadable price list[^34] | No: quoted after a hearing[^35] | No: estimate on request[^36] | | No; M3 cites ¥10,000–20,000 a month in a modelled example[^45] |
+| Cloud delivery | Cloud[^18] | Cloud version available[^12] | Cloud service[^7] | ASP (hosted) service[^8] | | | Cloud service[^15] | | ASP (hosted) service[^40] |
+| Third-party links | "Kaipoke Connect" hub planned[^37]; link with ZEST[^38] | Sensor links through IoT cloud[^12] | | | | "CAREKARTE Link" API; 54 partner pages[^39] | Links with Kaipoke, Wiseman, Care-wing, CAREKARTE and others[^15] | Links with TriCare-Tops, CAREKARTE, QuaLink, Quick Care[^17] | Links to nine billing products, including Honobono NEXT and CAREKARTE[^44] |
 
 {{< analysis title="Tako-San's take" >}}
-Tako-San's view: the government rows matter most, because they decide subsidy eligibility. Seven of the eight products have completed the V4 vendor test, but only four appear in the August 2026 function survey. The feature rows show two kinds of product. Five are all-in-one records-and-claims suites. Two are specialists that plug into those suites: ZEST for scheduling and SmaCare for regular-visit records. CAREKARTE sits in between, acting as a hub through its link interface. The blank cells are as telling as the filled ones. Few vendors say anything public about multilingual apps or family access, and only Kaipoke publishes a full price list.
+Tako-San's view: the government rows matter most, because they decide subsidy eligibility. Seven of the nine products have completed all seven V4 test patterns, and Care-wing has completed the four that a home-visit records product needs, but only four appear in the August 2026 function survey. The feature rows show two kinds of product. Five are all-in-one records-and-claims suites. Three are specialists that plug into those suites: ZEST for scheduling, SmaCare for regular-visit records and Care-wing for home-visit records. CAREKARTE sits in between, acting as a hub through its link interface. The blank cells are as telling as the filled ones. Few vendors say anything public about multilingual apps or family access, and only Kaipoke publishes a full price list.
 {{< /analysis >}}
 
 ## Changelog
 
 - 9 Oct 2026: first published
+- 9 Oct 2026: added Care-wing as a ninth product, with cells from Logic, M3, MHLW and Kokuho Chūōkai sources; linked the new function survey guide
 
 ---
 
@@ -167,3 +169,17 @@ Tako-San's view: the government rows matter most, because they decide subsidy el
 [^38]: ZEST Inc. "ZEST Visit Schedules Now Linked with Kaipoke (ZESTの訪問スケジュールと、カイポケとのデータ連携が実現)." Press release, 7 April 2022. https://zest.jp/corporate/news/20220407
 
 [^39]: Care Connect Japan Co., Ltd. "Devices and Systems that Link with CAREKARTE (CAREKARTE（ケアカルテ）と連携できる機器・システム)." Accessed 9 October 2026. https://www.carekarte.jp/carekartelink/
+
+[^40]: Logic Inc. "Frequently Asked Questions (よくある質問)." Care-wing site. Accessed 9 October 2026. https://care-wing.jp/product-faq/
+
+[^41]: Logic Inc. "Care-wing: Home-Visit Care Software (訪問介護ソフトならケアウイング)." Home page. Accessed 9 October 2026. https://care-wing.jp/
+
+[^42]: Logic Inc. "Regular-Visit Services (定期巡回サービス)." Care-wing site. Accessed 9 October 2026. https://care-wing.jp/service/regularpatrol/
+
+[^43]: Logic Inc. "Serviced Housing and Paid Homes (サ高住・有料老人ホーム)." Care-wing site. Accessed 9 October 2026. https://care-wing.jp/service/nursinghome/
+
+[^44]: Logic Inc. "Linked Software (連携ソフト一覧)." Care-wing site, partner logos. Accessed 9 October 2026. https://care-wing.jp/linkage/
+
+[^45]: M3, Inc. "Company Presentation, Q1 Results for the Year Ending March 2027 (会社説明資料)." 6 August 2026, slide 21. https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/5QE1BL4hbahSXLuoXH8riz/a3ad90dbfebe33f0adb4da773f9c058d/20260806_Presentation_J.pdf
+
+[^46]: M3, Inc. "Making Wiseman a Consolidated Subsidiary (ワイズマンの連結子会社化について)." Supplementary presentation, 5 June 2026, slides 6–7. https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/7B6ADxKAZqfvmozuTDV8W7/fe4bf3fe90c695bee95c0b445cb30dc3/20260605_Presentation_J.pdf
