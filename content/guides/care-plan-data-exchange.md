@@ -1,7 +1,7 @@
 ---
 title: "Care Plan Data Exchange: Japan's care-plan pipe and the 2027 move to the Kaigo WEB Service"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-09T09:00:00+07:00
 tags: ["japan", "long-term-care", "care-plan", "software", "guide"]
 summary: "How care plans move between care managers and service providers as data, the fees and add-ons tied to it, and the January 2027 move into the Kaigo WEB Service."
 categories: ["Guides"]
@@ -40,6 +40,8 @@ MHLW announced on 29 July 2026 that the exchange will be merged into the care in
 - The care-plan data standard is now an annex to the API standard.
 - Release of the care-plan standard into that environment is planned for **around late March 2027**.[^7]
 - A vendor test for the API will be announced separately. The API link function itself will go live only after the merger.[^6][^7]
+
+What the API requires of care software is covered in our separate guide, [Kaigo WEB Service and its API](../kaigo-web-service-api/). It explains standard 5.0, certificates and login, the enhanced and API vendor tests, and the open questions.
 
 ## Vendor tests: what "compatible" means
 
@@ -120,6 +122,7 @@ Tako-San's view: the exchange has turned from an optional fax replacement into a
 
 ## Changelog
 
+- 9 Oct 2026: added a link to the new guide on the Kaigo WEB Service API
 - 9 Oct 2026: first published
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "LIFE, Japan's scientific-care data system: a guide for software vendors"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-09T09:00:00+07:00
 tags: ["japan", "long-term-care", "LIFE", "software", "guide"]
 summary: "What LIFE is, who runs it since May 2026, which add-ons depend on it, and what a care-software vendor has to build to support it."
 categories: ["Guides"]
@@ -22,7 +22,7 @@ On **11 May 2026**, operation of LIFE moved from the Ministry of Health, Labour 
 4. Users log in from the LIFE home page.
 5. A new function checks that user (care recipient) information is accurate.
 
-Some of the data submitted to the new LIFE flows on to the care information platform. Related care offices can then view it through the Kaigo WEB Service ({{< ja "介護保険資格確認等WEBサービス" "kaigo hoken shikaku kakunin tō webu sābisu" "care-insurance eligibility check web service" >}}).[^2]
+Some of the data submitted to the new LIFE flows on to the care information platform. Related care offices can then view it through the Kaigo WEB Service ({{< ja "介護保険資格確認等WEBサービス" "kaigo hoken shikaku kakunin tō webu sābisu" "care-insurance eligibility check web service" >}}).[^2] Our [Kaigo WEB Service guide](../kaigo-web-service-api/) explains that service and its API.
 
 **Migration deadline.** Each office had to migrate between **11 May and 31 July 2026**. Account IDs, passwords and office details carried over to the new LIFE. User information and submitted forms did not, so offices had to register their users again.[^2] MHLW sent out repeated reminders on 2 July and 23 July 2026, saying that some offices still had not migrated.[^3][^4] The 2 July notice set the consequences:[^3]
 
@@ -80,6 +80,7 @@ Tako-San's view: the May 2026 handover matters more to vendors than the CSV chan
 
 ## Changelog
 
+- 9 Oct 2026: added a link to the new guide on the Kaigo WEB Service API
 - 9 Oct 2026: first published
 
 ---
