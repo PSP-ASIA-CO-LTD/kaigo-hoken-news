@@ -7,7 +7,7 @@ summary: "Profiles of the Japanese care-software products a new entrant meets fi
 
 *Last updated: 9 Oct 2026*
 
-This section profiles five Japanese care-software products. Each profile covers pricing, main features, target customers, any share claims, and how the product handles LIFE, claims to the federation ({{< ja "国保連" "kokuho-ren" "prefectural National Health Insurance federation" >}}) and the Care Plan Data Exchange. Profiles are updated in place and carry their own changelog.
+This section profiles eight Japanese care-software products. The overview tables below cover the first five. [CAREKARTE](carekarte/), [ZEST](zest/) and [SmaCare](smacare/) were added later, and all eight are compared in the [feature matrix](feature-matrix/). Each profile covers pricing, main features, target customers, any share claims, and how the product handles LIFE, claims to the federation ({{< ja "国保連" "kokuho-ren" "prefectural National Health Insurance federation" >}}) and the Care Plan Data Exchange. Profiles are updated in place and carry their own changelog.
 
 **How to read the numbers.** No official market-share table was found. Office counts come from the vendors themselves and use different definitions: some include disability-welfare or free members, others exclude them. Do not add them together. The share figures below are claims made by a vendor's owner or acquirer, and are labelled with whose claim they are.
 
@@ -39,6 +39,7 @@ Tako-San's view: on their own figures, the market splits two ways. Kaipoke is ho
 
 ## Changelog
 
+- 9 Oct 2026: added the CAREKARTE, ZEST and SmaCare profiles and the feature matrix
 - 9 Oct 2026: first published
 
 ---
