@@ -1,13 +1,13 @@
 ---
 title: "Competitors"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-09T09:00:00+07:00
 summary: "Profiles of the Japanese care-software products a new entrant meets first, with an overview table. Every cell is sourced; vendor and acquirer claims are labelled as claims."
 ---
 
 *Last updated: 9 Oct 2026*
 
-This section profiles eight Japanese care-software products. The overview tables below cover the first five. [CAREKARTE](carekarte/), [ZEST](zest/) and [SmaCare](smacare/) were added later, and all eight are compared in the [feature matrix](feature-matrix/). Each profile covers pricing, main features, target customers, any share claims, and how the product handles LIFE, claims to the federation ({{< ja "国保連" "kokuho-ren" "prefectural National Health Insurance federation" >}}) and the Care Plan Data Exchange. Profiles are updated in place and carry their own changelog.
+This section profiles nine Japanese care-software products. The overview tables below cover the first five. [CAREKARTE](carekarte/), [ZEST](zest/) and [SmaCare](smacare/) were added later, and those eight are compared in the [feature matrix](feature-matrix/). [Care-wing](care-wing/), M3's records system for home-visit care, was added after that. A separate page covers [the M3 group in care](m3-group/): Wiseman, Care-wing, Elan and the CUC companies. Each profile covers pricing, main features, target customers, any share claims, and how the product handles LIFE, claims to the federation ({{< ja "国保連" "kokuho-ren" "prefectural National Health Insurance federation" >}}) and the Care Plan Data Exchange. Profiles are updated in place and carry their own changelog.
 
 **How to read the numbers.** No official market-share table was found. Office counts come from the vendors themselves and use different definitions: some include disability-welfare or free members, others exclude them. Do not add them together. The share figures below are claims made by a vendor's owner or acquirer, and are labelled with whose claim they are.
 
@@ -39,6 +39,7 @@ Tako-San's view: on their own figures, the market splits two ways. Kaipoke is ho
 
 ## Changelog
 
+- 9 Oct 2026: added the Care-wing profile and the M3 group page
 - 9 Oct 2026: added the CAREKARTE, ZEST and SmaCare profiles and the feature matrix
 - 9 Oct 2026: first published
 

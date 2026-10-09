@@ -1,7 +1,7 @@
 ---
 title: "ZEST (ZEST Inc.): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-09T09:00:00+07:00
 tags: ["japan", "competitors", "zest", "scheduling", "software"]
 summary: "ZEST, a visit-scheduling and route-optimisation cloud for home-visit nursing and care that sits beside billing software rather than replacing it: its usage-based pricing, its links to Kaipoke, CAREKARTE and others, its AI plans and its subsidy route."
 categories: ["Competitors"]
@@ -50,11 +50,11 @@ ZEST charges by usage according to the size of the office, with no initial, base
 
 ZEST's site shows six linked systems as examples:[^1]
 
-- Kaipoke Home-Visit Nursing and Kaipoke Home-Visit Care
-- Wiseman
-- Care-wing
+- [Kaipoke](../kaipoke/) Home-Visit Nursing and Kaipoke Home-Visit Care
+- [Wiseman](../wiseman/)
+- [Care-wing](../care-wing/)
 - the home-medical EHR "Movacal.net"
-- CAREKARTE
+- [CAREKARTE](../carekarte/)
 
 Two of these links are described in detail:
 
@@ -84,6 +84,7 @@ Tako-San's view: ZEST is the clearest sign that rostering and routing, the job t
 
 ## Changelog
 
+- 9 Oct 2026: linked the listed systems to our Kaipoke, Wiseman, Care-wing and CAREKARTE profiles
 - 9 Oct 2026: first published
 
 ---

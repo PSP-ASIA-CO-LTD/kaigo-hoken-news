@@ -1,7 +1,7 @@
 ---
 title: "Wiseman (M3 group): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-09T09:00:00+07:00
 tags: ["japan", "competitors", "wiseman", "m3", "software"]
 summary: "Wiseman's five-year licence model, its care and medical products, M3's June 2026 acquisition and M3's share claims, and how Wiseman handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
@@ -10,13 +10,13 @@ weight: 4
 
 *Last updated: 9 Oct 2026*
 
-Wiseman ({{< ja "ワイズマン" "waizuman" "Wiseman" >}}) is a software company based in Morioka, Iwate Prefecture. Founded in June 1983, it develops, sells and supports systems for care and welfare offices, medical institutions and local governments.[^1] On **5 June 2026**, M3, Inc. ({{< ja "エムスリー株式会社" "emu surī kabushiki-gaisha" "M3, Inc." >}}, TSE Prime 2413) signed an agreement to buy all of Wiseman's shares. The transfer was scheduled for **1 July 2026**.[^1][^2]
+Wiseman ({{< ja "ワイズマン" "waizuman" "Wiseman" >}}) is a software company based in Morioka, Iwate Prefecture. Founded in June 1983, it develops, sells and supports systems for care and welfare offices, medical institutions and local governments.[^1] On **5 June 2026**, M3, Inc. ({{< ja "エムスリー株式会社" "emu surī kabushiki-gaisha" "M3, Inc." >}}, TSE Prime 2413) signed an agreement to buy all of Wiseman's shares. The transfer was scheduled for **1 July 2026**.[^1][^2] M3's Report for Investors 2026, dated 30 September 2026, says Wiseman was consolidated as a subsidiary "from July" 2026. None of the documents we opened gives the exact day.[^7] Our page on [the M3 group in care](../m3-group/) covers the deal terms and M3's other care companies.
 
 ## At a glance
 
 | Item | What the sources say |
 |---|---|
-| Vendor | Wiseman Co., Ltd.; M3 agreed on 5 Jun 2026 to make it a wholly owned subsidiary, with the transfer scheduled for 1 Jul 2026[^2] |
+| Vendor | Wiseman Co., Ltd.; M3 agreed on 5 Jun 2026 to make it a wholly owned subsidiary, with the transfer scheduled for 1 Jul 2026[^2]; M3 says it consolidated Wiseman from July 2026[^7] |
 | Pricing model | Initial setup fee plus a "five-year usage-right pack" covering licence, maintenance, law-change updates and version upgrades[^3] |
 | Published price | None. Quotes are prepared for each office.[^3] |
 | Customer count | More than 61,200 care offices, excluding disability offices (Wiseman's own count)[^4] |
@@ -53,6 +53,8 @@ The deck gives these figures for the company:[^2]
 - A **forecast** of ¥13,980 million revenue and ¥1,586 million operating profit for the year to June 2026.
 - **535 employees** at the end of June 2025, and 18 branches.
 
+M3's TDnet notice gives Wiseman's sales for the three years to June 2023, 2024 and 2025 as ¥11,354 million, ¥12,202 million and ¥12,377 million. Operating results were a profit of ¥457 million, then losses of ¥346 million and ¥222 million.[^8]
+
 These figures cover both businesses, not care software alone.
 
 ## Share: what M3 claims
@@ -86,18 +88,21 @@ Kokuho Chūōkai's V4 vendor-test list shows "Wiseman SP System" as having compl
 
 M3's deck sets out plans to:[^2]
 
-- use M3's AI to add value to Wiseman products, extending AI results from "Care-wing", a product of Logic ({{< ja "ロジック" "rojikku" "Logic" >}}), which M3 lists among its group's care services
+- use M3's AI to add value to Wiseman products, extending AI results from "Care-wing", a product of Logic ({{< ja "ロジック" "rojikku" "Logic" >}}), which M3 lists among its group's care services (see our [Care-wing profile](../care-wing/))
 - link Wiseman's MeLL+ with M3's cloud electronic health record, "M3 Digikar" ({{< ja "エムスリーデジカル" "emu surī dejikaru" "M3 Digikar" >}})
 - use M3's marketing to help sell Wiseman products
 
 Wiseman told customers that current services, support and contracts would not change significantly after it joined the M3 group.[^1]
 
+M3's notice says two M3 subsidiaries, Logic and CUC, already had transactions with Wiseman relating to consignment of product sales.[^8] In its August 2026 results presentation, M3 described Wiseman, in M3's words, as "positioned as the platform for realising the 'one person, one yen' mission in the care field as well".[^9]
+
 {{< analysis title="Tako-San's take" >}}
-Tako-San's view: going by their owners' own share claims, Wiseman and Honobono are both facility-heavy, licence-based packages. Wiseman now has a parent with an AI and medical-records business, and with other care services in its group (Logic and Elan, per M3). That combination could make the M3 group a stronger all-round competitor than Wiseman alone, especially for links between medical and care providers. The share figures come from the buyer's acquisition deck. I would cite them only as M3's claim. We have not confirmed that the 1 July 2026 transfer actually closed.
+Tako-San's view: going by their owners' own share claims, Wiseman and Honobono are both facility-heavy, licence-based packages. Wiseman now has a parent with an AI and medical-records business, and with other care services in its group (Logic and Elan, per M3). That combination could make the M3 group a stronger all-round competitor than Wiseman alone, especially for links between medical and care providers. The share figures come from the buyer's acquisition deck. I would cite them only as M3's claim. M3's own investor report says the deal took effect in July 2026, but I have not seen the exact day confirmed.
 {{< /analysis >}}
 
 ## Changelog
 
+- 9 Oct 2026: added M3's statement that Wiseman was consolidated from July 2026, Wiseman's three-year results from M3's notice, and links to the new M3 group and Care-wing pages
 - 9 Oct 2026: first published
 
 ---
@@ -115,3 +120,9 @@ Tako-San's view: going by their owners' own share claims, Wiseman and Honobono a
 [^5]: National Health Insurance Central Association. "Care Plan Data Exchange System Vendor Test (V4) Completion Results (「ケアプランデータ連携システム」ベンダ試験（Ｖ４対応版）の完了結果について)." Accessed 9 October 2026. https://www.kokuho.or.jp/system/care/careplan/lib/261006_5113_cp-vender_4.pdf
 
 [^6]: Wiseman Co., Ltd. "Release of the 'Voice Record AI Option' (介護現場における記録業務を支援する「音声記録AIオプション」をリリース)." News, 24 March 2026. https://www.wiseman.co.jp/news/welfare/utm_sourcepressreleaseutm_mediumpressreleaseutm_campaignvoicerecordingai/
+
+[^7]: M3, Inc. "M3 Report for Investors 2026." 30 September 2026, pp. 7, 18 and 24. https://corporate.m3.com/downloads.ctfassets.net/1pwj74siywcy/4Q7UaI38pNfzee3DuwEAgb/1c04aec21656c2f475027130267f7ace/20260930_M3_Report_for_Investors_2026.pdf
+
+[^8]: M3, Inc. "Notice Concerning the Acquisition of Shares of Wiseman Co., Ltd. (Making It a Consolidated Subsidiary) (株式会社ワイズマンの株式の取得（連結子会社化）に関するお知らせ)." TDnet, 5 June 2026. https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/MJMNRxFaXgUzIhVE6ntNJ/af03939f1f9877029dc23b71caf9c06c/20260605_Public_J.pdf
+
+[^9]: M3, Inc. "Company Presentation, Q1 Results for the Year Ending March 2027 (会社説明資料)." 6 August 2026, slide 29. https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/5QE1BL4hbahSXLuoXH8riz/a3ad90dbfebe33f0adb4da773f9c058d/20260806_Presentation_J.pdf
