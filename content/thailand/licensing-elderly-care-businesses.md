@@ -1,7 +1,7 @@
 ---
 title: "Licensing elderly-care businesses in Thailand: the Health Establishment Act and DHSS"
 date: 2026-10-10T00:00:00+07:00
-lastmod: 2026-10-11T02:00:00+07:00
+lastmod: 2026-10-11T02:56:00+07:00
 tags: ["thailand", "long-term-care", "regulation", "licensing", "nursing-homes", "guide"]
 summary: "How Thailand regulates private elderly-care and dependent-care businesses: the Health Establishment Act B.E. 2559 (2016), the two 2020 ministerial regulations that brought care homes under it, the three licences (business, operator, caregiver registration), the standards, inspection and penalties, how to apply online, and the count of licensed homes (1,203 in October 2026)."
 categories: ["Guides"]
@@ -24,7 +24,9 @@ The regulator is the Department of Health Service Support (DHSS), กรมส�
 | Licensing authority | ผู้อนุญาต (phu anuyat, licensing authority): the Director-General of DHSS or a person the Director-General assigns | s. 3[^1] |
 | Regulation bringing care homes in | Ministerial Regulation designating elderly or dependent-person care as another business in health establishments B.E. 2563, signed 20 July 2020, Royal Gazette vol. 137, part 61 Kor, 31 July 2020 | [^2] |
 | Standards regulation | Ministerial Regulation on standards of premises, safety and service for elderly or dependent-person care establishments B.E. 2563, same Gazette issue | [^3] |
-| In force | 180 days after publication.[^2] The government's citizen guide gives 27 January 2021[^4] | [^2][^4] |
+| In force | "When 180 days have passed from the date of publication" (clause 1).[^2] DHSS and the citizen guide give 27 January 2021.[^4][^9] Counted the courts' way the date would be 28 January 2021: see the note below the table | [^2][^4][^9][^10] |
+
+**Why two dates.** Thai lawyers count a period "from the date of publication in the Royal Gazette", ราชกิจจานุเบกษา (Ratchakitchanubeksa), in two ways. The Council of State (Krisdika), สำนักงานคณะกรรมการกฤษฎีกา (Samnakngan Khana Kammakan Kritsadika), counts the publication day itself as day one. The Supreme Court has applied section 193/3 of the Civil and Commercial Code, which leaves out the first day, so counting starts the day after.[^10][^11] With publication on 31 July 2020, the first method ends the 180 days on 26 January 2021, so the regulation applies from 27 January 2021. The second ends them on 27 January, so it applies from 28 January 2021. DHSS uses the first method. Its January 2021 announcement gives 27 January 2021, and gives existing businesses 27 January to 25 July 2021 to apply, which is also 180 days counted from the first day.[^9] This guide uses 27 January 2021, the date the regulator applies. The one-day difference could matter only in a dispute about something done on 27 January 2021.
 
 The regulation defines the business, กิจการการดูแลผู้สูงอายุหรือผู้มีภาวะพึ่งพิง (kitchakan kan dulae phu sung-ayu rue phu mi phawa phuengphing, elderly or dependent-person care business), as a business that cares for, promotes, rehabilitates or gives palliative support to older or dependent people with health problems, through daytime activities, help with daily living, or a place to stay or be cared for. Care given inside a licensed medical facility is excluded.[^2]
 
@@ -52,7 +54,7 @@ The Act separates three roles.[^1]
 
 The licensee must keep an operator on site during all opening hours, keep a register of operators and caregivers, keep the premises, safety and service to the licensed standard, and employ only registered caregivers (s. 28).[^1] The operator must write work manuals, supervise the service and equipment, ask for and record each client's basic health data and screen clients, and keep caregivers to the manuals (s. 29).[^1] DHSS calls the caregiver registration certificate form "สพส.14".[^5] For which courses lead to the certificates, see [Caregiver training and schools]({{< relref "caregiver-training-and-schools" >}}).
 
-Businesses already running before the regulation took effect had 180 days to apply for their licences or registration, and could keep operating until told they had been refused.[^2]
+Businesses already running before the regulation took effect had 180 days to apply for their licences or registration, and could keep operating until told they had been refused.[^2] DHSS gave the window as 27 January to 25 July 2021.[^9]
 
 ## Standards
 
@@ -111,10 +113,16 @@ The two counts come from different sources and may not be counted the same way. 
 Tako-San's view: the Thai rules ask a licensed home to keep a client register in a set form, repeat a needs assessment every three months, record health changes, and keep a staff register, all checked at inspection. Those are the same building blocks as a Japanese care record, though Thailand does not yet ask for electronic claims the way Japan does. With 1,203 licensed homes, mostly small type 3 homes concentrated around Bangkok, the market is small but easy to map. The licence count is also rising: 927 on the April 2025 list against 1,203 in October 2026, though the two counts may not be like for like. An inspection-ready record pack (the three-monthly reassessment, the client register, the staff register with each caregiver's สพส.14 number) is a concrete product idea. It should be checked with a few operators and a regional Health Service Support Centre before any build.
 {{< /analysis >}}
 
+## Not verified
+
+- **Which date a court would use.** We found no court ruling or DHSS case that turns on whether the regulation applied from 27 or 28 January 2021. The page follows DHSS.[^9]
+- **The "24 January" in the DHSS announcement.** We read it as a typing error because the headline and the application window both use 27 January; DHSS has not said so.[^9]
+
 ## Changelog
 
 - 10 Oct 2026: first published
 - 11 Oct 2026: licence fee clarified: the citizen guide's "no fee" field conflicts with its own payment steps; DHSS's 2020 announcement gives the fees (new note 8) and the Act's fee caps are added from note 1
+- 11 Oct 2026: effective date explained. The regulation applies "when 180 days have passed" from publication on 31 July 2020. DHSS gives 27 January 2021 (new note 9), which follows the Council of State's way of counting; the courts' way under Civil and Commercial Code s. 193/3 would give 28 January 2021 (new notes 10 and 11). The page now gives both, uses 27 January 2021, and adds DHSS's 27 January to 25 July 2021 window for existing businesses
 
 ---
 
@@ -135,3 +143,9 @@ Tako-San's view: the Thai rules ask a licensed home to keep a client register in
 [^7]: Department of Health Service Support. "Check licensed establishments (ตรวจสอบสถานประกอบการที่ได้รับอนุญาต)," Elderly or Dependent-Person Care Business System. https://esta.hss.moph.go.th/check-shops.php (page title from the search index; the site refused our connection on 10 October 2026)
 
 [^8]: Department of Health Service Support. "Law to regulate elderly-care businesses now in force (กฎหมายคุมกิจการดูแลผู้สูงอายุ ประกาศใช้แล้ว)," press release, 3 September 2020. https://hss.moph.go.th/fileupload_doc/2020-09-08-1-20-53054880.pdf
+
+[^9]: Department of Health Service Support, Public Relations. "DHSS starts using the law to promote elderly and dependent-person care businesses from 27 January 2021 (กรม สบส. เริ่มใช้กฏหมายส่งเสริมกิจการดูแลผู้สูงอายุ หรือผู้มีภาวะพึ่งพิง เริ่ม 27 มกราคม 2564 นี้)," 22 January 2021. The headline gives 27 January; the first line of the body says "24 January", which appears to be a typing error, since the same text gives the application window as 27 January to 25 July 2021. https://prgroup.hss.moph.go.th/info/news/324
+
+[^10]: วรชัย แสนสีระ, legal officer, Legal Office (สำนักกฎหมาย). "Counting the effective date of an Act that takes effect when a period has passed (การนับระยะเวลาวันใช้บังคับของพระราชบัญญัติกรณีกำหนดให้มีผลใช้บังคับเมื่อพ้นช่วงระยะเวลาหนึ่ง)," Chunlanit (จุลนิติ), file hosted on the Senate website,, September–October 2017, pp. 137–141, summarising Council of State opinions 363/2525 and 290/2543 and Supreme Court judgment 5470/2538. https://www.senate.go.th/assets/portals/93/fileups/272/files/Sub_Jun/9legal/legal57.pdf
+
+[^11]: อานนท์ มาเม้า. "The confusion in counting the date a law takes effect: the marriage-equality case (ความน่าสับสนในการนับวันที่กฎหมายมีผล กรณี 'สมรสเท่าเทียม')," The Standard, 7 January 2025. Opinion article by a law academic. https://thestandard.co/opinion-marriage-equality-law-effective-date/

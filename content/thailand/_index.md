@@ -20,6 +20,8 @@ Suggested reading order:
 4. [Caregiver training and schools]({{< relref "caregiver-training-and-schools" >}}): the 420-hour, 130-hour and 70-hour courses, who may teach them, how many schools exist, and where to find them.
 5. [Data and IT reporting]({{< relref "data-and-it-reporting" >}}): DHSS's online licensing system, the NHSO LTC programme, the Department of Health's 3C program, and the records a licensed home must keep.
 6. [Ageing and market statistics]({{< relref "ageing-and-market-statistics" >}}): how many older people, where, and the size of the nursing-home market.
+7. [The NHSO long-term care cycle]({{< relref "nhso-ltc-cycle" >}}): Barthel ADL screening, the care plan in the 3C program, the lump sum, caregiver visits, and how caregivers are paid.
+8. [Who does what in Thai community care]({{< relref "who-does-what-community-care" >}}): care managers, caregivers, village health volunteers, local governments, and the Department of Older Persons' community caregivers.
 
 See also [Competitors]({{< relref "competitors" >}}).
 

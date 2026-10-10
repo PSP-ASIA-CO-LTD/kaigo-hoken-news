@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600&display=swap');
+
 /* Glossary page styles */
 
 .glossary-page {
@@ -28,6 +30,78 @@
   font-size: 0.85rem;
   color: var(--secondary);
   margin: 0;
+}
+
+.glossary-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+.glossary-filter {
+  display: inline-flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--card-bg);
+}
+
+.glossary-filter-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--content);
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+}
+
+.glossary-filter-btn + .glossary-filter-btn {
+  border-left: 1px solid var(--border);
+}
+
+.glossary-filter-btn[aria-selected="true"],
+.glossary-filter-btn.is-active {
+  background: var(--tertiary);
+  color: var(--primary);
+}
+
+.glossary-filter-btn:focus-visible {
+  outline: 2px solid var(--newspaper-accent);
+  outline-offset: -2px;
+}
+
+.glossary-search-wrap {
+  flex: 1 1 12rem;
+  min-width: 0;
+  max-width: 20rem;
+}
+
+.glossary-search-input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--card-bg);
+  color: var(--content);
+  font: inherit;
+}
+
+.glossary-search-input:focus {
+  outline: 2px solid var(--newspaper-accent);
+  outline-offset: 1px;
+}
+
+.glossary-panel[hidden] {
+  display: none;
 }
 
 /* Letter navigation */
@@ -130,9 +204,17 @@
   flex-shrink: 0;
 }
 
-.glossary-romaji {
+.glossary-romaji,
+.glossary-rtgs {
   font-style: italic;
   color: var(--secondary);
+}
+
+.glossary-th {
+  font-family: 'Noto Sans Thai', 'Leelawadee UI', 'Thonburi', Tahoma, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  overflow-wrap: anywhere;
 }
 
 /* Line 2: English meaning */
@@ -161,9 +243,17 @@
   text-decoration: none;
 }
 
-.glossary-search:hover {
+.glossary-search:hover,
+.glossary-source:hover {
   color: var(--primary);
   text-decoration: underline;
+}
+
+.glossary-source {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--secondary);
+  text-decoration: none;
 }
 
 /* Mobile */
@@ -183,8 +273,18 @@
     font-size: 0.8rem;
   }
   
-  .glossary-ja {
+  .glossary-ja,
+  .glossary-th {
     font-size: 1.1rem;
+  }
+
+  .glossary-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .glossary-search-wrap {
+    max-width: none;
   }
 }
 
@@ -288,12 +388,30 @@ html[data-theme="dark"] .ja-tooltip {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Link styling in ja shortcode */
-.ja-term-link {
+/* Link styling in ja / th shortcodes */
+.ja-term-link,
+.th-term-link {
   text-decoration: none;
   color: inherit;
 }
 
-.ja-term-link:hover .ja-term {
+.ja-term-link:hover .ja-term,
+.th-term-link:hover .th-term {
   color: var(--newspaper-accent);
+}
+
+.th-term-wrapper {
+  position: relative;
+  display: inline;
+}
+
+.th-term-wrapper[data-tooltip] {
+  cursor: help;
+}
+
+.th-term-wrapper[data-tooltip] .th-term {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--secondary);
+  text-underline-offset: 3px;
 }

@@ -1,0 +1,96 @@
+{{- /*
+  Thai term shortcode with glossary lookup, RTGS romanisation, and read-aloud
+
+  Usage by glossary key (preferred):
+    {{< th key="krom-sanapsanun-borikan-sukkhaphap" >}}
+    {{< th key="krom-sanapsanun-borikan-sukkhaphap" en="DHSS" >}}  (override English)
+
+  Usage by explicit values:
+    {{< th "กรมสนับสนุนบริการสุขภาพ" "Krom Sanapsanun Borikan Sukkhaphap" >}}
+    {{< th "กรมสนับสนุนบริการสุขภาพ" "Krom Sanapsanun Borikan Sukkhaphap" "Department of Health Service Support" >}}
+    {{< th term="กรมสนับสนุนบริการสุขภาพ" rtgs="Krom Sanapsanun Borikan Sukkhaphap" en="Department of Health Service Support" >}}
+
+  AUTO-LOOKUP: When using positional/explicit syntax, the shortcode automatically
+  looks up the Thai term in data/thai_glossary.yaml and adds the tooltip/link
+  if a matching entry is found.
+
+  Output:
+    กรมสนับสนุนบริการสุขภาพ (Krom Sanapsanun Borikan Sukkhaphap) [🔊]
+    with tooltip showing English meaning and definition (if in glossary)
+
+  Features:
+    - Looks up term from data/thai_glossary.yaml by key OR by Thai script
+    - Displays Thai script with RTGS romanisation in parentheses
+    - Accessible tooltip with English meaning and definition
+    - Speaker button for Web Speech API read-aloud (th-TH)
+    - Links to glossary entry at /glossary/#key
+    - WCAG 1.4.13 compliant tooltip (Escape to dismiss, hover-persistent)
+*/ -}}
+{{- $key := .Get "key" -}}
+{{- $thai := "" -}}
+{{- $rtgs := "" -}}
+{{- $meaning := "" -}}
+{{- $def := "" -}}
+{{- $glossaryLink := "" -}}
+{{- $foundKey := "" -}}
+
+{{- /* Key-based lookup from Thai glossary */ -}}
+{{- if $key -}}
+  {{- $entry := index site.Data.thai_glossary $key -}}
+  {{- if $entry -}}
+    {{- $thai = $entry.th -}}
+    {{- $rtgs = $entry.rtgs -}}
+    {{- $meaning = .Get "en" | default $entry.en -}}
+    {{- $def = $entry.def -}}
+    {{- $glossaryLink = printf "glossary/#%s" $key -}}
+    {{- $foundKey = $key -}}
+  {{- else -}}
+    {{- errorf "Glossary key '%s' not found in data/thai_glossary.yaml" $key -}}
+  {{- end -}}
+{{- else -}}
+  {{- /* Fallback to explicit parameters */ -}}
+  {{- $thai = .Get "term" | default (.Get 0) -}}
+  {{- $rtgs = .Get "rtgs" | default (.Get 1) -}}
+  {{- $meaning = .Get "en" | default (.Get 2) -}}
+  {{- $glossaryLink = .Get "link" -}}
+
+  {{- /* Auto-lookup: search Thai glossary for matching Thai script */ -}}
+  {{- if and $thai (not $glossaryLink) -}}
+    {{- range $k, $entry := site.Data.thai_glossary -}}
+      {{- if eq $entry.th $thai -}}
+        {{- $foundKey = $k -}}
+        {{- if not $meaning -}}
+          {{- $meaning = $entry.en -}}
+        {{- end -}}
+        {{- $def = $entry.def -}}
+        {{- $glossaryLink = printf "glossary/#%s" $k -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Build tooltip content */ -}}
+{{- $tooltipText := "" -}}
+{{- if $meaning -}}
+  {{- $tooltipText = $meaning -}}
+  {{- if $def -}}
+    {{- $tooltipText = printf "%s — %s" $meaning $def -}}
+  {{- end -}}
+{{- else if $def -}}
+  {{- $tooltipText = $def -}}
+{{- end -}}
+
+{{- /* Generate unique ID */ -}}
+{{- $id := printf "th-%s" (md5 (printf "%s-%s" $thai (now.UnixNano))) | truncate 16 "" -}}
+
+<span class="th-term-wrapper" id="{{ $id }}"{{ if $tooltipText }} data-tooltip="{{ $tooltipText }}"{{ end }}>
+  {{- if $glossaryLink -}}
+    <a href="{{ $glossaryLink | relURL }}" class="th-term-link">
+  {{- end -}}
+  <span class="th-term" lang="th" aria-hidden="true">{{ $thai }}</span>
+  {{- if $glossaryLink -}}
+    </a>
+  {{- end -}}
+  {{- if $rtgs }} (<span class="th-rtgs">{{ $rtgs }}</span>{{ if $meaning }}, <span class="th-meaning">{{ $meaning }}</span>{{ end }})<button type="button" class="ja-speak-btn" data-th-text="{{ $thai }}" data-lang="th-TH" aria-label="Listen to {{ $rtgs | default $thai }}" title="Listen"><svg class="ja-speak-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>{{- else -}}<button type="button" class="ja-speak-btn" data-th-text="{{ $thai }}" data-lang="th-TH" aria-label="Listen to {{ $thai }}" title="Listen"><svg class="ja-speak-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>{{- end -}}
+  <span class="ja-sr-only"> ({{ $rtgs }}{{ if $meaning }}, {{ $meaning }}{{ end }})</span>
+</span>
