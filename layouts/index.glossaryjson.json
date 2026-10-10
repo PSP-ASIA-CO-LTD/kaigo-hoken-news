@@ -1,0 +1,52 @@
+{{- $terms := slice -}}
+{{- $ja := 0 -}}
+{{- $th := 0 -}}
+{{- range $key, $entry := site.Data.glossary -}}
+  {{- $item := dict
+    "key" $key
+    "country" "Japan"
+    "term" $entry.ja
+    "romanization" $entry.romaji
+    "romanization_system" "Hepburn"
+    "english" $entry.en
+    "definition" $entry.def
+  -}}
+  {{- with $entry.source -}}
+    {{- $item = merge $item (dict "source" .) -}}
+  {{- end -}}
+  {{- $terms = $terms | append $item -}}
+  {{- $ja = add $ja 1 -}}
+{{- end -}}
+{{- range $key, $entry := site.Data.thai_glossary -}}
+  {{- $source := "" -}}
+  {{- with $entry.source -}}
+    {{- $src := . -}}
+    {{- with site.GetPage $src -}}
+      {{- $source = .Permalink -}}
+    {{- else -}}
+      {{- $source = $src | absURL -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $item := dict
+    "key" $key
+    "country" "Thailand"
+    "term" $entry.th
+    "romanization" $entry.rtgs
+    "romanization_system" "RTGS"
+    "english" $entry.en
+    "definition" $entry.def
+  -}}
+  {{- if $source -}}
+    {{- $item = merge $item (dict "source" $source) -}}
+  {{- end -}}
+  {{- $terms = $terms | append $item -}}
+  {{- $th = add $th 1 -}}
+{{- end -}}
+{{- $out := dict
+  "site" site.Title
+  "url" ("glossary/" | absURL)
+  "generated" (now.Format "2006-01-02T15:04:05Z07:00")
+  "counts" (dict "total" (add $ja $th) "Japan" $ja "Thailand" $th)
+  "terms" $terms
+-}}
+{{- $out | jsonify -}}

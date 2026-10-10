@@ -799,3 +799,14 @@ body:not(.list) .main {
   white-space: nowrap;
   border: 0;
 }
+
+/* Small footer pointer to the machine-readable site map */
+.ai-agents-link {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--secondary);
+  margin: -0.5rem 0 var(--space-8);
+}
+.ai-agents-link a {
+  color: inherit;
+}

@@ -1,0 +1,25 @@
+{{- $pages := slice -}}
+{{- $byCountry := dict -}}
+{{- $bySection := dict -}}
+{{- $n := 0 -}}
+{{- range site.RegularPages -}}
+  {{- if partial "ai-include-page.html" . -}}
+    {{- $info := partial "ai-page-info.html" . -}}
+    {{- $pages = $pages | append $info -}}
+    {{- $n = add $n 1 -}}
+    {{- $ck := $info.country | default "shared" -}}
+    {{- $byCountry = merge $byCountry (dict $ck (add (index $byCountry $ck | default 0) 1)) -}}
+    {{- $bySection = merge $bySection (dict $info.section (add (index $bySection $info.section | default 0) 1)) -}}
+  {{- end -}}
+{{- end -}}
+{{- $counts := dict "pages" $n "by_country" $byCountry "by_section" $bySection -}}
+{{- $out := dict
+  "site" site.Title
+  "url" site.Home.Permalink
+  "description" site.Params.description
+  "structure" "Split by country (Japan and Thailand). Per country: Start Here series, posts, guides, competitor profiles, and infographics. Shared glossary and about pages cover both countries. Every factual claim is footnoted; opinions are labelled Tako-San's take/view."
+  "generated" (now.Format "2006-01-02T15:04:05Z07:00")
+  "counts" $counts
+  "pages" $pages
+-}}
+{{- $out | jsonify -}}

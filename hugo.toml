@@ -36,10 +36,47 @@ buildExpired = false
   # RSS link in footer instead
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "LLMS", "LLMSFull", "GlossaryJSON", "Robots"]
+  page = ["HTML", "Markdown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
+
+[mediaTypes]
+  [mediaTypes."text/markdown"]
+    suffixes = ["md"]
+
+[outputFormats]
+  [outputFormats.Markdown]
+    mediaType = "text/markdown"
+    isPlainText = true
+    isHTML = false
+    suffix = "md"
+    permalinkable = true
+    rel = "alternate"
+  [outputFormats.LLMS]
+    mediaType = "text/plain"
+    isPlainText = true
+    baseName = "llms"
+    suffix = "txt"
+    rel = "describedby"
+  [outputFormats.LLMSFull]
+    mediaType = "text/plain"
+    isPlainText = true
+    baseName = "llms-full"
+    suffix = "txt"
+    notAlternative = true
+  [outputFormats.GlossaryJSON]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "glossary"
+    notAlternative = true
+  [outputFormats.Robots]
+    mediaType = "text/plain"
+    isPlainText = true
+    baseName = "robots"
+    suffix = "txt"
+    notAlternative = true
 
 [taxonomies]
   tag = "tags"

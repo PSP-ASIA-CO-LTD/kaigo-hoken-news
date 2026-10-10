@@ -1,0 +1,11 @@
+{{- $info := partial "ai-page-info.html" . -}}
+Title: {{ $info.title }}
+URL: {{ $info.url }}
+{{- if $info.country }}
+Country: {{ $info.country }}
+{{- end }}
+Last updated: {{ $info.lastmod }}
+
+---
+
+{{ .RenderShortcodes }}

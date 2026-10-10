@@ -1,0 +1,14 @@
+{{- /* Plain-text ja/th term: "script (romanization, English)". */ -}}
+{{- $script := .script -}}
+{{- $roma := .romanization -}}
+{{- $en := .en -}}
+{{- $out := $script -}}
+{{- if $roma -}}
+  {{- $out = printf "%s (%s" $script $roma -}}
+  {{- if $en -}}
+    {{- $out = printf "%s, %s)" $out $en -}}
+  {{- else -}}
+    {{- $out = printf "%s)" $out -}}
+  {{- end -}}
+{{- end -}}
+{{- $out | safeHTML -}}
