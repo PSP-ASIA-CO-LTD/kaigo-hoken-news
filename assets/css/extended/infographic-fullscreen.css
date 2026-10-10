@@ -1,0 +1,179 @@
+/* Infographic fullscreen — kept out of infographics.css to avoid
+   colliding with other infographic PRs. Loaded automatically by PaperMod. */
+
+.desktop-infographic,
+.diagram-wrapper,
+.mobile-infographic {
+  position: relative;
+}
+
+.infographic-fs-btn {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  z-index: 8;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  font-family: var(--newspaper-body, inherit);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--primary);
+  background: var(--card-bg, #fff);
+  border: 1.5px solid var(--newspaper-rule, #333);
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.infographic-fs-btn:hover,
+.infographic-fs-btn:focus-visible {
+  color: var(--newspaper-accent, #8b0000);
+  border-color: var(--newspaper-accent, #8b0000);
+  outline: 2px solid var(--newspaper-accent, #8b0000);
+  outline-offset: 2px;
+}
+
+.infographic-fs-btn svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.infographic-fs-btn[aria-pressed="true"] .infographic-fs-icon--enter,
+.infographic-fs-btn:not([aria-pressed="true"]) .infographic-fs-icon--exit {
+  display: none;
+}
+
+html.infographic-fs-lock,
+html.infographic-fs-lock body {
+  overflow: hidden !important;
+}
+
+.infographic-container.is-fs-active,
+.infographic-container:fullscreen,
+.infographic-container:-webkit-full-screen {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 3.25rem 1rem 1rem;
+  background: var(--theme, var(--card-bg, #fff));
+  color: var(--primary);
+}
+
+.infographic-container.is-fs-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 12000;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  width: auto;
+  height: auto;
+}
+
+.infographic-container.is-fs-active .desktop-infographic,
+.infographic-container:fullscreen .desktop-infographic,
+.infographic-container:-webkit-full-screen .desktop-infographic {
+  display: flex !important;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  overflow: auto;
+  border-color: var(--border);
+  background: var(--theme, var(--card-bg, #fff));
+}
+
+.infographic-container.is-fs-active .mobile-infographic,
+.infographic-container:fullscreen .mobile-infographic,
+.infographic-container:-webkit-full-screen .mobile-infographic {
+  display: none !important;
+}
+
+.infographic-container.is-fs-active .diagram-scroll-hint,
+.infographic-container:fullscreen .diagram-scroll-hint,
+.infographic-container:-webkit-full-screen .diagram-scroll-hint,
+.infographic-container.is-fs-active .diagram-opinion,
+.infographic-container:fullscreen .diagram-opinion,
+.infographic-container:-webkit-full-screen .diagram-opinion,
+.infographic-container.is-fs-active .example-notes,
+.infographic-container:fullscreen .example-notes,
+.infographic-container:-webkit-full-screen .example-notes,
+.infographic-container.is-fs-active noscript,
+.infographic-container:fullscreen noscript,
+.infographic-container:-webkit-full-screen noscript,
+.infographic-container.is-fs-active > h2,
+.infographic-container:fullscreen > h2,
+.infographic-container:-webkit-full-screen > h2,
+.infographic-container.is-fs-active > ul,
+.infographic-container:fullscreen > ul,
+.infographic-container:-webkit-full-screen > ul,
+.infographic-container.is-fs-active > p,
+.infographic-container:fullscreen > p,
+.infographic-container:-webkit-full-screen > p {
+  display: none !important;
+}
+
+.infographic-container.is-fs-active .diagram-svg,
+.infographic-container:fullscreen .diagram-svg,
+.infographic-container:-webkit-full-screen .diagram-svg {
+  display: block;
+  width: auto;
+  height: auto;
+  min-width: 0 !important;
+  max-width: 100%;
+  max-height: calc(100vh - 5.5rem);
+  max-height: calc(100dvh - 5.5rem);
+  margin: 0 auto;
+}
+
+.infographic-container.is-fs-active .step-controls,
+.infographic-container.is-fs-active .filter-controls,
+.infographic-container.is-fs-active .calculator-controls,
+.infographic-container:fullscreen .step-controls,
+.infographic-container:fullscreen .filter-controls,
+.infographic-container:fullscreen .calculator-controls,
+.infographic-container:-webkit-full-screen .step-controls,
+.infographic-container:-webkit-full-screen .filter-controls,
+.infographic-container:-webkit-full-screen .calculator-controls {
+  flex: 0 0 auto;
+  padding-right: 9.5rem;
+}
+
+.infographic-container.is-fs-active .info-panel-backdrop,
+.infographic-container:fullscreen .info-panel-backdrop,
+.infographic-container:-webkit-full-screen .info-panel-backdrop {
+  z-index: 12010;
+}
+
+.infographic-container.is-fs-active .info-panel,
+.infographic-container:fullscreen .info-panel,
+.infographic-container:-webkit-full-screen .info-panel {
+  z-index: 12011;
+}
+
+.infographic-container.is-fs-active .infographic-fs-btn,
+.infographic-container:fullscreen .infographic-fs-btn,
+.infographic-container:-webkit-full-screen .infographic-fs-btn {
+  position: fixed;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 12020;
+}
+
+@media print {
+  .infographic-fs-btn {
+    display: none !important;
+  }
+}
