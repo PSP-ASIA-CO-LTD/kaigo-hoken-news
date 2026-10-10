@@ -1,16 +1,18 @@
 ---
 title: "Thailand"
 date: 2026-10-10T00:00:00+07:00
-lastmod: 2026-10-10T20:30:00+07:00
-summary: "Living reference guides to elderly long-term care in Thailand: the licensing law for care homes, who pays, public and private providers, caregiver training, data and IT reporting, and the ageing numbers."
+lastmod: 2026-10-11T04:16:57+07:00
+summary: "Living reference guides to elderly long-term care in Thailand: the licensing law for care homes, who pays, public and private providers, caregiver training, data and IT reporting, the ageing numbers, the NHSO care cycle, who does what in community care, and how public bodies buy software."
 countries: ["Thailand"]
 ---
 
-*Last updated: 10 Oct 2026*
+*Last updated: 11 Oct 2026*
 
 These guides cover elderly long-term care in Thailand. They run parallel to the Japan guides and follow the same rules. Each guide is **updated in place**, with a "Last updated" line at the top and a changelog at the bottom. Every fact has a numbered footnote to a source we opened, and each guide ends with a References list. Opinion appears only in the "Tako-San's take" box.
 
 Thai terms are given in Thai script, then the Royal Thai General System (RTGS) romanisation, then an English meaning, for example กรมสนับสนุนบริการสุขภาพ (Krom Sanapsanun Borikan Sukkhaphap, Department of Health Service Support). Thai dates use the Buddhist Era (B.E.), which is 543 years ahead of the Common Era: B.E. 2569 is 2026. Thai fiscal years (FY) run from 1 October to 30 September.
+
+New to the subject? Start with the five-part [Thailand LTC Basics]({{< relref "/posts/thailand-01-what-to-know" >}}) series, which summarises these guides.
 
 Suggested reading order:
 
@@ -22,6 +24,7 @@ Suggested reading order:
 6. [Ageing and market statistics]({{< relref "ageing-and-market-statistics" >}}): how many older people, where, and the size of the nursing-home market.
 7. [The NHSO long-term care cycle]({{< relref "nhso-ltc-cycle" >}}): Barthel ADL screening, the care plan in the 3C program, the lump sum, caregiver visits, and how caregivers are paid.
 8. [Who does what in Thai community care]({{< relref "who-does-what-community-care" >}}): care managers, caregivers, village health volunteers, local governments, and the Department of Older Persons' community caregivers.
+9. [How Thai public bodies buy software]({{< relref "how-public-bodies-buy-software" >}}): the 2017 procurement Act, the specific method, e-market and e-bidding with their baht thresholds, e-GP, what the NHSO long-term care money pays for, the budget year, real purchases found in ACT Ai, the Thai Innovation List, and PDPA and cloud rules.
 
 See also [Competitors]({{< relref "competitors" >}}).
 

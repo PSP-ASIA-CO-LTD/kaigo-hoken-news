@@ -70,26 +70,40 @@
   {{- $name = "Thailand" -}}
   {{- $intro = "Elderly long-term care in Thailand: licensing, who pays, providers, caregiver training, data and IT, and ageing numbers." -}}
   {{- $thaiSection := site.GetPage "/thailand" -}}
+  {{- $thaiGuides := slice -}}
   {{- with $thaiSection -}}
-    {{- $startHerePages = .RegularPages.ByWeight -}}
+    {{- $thaiGuides = .RegularPages.ByWeight -}}
   {{- end -}}
+  {{- $seriesName := "Thailand LTC Basics" -}}
+  {{- $startHerePages = (where site.RegularPages "Params.series" $seriesName).ByParam "series_order" -}}
   {{- if gt (len $startHerePages) 0 -}}
     {{- $startHereFirst = index $startHerePages 0 -}}
+    {{- $startHereOverview = site.GetPage (printf "/series/%s" ($seriesName | urlize)) -}}
+    {{- $startHereTitle = "📚 New to elderly care in Thailand?" -}}
+    {{- $startHereText = printf "Our <strong>%d-part introductory series</strong> covers what a care-software company needs to know about elderly long-term care in Thailand." (len $startHerePages) -}}
+    {{- $startHerePrimaryLabel = "Start with Part 1 →" -}}
+    {{- $startHereSecondaryLabel = "View Series Overview" -}}
+    {{- $hubStartHereText = "The introductory series on elderly long-term care in Thailand." -}}
+  {{- else -}}
+    {{- $startHerePages = $thaiGuides -}}
+    {{- if gt (len $startHerePages) 0 -}}
+      {{- $startHereFirst = index $startHerePages 0 -}}
+    {{- end -}}
+    {{- $startHereOverview = $thaiSection -}}
+    {{- $startHereTitle = "📚 New to elderly care in Thailand?" -}}
+    {{- $startHereText = printf "A <strong>%d-guide reading order</strong> covering the licensing law, who pays, providers, caregiver training, data and IT, and the ageing numbers." (len $startHerePages) -}}
+    {{- $startHerePrimaryLabel = "Start with Licensing →" -}}
+    {{- $startHereSecondaryLabel = "View Thailand Overview" -}}
+    {{- $hubStartHereText = "The reading order for elderly long-term care in Thailand." -}}
   {{- end -}}
-  {{- $startHereOverview = $thaiSection -}}
-  {{- $startHereTitle = "📚 New to elderly care in Thailand?" -}}
-  {{- $startHereText = printf "A <strong>%d-guide reading order</strong> covering the licensing law, who pays, providers, caregiver training, data and IT, and the ageing numbers." (len $startHerePages) -}}
-  {{- $startHerePrimaryLabel = "Start with Licensing →" -}}
-  {{- $startHereSecondaryLabel = "View Thailand Overview" -}}
-  {{- $hubStartHereText = "The six-guide reading order for elderly long-term care in Thailand." -}}
   {{- $postsPage = site.GetPage "/posts" -}}
   {{- $posts := where (where site.RegularPages "Section" "posts") "Params.countries" "intersect" (slice "Thailand") -}}
   {{- $postsCount = len $posts -}}
-  {{- $postsText = "Dated briefings on elderly long-term care in Thailand." -}}
+  {{- $postsText = "The Thailand LTC Basics series and dated briefings on elderly long-term care in Thailand." -}}
   {{- $guidesPage = $thaiSection -}}
-  {{- $guidesCount = len $startHerePages -}}
-  {{- $guidesText = "Licensing, who pays, public and private providers, caregiver training, data and IT, and ageing statistics." -}}
-  {{- $hubGuidesText = "Licensing, who pays, public and private providers, caregiver training, data and IT, and ageing statistics." -}}
+  {{- $guidesCount = len $thaiGuides -}}
+  {{- $guidesText = "Licensing, who pays, providers, caregiver training, data and IT, ageing statistics, the NHSO care cycle, who does what, and how public bodies buy software." -}}
+  {{- $hubGuidesText = "Licensing, who pays, providers, caregiver training, data and IT, ageing statistics, the NHSO care cycle, who does what, and how public bodies buy software." -}}
   {{- $competitorsPage = site.GetPage "/thailand/competitors" -}}
   {{- with $competitorsPage }}{{ $competitorsCount = len .RegularPages }}{{ end -}}
   {{- $competitorsText = "Profiles of Thai care-software products and the landscape overview." -}}

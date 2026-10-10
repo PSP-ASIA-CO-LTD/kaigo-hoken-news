@@ -1,8 +1,8 @@
 ---
 title: "Thai infographics"
 date: 2026-10-11T00:00:00+07:00
-lastmod: 2026-10-11T03:35:00+07:00
-summary: "Interactive diagrams of elderly long-term care in Thailand: how the money and people flow, how community care records move between paper, the NHSO programme and the 3C program, and a map of Thai care software."
+lastmod: 2026-10-11T04:19:58+07:00
+summary: "Interactive diagrams of elderly long-term care in Thailand: how the money and people flow, how community care records move between paper, the NHSO programme and the 3C program, a map of Thai care software, and one example person's year in the NHSO scheme."
 type: "infographics"
 layout: "infographics-list"
 countries: ["Thailand"]
