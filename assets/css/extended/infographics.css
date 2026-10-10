@@ -1041,20 +1041,28 @@ html[data-theme="dark"] .example-label {
 }
 
 .mobile-calc-label {
-  flex: 1;
+  flex: 0 0 auto;
+  max-width: 55%;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  hyphens: none;
+  color: var(--secondary);
+}
+
+.mobile-calc-label--nowrap {
+  white-space: nowrap;
+  max-width: none;
+}
+
+.mobile-calc-value {
+  flex: 1 1 auto;
+  text-align: right;
   min-width: 0;
+  font-weight: 600;
 }
 
 .mobile-calc-row:last-child {
   border-bottom: none;
-}
-
-.mobile-calc-label {
-  color: var(--secondary);
-}
-
-.mobile-calc-value {
-  font-weight: 600;
 }
 
 .mobile-calc-total {
