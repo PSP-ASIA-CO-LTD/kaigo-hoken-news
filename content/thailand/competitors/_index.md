@@ -1,8 +1,8 @@
 ---
 title: "Thai competitors"
 date: 2026-10-11T00:00:00+07:00
-lastmod: 2026-10-11T02:56:00+07:00
-summary: "Who sells care software to Thai elderly-care providers: the free government systems (led by NSTDA's Nirun, now in every DOP welfare centre and spreading to every district), private nursing-home start-ups (CloudNurse, Caleo), clinic suites with care modules (HexaHealth, APSX, MCS), and foreign entrants, with a page on the state systems (3C, the NHSO LTC programme, Thai COC, Blue Book, Smart อสม.) and a feature matrix. Every cell is sourced; vendor claims are labelled as claims. No market-share data exists."
+lastmod: 2026-10-11T03:42:49+07:00
+summary: "Who sells care software to Thai elderly-care providers: the government systems (led by NSTDA's Nirun, now in every DOP welfare centre and spreading to every district), private nursing-home start-ups (CloudNurse, Caleo), clinic suites with care modules (HexaHealth, APSX, MCS), and foreign entrants, with a page on the state systems (3C, the NHSO LTC programme, Thai COC, Blue Book, Smart อสม.) and a feature matrix. Every cell is sourced; vendor claims are labelled as claims. No market-share data exists."
 countries: ["Thailand"]
 ---
 

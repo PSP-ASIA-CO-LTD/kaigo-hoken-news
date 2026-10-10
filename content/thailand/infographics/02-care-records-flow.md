@@ -2,7 +2,7 @@
 title: "How Thai community care records flow"
 date: 2026-10-11T00:00:00+07:00
 lastmod: 2026-10-11T03:35:00+07:00
-description: "One round of the NHSO community long-term care cycle, step by step, and the system that records each step: paper and the LTC subcommittee, the NHSO LTC programme (ltcnew) and the Department of Health's 3C program, with the double entry between them, the Blue Book, Smart อสม. and Thai COC side systems, and no national form for the caregiver visit log was found."
+description: "One round of the NHSO community long-term care cycle, step by step, and the system that records each step: paper and the LTC subcommittee, the NHSO LTC programme (ltcnew) and the Department of Health's 3C program, with the double entry between them, the Blue Book, Smart อสม. and Thai COC side systems, and the caregiver visit log, for which no national form was found."
 type: "infographics"
 weight: 2
 infographic_type: "flow"
