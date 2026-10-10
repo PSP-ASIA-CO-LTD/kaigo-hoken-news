@@ -1,0 +1,72 @@
+{{- /* Metadata for one regular page. Used by index.json, llms.txt, and .md copies. */ -}}
+{{- $p := . -}}
+{{- $country := "" -}}
+{{- with $p.Params.countries -}}
+  {{- if gt (len .) 0 -}}
+    {{- $country = index . 0 -}}
+  {{- end -}}
+{{- end -}}
+{{- $path := "" -}}
+{{- with $p.File -}}
+  {{- $path = path.Clean .Path -}}
+{{- end -}}
+{{- $section := "other" -}}
+{{- if or (eq $p.Layout "glossary") (eq $path "glossary.md") -}}
+  {{- $section = "glossary" -}}
+{{- else if or (eq $path "about.md") (eq $p.Title "About") -}}
+  {{- $section = "about" -}}
+{{- else if or (eq $p.Type "infographics") (eq $p.Section "infographics") -}}
+  {{- $section = "infographics" -}}
+{{- else if or (eq $p.Type "competitors") (in $path "competitors/") -}}
+  {{- $section = "competitors" -}}
+{{- else if eq $p.Section "posts" -}}
+  {{- $section = "posts" -}}
+{{- else if eq $p.Section "guides" -}}
+  {{- $section = "guides" -}}
+{{- else if eq $p.Section "thailand" -}}
+  {{- $section = "guides" -}}
+{{- end -}}
+{{- $html := $p.Permalink -}}
+{{- with $p.OutputFormats.Get "html" -}}
+  {{- $html = .Permalink -}}
+{{- end -}}
+{{- $md := "" -}}
+{{- with $p.OutputFormats.Get "markdown" -}}
+  {{- $md = .Permalink -}}
+{{- end -}}
+{{- $lastmod := $p.Date -}}
+{{- if not $p.Lastmod.IsZero -}}
+  {{- $lastmod = $p.Lastmod -}}
+{{- end -}}
+{{- $summary := "" -}}
+{{- with $p.Params.summary -}}
+  {{- $summary = . -}}
+{{- else -}}
+  {{- with $p.Description -}}
+    {{- $summary = . -}}
+  {{- else -}}
+    {{- $summary = $p.Summary | plainify -}}
+  {{- end -}}
+{{- end -}}
+{{- $summary = $summary | plainify | strings.TrimSpace | replaceRE `\s+` " " -}}
+{{- $tags := slice -}}
+{{- with $p.Params.tags -}}
+  {{- $tags = . -}}
+{{- end -}}
+{{- $entry := dict
+  "title" $p.Title
+  "url" $html
+  "markdown_url" $md
+  "country" $country
+  "section" $section
+  "type" $p.Type
+  "summary" $summary
+  "date" ($p.Date.Format "2006-01-02")
+  "lastmod" ($lastmod.Format "2006-01-02")
+  "word_count" $p.WordCount
+  "tags" $tags
+-}}
+{{- with $p.Params.series -}}
+  {{- $entry = merge $entry (dict "series" . "series_order" ($p.Params.series_order | default 0)) -}}
+{{- end -}}
+{{- return $entry -}}

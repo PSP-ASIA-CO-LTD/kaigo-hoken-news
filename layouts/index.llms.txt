@@ -1,0 +1,142 @@
+{{- /* Catalog of every regular page, generated from content/front matter at build time. */ -}}
+{{- $japanStart := slice -}}
+{{- $japanPosts := slice -}}
+{{- $japanGuides := slice -}}
+{{- $japanCompetitors := slice -}}
+{{- $japanInfographics := slice -}}
+{{- $thaiStart := slice -}}
+{{- $thaiPosts := slice -}}
+{{- $thaiGuides := slice -}}
+{{- $thaiCompetitors := slice -}}
+{{- $thaiInfographics := slice -}}
+{{- $shared := slice -}}
+{{- range (where site.RegularPages "Params.series" "Japan LTC Basics").ByParam "series_order" -}}
+  {{- if partial "ai-include-page.html" . -}}
+    {{- $japanStart = $japanStart | append (partial "ai-page-info.html" .) -}}
+  {{- end -}}
+{{- end -}}
+{{- with site.GetPage "/thailand" -}}
+  {{- range .RegularPages.ByWeight -}}
+    {{- if partial "ai-include-page.html" . -}}
+      {{- $thaiStart = $thaiStart | append (partial "ai-page-info.html" .) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- range site.RegularPages -}}
+  {{- if partial "ai-include-page.html" . -}}
+    {{- $info := partial "ai-page-info.html" . -}}
+    {{- if eq $info.country "Japan" -}}
+      {{- if eq $info.section "posts" -}}{{- $japanPosts = $japanPosts | append $info -}}
+      {{- else if eq $info.section "guides" -}}{{- $japanGuides = $japanGuides | append $info -}}
+      {{- else if eq $info.section "competitors" -}}{{- $japanCompetitors = $japanCompetitors | append $info -}}
+      {{- else if eq $info.section "infographics" -}}{{- $japanInfographics = $japanInfographics | append $info -}}
+      {{- end -}}
+    {{- else if eq $info.country "Thailand" -}}
+      {{- if eq $info.section "posts" -}}{{- $thaiPosts = $thaiPosts | append $info -}}
+      {{- else if eq $info.section "guides" -}}{{- $thaiGuides = $thaiGuides | append $info -}}
+      {{- else if eq $info.section "competitors" -}}{{- $thaiCompetitors = $thaiCompetitors | append $info -}}
+      {{- else if eq $info.section "infographics" -}}{{- $thaiInfographics = $thaiInfographics | append $info -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $shared = $shared | append $info -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+# {{ site.Title }}
+
+> {{ site.Params.description }}. Published by {{ site.Params.author }}, a Thai care-software company studying Japan's long-term care insurance (介護保険, kaigo hoken) and elderly long-term care in Thailand. Every factual claim is footnoted to a source we opened. Opinions are labelled "Tako-San's take" or "Tako-San's view".
+
+**How this site is organised.** Split by country — Japan and Thailand. For each country: a Start Here series, posts, guides, competitor profiles, and infographics. Shared across both countries: the glossary and the about page.
+
+- **Japan** — Start Here is the 5-part *Japan LTC Basics* series. Then posts (the same dated briefings), living guides, competitor profiles, and infographics.
+- **Thailand** — Start Here is the reading-order guides under Thailand. Then posts (if any), those guides, Thai competitor profiles, and Thai infographics.
+- **Shared** — glossary of Japanese (Hepburn) and Thai (RTGS) terms, and about.
+
+Prefer the Markdown copy of a page when one is linked. Machine-readable catalogs are listed at the end.
+
+{{- if gt (len $japanStart) 0 }}
+
+## Japan — Start Here
+{{ range $japanStart }}
+{{ partial "ai-llms-item.html" . -}}
+{{- end -}}
+{{- end -}}
+{{- if gt (len $japanPosts) 0 }}
+
+## Japan — Posts
+{{ range $japanPosts }}
+{{ partial "ai-llms-item.html" . -}}
+{{- end -}}
+{{- end -}}
+{{- if gt (len $japanGuides) 0 }}
+
+## Japan — Guides
+{{ range $japanGuides }}
+{{ partial "ai-llms-item.html" . -}}
+{{- end -}}
+{{- end -}}
+{{- if gt (len $japanCompetitors) 0 }}
+
+## Japan — Competitors
+{{ range $japanCompetitors }}
+{{ partial "ai-llms-item.html" . -}}
+{{- end -}}
+{{- end -}}
+{{- if gt (len $japanInfographics) 0 }}
+
+## Japan — Infographics
+{{ range $japanInfographics }}
+{{ partial "ai-llms-item.html" . -}}
+{{- end -}}
+{{- end -}}
+{{- if gt (len $thaiStart) 0 }}
+
+## Thailand — Start Here
+{{ range $thaiStart }}
+{{ partial "ai-llms-item.html" . -}}
+{{- end -}}
+{{- end -}}
+{{- if gt (len $thaiPosts) 0 }}
+
+## Thailand — Posts
+{{ range $thaiPosts }}
+{{ partial "ai-llms-item.html" . -}}
+{{- end -}}
+{{- end -}}
+{{- if gt (len $thaiGuides) 0 }}
+
+## Thailand — Guides
+{{ range $thaiGuides }}
+{{ partial "ai-llms-item.html" . -}}
+{{- end -}}
+{{- end -}}
+{{- if gt (len $thaiCompetitors) 0 }}
+
+## Thailand — Competitors
+{{ range $thaiCompetitors }}
+{{ partial "ai-llms-item.html" . -}}
+{{- end -}}
+{{- end -}}
+{{- if gt (len $thaiInfographics) 0 }}
+
+## Thailand — Infographics
+{{ range $thaiInfographics }}
+{{ partial "ai-llms-item.html" . -}}
+{{- end -}}
+{{- end -}}
+{{- if gt (len $shared) 0 }}
+
+## Shared
+{{ range $shared }}
+{{ partial "ai-llms-item.html" . -}}
+{{- end -}}
+{{- end }}
+
+## Machine-readable files
+
+- [index.json]({{ "index.json" | absURL }}): catalog of every regular page (title, absolute URL, markdown URL, country, section, series, summary, dates, word count, tags)
+- [glossary.json]({{ "glossary.json" | absURL }}): Japanese and Thai glossary terms (script, romanization, English, definition, source)
+- [sitemap.xml]({{ "sitemap.xml" | absURL }}): HTML sitemap
+- [RSS]({{ with site.Home.OutputFormats.Get "rss" }}{{ .Permalink }}{{ else }}{{ "index.xml" | absURL }}{{ end }}): feed of posts
+- [llms-full.txt]({{ "llms-full.txt" | absURL }}): full Markdown of every article, concatenated
+- [robots.txt]({{ "robots.txt" | absURL }}): crawl policy

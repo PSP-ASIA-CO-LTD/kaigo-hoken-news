@@ -1,0 +1,6 @@
+{{- /* True for regular pages that belong in machine-readable catalogs. */ -}}
+{{- $ok := true -}}
+{{- if or (eq .Layout "archives") (eq .Layout "search") (.Params.searchHidden) (.Draft) -}}
+  {{- $ok = false -}}
+{{- end -}}
+{{- return $ok -}}

@@ -1,0 +1,14 @@
+{{- /* Full Markdown of every regular page. Generated at build time. */ -}}
+# {{ site.Title }} — full Markdown
+
+> Concatenated Markdown copies of every article. Prefer [llms.txt]({{ "llms.txt" | absURL }}) to pick pages; use this file only when you need the full text in one request.
+
+Generated: {{ now.Format "2006-01-02T15:04:05Z07:00" }}
+
+{{- range site.RegularPages -}}
+{{- if partial "ai-include-page.html" . }}
+
+================================================================
+{{ partial "ai-markdown-page.html" . }}
+{{- end -}}
+{{- end -}}

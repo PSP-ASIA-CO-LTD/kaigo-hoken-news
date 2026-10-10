@@ -1,0 +1,2 @@
+{{- $info := . -}}
+- [{{ $info.title | safeHTML }}]({{ $info.url }}): {{ if $info.summary }}{{ $info.summary | safeHTML }} {{ end }}(last updated {{ $info.lastmod }}){{ if $info.markdown_url }} ([Markdown]({{ $info.markdown_url }})){{ end }}

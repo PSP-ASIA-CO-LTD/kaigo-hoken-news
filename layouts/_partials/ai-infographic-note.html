@@ -1,0 +1,5 @@
+{{- $html := .Page.Permalink -}}
+{{- with .Page.OutputFormats.Get "html" -}}
+  {{- $html = .Permalink -}}
+{{- end -}}
+*[Interactive infographic — open the HTML page for the diagram: [{{ .Page.Title }}]({{ $html }})]*
