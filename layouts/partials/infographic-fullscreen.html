@@ -1,2 +1,2 @@
 {{- $fs := resources.Get "js/infographic-fullscreen.js" | minify | fingerprint }}
-<script src="{{ $fs.Permalink }}" defer></script>
+<script src="{{ $fs.RelPermalink }}" defer></script>
