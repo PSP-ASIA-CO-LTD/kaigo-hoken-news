@@ -98,27 +98,39 @@
       document.body.classList.remove('infographic-fs-lock');
     }
 
+    function blurInterior() {
+      var focused = document.activeElement;
+      if (focused && container.contains(focused) && !focused.classList.contains('infographic-fs-btn')) {
+        focused.blur();
+      }
+    }
+
     function restoreScroll() {
       var y = savedScroll;
       container.scrollTop = 0;
       container.scrollLeft = 0;
-      var focused = document.activeElement;
-      if (focused && container.contains(focused) && focused.tagName !== 'BUTTON') {
-        focused.blur();
-      }
       function pin() {
-        window.scrollTo(0, y);
+        if (Math.abs((window.scrollY || window.pageYOffset || 0) - y) > 1) {
+          window.scrollTo(0, y);
+        }
       }
+      function onScroll() {
+        pin();
+      }
+      window.addEventListener('scroll', onScroll, true);
       pin();
       requestAnimationFrame(function () {
         pin();
-        setTimeout(pin, 0);
-        setTimeout(pin, 50);
+        setTimeout(function () {
+          pin();
+          window.removeEventListener('scroll', onScroll, true);
+        }, 120);
       });
     }
 
     function syncUi() {
       var active = isActive();
+      if (!active) blurInterior();
       container.classList.toggle('is-fs-active', active);
       container.classList.toggle('is-fs-overlay', overlayOn);
       container.setAttribute('data-infographic-fs', active ? (overlayOn ? 'overlay' : 'native') : 'off');
