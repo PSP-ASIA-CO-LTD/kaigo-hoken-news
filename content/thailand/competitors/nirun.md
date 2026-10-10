@@ -1,7 +1,7 @@
 ---
 title: "Nirun and Nirun for Community (NSTDA, with the Department of Older Persons): competitor profile"
 date: 2026-10-11T00:00:00+07:00
-lastmod: 2026-10-11T09:00:00+07:00
+lastmod: 2026-10-11T09:30:00+07:00
 tags: ["thailand", "competitors", "nirun", "nstda", "dop", "government", "software"]
 summary: "Nirun, the elderly-care centre system built by Thailand's state science agency NSTDA with the Department of Older Persons and used in DOP's 12 welfare centres, and Nirun for Community, its field app for DOP's community caregivers, which by 2026 covers 76 provinces. Pricing, features, who uses it, the published numbers (some of which conflict), and what is known about links to NHSO, DHSS and 3C."
 categories: ["Competitors"]
@@ -63,19 +63,19 @@ Licence fees are not published. DOP staff log in at a DOP-specific address (dop.
 
 ## Target customers
 
-- **DOP's state welfare centres.** Nirun's site says the system is in use at all 12 social welfare development centres for older persons, ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุ (sun phatthana kan chat sawatdikan sangkhom phu sung-ayu).[^5] The centres it names are:[^5]
+- **DOP's state welfare centres.** Nirun's site says the system is in use at all 12 social welfare development centres for older persons, ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุ (sun phatthana kan chat sawatdikan sangkhom phu sung-ayu).[^5] The centres it names are listed below, spelled as in our [Public and private providers]({{< relref "/thailand/public-and-private-providers" >}}) guide:[^5]
   - Ban Bang Khae (Bangkok)
-  - Wasana Wet (Phra Nakhon Si Ayutthaya)
+  - Wasanawet (Phra Nakhon Si Ayutthaya)
   - Ban Bang Lamung (Chon Buri)
-  - Thammapakorn Chiang Mai
-  - Ban Buriram
-  - the centres in Phuket, Pathum Thani, Khon Kaen, Nakhon Phanom, Lampang, Yala and Songkhla
+  - Ban Thammapakorn (Chiang Mai)
+  - Ban Buri Ram
+  - the centres in Phuket, Pathum Thani, Khon Kaen, Nakhon Phanom, Lampang, Ban Thaksin (Yala) and Songkhla
 
   The work began as a technology pilot at Ban Bang Khae in 2020. At that time the plan was to reach all 12 centres by 2022, and Ban Bang Khae had 234 residents.[^10] For the centres' capacity and waiting lists, see [Public and private providers]({{< relref "/thailand/public-and-private-providers" >}}).
 - **DOP's community caregivers.** These are the "caregivers protecting the rights of older persons", ผู้บริบาลคุ้มครองสิทธิผู้สูงอายุ (phu boriban khumkhrong sitthi phu sung-ayu, abbreviated บสส.). NSTDA's English name for them is "Wellbeing and Life Protector".[^9] They work in DOP's "Community Elderly Care and Rights Protection Project", โครงการบริบาลและคุ้มครองสิทธิผู้สูงอายุในชุมชน (khrongkan boriban lae khumkhrong sitthi phu sung-ayu nai chumchon).[^2]
   - They complete a 240-hour course.[^9]
   - The Bangkok Post reports a monthly stipend of 10,000 baht.[^6]
-  - This is a DOP social-welfare programme. It is separate from the NHSO-funded caregivers and care managers who use the Department of Health's 3C program (see [Data and IT reporting]({{< relref "/thailand/data-and-it-reporting" >}})).
+  - This is a DOP social-welfare programme. It is separate from the NHSO-funded community scheme. In that scheme, care managers register caregivers and write each person's care plan in the Department of Health's 3C program.[^12] See [Data and IT reporting]({{< relref "/thailand/data-and-it-reporting" >}}).
 
 ## Scale: what has been published
 
@@ -110,6 +110,8 @@ Tako-San's view: Nirun is the most important name on this list for anyone sellin
 ## Changelog
 
 - 11 Oct 2026: first published
+- 11 Oct 2026: centre names spelled as in the Public and private providers guide (Wasanawet, Ban Thammapakorn, Ban Buri Ram, Ban Thaksin)
+- 11 Oct 2026: the sentence on care managers using the 3C program now has a source (new note 12)
 
 ---
 
@@ -136,3 +138,5 @@ Tako-San's view: Nirun is the most important name on this list for anyone sellin
 [^10]: Thai PBS News. "'Bang Khae model' pilots technology to help older people be self-reliant (“บางแคโมเดล” นำร่องช่วยผู้สูงอายุพึ่งตัวเองด้วยเทคโนโลยี)," 24 September 2020. https://www.thaipbs.or.th/news/content/296787
 
 [^11]: NSTDA. "NSTDA receives special outstanding network-organisation award for promoting the elderly network, 2026 (สวทช. รับรางวัลองค์กรเครือข่ายดีเด่นพิเศษ…ประจำปี 2569)," press release, 8 April 2026. https://www.nstda.or.th/home/news_post/nstda-elderly-award-20260408/
+
+[^12]: Department of Health, Institute for Urban Health Development (สถาบันพัฒนาสุขภาวะเขตเมือง), elderly health group. "Program Long Term Care (3C)," undated training slides on registering care managers and caregivers and writing care plans in the Department of Health's 3C program (ltc.anamai.moph.go.th). Accessed 11 October 2026. https://mwi.anamai.moph.go.th/th/elderly-group/download/?did=207612&id=83877&reload=

@@ -1,7 +1,7 @@
 ---
 title: "Public and private elderly-care providers in Thailand"
 date: 2026-10-10T00:00:00+07:00
-lastmod: 2026-10-10T20:30:00+07:00
+lastmod: 2026-10-11T02:00:00+07:00
 tags: ["thailand", "long-term-care", "providers", "nursing-homes", "welfare-centres", "guide"]
 summary: "Who provides residential elderly care in Thailand: the Department of Older Persons' state welfare centres (1,620 places, with waiting lists of 2,149 and 6,530 in August 2026), DHSS-licensed private care homes (1,203 in October 2026), the Real Estate Information Center's nursing-home survey (17,349 beds in 2025), and the gaps between these counts."
 categories: ["Guides"]
@@ -9,15 +9,15 @@ weight: 3
 countries: ["Thailand"]
 ---
 
-*Last updated: 10 Oct 2026*
+*Last updated: 11 Oct 2026*
 
 Residential elderly care in Thailand has a small public sector and a larger private one. The public side is the network of state welfare centres run by the Department of Older Persons (DOP), กรมกิจการผู้สูงอายุ (Krom Kitchakan Phu Sung-ayu), in the Ministry of Social Development and Human Security (MSDHS).[^1] The private side is care homes licensed by the Department of Health Service Support (DHSS) under the Health Establishment Act. See [Licensing elderly-care businesses]({{< relref "licensing-elderly-care-businesses" >}}).[^3] Care at home in the community is funded mainly through the NHSO scheme in [Who pays]({{< relref "who-pays-for-long-term-care" >}}).
 
 ## Public: DOP social welfare development centres
 
-DOP was set up on 6 March 2015.[^1] Its website lists 12 social welfare development centres for older persons, ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุ (sun phatthana kan chat sawatdikan sangkhom phu sung-ayu), plus a learning and training centre for older persons in Chon Buri.[^1] DOP's statistics table for 28 August 2026 covers 11 centres. The Khon Kaen centre, which the site lists, is not in the table.[^2]
+DOP was set up on 6 March 2015.[^1] Its website lists 12 social welfare development centres for older persons, ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุ (sun phatthana kan chat sawatdikan sangkhom phu sung-ayu), plus a learning and training centre for older persons in Chon Buri.[^1] DOP's statistics table for 28 August 2026 covers 11 centres. The Khon Kaen centre, which the site lists, is not in the table.[^2] The Khon Kaen centre was operating in 2026: its own website posted daily activity reports in September 2026.[^7] Its history page says that since it took its present name in 2005 it has offered day-centre services, มาเช้า-เย็นกลับ (ma chao yen klap, come in the morning and go home in the evening), and that it now runs two branches in Mueang Khon Kaen district. The page does not mention residential places.[^7] We take this to be why the residents table leaves it out, though DOP does not say so. So DOP had 12 centres in 2026, and the residents and waiting-list figures below cover the other 11.
 
-| Centre | Target places | Residents | Waiting: welfare group | Waiting: self-reliant group |
+| Centre | Target places | Residents (welfare group) | Waiting: welfare group | Waiting: self-reliant group |
 |---|---|---|---|---|
 | Ban Bang Khae (Bangkok) | 270 | 246 | 1,434 | 6,070 |
 | Pathum Thani | 130 | 110 | 254 | none |
@@ -32,7 +32,7 @@ DOP was set up on 6 March 2015.[^1] Its website lists 12 social welfare developm
 | Ban Thaksin (Yala) | 100 | 100 | 19 | none |
 | **Total** | **1,620** | **1,547** | **2,149** | **6,530** |
 
-Source for the table: DOP statistics, data as of 28 August 2026.[^2] The table's notes give 1,547 residents in the welfare group, กลุ่มสงเคราะห์ (klum songkhro, welfare group), and 78 in the self-reliant group, กลุ่มพึ่งพาตนเอง (klum phuengpha ton-eng, self-reliant group). The residents column adds up to 1,547, so it is not clear whether the 78 are counted in it.[^2] The table splits residents into groups A, B and C without defining them.[^2] Ban Bang Khae alone accounts for 7,504 of the 8,679 people waiting (our sum of the table's figures).[^2]
+Source for the table: DOP statistics, data as of 28 August 2026.[^2] The residents columns (groups A, B and C) add up to 1,547. That is the figure the table's first note gives for the welfare group, กลุ่มสงเคราะห์ (klum songkhro, welfare group). The second note gives 78 residents in the self-reliant group, กลุ่มพึ่งพาตนเอง (klum phuengpha ton-eng, self-reliant group), with no breakdown by centre.[^2] We therefore read the residents column as the welfare group only. On that reading the 11 centres held 1,625 residents in all (1,547 plus 78, our sum). The table does not define groups A, B and C.[^2] Ban Bang Khae alone accounts for 7,504 of the 8,679 people waiting (our sum of the table's figures).[^2]
 
 The DOP web page for August 2026 links an image file named for April 2026, but the table in the image is dated 28 August 2026. We used the date printed in the table.[^2]
 
@@ -77,12 +77,14 @@ The REIC summary gives two nursing-home counts, 1,019 and 944. The page we read 
 On these figures, private homes hold roughly ten times as many beds as the state centres (17,349 against 1,620, our calculation). The counts use different sources and dates, so the ratio is only a rough guide.
 
 {{< analysis title="Tako-San's take" >}}
-Tako-San's view: the state centres are few (11 or 12) and full, with long queues, so they are a small and slow public-sector sale. The private side is where the units are: about 1,200 licensed establishments and roughly 17,000 beds, clustered in Bangkok and the provinces around it plus a few regional cities. Most homes are small. 17,349 beds across 944 homes is about 18 beds per home on average, so any product has to be cheap, quick to set up, and usable on a phone. The gap between REIC's 1,019 homes and DHSS's licence counts at different dates is worth watching. Some homes may be unlicensed, and DHSS said in October 2026 that it would tighten checks. A product that helps a home get and keep its licence could be one way in.
+Tako-San's view: the state centres are few (12, of which 11 report residents) and full, with long queues, so they are a small and slow public-sector sale. The private side is where the units are: about 1,200 licensed establishments and roughly 17,000 beds, clustered in Bangkok and the provinces around it plus a few regional cities. Most homes are small. 17,349 beds across 944 homes is about 18 beds per home on average, so any product has to be cheap, quick to set up, and usable on a phone. The gap between REIC's 1,019 homes and DHSS's licence counts at different dates is worth watching. Some homes may be unlicensed, and DHSS said in October 2026 that it would tighten checks. A product that helps a home get and keep its licence could be one way in.
 {{< /analysis >}}
 
 ## Changelog
 
 - 10 Oct 2026: first published
+- 11 Oct 2026: DOP centre count made consistent: DOP had 12 centres in 2026; the Khon Kaen centre, which runs day-centre services, is not in the residents table (new note 7)
+- 11 Oct 2026: residents column relabelled as the welfare group; the 78 self-reliant residents in the table's second note are listed separately (total 1,625, our sum)
 
 ---
 
@@ -99,3 +101,5 @@ Tako-San's view: the state centres are few (11 or 12) and full, with long queues
 [^5]: Ministerial Regulation designating elderly or dependent-person care as another business in health establishments B.E. 2563, Royal Gazette vol. 137, part 61 Kor, 31 July 2020, clause 2. https://download.asa.or.th/03media/04law/swfa/mr63.pdf
 
 [^6]: Real Estate Information Center, Government Housing Bank. "Survey of housing projects for older people nationwide, 2025 (ผลการสำรวจโครงการที่อยู่อาศัยสำหรับผู้สูงอายุ ทั่วประเทศ ปี 2568)," 20 November 2025. https://www.reic.or.th/Research/ResearchDetail/8
+
+[^7]: Department of Older Persons, Khon Kaen Social Welfare Development Centre for Older Persons (ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุขอนแก่น). "History (ประวัติความเป็นมา)," accessed 11 October 2026, https://khonkaen.dop.go.th/th/aboutus/1; and home page with daily activity reports dated 28 to 30 September 2026, accessed 11 October 2026, https://khonkaen.dop.go.th/

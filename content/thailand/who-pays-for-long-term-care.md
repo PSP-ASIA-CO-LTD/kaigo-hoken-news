@@ -1,7 +1,7 @@
 ---
 title: "Who pays for elderly long-term care in Thailand"
 date: 2026-10-10T00:00:00+07:00
-lastmod: 2026-10-10T20:30:00+07:00
+lastmod: 2026-10-11T02:00:00+07:00
 tags: ["thailand", "long-term-care", "financing", "nhso", "local-government", "guide"]
 summary: "The money behind elderly care in Thailand: the NHSO community long-term care budget for dependent people (10,442 baht per person per year; 5,514 million baht in the FY2026 framework), the role of local governments and the caregivers they hire, the tiered old-age allowance, Department of Older Persons welfare centres, and private pay. Thailand has no Japanese-style care insurance."
 categories: ["Guides"]
@@ -9,15 +9,15 @@ weight: 2
 countries: ["Thailand"]
 ---
 
-*Last updated: 10 Oct 2026*
+*Last updated: 11 Oct 2026*
 
 Thailand has no long-term care insurance of the Japanese kind. The public money for elderly care comes through several separate channels, each run by a different agency:
 
 | Channel | Run by | What it pays for | Source |
 |---|---|---|---|
-| Community long-term care (LTC) for dependent people | National Health Security Office (NHSO), สำนักงานหลักประกันสุขภาพแห่งชาติ (Samnakngan Lakprakan Sukkhaphap Haeng Chat), with local governments | Care plans, caregiver visits and equipment for people assessed as dependent | [^1][^2] |
+| Community long-term care (LTC) for dependent people | National Health Security Office (NHSO), สำนักงานหลักประกันสุขภาพแห่งชาติ (Samnakngan Lak Prakan Sukkhaphap haeng Chat), with local governments | Care plans, caregiver visits and equipment for people assessed as dependent | [^1][^2] |
 | Old-age allowance | Paid by local administrative organisations (LAOs), องค์กรปกครองส่วนท้องถิ่น (ongkon pokkhrong suan thongthin, local administrative organisation), under a Ministry of Interior regulation | A monthly cash allowance by age band | [^4] |
-| State welfare centres | Department of Older Persons (DOP), กรมกิจการผู้สูงอายุ (Krom Kitchakan Phu Sung-ayu), in the Ministry of Social Development and Human Security (MSDHS) | Places in 11 to 12 centres for older people | [^5][^6] |
+| State welfare centres | Department of Older Persons (DOP), กรมกิจการผู้สูงอายุ (Krom Kitchakan Phu Sung-ayu), in the Ministry of Social Development and Human Security (MSDHS) | Places in its 12 centres for older people (11 of them in DOP's August 2026 residents table; see [Public and private providers]({{< relref "public-and-private-providers" >}})) | [^5][^6] |
 | Private care homes | Residents and families | Fees set by each licensed home | [^7] |
 
 ## The NHSO community long-term care budget
@@ -84,6 +84,8 @@ Tako-San's view: the public money with a software angle is the NHSO community LT
 ## Changelog
 
 - 10 Oct 2026: first published
+- 11 Oct 2026: NHSO romanisation standardised to "Samnakngan Lak Prakan Sukkhaphap haeng Chat"
+- 11 Oct 2026: DOP centre count made consistent: 12 centres, 11 of them in the August 2026 residents table
 
 ---
 
