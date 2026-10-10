@@ -29,76 +29,7 @@
   </div>
 </header>
 
-{{- $term := .Data.Term | lower }}
-<section class="country-hub-sections" aria-label="{{ .Title }} sections">
-  <h2 class="country-hub-heading">Sections</h2>
-  <div class="deep-dive-grid country-hub-grid">
-    {{- if eq $term "japan" }}
-      {{- $hubs := slice
-        (dict "path" "series/" "title" "Start Here" "text" "The introductory series on Japan's long-term care insurance.")
-        (dict "path" "posts/" "title" "Posts" "text" "Dated briefings on how the system works, providers, technology, and the budget.")
-        (dict "path" "guides/" "title" "Guides" "text" "Living reference guides to the national systems care software has to work with.")
-        (dict "path" "competitors/" "title" "Competitors" "text" "Profiles of Japanese care-software products and the feature matrix.")
-        (dict "path" "infographics/" "title" "Infographics" "text" "Interactive diagrams of the system, claims flow, competitors, and a worked example.")
-      }}
-      {{- range $hubs }}
-      <div class="deep-dive-card">
-        <h3 class="deep-dive-title">{{ .title }}</h3>
-        <p class="deep-dive-text">{{ .text }}</p>
-        <a href="{{ .path | relURL }}" class="deep-dive-link">Open {{ .title }} →</a>
-      </div>
-      {{- end }}
-    {{- else if eq $term "thailand" }}
-      <div class="deep-dive-card">
-        <h3 class="deep-dive-title">Thailand guides</h3>
-        <p class="deep-dive-text">Licensing, who pays, public and private providers, caregiver training, data and IT, and ageing statistics.</p>
-        <a href="{{ "thailand/" | relURL }}" class="deep-dive-link">Open Thailand →</a>
-      </div>
-    {{- end }}
-  </div>
-</section>
-
-{{- $sectionPages := where .Pages "Kind" "section" }}
-{{- $regularPages := where .Pages "Kind" "page" }}
-{{- $regularPages = $regularPages.ByTitle }}
-
-<div class="section-entries country-hub-pages">
-  {{- if $sectionPages }}
-  <h2 class="country-hub-heading">Section indexes</h2>
-  {{- range $sectionPages.ByTitle }}
-  <article class="post-entry section-entry">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">{{ .Title }}</h2>
-    </header>
-    {{- if (ne (.Param "hideSummary") true) }}
-    <div class="entry-content">
-      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-    </div>
-    {{- end }}
-    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-  </article>
-  {{- end }}
-  {{- end }}
-
-  <h2 class="country-hub-heading">Pages</h2>
-  {{- range $regularPages }}
-  <article class="post-entry section-entry">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">{{ .Title }}</h2>
-    </header>
-    {{- if (ne (.Param "hideSummary") true) }}
-    <div class="entry-content">
-      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-    </div>
-    {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    <footer class="entry-footer">
-      {{- partial "post_meta.html" . -}}
-    </footer>
-    {{- end }}
-    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-  </article>
-  {{- end }}
-</div>
+{{- partial "country-hub-cards.html" (dict "country" $term) }}
+{{- partial "country-hub-pages.html" (dict "term" . "current" .) }}
 
 {{- end }}{{- /* end main */ -}}

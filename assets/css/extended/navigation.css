@@ -74,7 +74,8 @@
   color: var(--theme);
 }
 
-.start-here-series-preview h3 {
+.start-here-series-preview h3,
+.start-here-series-preview h4 {
   font-family: 'Playfair Display', 'Noto Serif JP', Georgia, serif;
   font-size: 1rem;
   font-weight: 600;
@@ -522,6 +523,39 @@
   font-weight: 700;
   margin: 0 0 0.5rem 0;
   color: var(--primary);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.6rem;
+}
+
+.page-count {
+  font-family: var(--newspaper-body, 'Noto Sans JP', sans-serif);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  background: var(--tertiary);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.15rem 0.5rem;
+}
+
+.deep-dive-card.is-coming-soon {
+  opacity: 0.8;
+}
+
+.deep-dive-card.is-coming-soon:hover {
+  box-shadow: none;
+  border-color: var(--border);
+}
+
+.coming-soon-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--secondary);
 }
 
 .deep-dive-text {
@@ -569,6 +603,90 @@
 @media (min-width: 640px) {
   .country-hub-grid.deep-dive-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ==========================================================================
+   HOMEPAGE COUNTRY BLOCKS (Japan | Thailand)
+   ========================================================================== */
+
+.country-home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1rem 0 2rem;
+  min-width: 0;
+}
+
+.country-home-block {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.country-home-title {
+  font-family: 'Playfair Display', 'Noto Serif JP', Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--newspaper-rule);
+}
+
+.country-home-intro {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--secondary);
+  margin: 0 0 1rem;
+  overflow-wrap: anywhere;
+}
+
+.country-home-block .start-here-box {
+  margin: 0 0 1rem;
+  padding: 1.25rem;
+}
+
+.country-home-block .start-here-title {
+  font-size: 1.25rem;
+}
+
+.country-home-block .start-here-toc,
+.country-home-block .start-here-toc a,
+.country-home-block .deep-dive-text,
+.country-home-block .deep-dive-title {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.country-home-cards.deep-dive-grid {
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.entry-countries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.country-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  background: var(--tertiary);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 0.15rem 0.45rem;
+}
+
+@media (min-width: 900px) {
+  .country-home-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
   }
 }
 

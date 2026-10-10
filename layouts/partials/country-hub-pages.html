@@ -1,0 +1,57 @@
+{{/*
+  Tagged-page list used by both country hubs.
+  Input: dict with "term" (taxonomy term page) and optional "current" (page to omit).
+*/}}
+{{- $term := .term -}}
+{{- $currentPermalink := "" -}}
+{{- with .current }}{{ $currentPermalink = .RelPermalink }}{{ end -}}
+
+{{- $sectionPages := where $term.Pages "Kind" "section" -}}
+{{- $regularPages := where $term.Pages "Kind" "page" -}}
+{{- $regularPages = $regularPages.ByTitle -}}
+
+{{- $filteredSections := slice -}}
+{{- range $sectionPages.ByTitle -}}
+  {{- if ne .RelPermalink $currentPermalink -}}
+    {{- $filteredSections = $filteredSections | append . -}}
+  {{- end -}}
+{{- end -}}
+
+<div class="section-entries country-hub-pages">
+  {{- if $filteredSections }}
+  <h2 class="country-hub-heading">Section indexes</h2>
+  {{- range $filteredSections }}
+  <article class="post-entry section-entry">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .RelPermalink }}"></a>
+  </article>
+  {{- end }}
+  {{- end }}
+
+  <h2 class="country-hub-heading">Pages</h2>
+  {{- range $regularPages }}
+  <article class="post-entry section-entry">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <footer class="entry-footer">
+      {{- partial "post_meta.html" . -}}
+    </footer>
+    {{- end }}
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .RelPermalink }}"></a>
+  </article>
+  {{- end }}
+</div>
