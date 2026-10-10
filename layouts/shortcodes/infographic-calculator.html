@@ -30,9 +30,38 @@
 <p class="control-help">Varies by region and service type (one rate applied to all lines for this example)</p>
 </div>
 </div>
-<div class="diagram-wrapper" role="region" aria-label="Interactive diagram: Monthly cost calculation">
+<div class="mobile-infographic" role="region" aria-label="Monthly cost calculation">
+<div class="mobile-section-title">Services Used (example values)</div>
+<div class="mobile-calculator">
+<div class="mobile-calc-row"><span class="mobile-calc-label">Home-Visit Care (訪問介護) · Body care 20–30 min (example)</span><span class="mobile-calc-value">245 units × 8</span></div>
+<div class="mobile-calc-row"><span class="mobile-calc-label">Home-Visit Care · Body care 30–60 min (example)</span><span class="mobile-calc-value">388 units × 4</span></div>
+<div class="mobile-calc-row"><span class="mobile-calc-label">Day Care (通所介護) · 7–8 hrs, level 3 (example)</span><span class="mobile-calc-value">896 units × 8</span></div>
+<div class="mobile-calc-row"><span class="mobile-calc-label">Add-ons · Exercise guidance (example)</span><span class="mobile-calc-value">100 units × 8</span></div>
+</div>
+<div class="mobile-section-title">Monthly Total</div>
+<div class="mobile-calculator">
+<div class="mobile-calc-row"><span class="mobile-calc-label">Units used</span><span class="mobile-calc-value" id="m-total-units">11,480</span></div>
+<div class="mobile-calc-row"><span class="mobile-calc-label">Cap status</span><span class="mobile-calc-value" id="m-cap-status">Under cap of 27,048</span></div>
+<div class="mobile-calc-row"><span class="mobile-calc-label">Unit → Yen</span><span class="mobile-calc-value" id="m-unit-price-display">1 unit = ¥10.00</span></div>
+<div class="mobile-calc-row"><span class="mobile-calc-label">Formula</span><span class="mobile-calc-value" id="m-calc-formula">11,480 × 10.00</span></div>
+<div class="mobile-calc-row mobile-calc-total"><span class="mobile-calc-label">Total</span><span class="mobile-calc-value" id="m-yen-total">= ¥114,800</span></div>
+</div>
+<div class="mobile-section-title">Who Pays What</div>
+<div class="mobile-calculator">
+<div class="mobile-calc-row"><span class="mobile-calc-label" id="m-insurance-pct">Insurance 90%</span><span class="mobile-calc-value" id="m-insurance-amt">¥103,320</span></div>
+<div class="mobile-calc-row"><span class="mobile-calc-label" id="m-user-pct">User 10% co-pay</span><span class="mobile-calc-value" id="m-user-amt">¥11,480</span></div>
+</div>
+<div class="mobile-section-title">Payment Timeline (Miyagi kokuho-ren schedule)</div>
+<div class="mobile-calculator">
+<div class="mobile-calc-row"><span class="mobile-calc-label">April: Service</span><span class="mobile-calc-value">Care delivered</span></div>
+<div class="mobile-calc-row"><span class="mobile-calc-label">May: Claim</span><span class="mobile-calc-value">Filed by 10th</span></div>
+<div class="mobile-calc-row"><span class="mobile-calc-label">June: Payment</span><span class="mobile-calc-value">15th: bills insurer · 25th: insurer pays</span></div>
+<div class="mobile-calc-row"><span class="mobile-calc-label">End June</span><span class="mobile-calc-value">Provider paid</span></div>
+</div>
+</div>
+<div class="desktop-infographic diagram-wrapper" role="region" aria-label="Interactive diagram: Monthly cost calculation">
 <div class="diagram-scroll-hint">← Scroll horizontally to see full diagram →</div>
-<svg class="diagram-svg" viewBox="0 0 900 500" role="img" aria-label="Diagram showing how monthly care costs are calculated">
+<svg class="diagram-svg" viewBox="0 0 940 540" role="img" aria-label="Diagram showing how monthly care costs are calculated">
 <title>Monthly Cost Calculation Example</title>
 <defs><marker id="calc-arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="currentColor"/></marker></defs>
 <text class="node-text" x="450" y="28" font-weight="bold" font-size="14">MONTHLY COST CALCULATION (EXAMPLE)</text>
@@ -69,37 +98,37 @@
 <text class="node-text" x="130" y="100" font-size="16" font-weight="bold" id="yen-total">= ¥114,800</text>
 </g>
 <path d="M580 110 L610 90" stroke="currentColor" stroke-width="1.5" marker-end="url(#calc-arrow)"/>
-<g class="calc-split" transform="translate(150, 290)">
+<g class="calc-split" transform="translate(150, 310)">
 <text class="node-text" x="300" y="0" font-weight="bold">Who Pays What</text>
-<rect class="node-rect node-rect--primary" x="0" y="20" width="250" height="90" rx="4"/>
-<text class="node-text" x="125" y="50">Insurance Pays</text>
-<text class="node-text node-text--small" x="125" y="70" id="insurance-pct">90%</text>
-<text class="node-text" x="125" y="100" font-size="18" font-weight="bold" id="insurance-amt">¥103,320</text>
-<rect class="node-rect" x="350" y="20" width="250" height="90" rx="4" fill="#ffebee" stroke="#c62828"/>
-<text class="node-text" x="475" y="50" fill="#c62828">User Pays</text>
-<text class="node-text node-text--small" x="475" y="70" fill="#c62828" id="user-pct">10% co-pay</text>
-<text class="node-text" x="475" y="100" font-size="18" font-weight="bold" fill="#c62828" id="user-amt">¥11,480</text>
+<rect class="node-rect node-rect--primary" x="0" y="22" width="250" height="90" rx="4"/>
+<text class="node-text" x="125" y="52">Insurance Pays</text>
+<text class="node-text node-text--small" x="125" y="72" id="insurance-pct">90%</text>
+<text class="node-text" x="125" y="102" font-size="18" font-weight="bold" id="insurance-amt">¥103,320</text>
+<rect class="node-rect" x="350" y="22" width="250" height="90" rx="4" fill="#ffebee" stroke="#c62828"/>
+<text class="node-text" x="475" y="52" fill="#c62828">User Pays</text>
+<text class="node-text node-text--small" x="475" y="72" fill="#c62828" id="user-pct">10% co-pay</text>
+<text class="node-text" x="475" y="102" font-size="18" font-weight="bold" fill="#c62828" id="user-amt">¥11,480</text>
 </g>
-<path d="M740 160 L650 260 L600 290" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4" marker-end="url(#calc-arrow)"/>
-<path d="M740 160 L450 260 L400 290" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4"/>
-<g class="calc-timeline" transform="translate(50, 410)">
-<text class="node-text" x="400" y="0" font-weight="bold">Payment Timeline (Miyagi kokuho-ren schedule)</text>
-<rect x="0" y="20" width="200" height="50" rx="4" fill="#e3f2fd" stroke="#1976d2"/>
-<text class="node-text" x="100" y="42" font-size="11" fill="#1976d2">April: Service</text>
-<text class="node-text node-text--small" x="100" y="58" fill="#1976d2">Care delivered</text>
-<path d="M200 45 L240 45" stroke="currentColor" stroke-width="1.5" marker-end="url(#calc-arrow)"/>
-<rect x="240" y="20" width="200" height="50" rx="4" fill="#fff3e0" stroke="#ff9800"/>
-<text class="node-text" x="340" y="42" font-size="11" fill="#e65100">May: Claim</text>
-<text class="node-text node-text--small" x="340" y="58" fill="#e65100">Filed by 10th</text>
-<path d="M440 45 L480 45" stroke="currentColor" stroke-width="1.5" marker-end="url(#calc-arrow)"/>
-<rect x="480" y="20" width="220" height="50" rx="4" fill="#e8f5e9" stroke="#388e3c"/>
-<text class="node-text" x="590" y="38" font-size="11" fill="#388e3c">June: Payment</text>
-<text class="node-text node-text--small" x="590" y="52" fill="#388e3c">15th: bills insurer</text>
-<text class="node-text node-text--small" x="590" y="64" fill="#388e3c">25th: insurer pays</text>
-<path d="M700 45 L740 45" stroke="currentColor" stroke-width="1.5" marker-end="url(#calc-arrow)"/>
-<rect x="740" y="20" width="120" height="50" rx="4" fill="#c8e6c9" stroke="#2e7d32"/>
-<text class="node-text" x="800" y="42" font-size="11" fill="#2e7d32">End June</text>
-<text class="node-text node-text--small" x="800" y="58" fill="#2e7d32">Provider paid</text>
+<path d="M740 160 L700 250 L625 332" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4" marker-end="url(#calc-arrow)"/>
+<path d="M740 160 L450 250 L275 332" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4"/>
+<g class="calc-timeline" transform="translate(40, 440)">
+<text class="node-text" x="430" y="0" font-weight="bold">Payment Timeline (Miyagi kokuho-ren schedule)</text>
+<rect x="0" y="20" width="190" height="50" rx="4" fill="#e3f2fd" stroke="#1976d2"/>
+<text class="node-text" x="95" y="42" font-size="11" fill="#1976d2">April: Service</text>
+<text class="node-text node-text--small" x="95" y="58" fill="#1976d2">Care delivered</text>
+<path d="M190 45 L220 45" stroke="currentColor" stroke-width="1.5" marker-end="url(#calc-arrow)"/>
+<rect x="220" y="20" width="190" height="50" rx="4" fill="#fff3e0" stroke="#ff9800"/>
+<text class="node-text" x="315" y="42" font-size="11" fill="#e65100">May: Claim</text>
+<text class="node-text node-text--small" x="315" y="58" fill="#e65100">Filed by 10th</text>
+<path d="M410 45 L440 45" stroke="currentColor" stroke-width="1.5" marker-end="url(#calc-arrow)"/>
+<rect x="440" y="20" width="210" height="50" rx="4" fill="#e8f5e9" stroke="#388e3c"/>
+<text class="node-text" x="545" y="38" font-size="11" fill="#388e3c">June: Payment</text>
+<text class="node-text node-text--small" x="545" y="52" fill="#388e3c">15th: bills insurer</text>
+<text class="node-text node-text--small" x="545" y="64" fill="#388e3c">25th: insurer pays</text>
+<path d="M650 45 L680 45" stroke="currentColor" stroke-width="1.5" marker-end="url(#calc-arrow)"/>
+<rect x="680" y="20" width="180" height="50" rx="4" fill="#c8e6c9" stroke="#2e7d32"/>
+<text class="node-text" x="770" y="42" font-size="11" fill="#2e7d32">End June</text>
+<text class="node-text node-text--small" x="770" y="58" fill="#2e7d32">Provider paid</text>
 </g>
 </svg>
 </div>
@@ -118,6 +147,6 @@
 </table>
 </div>
 <script>
-(function(){var levelSelect=document.getElementById('care-level'),copaySelect=document.getElementById('copay-rate'),unitPriceSelect=document.getElementById('unit-price');var svc1=245*8,svc2=388*4,svc3=896*8,svc4=100*8;var totalUnits=svc1+svc2+svc3+svc4;function update(){var cap=parseInt(levelSelect.options[levelSelect.selectedIndex].getAttribute('data-cap'),10);var copay=parseInt(copaySelect.value,10)/100;var unitPrice=parseFloat(unitPriceSelect.value);document.getElementById('total-units').textContent=totalUnits.toLocaleString();var capStatus=document.getElementById('cap-status');if(totalUnits<=cap){capStatus.textContent='Under cap of '+cap.toLocaleString();capStatus.style.fill=''}else{capStatus.textContent='OVER cap of '+cap.toLocaleString()+'!';capStatus.style.fill='#c62828'}document.getElementById('unit-price-display').textContent='1 unit = ¥'+unitPrice.toFixed(2);var yenTotal=Math.round(totalUnits*unitPrice);document.getElementById('calc-formula').textContent=totalUnits.toLocaleString()+' × '+unitPrice.toFixed(2);document.getElementById('yen-total').textContent='= ¥'+yenTotal.toLocaleString();var insuranceAmt=Math.round(yenTotal*(1-copay));var userAmt=yenTotal-insuranceAmt;document.getElementById('insurance-pct').textContent=Math.round((1-copay)*100)+'%';document.getElementById('insurance-amt').textContent='¥'+insuranceAmt.toLocaleString();document.getElementById('user-pct').textContent=Math.round(copay*100)+'% co-pay';document.getElementById('user-amt').textContent='¥'+userAmt.toLocaleString()}levelSelect.addEventListener('change',update);copaySelect.addEventListener('change',update);unitPriceSelect.addEventListener('change',update);update()})();
+(function(){var levelSelect=document.getElementById('care-level'),copaySelect=document.getElementById('copay-rate'),unitPriceSelect=document.getElementById('unit-price');var svc1=245*8,svc2=388*4,svc3=896*8,svc4=100*8;var totalUnits=svc1+svc2+svc3+svc4;function setText(id,value,styleProp,styleVal){var el=document.getElementById(id);if(!el)return;el.textContent=value;if(styleProp){el.style[styleProp]=styleVal||''}}function update(){var cap=parseInt(levelSelect.options[levelSelect.selectedIndex].getAttribute('data-cap'),10);var copay=parseInt(copaySelect.value,10)/100;var unitPrice=parseFloat(unitPriceSelect.value);var unitsLabel=totalUnits.toLocaleString();setText('total-units',unitsLabel);setText('m-total-units',unitsLabel);var capOk=totalUnits<=cap;var capLabel=(capOk?'Under cap of ':'OVER cap of ')+cap.toLocaleString()+(capOk?'':'!');setText('cap-status',capLabel,'fill',capOk?'':'#c62828');setText('m-cap-status',capLabel,'color',capOk?'':'#c62828');var priceLabel='1 unit = ¥'+unitPrice.toFixed(2);setText('unit-price-display',priceLabel);setText('m-unit-price-display',priceLabel);var yenTotal=Math.round(totalUnits*unitPrice);var formula=totalUnits.toLocaleString()+' × '+unitPrice.toFixed(2);setText('calc-formula',formula);setText('m-calc-formula',formula);var yenLabel='= ¥'+yenTotal.toLocaleString();setText('yen-total',yenLabel);setText('m-yen-total',yenLabel);var insuranceAmt=Math.round(yenTotal*(1-copay));var userAmt=yenTotal-insuranceAmt;var insPct=Math.round((1-copay)*100);var userPct=Math.round(copay*100);setText('insurance-pct',insPct+'%');setText('m-insurance-pct','Insurance '+insPct+'%');setText('insurance-amt','¥'+insuranceAmt.toLocaleString());setText('m-insurance-amt','¥'+insuranceAmt.toLocaleString());setText('user-pct',userPct+'% co-pay');setText('m-user-pct','User '+userPct+'% co-pay');setText('user-amt','¥'+userAmt.toLocaleString());setText('m-user-amt','¥'+userAmt.toLocaleString())}levelSelect.addEventListener('change',update);copaySelect.addEventListener('change',update);unitPriceSelect.addEventListener('change',update);update()})();
 </script>
 <noscript><p><strong>JavaScript is required for the interactive calculator.</strong> Default values: Care level 3, 10% co-pay, ¥10.00 per unit.</p></noscript>

@@ -22,7 +22,7 @@
     </div>
   </header>
 
-  <div class="infographic-container">
+  <div class="infographic-container"{{ with .Params.infographic_type }} data-type="{{ . }}"{{ end }}>
     {{ .Content }}
   </div>
 

@@ -199,12 +199,11 @@ html[data-theme="dark"] .infographic-card:hover {
 }
 
 @media (max-width: 640px) {
-  .diagram-svg {
+  .desktop-infographic .diagram-svg {
     min-width: 1080px;
   }
-  
-  /* Infographic 01 needs larger viewBox scaling */
-  .infographic-container[data-type="system"] .diagram-svg {
+
+  .infographic-container[data-type="system"] .desktop-infographic .diagram-svg {
     min-width: 960px;
   }
 }
@@ -859,6 +858,10 @@ html[data-theme="dark"] .example-label {
   .desktop-infographic {
     display: none;
   }
+
+  .infographic-page {
+    overflow-x: hidden;
+  }
 }
 
 .mobile-card-grid {
@@ -987,6 +990,7 @@ html[data-theme="dark"] .example-label {
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 0.875rem;
+  cursor: pointer;
 }
 
 .mobile-step-number {
@@ -995,12 +999,17 @@ html[data-theme="dark"] .example-label {
   justify-content: center;
   width: 24px;
   height: 24px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 700;
   background: var(--primary);
   color: var(--theme);
   border-radius: 50%;
   margin-right: 0.5rem;
+}
+
+.mobile-step--active {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 1px var(--primary);
 }
 
 .mobile-step-title {
@@ -1025,9 +1034,15 @@ html[data-theme="dark"] .example-label {
 .mobile-calc-row {
   display: flex;
   justify-content: space-between;
+  gap: 0.75rem;
   padding: 0.5rem 0;
   border-bottom: 1px solid var(--tertiary);
   font-size: 0.9rem;
+}
+
+.mobile-calc-label {
+  flex: 1;
+  min-width: 0;
 }
 
 .mobile-calc-row:last-child {
@@ -1098,7 +1113,7 @@ html[data-theme="dark"] .example-label {
 
 .mobile-node-ja {
   font-family: 'Noto Serif JP', serif;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: var(--secondary);
 }
 
@@ -1157,11 +1172,33 @@ html[data-theme="dark"] .example-label {
   }
   
   /* Minimum 14px font size requirement for mobile */
-  .infographic-meta {
-    font-size: 0.875rem;
-  }
-  
-  .infographic-meta-item {
+  .mobile-infographic,
+  .mobile-infographic p,
+  .mobile-card-meta,
+  .mobile-card-ja,
+  .mobile-card-badge,
+  .mobile-segment-tag,
+  .mobile-section-title,
+  .mobile-step-title,
+  .mobile-step-content,
+  .mobile-calc-row,
+  .mobile-calc-label,
+  .mobile-calc-value,
+  .mobile-node-title,
+  .mobile-node-ja,
+  .example-notes p,
+  .example-sources,
+  .example-sources th,
+  .example-sources td,
+  .step-explanation-box,
+  .control-group label,
+  .control-help,
+  .infographic-meta,
+  .infographic-meta-item,
+  .infographic-page .analysis-label,
+  .infographic-page .analysis-title,
+  .infographic-page .analysis-body,
+  .diagram-opinion-body {
     font-size: 0.875rem;
   }
   
@@ -1209,6 +1246,14 @@ html[data-theme="dark"] .example-label {
    ========================================================================== */
 
 @media print {
+  .mobile-infographic {
+    display: none !important;
+  }
+
+  .desktop-infographic {
+    display: block !important;
+  }
+
   .infographic-meta,
   .step-controls,
   .filter-controls,
