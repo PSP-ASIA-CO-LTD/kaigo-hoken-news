@@ -1336,3 +1336,9 @@ html[data-theme="dark"] .th-badge--none, html[data-theme="dark"] .th-badge--part
     page-break-before: always;
   }
 }
+
+/* Thai infographic 4 */
+.th-year-step { cursor: pointer; transition: opacity .15s ease; }
+.th-year-step.is-current > .node-rect { stroke: var(--newspaper-accent, #8b0000); stroke-width: 2.5; }
+html[data-theme="dark"] .th-year-step.is-current > .node-rect { stroke: #e57373; }
+.th-year-example-mobile { border-style: dashed; }
