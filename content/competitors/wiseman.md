@@ -6,6 +6,7 @@ tags: ["japan", "competitors", "wiseman", "m3", "software"]
 summary: "Wiseman's five-year licence model, its care and medical products, M3's June 2026 acquisition and M3's share claims, and how Wiseman handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
 weight: 4
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

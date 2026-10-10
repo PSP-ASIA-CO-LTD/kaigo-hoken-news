@@ -6,6 +6,7 @@ tags: ["japan", "competitors", "comparison", "software"]
 summary: "A sourced side-by-side view of the nine products we profile, from Kaipoke to Care-wing: government test and survey listings, LIFE and claims, scheduling, AI and voice, family access, service coverage, pricing and links. Every filled cell is cited; a blank cell means we did not find it in public sources."
 categories: ["Competitors"]
 weight: 9
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

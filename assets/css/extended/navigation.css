@@ -542,6 +542,36 @@
   text-decoration: underline;
 }
 
+/* Country taxonomy landings */
+.country-hub-sections,
+.country-hub-pages {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.country-hub-heading {
+  font-family: 'Playfair Display', 'Noto Serif JP', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+  color: var(--primary);
+}
+
+.country-hub-grid {
+  margin-bottom: 1.5rem;
+}
+
+.country-hub-grid.deep-dive-grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .country-hub-grid.deep-dive-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* Mobile: stack the cards */
 @media (max-width: 640px) {
   .deep-dive-grid {

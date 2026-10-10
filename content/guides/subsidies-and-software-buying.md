@@ -6,6 +6,7 @@ tags: ["japan", "long-term-care", "subsidy", "software", "care-plan", "guide"]
 summary: "The fiscal 2026 care-technology subsidy at four fifths of cost, what software and offices must do to qualify, how it links to the Care Plan Data Exchange and the wage add-on, and the separate METI subsidy that some vendors use instead."
 categories: ["Guides"]
 weight: 5
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

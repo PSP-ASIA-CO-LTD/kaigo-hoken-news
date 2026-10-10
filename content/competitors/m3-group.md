@@ -6,6 +6,7 @@ tags: ["japan", "competitors", "m3", "wiseman", "care-wing", "elan", "m-and-a"]
 summary: "What M3 owns in Japan's care market and when it bought each company, the deal terms on public record (including what M3 has said about closing the Wiseman deal), M3's strategy in its own words, the group's scale on M3's numbers, where the group touches each care segment, and the open questions."
 categories: ["Competitors"]
 weight: 11
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

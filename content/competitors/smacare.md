@@ -6,6 +6,7 @@ tags: ["japan", "competitors", "smacare", "teiki-junkai", "software"]
 summary: "SmaCare, a records and call-handling system built for 24-hour regular-and-on-call home visiting, with a new AI option and a lighter home-care edition: its share claim, multilingual app, links to billing software, and Care Plan Data Exchange status."
 categories: ["Competitors"]
 weight: 8
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

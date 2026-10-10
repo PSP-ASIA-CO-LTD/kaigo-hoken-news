@@ -6,6 +6,7 @@ tags: ["japan", "competitors", "carekarte", "software"]
 summary: "CAREKARTE, a records-to-claims care system with a strong facility base: its licence model, voice-AI and family tools, its open link interface, two different office counts, and how it handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
 weight: 6
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

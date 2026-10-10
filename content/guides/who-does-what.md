@@ -6,6 +6,7 @@ tags: ["japan", "long-term-care", "roles", "care-manager", "home-visit-care", "g
 summary: "The people and bodies involved in Japanese home care, from the user and family to the care manager, service coordinator, helpers, nurses, doctors, the municipality, the kokuho-ren and MHLW: their legal duties, and the records and data those duties create."
 categories: ["Guides"]
 weight: 4
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

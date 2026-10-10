@@ -36,6 +36,7 @@ sources:
   - title: "SmaCare profile"
     url: "competitors/smacare/"
     note: "Regular-visit records"
+countries: ["Japan"]
 ---
 
 {{< infographic-competitors >}}

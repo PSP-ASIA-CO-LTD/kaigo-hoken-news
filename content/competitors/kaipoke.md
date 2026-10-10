@@ -6,6 +6,7 @@ tags: ["japan", "competitors", "kaipoke", "software"]
 summary: "Kaipoke's published per-office prices, its features, who it targets, SMS's own scale and share figures, and how it handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
 weight: 1
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

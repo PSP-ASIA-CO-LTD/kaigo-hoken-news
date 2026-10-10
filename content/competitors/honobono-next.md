@@ -6,6 +6,7 @@ tags: ["japan", "competitors", "honobono", "sompo", "software"]
 summary: "ND Software's Honobono NEXT: its five-year licence model, features, customers, SOMPO's 2023 share estimates, and how it handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
 weight: 2
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

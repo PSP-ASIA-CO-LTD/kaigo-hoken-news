@@ -6,6 +6,7 @@ tags: ["japan", "competitors", "kanamic", "software"]
 summary: "Kanamic's cloud service: its pricing model, features, customers and published scale, its approval as an equivalent to the Care Plan Data Exchange, and how it handles LIFE and claims."
 categories: ["Competitors"]
 weight: 3
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

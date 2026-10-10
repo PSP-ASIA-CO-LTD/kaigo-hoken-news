@@ -12,6 +12,7 @@ sources:
   - title: "Executive summary"
     url: "posts/00-executive-summary/"
     note: "Number of offices and facilities"
+countries: ["Japan"]
 ---
 
 {{< infographic-system >}}

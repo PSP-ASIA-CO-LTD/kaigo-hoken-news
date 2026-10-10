@@ -15,6 +15,7 @@ sources:
   - title: "LIFE scientific care data"
     url: "guides/life-scientific-care-data/"
     note: "Submitting add-on data to the national LIFE system"
+countries: ["Japan"]
 ---
 
 {{< infographic-claims >}}

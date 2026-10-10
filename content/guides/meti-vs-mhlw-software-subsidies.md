@@ -6,6 +6,7 @@ tags: ["japan", "long-term-care", "subsidy", "software", "meti", "guide"]
 summary: "A side-by-side comparison of METI's Digital and AI Adoption Subsidy and MHLW's care-technology subsidy run by prefectures: who runs each, the budget and legal basis, eligible costs, rates and caps, how offices apply, what vendors must register, the fiscal 2026 dates, whether the two can be combined, and what it means for a foreign vendor."
 categories: ["Guides"]
 weight: 8
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

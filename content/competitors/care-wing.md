@@ -6,6 +6,7 @@ tags: ["japan", "competitors", "care-wing", "logic", "m3", "home-visit-care", "s
 summary: "Care-wing, the smartphone-and-IC-tag records system for home-visit care and nursing that M3 bought in 2022: how it is priced, what it does, the billing software it links to, its office count, and its LIFE and Care Plan Data Exchange status."
 categories: ["Competitors"]
 weight: 10
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*
