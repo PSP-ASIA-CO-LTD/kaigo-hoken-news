@@ -21,4 +21,6 @@ Suggested reading order:
 5. [Data and IT reporting]({{< relref "data-and-it-reporting" >}}): DHSS's online licensing system, the NHSO LTC programme, the Department of Health's 3C program, and the records a licensed home must keep.
 6. [Ageing and market statistics]({{< relref "ageing-and-market-statistics" >}}): how many older people, where, and the size of the nursing-home market.
 
+See also [Competitors]({{< relref "competitors" >}}).
+
 For the Japanese system, see the [Guides]({{< relref "/guides" >}}) section.
