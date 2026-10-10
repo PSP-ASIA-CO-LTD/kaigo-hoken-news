@@ -36,7 +36,7 @@ To compare all of them on one page, see the [feature matrix]({{< relref "/thaila
 
 ## The landscape in four groups
 
-**1. Free government systems.** The state is the largest software supplier in Thai elderly care.
+**1. Government systems.** The state is the largest software supplier in Thai elderly care.
 
 - **Nirun.** Built by the National Science and Technology Development Agency (NSTDA), สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (Samnakngan Phatthana Witthayasat lae Theknoloyi haeng Chat, สวทช.). It is used in all 12 welfare centres run by the Department of Older Persons (DOP), กรมกิจการผู้สูงอายุ (Krom Kitchakan Phu Sung-ayu).[^1] Its community app, Nirun for Community, supports DOP's community caregivers in 268 areas across all 76 provinces in 2026.[^2]
 - **NHSO's LTC web programme and the Department of Health's 3C program.** In the NHSO-funded community scheme, care managers use the 3C program to register caregivers and write individual care plans. The program pulls the records of dependent older people from the NHSO's LTC programme.[^16] Both systems are covered in [Data and IT reporting]({{< relref "/thailand/data-and-it-reporting" >}}) and profiled, with Thai COC, the Blue Book app and Smart อสม., on the [Government systems]({{< relref "/thailand/competitors/government-systems" >}}) page.
@@ -122,6 +122,7 @@ Tako-San's view: in Thai public-sector elderly care, the main competitor is the 
 - 11 Oct 2026: first published (overview plus four profiles)
 - 11 Oct 2026: the line on care managers now has a source (new note 16). The unsourced claim that they use these systems "for payments" was removed
 - 11 Oct 2026: added profiles of APSX, MCS and the government systems, and a feature matrix, with links from this page. APSX's prices are now stated as annual, excluding VAT, from its home page (new note 17), and MCS's published clinic packages are added (new note 18). APSX and MCS rows added to both overview tables. NEC and the adjacent state apps now point to the Government systems page
+- 11 Oct 2026: heading renamed; "free" is only sourced for Thai COC
 
 ---
 
