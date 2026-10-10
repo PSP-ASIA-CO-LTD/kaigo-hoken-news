@@ -83,6 +83,24 @@
       document.body.classList.toggle('infographic-fs-lock', on);
     }
 
+    function restoreScroll() {
+      var y = savedScroll;
+      container.scrollTop = 0;
+      container.scrollLeft = 0;
+      var focused = document.activeElement;
+      if (focused && container.contains(focused) && focused.tagName !== 'BUTTON') {
+        focused.blur();
+      }
+      function pin() {
+        window.scrollTo(0, y);
+      }
+      pin();
+      requestAnimationFrame(function () {
+        pin();
+        setTimeout(pin, 0);
+      });
+    }
+
     function syncUi() {
       var active = isActive();
       container.classList.toggle('is-fs-active', active);
@@ -92,9 +110,7 @@
         setButtonState(btn, active);
       });
       lockScroll(overlayOn);
-      if (!active) {
-        window.scrollTo(0, savedScroll);
-      }
+      if (!active) restoreScroll();
     }
 
     function enterOverlay() {
