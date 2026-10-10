@@ -1094,7 +1094,7 @@ html[data-theme="dark"] .example-label {
   justify-content: center;
   width: 28px;
   height: 28px;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-weight: 700;
   background: var(--tertiary);
   border-radius: 4px;
@@ -1186,6 +1186,7 @@ html[data-theme="dark"] .example-label {
   .mobile-calc-value,
   .mobile-node-title,
   .mobile-node-ja,
+  .mobile-node-number,
   .example-notes p,
   .example-sources,
   .example-sources th,
