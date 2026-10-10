@@ -1,7 +1,7 @@
 ---
 title: "Licensing elderly-care businesses in Thailand: the Health Establishment Act and DHSS"
 date: 2026-10-10T00:00:00+07:00
-lastmod: 2026-10-10T20:30:00+07:00
+lastmod: 2026-10-11T02:00:00+07:00
 tags: ["thailand", "long-term-care", "regulation", "licensing", "nursing-homes", "guide"]
 summary: "How Thailand regulates private elderly-care and dependent-care businesses: the Health Establishment Act B.E. 2559 (2016), the two 2020 ministerial regulations that brought care homes under it, the three licences (business, operator, caregiver registration), the standards, inspection and penalties, how to apply online, and the count of licensed homes (1,203 in October 2026)."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 1
 countries: ["Thailand"]
 ---
 
-*Last updated: 10 Oct 2026*
+*Last updated: 11 Oct 2026*
 
 In Thailand, a private business that looks after older or dependent people is licensed as a "health establishment", the same legal category as spas and massage shops. The law is the Health Establishment Act B.E. 2559 (2016), พระราชบัญญัติสถานประกอบการเพื่อสุขภาพ (Phraratchabanyat Sathan Prakop Kan Phuea Sukkhaphap, Health Establishment Act).[^1] A 2020 ministerial regulation, กฎกระทรวง (kot krasuang, ministerial regulation), added "elderly or dependent-person care" to the businesses that the Act covers.[^2] A second 2020 regulation sets the standards for premises, safety and service.[^3]
 
@@ -96,7 +96,7 @@ The government's citizen guide for this licence sets out the steps.[^4]
 4. Officials visit to assess the premises against the standards. A committee reviews the result. The guide allows 50 days for this step.[^4]
 5. If approved, the applicant is told to pay the fee within 60 days, then prints the licence and fee receipt from the system. The guide gives two months as the total time.[^4]
 
-The guide describes this procedure for Bangkok. For other provinces it names DHSS's 12 regional Health Service Support Centres, ศูนย์สนับสนุนบริการสุขภาพ (sun sanapsanun borikan sukkhaphap, Health Service Support Centre), among the contact points.[^4] The guide's fee field says "no fee", but its own step 5 asks the applicant to pay a fee. We did not find the fee amounts. The Act lets them be set by ministerial regulation (ss. 4, 12, 15).[^1][^4]
+The guide describes this procedure for Bangkok. For other provinces it names DHSS's 12 regional Health Service Support Centres, ศูนย์สนับสนุนบริการสุขภาพ (sun sanapsanun borikan sukkhaphap, Health Service Support Centre), among the contact points.[^4] The guide's fee field says "no fee". Its own steps, however, tell the applicant to pay the fee within 60 days of being told the licence is approved, and then to print the annual-fee receipt.[^4] DHSS's announcement of the 2020 rules says a licence fee does apply. It depends on the type and floor area of the establishment, from 500 to 10,000 baht, and is waived for businesses run by state agencies, foundations or public charities. An operator licence costs 1,000 baht and lasts for life, and registering as a caregiver is free.[^8] The Act caps the business licence fee at 10,000 baht and the annual fee at 1,000 baht a year. The actual rates are set by ministerial regulation (s. 4, s. 15 and the Act's fee schedule).[^1] So the guide's "no fee" entry is either an error or refers only to filing the application. The guide does not say which.
 
 ## How many licensed establishments
 
@@ -114,6 +114,7 @@ Tako-San's view: the Thai rules ask a licensed home to keep a client register in
 ## Changelog
 
 - 10 Oct 2026: first published
+- 11 Oct 2026: licence fee clarified: the citizen guide's "no fee" field conflicts with its own payment steps; DHSS's 2020 announcement gives the fees (new note 8) and the Act's fee caps are added from note 1
 
 ---
 
@@ -132,3 +133,5 @@ Tako-San's view: the Thai rules ask a licensed home to keep a client register in
 [^6]: Department of Older Persons, Strategy and Planning Division. "Elderly-care establishments licensed by the Department of Health Service Support (สถานประกอบการ การดูแลผู้สูงอายุ กรมสนับสนุนการบริการสุขภาพ)," PDF uploaded 2 April 2025 (date from the file's upload stamp and metadata). https://www.dop.go.th/download/knowledge/th1743570381-2609_0.pdf
 
 [^7]: Department of Health Service Support. "Check licensed establishments (ตรวจสอบสถานประกอบการที่ได้รับอนุญาต)," Elderly or Dependent-Person Care Business System. https://esta.hss.moph.go.th/check-shops.php (page title from the search index; the site refused our connection on 10 October 2026)
+
+[^8]: Department of Health Service Support. "Law to regulate elderly-care businesses now in force (กฎหมายคุมกิจการดูแลผู้สูงอายุ ประกาศใช้แล้ว)," press release, 3 September 2020. https://hss.moph.go.th/fileupload_doc/2020-09-08-1-20-53054880.pdf

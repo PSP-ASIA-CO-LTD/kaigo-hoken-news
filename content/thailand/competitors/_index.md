@@ -1,7 +1,7 @@
 ---
 title: "Thai competitors"
 date: 2026-10-11T00:00:00+07:00
-lastmod: 2026-10-11T09:00:00+07:00
+lastmod: 2026-10-11T09:30:00+07:00
 summary: "Who sells care software to Thai elderly-care providers: the free government systems (led by NSTDA's Nirun, now in every DOP welfare centre and spreading to every district), private nursing-home start-ups (CloudNurse, Caleo), clinic suites with care modules (HexaHealth, APSX, MCS), and foreign entrants. Every cell is sourced; vendor claims are labelled as claims. No market-share data exists."
 countries: ["Thailand"]
 ---
@@ -34,7 +34,7 @@ Profiles are updated in place and carry their own changelog:
 **1. Free government systems.** The state is the largest software supplier in Thai elderly care.
 
 - **Nirun.** Built by the National Science and Technology Development Agency (NSTDA), สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (Samnakngan Phatthana Witthayasat lae Theknoloyi haeng Chat, สวทช.). It is used in all 12 welfare centres run by the Department of Older Persons (DOP), กรมกิจการผู้สูงอายุ (Krom Kitchakan Phu Sung-ayu).[^1] Its community app, Nirun for Community, supports DOP's community caregivers in 268 areas across all 76 provinces in 2026.[^2]
-- **NHSO's LTC web programme and the Department of Health's 3C program.** Care managers and caregivers in the NHSO-funded community scheme must use these for care plans and payments. They are covered in [Data and IT reporting]({{< relref "/thailand/data-and-it-reporting" >}}).
+- **NHSO's LTC web programme and the Department of Health's 3C program.** In the NHSO-funded community scheme, care managers use the 3C program to register caregivers and write individual care plans. The program pulls the records of dependent older people from the NHSO's LTC programme.[^16] Both systems are covered in [Data and IT reporting]({{< relref "/thailand/data-and-it-reporting" >}}).
 
 **2. Private nursing-home software.** Small Thai start-ups selling to fee-paying private homes:
 
@@ -111,6 +111,7 @@ Tako-San's view: in Thai public-sector elderly care, the main competitor is the 
 ## Changelog
 
 - 11 Oct 2026: first published (overview plus four profiles)
+- 11 Oct 2026: the line on care managers now has a source (new note 16). The unsourced claim that they use these systems "for payments" was removed
 
 ---
 
@@ -145,3 +146,5 @@ Tako-San's view: in Thai public-sector elderly care, the main competitor is the 
 [^14]: NSTDA. "DOP and NSTDA join forces… developing the 'Nirun' system," press release, 24 July 2025. https://www.nstda.or.th/home/news_post/nstda-nirun-platform-develops-elderly-care-20250723/
 
 [^15]: NSTDA. "NSTDA receives special outstanding network-organisation award…2026," press release, 8 April 2026. https://www.nstda.or.th/home/news_post/nstda-elderly-award-20260408/
+
+[^16]: Department of Health, Institute for Urban Health Development (สถาบันพัฒนาสุขภาวะเขตเมือง), elderly health group. "Program Long Term Care (3C)," undated training slides on registering care managers and caregivers and writing care plans in the Department of Health's 3C program (ltc.anamai.moph.go.th). Accessed 11 October 2026. https://mwi.anamai.moph.go.th/th/elderly-group/download/?did=207612&id=83877&reload=
