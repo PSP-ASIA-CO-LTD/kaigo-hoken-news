@@ -47,7 +47,7 @@ sources:
 - **Who funds the 2025 caregiver stimulus project.** Local governments hire the caregivers and sign the agreements, but the source of the money behind those wages is not shown.
 - **How the old-age allowance budget reaches local governments.** There is no national-budget-to-LAO arrow, and the Ministry of Finance role is not drawn.
 - **What DOP centre residents pay, and the centres' budget.** There is no money arrow into the welfare centres.
-- **Who pays the DOP caregivers' 10,000 baht stipend.** The Bangkok Post figure is on the node, not drawn as a money arrow.
+- **Who pays the DOP caregivers' 10,000 baht stipend.** The Bangkok Post figure is in the DOP caregivers panel, not drawn as a money arrow.
 - **Private-home prices.** No official national data was found, so the family-to-home arrow has no amount.
 - **How the NHSO lump sum is spent downstream.** There is no arrow from that money to caregiver pay or equipment.
 - **Who trains community caregivers on the 70-hour course.** There is no schools-to-community-caregiver arrow.
