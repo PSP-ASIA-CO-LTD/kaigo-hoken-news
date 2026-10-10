@@ -1262,6 +1262,12 @@ html[data-theme="dark"] .diagram-line--money { stroke: #e57373; }
 @media (max-width: 639px) { .mobile-node-th, .mobile-flow .mobile-node-number { font-size: 0.875rem; } }
 
 /* Thai infographics 2 and 3 */
+svg:has(.th-rec-step) .node-text,
+svg:has(.th-rec-step) .node-text--th,
+svg:has(.th-map-node) .node-text,
+svg:has(.th-map-node) .node-text--th,
+svg:has(.th-map-node) .th-badge-text,
+svg:has(.th-chip) .th-chip-text { font-family: 'Liberation Sans', 'Noto Sans Thai', sans-serif; }
 .th-lane { fill: rgba(0,0,0,.035); stroke: none; }
 html[data-theme="dark"] .th-lane { fill: rgba(255,255,255,.05); }
 .th-chip { fill: #fff; stroke: #555; stroke-width: 1; }
