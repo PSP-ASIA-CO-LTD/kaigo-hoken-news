@@ -1194,6 +1194,7 @@ html[data-theme="dark"] .example-label {
   .mobile-calc-value,
   .mobile-node-title,
   .mobile-node-ja,
+  .mobile-node-th,
   .mobile-node-number,
   .example-notes p,
   .example-sources,
@@ -1249,6 +1250,16 @@ html[data-theme="dark"] .example-label {
     font-size: 0.875rem !important;
   }
 }
+
+/* Thai infographic 1 */
+.node-text--th { font-family: 'Noto Sans Thai', 'Leelawadee UI', Tahoma, sans-serif; font-size: 11px; }
+.diagram-line--money { stroke: var(--newspaper-accent, #8b0000); stroke-width: 2.5; marker-end: url(#arrowhead); }
+.diagram-line--rule { stroke-dasharray: 4 3; marker-end: url(#arrowhead); }
+html[data-theme="dark"] .diagram-line--money { stroke: #e57373; }
+.mobile-node-th { font-family: 'Noto Sans Thai', 'Leelawadee UI', Tahoma, sans-serif; overflow-wrap: anywhere; word-break: break-word; }
+.mobile-flow { cursor: default; }
+.mobile-flow .mobile-node-number { min-width: 28px; width: auto; padding: 0 4px; }
+@media (max-width: 639px) { .mobile-node-th, .mobile-flow .mobile-node-number { font-size: 0.875rem; } }
 
 /* ==========================================================================
    PRINT STYLES
