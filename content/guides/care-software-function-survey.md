@@ -6,6 +6,7 @@ tags: ["japan", "long-term-care", "subsidy", "software", "care-plan", "life", "g
 summary: "MHLW's care-software function survey is the list that prefectures check before subsidising care software. This guide covers what the survey is, how it ties into the fiscal 2026 subsidy and the other public lists, what the October 2025 and August 2026 editions ask, how many products each lists, which of our profiled vendors appear, and what a new vendor has to do to be listed."
 categories: ["Guides"]
 weight: 7
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

@@ -9,6 +9,7 @@ series_order: 1
 categories: ["Basics"]
 cover:
   hidden: true
+countries: ["Japan"]
 ---
 
 Japan does not give each nursing-home resident a fixed public budget. Money follows the person through Long-Term Care Insurance ({{< ja "介護保険" "kaigo hoken" >}}), which started in April 2000.[^1] The insurer is the municipality. People aged 65 and over can qualify for any cause; people aged 40 to 64 only for designated age-related diseases. A certificate ({{< ja "要介護認定" "yōkaigo nintei" "care-need certification" >}}) places the person in {{< ja "要支援" "yō-shien" "support needed" >}}1–2 or {{< ja "要介護" "yō-kaigo" "care needed" >}}1–5. A care manager writes the care plan.

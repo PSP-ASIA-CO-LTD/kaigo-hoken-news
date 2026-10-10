@@ -6,6 +6,7 @@ tags: ["japan", "long-term-care", "claims", "kokuho-ren", "care-plan", "guide"]
 summary: "Step by step, the rules that move a home-care user from assessment to care plan, service, records, the kokuho-ren claim and payment, with the legal deadlines and the two-month payment lag."
 categories: ["Guides"]
 weight: 3
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

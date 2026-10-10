@@ -6,6 +6,7 @@ summary: "How a Japanese provider records care, bills the federation, and submit
 series: "Japan LTC Basics"
 series_order: 4
 categories: ["Technology"]
+countries: ["Japan"]
 ---
 
 Japanese care software is not a blank market. Billing has been electronic for years. The live fight is everything around the claim: the daily record, the roster, the add-on evidence, and a new national data platform that is switching on unevenly from 2026.

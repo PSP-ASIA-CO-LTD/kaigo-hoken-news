@@ -6,6 +6,7 @@ tags: ["japan", "competitors", "rehab-cloud", "software"]
 summary: "Rehab Cloud, a 'scientific care' software for day services: its pricing model, add-on and LIFE features, the 2026 move into special nursing homes, and how it handles claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
 weight: 5
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

@@ -6,6 +6,7 @@ tags: ["japan", "long-term-care", "care-information-platform", "api", "care-plan
 summary: "The Kaigo WEB Service is the website through which care offices reach Japan's care information platform, and from January 2027 it also carries care plans. This guide covers who runs it, the dated timeline, what API version 1.0 requires (standard 5.0, certificates, tokens, permissions), the vendor tests, costs, and the open questions."
 categories: ["Guides"]
 weight: 6
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

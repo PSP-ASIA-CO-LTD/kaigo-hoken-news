@@ -6,6 +6,7 @@ tags: ["japan", "long-term-care", "care-plan", "software", "guide"]
 summary: "How care plans move between care managers and service providers as data, the fees and add-ons tied to it, and the January 2027 move into the Kaigo WEB Service."
 categories: ["Guides"]
 weight: 2
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

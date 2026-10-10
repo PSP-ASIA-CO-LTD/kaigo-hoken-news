@@ -6,6 +6,7 @@ tags: ["japan", "long-term-care", "LIFE", "software", "guide"]
 summary: "What LIFE is, who runs it since May 2026, which add-ons depend on it, and what a care-software vendor has to build to support it."
 categories: ["Guides"]
 weight: 1
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

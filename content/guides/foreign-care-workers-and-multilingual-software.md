@@ -1,14 +1,15 @@
 ---
 title: "Foreign care workers in Japan and multilingual care software"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T09:00:00+07:00
+lastmod: 2026-10-10T20:30:00+07:00
 tags: ["japan", "long-term-care", "workforce", "foreign-workers", "multilingual", "policy", "guide"]
 summary: "The four visa routes into Japanese care work (EPA, the care residence status, Technical Intern Training and Specified Skilled Worker (i)), the move to the Employment for Skill Development system in April 2027, numbers by route and country (including Thailand), Japanese-language rules, what foreign staff may do, MHLW money for translation tools and multilingual care-record software, and which profiled vendors show a multilingual staff screen."
 categories: ["Guides"]
 weight: 10
+countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 10 Oct 2026*
 
 Japan admits foreign care workers through four routes. MHLW lists them as the Economic Partnership Agreement (EPA) route, the care residence status ({{< ja "在留資格「介護」" "zairyū shikaku 'kaigo'" "residence status 'care'" >}}), Technical Intern Training ({{< ja "技能実習" "ginō jisshū" "Technical Intern Training" >}}) and Specified Skilled Worker (i) ({{< ja "特定技能1号" "tokutei ginō ichi-gō" "Specified Skilled Worker (i)" >}}).[^1] A fifth system, Employment for Skill Development ({{< ja "育成就労" "ikusei shūrō" "Employment for Skill Development" >}}), replaces Technical Intern Training on 1 April 2027.[^7][^8]
 
@@ -23,7 +24,7 @@ This guide sets out each route, the numbers, the language rules, the limits on w
 | Technical Intern Training (care) | 1 Nov 2017[^1] | Transfer of skills to the home country[^1] | Up to five years of training, with a skills test at each stage[^1] | Not stated on the pages opened |
 | Specified Skilled Worker (i) (care) | 1 Apr 2019[^1] | Admitting foreign nationals with some expertise and skills to meet labour shortages[^1] | Five years in total. Up to six years if the person meets conditions such as a partial pass in the national exam taken just before the stay ends[^1] | Not stated on the pages opened |
 
-The care residence status is reached in two ways: graduating from a care-worker training school after entering as a student, or passing the national certified care worker exam ({{< ja "介護福祉士" "kaigo fukushishi" "certified care worker" >}}) after at least three years of work as a technical intern or similar.[^1] Since FY2017, training-school graduates also need to pass the national exam. Graduates up to FY2026 have a five-year transitional measure.[^1]
+The care residence status is reached in two ways: graduating from a care-worker training school after entering as a student, or passing the national certified care worker exam ({{< ja "介護福祉士" "kaigo fukushishi" "certified care worker" >}}) after at least three years of work as a technical intern or similar.[^1] Since FY2017, training-school graduates also need to pass the national exam. A transitional measure lets graduates up to FY2031 hold the qualification for five years without passing.[^26] From graduates of April 2027 onwards, the qualification lapses unless they pass within those five years.[^26][^27] See [Care-worker training in Japan]({{< relref "care-worker-training-schools" >}}).
 
 Future intake for SSW and ESD is set by a cabinet decision of 23 January 2026, the care-field operating policy for the two systems. It projects a care-worker shortage of about 259,300 in FY2028. After productivity and domestic-hiring measures, it still expects a shortfall of about 160,700, and sets planned intake to match:[^6]
 
@@ -168,6 +169,7 @@ Tako-San's view: for a Thai vendor, this topic matters more for the product than
 
 ## Changelog
 
+- 10 Oct 2026: transitional measure now runs to FY2031 graduates; link to the care-worker training guide
 - 9 Oct 2026: first published
 
 ---
@@ -223,3 +225,7 @@ Tako-San's view: for a Thai vendor, this topic matters more for the product than
 [^24]: Kanamic Network Co., Ltd. "Kanamic easy care record app (カナミックかんたん介護記録)." https://www.kanamic.net/lp/kantan-kaigo-kiroku/index.html
 
 [^25]: Wiseman Co., Ltd. "Webinar: ICT for a workplace that is kind to foreign staff (外国人スタッフに優しい職場はICTでつくれる)," 21 August 2025. https://www.wiseman.co.jp/webinar/welfare/20250821webseminar/
+
+[^26]: Social Welfare Promotion and Examination Center. "Transitional registration for graduates of training schools from 1 April 2017 to 31 March 2032 (【経過措置登録】平成29年4月1日から令和14年3月31日までに介護福祉士養成施設を卒業した方の介護福祉士経過措置登録について)." https://www.sssc.or.jp/touroku/info/info_keika.html
+
+[^27]: Ministry of Health, Labour and Welfare. "Overview of the Act amending the Social Welfare Act and related laws (社会福祉法等の一部を改正する法律の概要について)," item 2(2), pp. 1 and 12. https://www.mhlw.go.jp/content/001717214.pdf

@@ -7,6 +7,7 @@ summary: "Home visits, day care, short stay, and residential facilities, who own
 series: "Japan LTC Basics"
 series_order: 3
 categories: ["Providers"]
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

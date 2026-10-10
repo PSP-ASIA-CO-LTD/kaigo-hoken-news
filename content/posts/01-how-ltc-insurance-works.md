@@ -6,6 +6,7 @@ summary: "The basics of 介護保険: who is covered, who pays, how need is cert
 series: "Japan LTC Basics"
 series_order: 2
 categories: ["Basics"]
+countries: ["Japan"]
 ---
 
 This is the foundation for anyone selling care software in Japan. The system is social insurance, not a grant programme and not a copy of medical insurance, though the billing machinery looks similar.

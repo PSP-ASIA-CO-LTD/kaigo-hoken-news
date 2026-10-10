@@ -3,6 +3,7 @@ title: "Competitors"
 date: 2026-10-09T00:00:00+07:00
 lastmod: 2026-10-09T09:00:00+07:00
 summary: "Profiles of the Japanese care-software products a new entrant meets first, with an overview table. Every cell is sourced; vendor and acquirer claims are labelled as claims."
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*

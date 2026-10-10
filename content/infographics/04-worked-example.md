@@ -12,6 +12,7 @@ sources:
   - title: "Monthly cycle: from care plan to payment"
     url: "guides/monthly-cycle-plan-to-payment/"
     note: "Payment timeline"
+countries: ["Japan"]
 ---
 
 {{< infographic-calculator >}}

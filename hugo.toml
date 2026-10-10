@@ -16,7 +16,7 @@ buildExpired = false
 [params]
   mainSections = ["posts"]
   env = "production"
-  description = "Japan long-term care insurance research and updates — insights into 介護保険 (kaigo hoken) for international care technology companies"
+  description = "Long-term care research for care-technology companies: Japan's long-term care insurance (介護保険, kaigo hoken) and elderly care in Thailand"
   author = "PSP Asia Co., Ltd."
   defaultTheme = "auto"
   ShowReadingTime = true
@@ -45,6 +45,7 @@ buildExpired = false
   tag = "tags"
   series = "series"
   category = "categories"
+  country = "countries"
 
 [markup]
   [markup.goldmark]
@@ -55,30 +56,15 @@ buildExpired = false
 
 [menu]
   [[menu.main]]
-    identifier = "nav-series"
-    name = "Start Here"
-    url = "/series/"
+    identifier = "nav-japan"
+    name = "Japan"
+    url = "/countries/japan/"
     weight = 10
   [[menu.main]]
-    identifier = "nav-posts"
-    name = "Posts"
-    url = "/posts/"
+    identifier = "nav-thailand"
+    name = "Thailand"
+    url = "/thailand/"
     weight = 20
-  [[menu.main]]
-    identifier = "nav-guides"
-    name = "Guides"
-    url = "/guides/"
-    weight = 30
-  [[menu.main]]
-    identifier = "nav-competitors"
-    name = "Competitors"
-    url = "/competitors/"
-    weight = 40
-  [[menu.main]]
-    identifier = "nav-infographics"
-    name = "Infographics"
-    url = "/infographics/"
-    weight = 45
   [[menu.main]]
     identifier = "nav-glossary"
     name = "Glossary"

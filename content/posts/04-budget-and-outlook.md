@@ -6,6 +6,7 @@ summary: "What Japan spends on long-term care, the fiscal 2026 wage package, the
 series: "Japan LTC Basics"
 series_order: 5
 categories: ["Budget & Policy"]
+countries: ["Japan"]
 ---
 
 The care system is already one of the largest public programmes in Japan, and the official view is that it gets harder from here: more people over 85, fewer workers, and a fee schedule that cannot rise as fast as wages in other industries.

@@ -6,6 +6,7 @@ tags: ["japan", "long-term-care", "paid-homes", "serviced-housing", "policy", "g
 summary: "Fee-charging homes for older people (care-included, residential and healthy-living types) and serviced housing for older people: the law and regulator behind each, how many there are, what insurance pays and what residents pay, the 'enclosure' problem, the 2026 registration law, operators on public data, and what it means for care software."
 categories: ["Guides"]
 weight: 9
+countries: ["Japan"]
 ---
 
 *Last updated: 9 Oct 2026*
