@@ -16,3 +16,7 @@ countries: ["Japan"]
 ---
 
 {{< infographic-calculator >}}
+
+{{< analysis title="Tako-San's take" >}}
+Interpretation: two numbers on this calculator decide whether a provider is paid in full and when the cash arrives. The monthly unit cap (16,765–36,217 units by 要介護 level, for home and community services) is what the care manager's benefit-management form totals against; above the cap the user pays 100 percent, and software has to know which add-ons count toward it. The other constraint is timing: on the Miyagi kokuho-ren schedule, April services are claimed by the 10th of May and paid at the end of June, so the insurance share (90/80/70 percent) arrives about two months after the visit — miss the 10th and that cash-flow gap grows by another month.
+{{< /analysis >}}

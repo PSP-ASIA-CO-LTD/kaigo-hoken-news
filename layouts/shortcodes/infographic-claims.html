@@ -4,9 +4,58 @@
 <span class="step-indicator"><span id="step-current">1</span> / <span id="step-total">7</span></span>
 <button class="step-btn" id="step-next">Next →</button>
 </div>
-<div class="diagram-wrapper" role="region" aria-label="Interactive diagram: Claims and Care Records Flow">
+<div class="mobile-infographic" role="region" aria-label="Claims and Care Records Flow">
+<div class="mobile-step-list">
+<div class="mobile-step flow-step-mobile" data-step="1" tabindex="0" role="button">
+<span class="mobile-step-number">1</span>
+<div class="mobile-step-title">Care Plan Created</div>
+<div class="mobile-step-content">ケアプラン (kea puran) · Before service month</div>
+</div>
+<div class="mobile-step flow-step-mobile" data-step="2" tabindex="0" role="button">
+<span class="mobile-step-number">2</span>
+<div class="mobile-step-title">Provision Table</div>
+<div class="mobile-step-content">サービス提供票 · Sent to providers. Care Plan Data Exchange (ケアプランデータ連携) via CSV or API (Jan 2027 planned); FY2026: fee waived. Coming Jan 2027 (planned): Kaigo WEB Service (介護保険資格確認等WEBサービス, kaigo hoken shikaku kakunin tō webu sābisu).</div>
+</div>
+<div class="mobile-step flow-step-mobile" data-step="3" tabindex="0" role="button">
+<span class="mobile-step-number">3</span>
+<div class="mobile-step-title">Services Delivered</div>
+<div class="mobile-step-content">Each visit recorded: date, time, service type, staff, user, content. Care software (介護記録ソフト) typically links records to claims. LIFE submission (科学的介護情報システム, kagakuteki kaigo jōhō shisutemu): scientific-care add-on 40–60 units/mo (fac./day).</div>
+</div>
+<div class="mobile-step flow-step-mobile" data-step="4" tabindex="0" role="button">
+<span class="mobile-step-number">4</span>
+<div class="mobile-step-title">Actuals Table</div>
+<div class="mobile-step-content">Returned to care manager</div>
+</div>
+<div class="mobile-step flow-step-mobile" data-step="5" tabindex="0" role="button">
+<span class="mobile-step-number">5</span>
+<div class="mobile-step-title">Claims Filed</div>
+<div class="mobile-step-content">介護給付費請求 · By 10th of M+1 · Provider → kokuho-ren · Care mgr → 給付管理票. DEADLINE: 10th (Miyagi: 17:15)</div>
+</div>
+<div class="mobile-step flow-step-mobile" data-step="6" tabindex="0" role="button">
+<span class="mobile-step-number">6</span>
+<div class="mobile-step-title">Review</div>
+<div class="mobile-step-content">Kokuho-ren checks. Returns (返戻, henrei) if errors found.</div>
+</div>
+<div class="mobile-step flow-step-mobile" data-step="7" tabindex="0" role="button">
+<span class="mobile-step-number">7</span>
+<div class="mobile-step-title">Payment</div>
+<div class="mobile-step-content">Miyagi schedule: 15th bills insurer; 25th insurer pays; end of M+2: provider paid.</div>
+</div>
+</div>
+<div class="mobile-section-title">Record retention</div>
+<div class="mobile-calculator">
+<div class="mobile-calc-row"><span class="mobile-calc-label">National rule</span><span class="mobile-calc-value">2 years from completion</span></div>
+<div class="mobile-calc-row"><span class="mobile-calc-label">Some municipalities (e.g. Kawasaki)</span><span class="mobile-calc-value">5 years</span></div>
+</div>
+<div class="mobile-section-title">Where software typically helps</div>
+<div class="mobile-calculator">
+<div class="mobile-calc-row"><span class="mobile-calc-label">Records → claim data</span><span class="mobile-calc-value">Provision tables via Exchange</span></div>
+<div class="mobile-calc-row"><span class="mobile-calc-label">LIFE CSV export</span><span class="mobile-calc-value">Transmission</span></div>
+</div>
+</div>
+<div class="desktop-infographic diagram-wrapper" role="region" aria-label="Interactive diagram: Claims and Care Records Flow">
 <div class="diagram-scroll-hint">← Scroll horizontally to see full diagram →</div>
-<svg class="diagram-svg" viewBox="0 0 900 620" role="img" aria-label="Timeline diagram showing the monthly claim cycle from care plan to payment">
+<svg class="diagram-svg" viewBox="0 0 900 640" role="img" aria-label="Timeline diagram showing the monthly claim cycle from care plan to payment">
 <title>How Claims and Care Records Flow</title>
 <defs><marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="currentColor"/></marker></defs>
 <text class="node-text" x="450" y="25" font-weight="bold" font-size="14">MONTHLY CLAIM CYCLE</text>
@@ -55,23 +104,23 @@
 <text class="node-text node-text--small" x="150" y="418">Returned to care manager</text>
 </g>
 <g id="flow-step-5" class="flow-step" data-step="5">
-<rect class="node-rect node-rect--highlight" x="320" y="380" width="200" height="90" rx="4"/>
-<text class="node-text" x="420" y="400">5. Claims Filed</text>
-<text class="node-text node-text--ja" x="420" y="418">介護給付費請求</text>
-<text class="node-text node-text--small" x="420" y="438">By 10th of M+1</text>
-<text class="node-text node-text--small" x="420" y="453">• Provider → kokuho-ren</text>
-<text class="node-text node-text--small" x="420" y="468">• Care mgr → 給付管理票</text>
-<rect x="320" y="485" width="200" height="25" fill="#ffebee" stroke="#c62828" rx="3"/>
-<text class="node-text" x="420" y="502" fill="#c62828" font-size="10" font-weight="bold">DEADLINE: 10th (Miyagi: 17:15)</text>
+<rect class="node-rect node-rect--highlight" x="320" y="380" width="210" height="112" rx="4"/>
+<text class="node-text" x="425" y="400">5. Claims Filed</text>
+<text class="node-text node-text--ja" x="425" y="418">介護給付費請求</text>
+<text class="node-text node-text--small" x="425" y="438">By 10th of M+1</text>
+<text class="node-text node-text--small" x="425" y="456">• Provider → kokuho-ren</text>
+<text class="node-text node-text--small" x="425" y="474">• Care mgr → 給付管理票</text>
+<rect x="320" y="502" width="210" height="25" fill="#ffebee" stroke="#c62828" rx="3"/>
+<text class="node-text" x="425" y="519" fill="#c62828" font-size="10" font-weight="bold">DEADLINE: 10th (Miyagi: 17:15)</text>
 </g>
 <path d="M250 405 L320 420" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow)"/>
 <g id="flow-life" class="flow-step" data-step="3">
-<rect class="node-rect" x="490" y="280" width="180" height="80" rx="4" fill="#e8f5e9" stroke="#388e3c"/>
-<text class="node-text" x="580" y="296" font-size="11" fill="#388e3c">LIFE Submission</text>
-<text class="node-text node-text--ja" x="580" y="310" font-size="8">科学的介護情報システム</text>
-<text class="node-text node-text--small" x="580" y="322" font-size="6">(kagakuteki kaigo jōhō shisutemu)</text>
-<text class="node-text node-text--small" x="580" y="332">Scientific-care add-on:</text>
-<text class="node-text node-text--small" x="580" y="346">40–60 units/mo (fac./day)</text>
+<rect class="node-rect" x="490" y="268" width="190" height="112" rx="4" fill="#e8f5e9" stroke="#388e3c"/>
+<text class="node-text" x="585" y="288" font-size="11" fill="#388e3c">LIFE Submission</text>
+<text class="node-text node-text--ja" x="585" y="304" font-size="8">科学的介護情報システム</text>
+<text class="node-text node-text--small" x="585" y="322" style="font-size:8px">(kagakuteki kaigo jōhō shisutemu)</text>
+<text class="node-text node-text--small" x="585" y="344">Scientific-care add-on:</text>
+<text class="node-text node-text--small" x="585" y="362">40–60 units/mo (fac./day)</text>
 <path d="M460 320 L490 320" stroke="#388e3c" stroke-width="2" stroke-dasharray="4 3"/>
 <text class="node-text node-text--small" x="475" y="310" fill="#388e3c">CSV</text>
 </g>
@@ -94,21 +143,21 @@
 <text class="node-text node-text--small" x="785" y="492" font-weight="bold">provider paid</text>
 </g>
 <path d="M690 425 L710 425" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow)"/>
-<g transform="translate(690, 280)">
-<rect x="0" y="0" width="170" height="70" rx="4" fill="#fce4ec" stroke="#c2185b"/>
-<text class="node-text" x="85" y="15" font-size="9" fill="#c2185b" font-weight="bold">COMING JAN 2027 (planned)</text>
-<text class="node-text" x="85" y="30" font-size="9">Kaigo WEB Service</text>
-<text class="node-text node-text--ja" x="85" y="43" font-size="6">介護保険資格確認等WEBサービス</text>
-<text class="node-text node-text--small" x="85" y="53" font-size="6">(kaigo hoken shikaku kakunin tō</text>
-<text class="node-text node-text--small" x="85" y="62" font-size="6">webu sābisu)</text>
+<g transform="translate(690, 255)">
+<rect x="0" y="0" width="175" height="100" rx="4" fill="#fce4ec" stroke="#c2185b"/>
+<text class="node-text" x="87" y="16" font-size="9" fill="#c2185b" font-weight="bold">COMING JAN 2027 (planned)</text>
+<text class="node-text" x="87" y="34" font-size="9">Kaigo WEB Service</text>
+<text class="node-text node-text--ja" x="87" y="50" style="font-size:8px">介護保険資格確認等WEBサービス</text>
+<text class="node-text node-text--small" x="87" y="70" style="font-size:8px">(kaigo hoken shikaku kakunin tō</text>
+<text class="node-text node-text--small" x="87" y="86" style="font-size:8px">webu sābisu)</text>
 </g>
-<g transform="translate(50, 530)">
+<g transform="translate(50, 548)">
 <rect x="0" y="0" width="400" height="60" rx="4" fill="#f5f5f5" stroke="#666"/>
 <text class="node-text node-text--small" x="200" y="18" font-weight="bold">RECORD RETENTION</text>
 <text class="node-text node-text--small" x="200" y="35">National rule: 2 years from completion</text>
 <text class="node-text node-text--small" x="200" y="50">Some municipalities (e.g. Kawasaki): 5 years</text>
 </g>
-<g transform="translate(500, 530)">
+<g transform="translate(500, 548)">
 <rect x="0" y="0" width="350" height="55" rx="4" fill="#e3f2fd" stroke="#1976d2"/>
 <text class="node-text" x="175" y="15" font-size="10" fill="#1976d2" font-weight="bold">WHERE SOFTWARE TYPICALLY HELPS</text>
 <text class="node-text node-text--small" x="175" y="30" font-size="9">Records → claim data • Provision tables via Exchange</text>
@@ -161,6 +210,6 @@ A visit on April 1 is paid at the end of June. This ~2-month lag affects provide
 </div>
 </div>
 <script>
-(function(){var steps=document.querySelectorAll('.flow-step'),prevBtn=document.getElementById('step-prev'),nextBtn=document.getElementById('step-next'),currentSpan=document.getElementById('step-current'),totalSpan=document.getElementById('step-total'),explanations=document.querySelectorAll('[data-explain]'),currentStep=1,totalSteps=7;totalSpan.textContent=totalSteps;function updateStep(){currentSpan.textContent=currentStep;prevBtn.disabled=currentStep===1;nextBtn.disabled=currentStep===totalSteps;steps.forEach(function(step){var stepNum=parseInt(step.getAttribute('data-step'),10);step.style.opacity=stepNum<=currentStep?'1':'0.3'});explanations.forEach(function(exp){var expNum=parseInt(exp.getAttribute('data-explain'),10);exp.style.display=expNum===currentStep?'block':'none'})}prevBtn.addEventListener('click',function(){if(currentStep>1){currentStep--;updateStep()}});nextBtn.addEventListener('click',function(){if(currentStep<totalSteps){currentStep++;updateStep()}});document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'&&currentStep>1){currentStep--;updateStep()}else if(e.key==='ArrowRight'&&currentStep<totalSteps){currentStep++;updateStep()}});updateStep()})();
+(function(){var steps=document.querySelectorAll('.flow-step'),mobileSteps=document.querySelectorAll('.flow-step-mobile'),prevBtn=document.getElementById('step-prev'),nextBtn=document.getElementById('step-next'),currentSpan=document.getElementById('step-current'),totalSpan=document.getElementById('step-total'),explanations=document.querySelectorAll('[data-explain]'),currentStep=1,totalSteps=7;totalSpan.textContent=totalSteps;function updateStep(){currentSpan.textContent=currentStep;prevBtn.disabled=currentStep===1;nextBtn.disabled=currentStep===totalSteps;steps.forEach(function(step){var stepNum=parseInt(step.getAttribute('data-step'),10);step.style.opacity=stepNum<=currentStep?'1':'0.3'});mobileSteps.forEach(function(step){var stepNum=parseInt(step.getAttribute('data-step'),10);step.classList.toggle('mobile-step--active',stepNum===currentStep);step.style.opacity=stepNum<=currentStep?'1':'0.45'});explanations.forEach(function(exp){var expNum=parseInt(exp.getAttribute('data-explain'),10);exp.style.display=expNum===currentStep?'block':'none'})}prevBtn.addEventListener('click',function(){if(currentStep>1){currentStep--;updateStep()}});nextBtn.addEventListener('click',function(){if(currentStep<totalSteps){currentStep++;updateStep()}});mobileSteps.forEach(function(step){function go(){currentStep=parseInt(step.getAttribute('data-step'),10);updateStep()}step.addEventListener('click',go);step.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})});document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'&&currentStep>1){currentStep--;updateStep()}else if(e.key==='ArrowRight'&&currentStep<totalSteps){currentStep++;updateStep()}});updateStep()})();
 </script>
 <noscript><p><strong>JavaScript is required for the step-through feature.</strong> The diagram above shows the complete flow.</p></noscript>
