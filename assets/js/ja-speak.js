@@ -16,6 +16,7 @@
   
   var synth = window.speechSynthesis;
   var jaVoice = null;
+  var thVoice = null;
   var speechSupported = 'speechSynthesis' in window;
   
   if (!speechSupported) {
@@ -28,9 +29,11 @@
     if (!speechSupported) return;
     var voices = synth.getVoices();
     for (var i = 0; i < voices.length; i++) {
-      if (voices[i].lang.indexOf('ja') === 0) {
+      if (!jaVoice && voices[i].lang.indexOf('ja') === 0) {
         jaVoice = voices[i];
-        break;
+      }
+      if (!thVoice && voices[i].lang.indexOf('th') === 0) {
+        thVoice = voices[i];
       }
     }
   }
@@ -40,37 +43,49 @@
     synth.onvoiceschanged = loadVoices;
   }
   
-  function speak(text) {
+  function speak(text, lang) {
     if (!speechSupported) return;
     synth.cancel();
     var utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'ja-JP';
+    utterance.lang = lang || 'ja-JP';
     utterance.rate = 0.85;
     utterance.pitch = 1;
     utterance.volume = 1;
-    if (jaVoice) utterance.voice = jaVoice;
+    if (utterance.lang.indexOf('th') === 0) {
+      if (thVoice) utterance.voice = thVoice;
+    } else if (jaVoice) {
+      utterance.voice = jaVoice;
+    }
     synth.speak(utterance);
   }
-  
+
+  function buttonText(btn) {
+    return btn.getAttribute('data-th-text') || btn.getAttribute('data-ja-text');
+  }
+
+  function buttonLang(btn) {
+    return btn.getAttribute('data-lang') || (btn.getAttribute('data-th-text') ? 'th-TH' : 'ja-JP');
+  }
+
   // Speaker button clicks
   document.addEventListener('click', function(e) {
     var btn = e.target.closest('.ja-speak-btn');
     if (btn) {
       e.preventDefault();
       e.stopPropagation();
-      var text = btn.getAttribute('data-ja-text');
-      if (text) speak(text);
+      var text = buttonText(btn);
+      if (text) speak(text, buttonLang(btn));
     }
   });
-  
+
   // Speaker button keyboard
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Enter' || e.key === ' ') {
       var btn = e.target.closest('.ja-speak-btn');
       if (btn) {
         e.preventDefault();
-        var text = btn.getAttribute('data-ja-text');
-        if (text) speak(text);
+        var text = buttonText(btn);
+        if (text) speak(text, buttonLang(btn));
       }
     }
   });
@@ -155,12 +170,12 @@
   
   // Mouse events
   document.addEventListener('mouseenter', function(e) {
-    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip]');
+    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip], .th-term-wrapper[data-tooltip]');
     if (wrapper) showTooltip(wrapper);
   }, true);
   
   document.addEventListener('mouseleave', function(e) {
-    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip]');
+    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip], .th-term-wrapper[data-tooltip]');
     if (wrapper) {
       var tooltip = wrapper.querySelector('.ja-tooltip');
       hideTooltip(tooltip);
@@ -182,12 +197,12 @@
   
   // Focus events for keyboard users
   document.addEventListener('focusin', function(e) {
-    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip]');
+    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip], .th-term-wrapper[data-tooltip]');
     if (wrapper) showTooltip(wrapper);
   });
   
   document.addEventListener('focusout', function(e) {
-    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip]');
+    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip], .th-term-wrapper[data-tooltip]');
     if (wrapper) {
       var tooltip = wrapper.querySelector('.ja-tooltip');
       hideTooltip(tooltip);
@@ -196,7 +211,7 @@
   
   // Touch events for mobile
   document.addEventListener('touchstart', function(e) {
-    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip]');
+    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip], .th-term-wrapper[data-tooltip]');
     var isTooltip = e.target.closest('.ja-tooltip');
     var isSpeakBtn = e.target.closest('.ja-speak-btn');
     
@@ -211,7 +226,7 @@
   // Click outside to dismiss (for desktop clicks and touch fallback)
   document.addEventListener('click', function(e) {
     if (!activeTooltip) return;
-    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip]');
+    var wrapper = e.target.closest('.ja-term-wrapper[data-tooltip], .th-term-wrapper[data-tooltip]');
     var isTooltip = e.target.closest('.ja-tooltip');
     var isSpeakBtn = e.target.closest('.ja-speak-btn');
     

@@ -1,0 +1,317 @@
+# Glossary of Thai long-term care terms
+# Same keyed-map layout as data/glossary.yaml (Japanese), so it can sit beside it in data/.
+# Suggested location: data/thai_glossary.yaml (an underscore keeps it reachable as site.Data.thai_glossary).
+# Do not paste these entries into data/glossary.yaml as they stand: the current glossary layout
+# reads .ja and sorts by .romaji, which Thai entries do not have.
+# Fields:
+#   th      Thai script (abbreviation in brackets where one is in common use)
+#   rtgs    Royal Thai General System romanisation, as used on our pages
+#   en      English meaning
+#   def     one-line definition
+#   country always "Thailand", for the country filter
+#   source  the page on our site where the term is explained (Hugo path for relref)
+# Key format: rtgs, lowercase, hyphens for spaces. Sorted alphabetically by key.
+
+asasamak-boriban-thongthin:
+  th: อาสาสมัครบริบาลท้องถิ่น
+  rtgs: asasamak boriban thongthin
+  en: local care volunteer
+  def: "Full-time caregiver hired and paid monthly by a local government, under a 2019 Ministry of Interior order."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+asasamak-satharanasuk-pracham-muban:
+  th: อาสาสมัครสาธารณสุขประจำหมู่บ้าน (อสม.)
+  rtgs: asasamak satharanasuk pracham muban
+  en: village health volunteer
+  def: "Community health volunteer supported by DHSS; most caregivers in the NHSO scheme are drawn from them."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+datchani-barthel-adl:
+  th: ดัชนีบาร์เธลเอดีแอล
+  rtgs: datchani Barthel ADL
+  en: Barthel ADL index
+  def: "Ten-item test of daily living; a score of 11 or less makes a person eligible for the NHSO scheme."
+  country: Thailand
+  source: /thailand/nhso-ltc-cycle
+
+dika-boek-chai:
+  th: ฎีกาเบิกจ่าย
+  rtgs: dika boek chai
+  en: payment voucher
+  def: "Voucher a local government issues in the NHSO LTC programme before paying the unit that runs a project."
+  country: Thailand
+  source: /thailand/nhso-ltc-cycle
+
+kha-puai-kan:
+  th: ค่าป่วยการ
+  rtgs: kha puai kan
+  en: stipend (village health volunteers)
+  def: "Monthly allowance paid to village health volunteers, raised to 2,000 baht in 2024."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+khana-anukammakan-ltc:
+  th: คณะอนุกรรมการ LTC
+  rtgs: khana anukammakan LTC
+  en: LTC subcommittee
+  def: "Local subcommittee, appointed under the local health fund, that approves care plans and project budgets."
+  country: Thailand
+  source: /thailand/nhso-ltc-cycle
+
+kitchakan-kan-dulae-phu-sung-ayu-rue-phu-mi-phawa-phuengphing:
+  th: กิจการการดูแลผู้สูงอายุหรือผู้มีภาวะพึ่งพิง
+  rtgs: kitchakan kan dulae phu sung-ayu rue phu mi phawa phuengphing
+  en: elderly or dependent-person care business
+  def: "The licensed business type that brings private care homes under the Health Establishment Act since 2021."
+  country: Thailand
+  source: /thailand/licensing-elderly-care-businesses
+
+klum-tit-ban:
+  th: กลุ่มติดบ้าน
+  rtgs: klum tit ban
+  en: home-bound group
+  def: "Dependent people with a Barthel ADL score of 5 to 11."
+  country: Thailand
+  source: /thailand/nhso-ltc-cycle
+
+klum-tit-tiang:
+  th: กลุ่มติดเตียง
+  rtgs: klum tit tiang
+  en: bed-bound group
+  def: "Dependent people with a Barthel ADL score of 0 to 4."
+  country: Thailand
+  source: /thailand/nhso-ltc-cycle
+
+kongthun-lak-prakan-sukkhaphap-nai-radap-thongthin-rue-phuenthi:
+  th: กองทุนหลักประกันสุขภาพในระดับท้องถิ่นหรือพื้นที่
+  rtgs: kongthun lak prakan sukkhaphap nai radap thongthin rue phuenthi
+  en: local health security fund
+  def: "Area fund through which NHSO long-term care money is paid; a local government must belong to it to join the scheme."
+  country: Thailand
+  source: /thailand/nhso-ltc-cycle
+
+krasuang-satharanasuk:
+  th: กระทรวงสาธารณสุข (สธ.)
+  rtgs: Krasuang Satharanasuk
+  en: Ministry of Public Health (MOPH)
+  def: "Health ministry; it ran all sub-district health promoting hospitals before their transfer to provinces began."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+krom-anamai:
+  th: กรมอนามัย
+  rtgs: Krom Anamai
+  en: Department of Health
+  def: "MOPH department that sets the care-manager and caregiver courses and runs the 3C program."
+  country: Thailand
+  source: /thailand/data-and-it-reporting
+
+krom-kitchakan-phu-sung-ayu:
+  th: กรมกิจการผู้สูงอายุ (ผส.)
+  rtgs: Krom Kitchakan Phu Sung-ayu
+  en: Department of Older Persons (DOP)
+  def: "MSDHS department that runs 12 welfare centres for older people and its own community caregivers."
+  country: Thailand
+  source: /thailand/public-and-private-providers
+
+krom-sanapsanun-borikan-sukkhaphap:
+  th: กรมสนับสนุนบริการสุขภาพ (สบส.)
+  rtgs: Krom Sanapsanun Borikan Sukkhaphap
+  en: Department of Health Service Support (DHSS)
+  def: "MOPH department that licenses private elderly-care businesses and supports village health volunteers."
+  country: Thailand
+  source: /thailand/licensing-elderly-care-businesses
+
+nak-boriban:
+  th: นักบริบาล
+  rtgs: nak boriban
+  en: caregiver (care worker)
+  def: "Everyday word for a caregiver; another name for the community caregivers in the LTC scheme."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+nuai-borikan:
+  th: หน่วยบริการ
+  rtgs: nuai borikan
+  en: service unit
+  def: "Health unit that can receive NHSO long-term care money for services in the benefit package."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+nuai-chat-borikan:
+  th: หน่วยจัดบริการ
+  rtgs: nuai chat borikan
+  en: service-providing unit
+  def: "The unit that screens dependent people and delivers care in the NHSO workflow chart."
+  country: Thailand
+  source: /thailand/nhso-ltc-cycle
+
+ongkan-borihan-suan-changwat:
+  th: องค์การบริหารส่วนจังหวัด (อบจ.)
+  rtgs: ongkan borihan suan changwat
+  en: provincial administrative organisation (PAO)
+  def: "Provincial-level local government; 63 of them have taken over sub-district health promoting hospitals."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+ongkan-borihan-suan-tambon:
+  th: องค์การบริหารส่วนตำบล (อบต.)
+  rtgs: ongkan borihan suan tambon
+  en: sub-district administrative organisation
+  def: "Rural local government; one of the bodies that could join the 2025 NHSO caregiver stimulus project."
+  country: Thailand
+  source: /thailand/nhso-ltc-cycle
+
+ongkon-pokkhrong-suan-thongthin:
+  th: องค์กรปกครองส่วนท้องถิ่น (อปท.)
+  rtgs: ongkon pokkhrong suan thongthin
+  en: local government
+  def: "Any local authority; the main mechanism through which NHSO long-term care money is spent."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+phaen-kan-dulae-rai-bukkhon:
+  th: แผนการดูแลรายบุคคล
+  rtgs: phaen kan dulae rai bukkhon
+  en: individual care plan
+  def: "Care plan written by a care manager; NHSO pays its lump sum against each approved plan."
+  country: Thailand
+  source: /thailand/nhso-ltc-cycle
+
+phu-anuyat:
+  th: ผู้อนุญาต
+  rtgs: phu anuyat
+  en: licensing authority
+  def: "The DHSS Director-General, or a person they assign, who grants health-establishment licences."
+  country: Thailand
+  source: /thailand/licensing-elderly-care-businesses
+
+phu-boriban-khumkhrong-sitthi-phu-sung-ayu:
+  th: ผู้บริบาลคุ้มครองสิทธิผู้สูงอายุ
+  rtgs: phu boriban khumkhrong sitthi phu sung-ayu
+  en: caregiver protecting the rights of older persons (DOP community caregiver)
+  def: "DOP community worker with 240 hours of training, paid 10,000 baht a month, covering five areas of older people's lives."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+phu-chatkan-kan-dulae-phu-sung-ayu:
+  th: ผู้จัดการการดูแลผู้สูงอายุ
+  rtgs: phu chatkan kan dulae phu sung-ayu
+  en: care manager (CM)
+  def: "Usually a nurse at a sub-district health promoting hospital, trained on a 70-hour course, who writes care plans."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+phu-chuai-luea-dulae-phu-sung-ayu:
+  th: ผู้ช่วยเหลือดูแลผู้สูงอายุ
+  rtgs: phu chuai luea dulae phu sung-ayu
+  en: caregiver (CG)
+  def: "Community caregiver trained on the Department of Health's 70- or 420-hour course who visits under the care plan."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+phu-thi-mi-phawa-phuengphing:
+  th: ผู้ที่มีภาวะพึ่งพิง
+  rtgs: phu thi mi phawa phuengphing
+  en: dependent person
+  def: "Person of any age with a Barthel ADL score of 11 or less, eligible for NHSO long-term care."
+  country: Thailand
+  source: /thailand/nhso-ltc-cycle
+
+ratchakitchanubeksa:
+  th: ราชกิจจานุเบกษา
+  rtgs: Ratchakitchanubeksa
+  en: Royal Gazette
+  def: "Official journal in which laws and regulations are published; effective dates are counted from it."
+  country: Thailand
+  source: /thailand/licensing-elderly-care-businesses
+
+rongphayaban-songsoem-sukkhaphap-tambon:
+  th: โรงพยาบาลส่งเสริมสุขภาพตำบล (รพ.สต.)
+  rtgs: rongphayaban songsoem sukkhaphap tambon
+  en: sub-district health promoting hospital
+  def: "Front-line primary-care unit and employer of most care managers; nearly half have moved to provincial governments."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+samnakngan-khana-kammakan-kritsadika:
+  th: สำนักงานคณะกรรมการกฤษฎีกา
+  rtgs: Samnakngan Khana Kammakan Kritsadika
+  en: Office of the Council of State
+  def: "Government legal adviser; counts a law's start date with the publication day as day one."
+  country: Thailand
+  source: /thailand/licensing-elderly-care-businesses
+
+samnakngan-lak-prakan-sukkhaphap-haeng-chat:
+  th: สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)
+  rtgs: Samnakngan Lak Prakan Sukkhaphap haeng Chat
+  en: National Health Security Office (NHSO)
+  def: "Agency that runs Universal Coverage and pays the community long-term care lump sum."
+  country: Thailand
+  source: /thailand/who-pays-for-long-term-care
+
+samnakngan-phatthana-witthayasat-lae-theknoloyi-haeng-chat:
+  th: สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.)
+  rtgs: Samnakngan Phatthana Witthayasat lae Theknoloyi haeng Chat
+  en: National Science and Technology Development Agency (NSTDA)
+  def: "State science agency that built the Nirun care-centre system and the Nirun for Community app."
+  country: Thailand
+  source: /thailand/competitors/nirun
+
+samut-banthuek-sukkhaphap-phu-sung-ayu:
+  th: สมุดบันทึกสุขภาพผู้สูงอายุ
+  rtgs: samut banthuek sukkhaphap phu sung-ayu
+  en: elderly health record book (Blue Book)
+  def: "Printed health record for older people, now also a Department of Health app for screening."
+  country: Thailand
+  source: /thailand/competitors/government-systems
+
+sathan-borikan:
+  th: สถานบริการ
+  rtgs: sathan borikan
+  en: service facility
+  def: "Health facility named, with service units and elderly centres, as a recipient of NHSO long-term care money."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+sathan-chiwaphiban:
+  th: สถานชีวาภิบาล
+  rtgs: sathan chiwaphiban
+  en: community hospice
+  def: "Community end-of-life care facility the NHSO hopes to draw into the long-term care scheme."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+sathan-prakopkan-phuea-sukkhaphap:
+  th: สถานประกอบการเพื่อสุขภาพ
+  rtgs: sathan prakopkan phuea sukkhaphap
+  en: health establishment
+  def: "Business category under the 2016 Act that DHSS licenses, including spas and elderly-care businesses."
+  country: Thailand
+  source: /thailand/licensing-elderly-care-businesses
+
+sun-anamai:
+  th: ศูนย์อนามัย
+  rtgs: sun anamai
+  en: regional health centre
+  def: "Department of Health regional office that runs the 70-hour care-manager course for its area."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+sun-phatthana-khunnaphap-chiwit-phu-sung-ayu-nai-chumchon:
+  th: ศูนย์พัฒนาคุณภาพชีวิตผู้สูงอายุในชุมชน
+  rtgs: sun phatthana khunnaphap chiwit phu sung-ayu nai chumchon
+  en: community elderly quality-of-life development centre
+  def: "Centre a local government may set up to run the long-term care money itself, with more freedom on caregiver pay."
+  country: Thailand
+  source: /thailand/who-does-what-community-care
+
+thetsaban:
+  th: เทศบาล
+  rtgs: thetsaban
+  en: municipality
+  def: "Urban local government; one of the bodies that could join the 2025 NHSO caregiver stimulus project."
+  country: Thailand
+  source: /thailand/nhso-ltc-cycle

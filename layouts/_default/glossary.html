@@ -5,59 +5,142 @@
     {{- if .Description }}
     <p class="glossary-description">{{ .Description }}</p>
     {{- end }}
-    <p class="glossary-count">{{ len site.Data.glossary }} terms</p>
+    <p class="glossary-count" data-glossary-count>
+      <span data-count-japan>{{ len site.Data.glossary }} Japanese terms</span>
+      <span class="glossary-count-sep" aria-hidden="true"> · </span>
+      <span data-count-thailand>{{ len site.Data.thai_glossary }} Thai terms</span>
+    </p>
   </header>
 
-  {{- /* Build sorted list by romaji */ -}}
-  {{- $entries := slice -}}
+  {{- $jaEntries := slice -}}
   {{- range $key, $entry := site.Data.glossary -}}
-    {{- $entries = $entries | append (dict "key" $key "ja" $entry.ja "romaji" $entry.romaji "en" $entry.en "def" $entry.def) -}}
+    {{- $jaEntries = $jaEntries | append (dict "key" $key "ja" $entry.ja "romaji" $entry.romaji "en" $entry.en "def" $entry.def) -}}
   {{- end -}}
-  {{- $sorted := sort $entries "romaji" -}}
+  {{- $jaSorted := sort $jaEntries "romaji" -}}
 
-  {{- /* Group by first letter of romaji */ -}}
+  {{- $thEntries := slice -}}
+  {{- range $key, $entry := site.Data.thai_glossary -}}
+    {{- $thEntries = $thEntries | append (dict "key" $key "th" $entry.th "rtgs" $entry.rtgs "en" $entry.en "def" $entry.def "source" $entry.source "sortkey" (lower $entry.rtgs)) -}}
+  {{- end -}}
+  {{- $thSorted := sort $thEntries "sortkey" -}}
+
+  <div class="glossary-toolbar">
+    <div class="glossary-filter" role="tablist" aria-label="Glossary country">
+      <button type="button" class="glossary-filter-btn" role="tab" id="tab-japan" data-country="japan" aria-selected="true" aria-controls="glossary-japan">Japan</button>
+      <button type="button" class="glossary-filter-btn" role="tab" id="tab-thailand" data-country="thailand" aria-selected="false" aria-controls="glossary-thailand">Thailand</button>
+    </div>
+    <div class="glossary-search-wrap">
+      <label class="ja-sr-only" for="glossary-search">Filter terms</label>
+      <input type="search" id="glossary-search" class="glossary-search-input" placeholder="Filter terms…" autocomplete="off">
+    </div>
+  </div>
+
+  {{- /* Japan panel: same entry IDs, letter IDs, and markup as before */ -}}
   {{- $currentLetter := "" -}}
-
-  <nav class="glossary-nav" aria-label="Jump to letter">
-    {{- $letters := slice -}}
-    {{- range $sorted -}}
-      {{- $letter := upper (substr .romaji 0 1) -}}
-      {{- if not (in $letters $letter) -}}
-        {{- $letters = $letters | append $letter -}}
+  <div class="glossary-panel is-active" id="glossary-japan" data-country="japan" role="tabpanel" aria-labelledby="tab-japan">
+    <nav class="glossary-nav" aria-label="Jump to letter">
+      {{- $letters := slice -}}
+      {{- range $jaSorted -}}
+        {{- $letter := upper (substr .romaji 0 1) -}}
+        {{- if not (in $letters $letter) -}}
+          {{- $letters = $letters | append $letter -}}
+        {{- end -}}
       {{- end -}}
-    {{- end -}}
-    {{- range $letters }}
-    <a href="#letter-{{ . }}">{{ . }}</a>
-    {{- end }}
-  </nav>
-
-  <div class="glossary-entries">
-    {{- range $sorted -}}
-      {{- $letter := upper (substr .romaji 0 1) -}}
-      {{- if ne $letter $currentLetter -}}
-        {{- if $currentLetter }}</dl>{{ end }}
-        {{- $currentLetter = $letter }}
-        <h2 id="letter-{{ $letter }}" class="glossary-letter">{{ $letter }}</h2>
-        <dl class="glossary-list">
+      {{- range $letters }}
+      <a href="#letter-{{ . }}">{{ . }}</a>
       {{- end }}
-      
-      <div class="glossary-entry" id="{{ .key }}">
-        <dt class="glossary-term">
-          <span class="glossary-term-line">
-            <span class="glossary-ja" lang="ja">{{ .ja }}</span><button type="button" class="ja-speak-btn" data-ja-text="{{ .ja }}" aria-label="Listen to {{ .romaji }}" title="Listen"><svg class="ja-speak-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
-            <span class="glossary-romaji">{{ .romaji }}</span>
-          </span>
-          {{- if .en }}
-          <span class="glossary-en">{{ .en }}</span>
-          {{- end }}
-        </dt>
-        <dd class="glossary-def">
-          <p class="glossary-def-text">{{ .def }}</p>
-          <a href="{{ "posts/" | relURL }}?q={{ .ja | urlquery }}" class="glossary-search" title="Search posts for this term">Search posts →</a>
-        </dd>
-      </div>
-    {{- end }}
-    </dl>
+    </nav>
+
+    <div class="glossary-entries">
+      {{- range $jaSorted -}}
+        {{- $letter := upper (substr .romaji 0 1) -}}
+        {{- if ne $letter $currentLetter -}}
+          {{- if $currentLetter }}</dl>{{ end }}
+          {{- $currentLetter = $letter }}
+          <h2 id="letter-{{ $letter }}" class="glossary-letter">{{ $letter }}</h2>
+          <dl class="glossary-list">
+        {{- end }}
+
+        <div class="glossary-entry" id="{{ .key }}" data-country="japan">
+          <dt class="glossary-term">
+            <span class="glossary-term-line">
+              <span class="glossary-ja" lang="ja">{{ .ja }}</span><button type="button" class="ja-speak-btn" data-ja-text="{{ .ja }}" aria-label="Listen to {{ .romaji }}" title="Listen"><svg class="ja-speak-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+              <span class="glossary-romaji">{{ .romaji }}</span>
+            </span>
+            {{- if .en }}
+            <span class="glossary-en">{{ .en }}</span>
+            {{- end }}
+          </dt>
+          <dd class="glossary-def">
+            <p class="glossary-def-text">{{ .def }}</p>
+            <a href="{{ "posts/" | relURL }}?q={{ .ja | urlquery }}" class="glossary-search" title="Search posts for this term">Search posts →</a>
+          </dd>
+        </div>
+      {{- end }}
+      </dl>
+    </div>
+  </div>
+
+  {{- /* Thai panel: own field layout and letter IDs that do not collide with Japan */ -}}
+  {{- $currentThLetter := "" -}}
+  <div class="glossary-panel" id="glossary-thailand" data-country="thailand" role="tabpanel" aria-labelledby="tab-thailand" hidden>
+    <nav class="glossary-nav" aria-label="Jump to letter">
+      {{- $thLetters := slice -}}
+      {{- range $thSorted -}}
+        {{- $letter := upper (substr .rtgs 0 1) -}}
+        {{- if not (in $thLetters $letter) -}}
+          {{- $thLetters = $thLetters | append $letter -}}
+        {{- end -}}
+      {{- end -}}
+      {{- range $thLetters }}
+      <a href="#letter-th-{{ . }}">{{ . }}</a>
+      {{- end }}
+    </nav>
+
+    <div class="glossary-entries">
+      {{- range $thSorted -}}
+        {{- $letter := upper (substr .rtgs 0 1) -}}
+        {{- if ne $letter $currentThLetter -}}
+          {{- if $currentThLetter }}</dl>{{ end }}
+          {{- $currentThLetter = $letter }}
+          <h2 id="letter-th-{{ $letter }}" class="glossary-letter">{{ $letter }}</h2>
+          <dl class="glossary-list">
+        {{- end }}
+
+        {{- $sourceHref := "" -}}
+        {{- $sourceTitle := "" -}}
+        {{- with .source -}}
+          {{- with site.GetPage . -}}
+            {{- $sourceHref = .RelPermalink -}}
+            {{- $sourceTitle = .LinkTitle | default .Title -}}
+          {{- else -}}
+            {{- $sourceHref = strings.TrimPrefix "/" . | relURL -}}
+            {{- $sourceTitle = "Source" -}}
+          {{- end -}}
+        {{- end }}
+
+        <div class="glossary-entry" id="{{ .key }}" data-country="thailand">
+          <dt class="glossary-term">
+            <span class="glossary-term-line">
+              <span class="glossary-th" lang="th">{{ .th }}</span><button type="button" class="ja-speak-btn" data-th-text="{{ .th }}" data-lang="th-TH" aria-label="Listen to {{ .rtgs }}" title="Listen"><svg class="ja-speak-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+              <span class="glossary-rtgs">{{ .rtgs }}</span>
+            </span>
+            {{- if .en }}
+            <span class="glossary-en">{{ .en }}</span>
+            {{- end }}
+          </dt>
+          <dd class="glossary-def">
+            <p class="glossary-def-text">{{ .def }}</p>
+            {{- if $sourceHref }}
+            <a href="{{ $sourceHref }}" class="glossary-source" title="Open the page that explains this term">{{ $sourceTitle }} →</a>
+            {{- end }}
+          </dd>
+        </div>
+      {{- end }}
+      </dl>
+    </div>
   </div>
 </article>
+{{- $filter := resources.Get "js/glossary-filter.js" | minify | fingerprint }}
+<script src="{{ $filter.RelPermalink }}" defer></script>
 {{ end }}

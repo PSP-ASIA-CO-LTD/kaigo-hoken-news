@@ -409,6 +409,7 @@ h1, h2, h3, h4, h5, h6,
   font-size: 1.05rem;
   line-height: 1.8;
   padding: 0 var(--space-4);
+  min-width: 0;
 }
 
 .post-content p {
@@ -495,11 +496,29 @@ h1, h2, h3, h4, h5, h6,
   vertical-align: top;
 }
 
-/* Ensure tables scroll on mobile */
+/* Wide tables scroll inside their own container, not the page */
+.table-scroll {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: var(--space-6) 0;
+}
+
 .post-content table {
   display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+.post-content .table-scroll table {
+  display: table;
+  width: max-content;
+  min-width: 100%;
+  margin: 0;
+  overflow-x: visible;
 }
 
 /* ============================================
@@ -668,7 +687,8 @@ body:not(.list) .main {
 /* ============================================
    JAPANESE TERMS - Shortcode styling
    ============================================ */
-.ja-term-wrapper {
+.ja-term-wrapper,
+.th-term-wrapper {
   display: inline;
   /* Allow normal wrapping - no white-space: nowrap */
 }
@@ -681,12 +701,26 @@ body:not(.list) .main {
   word-break: auto-phrase; /* modern browsers: break at phrase boundaries */
 }
 
-.ja-term-link {
+.th-term {
+  font-family: 'Noto Sans Thai', 'Leelawadee UI', 'Thonburi', Tahoma, sans-serif;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.th-rtgs,
+.th-meaning {
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.ja-term-link,
+.th-term-link {
   text-decoration: none;
   border-bottom: 1px dotted var(--secondary);
 }
 
-.ja-term-link:hover {
+.ja-term-link:hover,
+.th-term-link:hover {
   border-bottom-color: var(--newspaper-accent);
 }
 

@@ -1,8 +1,8 @@
 ---
 title: "Thai competitors"
 date: 2026-10-11T00:00:00+07:00
-lastmod: 2026-10-11T09:30:00+07:00
-summary: "Who sells care software to Thai elderly-care providers: the free government systems (led by NSTDA's Nirun, now in every DOP welfare centre and spreading to every district), private nursing-home start-ups (CloudNurse, Caleo), clinic suites with care modules (HexaHealth, APSX, MCS), and foreign entrants. Every cell is sourced; vendor claims are labelled as claims. No market-share data exists."
+lastmod: 2026-10-11T02:56:00+07:00
+summary: "Who sells care software to Thai elderly-care providers: the free government systems (led by NSTDA's Nirun, now in every DOP welfare centre and spreading to every district), private nursing-home start-ups (CloudNurse, Caleo), clinic suites with care modules (HexaHealth, APSX, MCS), and foreign entrants, with a page on the state systems (3C, the NHSO LTC programme, Thai COC, Blue Book, Smart อสม.) and a feature matrix. Every cell is sourced; vendor claims are labelled as claims. No market-share data exists."
 countries: ["Thailand"]
 ---
 
@@ -26,6 +26,11 @@ Profiles are updated in place and carry their own changelog:
 2. [CloudNurse]({{< relref "/thailand/competitors/cloudnurse" >}}) (TH Healthtech Co., Ltd.)
 3. [HexaHealth]({{< relref "/thailand/competitors/hexahealth" >}}) (elderly-care module)
 4. [Caleo]({{< relref "/thailand/competitors/caleo" >}})
+5. [APSX]({{< relref "/thailand/competitors/apsx" >}}) (APS Thailand)
+6. [MCS]({{< relref "/thailand/competitors/mcs" >}}) (Everyday Doctor Co., Ltd.)
+7. [Government systems]({{< relref "/thailand/competitors/government-systems" >}}): 3C, the NHSO LTC programme, Thai COC, Blue Book, Smart อสม., and the NEC Mimamori trial
+
+To compare all of them on one page, see the [feature matrix]({{< relref "/thailand/competitors/feature-matrix" >}}).
 
 **How to read the numbers.** We found no market-share figures for Thai care software, official or otherwise. Customer counts are the vendors' own, undated and unaudited. Paid "market reports" on Thai long-term-care software publish only a table of contents, so we do not use them. The only founder estimate of market size we found is labelled as such in the CloudNurse profile.
 
@@ -34,7 +39,7 @@ Profiles are updated in place and carry their own changelog:
 **1. Free government systems.** The state is the largest software supplier in Thai elderly care.
 
 - **Nirun.** Built by the National Science and Technology Development Agency (NSTDA), สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (Samnakngan Phatthana Witthayasat lae Theknoloyi haeng Chat, สวทช.). It is used in all 12 welfare centres run by the Department of Older Persons (DOP), กรมกิจการผู้สูงอายุ (Krom Kitchakan Phu Sung-ayu).[^1] Its community app, Nirun for Community, supports DOP's community caregivers in 268 areas across all 76 provinces in 2026.[^2]
-- **NHSO's LTC web programme and the Department of Health's 3C program.** In the NHSO-funded community scheme, care managers use the 3C program to register caregivers and write individual care plans. The program pulls the records of dependent older people from the NHSO's LTC programme.[^16] Both systems are covered in [Data and IT reporting]({{< relref "/thailand/data-and-it-reporting" >}}).
+- **NHSO's LTC web programme and the Department of Health's 3C program.** In the NHSO-funded community scheme, care managers use the 3C program to register caregivers and write individual care plans. The program pulls the records of dependent older people from the NHSO's LTC programme.[^16] Both systems are covered in [Data and IT reporting]({{< relref "/thailand/data-and-it-reporting" >}}) and profiled, with Thai COC, the Blue Book app and Smart อสม., on the [Government systems]({{< relref "/thailand/competitors/government-systems" >}}) page.
 
 **2. Private nursing-home software.** Small Thai start-ups selling to fee-paying private homes:
 
@@ -44,7 +49,7 @@ Profiles are updated in place and carry their own changelog:
 **3. Clinic suites with an elderly-care module.** Vendors of clinic software adding long-term residents to an existing platform:
 
 - [HexaHealth]({{< relref "/thailand/competitors/hexahealth" >}}) publishes bed-based tiers, but they contradict each other.[^5]
-- **APSX** (APS Thailand) has a care-centre page covering the following:[^6]
+- [APSX]({{< relref "/thailand/competitors/apsx" >}}) (APS Thailand) has a care-centre page covering the following:[^6]
   - resident registry and care plans
   - daily nursing notes
   - timed medication with interaction alerts
@@ -53,8 +58,8 @@ Profiles are updated in place and carry their own changelog:
   - LINE reports to families
   - monthly resident accounts that close into an invoice automatically
 
-  It says residents are unlimited and packages are sized by branches and staff users. The page's structured data lists three offers from 27,000 to 135,000 baht.[^6] The page does not say what period these prices cover.
-- **MCS (Miracle Clinic System)**, from Everyday Doctor Co., Ltd., บริษัท เอเวอรี่เดย์ ด๊อกเตอร์ จำกัด, offers an elderly-care-centre system. It lists the following:[^7]
+  It says residents are unlimited and packages are sized by branches and staff users. The page's structured data lists three offers from 27,000 to 135,000 baht.[^6] The APSX home page shows these are annual prices, excluding VAT: 27,000, 54,000 and 135,000 baht a year.[^17]
+- [MCS (Miracle Clinic System)]({{< relref "/thailand/competitors/mcs" >}}), from Everyday Doctor Co., Ltd., บริษัท เอเวอรี่เดย์ ด๊อกเตอร์ จำกัด, offers an elderly-care-centre system. It lists the following:[^7]
   - unlimited inpatient beds and locations
   - real-time vital signs from connected devices
   - individual nutrition
@@ -63,9 +68,9 @@ Profiles are updated in place and carry their own changelog:
   - deposits and instalment payments for long-term packages
   - appointments for families and visiting doctors
 
-  No price is published on that page.[^7]
+  No price is published on that page.[^7] MCS publishes six annual clinic packages, from 9,900 to 35,900 baht a year, but does not say which one the elderly-care features need.[^18]
 
-**4. Foreign entrants.** NEC Thailand trialled its Japanese "Mimamori" system at a Chiang Mai nursing home in 2022. The system combines an online care-plan manager, family alerts and fall sensors. In 2023 NEC signed a smart-city memorandum with Chiang Mai municipality covering elderly care.[^8] We found no later public update. NEC is not profiled here.
+**4. Foreign entrants.** NEC Thailand trialled its Japanese "Mimamori" system at a Chiang Mai nursing home in 2022. The system combines an online care-plan manager, family alerts and fall sensors. In 2023 NEC signed a smart-city memorandum with Chiang Mai municipality covering elderly care.[^8] We found no later public update. The trial is described on the [Government systems]({{< relref "/thailand/competitors/government-systems" >}}) page.
 
 ## Overview: pricing, focus and scale
 
@@ -75,6 +80,8 @@ Profiles are updated in place and carry their own changelog:
 | [CloudNurse]({{< relref "/thailand/competitors/cloudnurse" >}}) (TH Healthtech) | Per resident per month; Enterprise on request[^3] | 300 baht per resident per month (Basic, up to 50 residents)[^3] | Private nursing homes[^3] | "35+" homes, "300+" resident accounts (vendor, undated)[^10] |
 | [HexaHealth]({{< relref "/thailand/competitors/hexahealth" >}}) | Bed-band tiers on a clinic platform[^5] | Free (≤5 beds), 1,990 / 3,490 / 5,900 baht. Also "from 5,000 THB/month for 20 residents" (contradictory).[^5] | Nursing homes, day care, home care, hospice[^5] | None published |
 | [Caleo]({{< relref "/thailand/competitors/caleo" >}}) | Per bed[^4] | None; quoted after a demo[^4] | Care homes, nursing homes, home care, day care[^4] | None published; "Founding Provider phase"[^11] |
+| [APSX]({{< relref "/thailand/competitors/apsx" >}}) (APS Thailand) | Annual package by branches and staff users; residents unlimited[^6][^17] | 27,000 / 54,000 / 135,000 baht a year, excluding VAT[^17] | Clinics, hospitals, spas, wellness and elderly-care centres[^17] | "1,000+ branches", all business types (vendor, undated)[^17] |
+| [MCS]({{< relref "/thailand/competitors/mcs" >}}) (Everyday Doctor) | Annual package by users and features[^18] | 9,900 to 35,900 baht a year (clinic packages); elderly-care price not published[^7][^18] | Clinics, wellness and elderly-care centres, private hospitals[^18] | "2,000+" clinics (vendor, undated)[^18] |
 
 ## Overview: reporting and integration
 
@@ -84,6 +91,8 @@ Profiles are updated in place and carry their own changelog:
 | CloudNurse | Not mentioned on the pages we opened | Not mentioned | "API integration" in Enterprise only[^3] |
 | HexaHealth | Not mentioned on the elderly-care page | Clinic claims module has an NHSO payer setting, and an NHSO EDI link is "on the development plan". This is not the LTC fund.[^12] | REST API and webhooks; HL7 FHIR R4 "on the development plan"[^12] |
 | Caleo | Claims records map to Thai standards and export "evidence packs" for DHSS inspection[^4] | Not mentioned | None mentioned |
+| APSX | Not mentioned | Not mentioned | REST API advertised[^17] |
+| MCS | Not mentioned | Not mentioned | Accounting-system links; "API to external systems" in the Gold package[^18] |
 
 No vendor we found says it exchanges data with the NHSO LTC programme or the 3C program. Neither agency publishes an interface for outside software (see [Data and IT reporting]({{< relref "/thailand/data-and-it-reporting" >}})).
 
@@ -105,13 +114,14 @@ Tako-San's view: in Thai public-sector elderly care, the main competitor is the 
 
 ## Not covered yet
 
-- **Clinic and hospital information systems** used by public hospitals and primary-care units for home visits. These include Thai COC, the Department of Health's Blue Book app and the Smart อสม app for village health volunteers. They are adjacent tools rather than care-home software. We have not yet researched them in depth.
+- **Hospital information systems** used by public hospitals and primary-care units. Thai COC, the Blue Book app and Smart อสม. are now on the [Government systems]({{< relref "/thailand/competitors/government-systems" >}}) page; general hospital systems are not covered.
 - **Consumer caregiver-matching apps.** These help families hire home caregivers. They are not software for care providers.
 
 ## Changelog
 
 - 11 Oct 2026: first published (overview plus four profiles)
 - 11 Oct 2026: the line on care managers now has a source (new note 16). The unsourced claim that they use these systems "for payments" was removed
+- 11 Oct 2026: added profiles of APSX, MCS and the government systems, and a feature matrix, with links from this page. APSX's prices are now stated as annual, excluding VAT, from its home page (new note 17), and MCS's published clinic packages are added (new note 18). APSX and MCS rows added to both overview tables. NEC and the adjacent state apps now point to the Government systems page
 
 ---
 
@@ -148,3 +158,7 @@ Tako-San's view: in Thai public-sector elderly care, the main competitor is the 
 [^15]: NSTDA. "NSTDA receives special outstanding network-organisation award…2026," press release, 8 April 2026. https://www.nstda.or.th/home/news_post/nstda-elderly-award-20260408/
 
 [^16]: Department of Health, Institute for Urban Health Development (สถาบันพัฒนาสุขภาวะเขตเมือง), elderly health group. "Program Long Term Care (3C)," undated training slides on registering care managers and caregivers and writing care plans in the Department of Health's 3C program (ltc.anamai.moph.go.th). Accessed 11 October 2026. https://mwi.anamai.moph.go.th/th/elderly-group/download/?did=207612&id=83877&reload=
+
+[^17]: APS Thailand. "APSX Clinic Software | All-in-One, from ฿27,000/yr," English home page: package table (excluding VAT 7%), feature groups and embedded schema.org offers (annual, unitCode ANN). Accessed 11 October 2026. https://www.apsth.com/en
+
+[^18]: Everyday Doctor Co., Ltd. "MCS clinic-management program (โปรแกรมบริหารคลินิก MCS)," home page with package summary (six packages, 9,900–35,900 baht a year), customer claim and FAQ. Accessed 11 October 2026. https://www.miracleclinicsystem.com/
