@@ -7,6 +7,10 @@
   position: relative;
 }
 
+.mobile-infographic {
+  padding-top: 3rem;
+}
+
 .infographic-fs-btn {
   position: absolute;
   top: 0.6rem;

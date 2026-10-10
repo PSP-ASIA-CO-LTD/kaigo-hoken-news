@@ -98,6 +98,10 @@
     }
 
     function enterOverlay() {
+      if (fsElement()) {
+        syncUi();
+        return;
+      }
       overlayOn = true;
       syncUi();
     }
@@ -113,8 +117,15 @@
       savedScroll = window.scrollY || window.pageYOffset || 0;
       if (nativeEnabled()) {
         requestFs(container).then(function () {
-          if (fsElement() !== container) enterOverlay();
-          else syncUi();
+          if (fsElement() === container) {
+            syncUi();
+            return;
+          }
+          // webkitRequestFullscreen often has no Promise; wait a tick.
+          setTimeout(function () {
+            if (fsElement() === container) syncUi();
+            else enterOverlay();
+          }, 80);
         }).catch(function () {
           enterOverlay();
         });
@@ -159,8 +170,14 @@
     document.addEventListener('keydown', function (e) {
       if (e.key !== 'Escape' && e.key !== 'Esc') return;
       if (!isActive()) return;
-      e.preventDefault();
-      exit();
+      if (overlayOn) {
+        e.preventDefault();
+        exitOverlay();
+        return;
+      }
+      if (fsElement()) {
+        exitNativeFs();
+      }
     }, true);
   }
 
