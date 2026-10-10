@@ -1041,12 +1041,17 @@ html[data-theme="dark"] .example-label {
 }
 
 .mobile-calc-label {
-  flex: 0 1 auto;
-  min-width: 0;
+  flex: 0 0 auto;
+  max-width: 55%;
   overflow-wrap: normal;
   word-break: keep-all;
   hyphens: none;
   color: var(--secondary);
+}
+
+.mobile-calc-label--nowrap {
+  white-space: nowrap;
+  max-width: none;
 }
 
 .mobile-calc-value {
