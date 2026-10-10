@@ -79,8 +79,23 @@
     }
 
     function lockScroll(on) {
-      document.documentElement.classList.toggle('infographic-fs-lock', on);
-      document.body.classList.toggle('infographic-fs-lock', on);
+      if (on) {
+        document.documentElement.classList.add('infographic-fs-lock');
+        document.body.classList.add('infographic-fs-lock');
+        document.body.style.position = 'fixed';
+        document.body.style.top = '-' + savedScroll + 'px';
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.style.width = '100%';
+        return;
+      }
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.width = '';
+      document.documentElement.classList.remove('infographic-fs-lock');
+      document.body.classList.remove('infographic-fs-lock');
     }
 
     function restoreScroll() {
@@ -98,6 +113,7 @@
       requestAnimationFrame(function () {
         pin();
         setTimeout(pin, 0);
+        setTimeout(pin, 50);
       });
     }
 
