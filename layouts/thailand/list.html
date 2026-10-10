@@ -32,9 +32,15 @@
 </div>
 {{- end }}
 
-{{/* Get pages and sort by weight */}}
+{{- $isThailandRoot := and (eq .Kind "section") (or (not .Parent) .Parent.IsHome) }}
+{{- if $isThailandRoot }}
+{{- partial "country-hub-cards.html" (dict "country" "thailand") }}
+{{- $term := site.GetPage "/countries/thailand" }}
+{{- if $term }}
+{{- partial "country-hub-pages.html" (dict "term" $term "current" .) }}
+{{- end }}
+{{- else }}
 {{- $pages := .RegularPages.ByWeight }}
-
 <div class="section-entries">
 {{- range $pages }}
 <article class="post-entry section-entry">
@@ -60,9 +66,10 @@
     {{- partial "post_meta.html" . -}}
   </footer>
   {{- end }}
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .RelPermalink }}"></a>
 </article>
 {{- end }}
 </div>
+{{- end }}
 
 {{- end }}{{- /* end main */ -}}

@@ -1,0 +1,68 @@
+{{/*
+  Shared section cards for the Japan taxonomy hub and the Thailand section hub.
+  Input: dict with "country" = "japan" | "thailand"
+*/}}
+{{- $scratch := newScratch -}}
+{{- partial "country-config.html" (dict "key" .country "scratch" $scratch) -}}
+{{- $cfg := $scratch.Get "cfg" -}}
+{{- if $cfg.name }}
+<section class="country-hub-sections" aria-label="{{ $cfg.name }} sections">
+  <h2 class="country-hub-heading">Sections</h2>
+  <div class="deep-dive-grid country-hub-grid">
+    {{- $startHereHref := "" -}}
+    {{- if $cfg.startHereOverview -}}
+      {{- $startHereHref = $cfg.startHereOverview.RelPermalink -}}
+    {{- end -}}
+    {{- partial "country-section-card.html" (dict
+      "title" "Start Here"
+      "text" $cfg.hubStartHereText
+      "href" $startHereHref
+      "linkLabel" "Open Start Here →"
+    ) -}}
+
+    {{- if gt $cfg.postsCount 0 }}
+    {{- partial "country-section-card.html" (dict
+      "title" "Posts"
+      "text" $cfg.postsText
+      "count" $cfg.postsCount
+      "page" $cfg.postsPage
+      "linkLabel" "Open Posts →"
+    ) -}}
+    {{- end }}
+
+    {{- partial "country-section-card.html" (dict
+      "title" "Guides"
+      "text" $cfg.hubGuidesText
+      "count" $cfg.guidesCount
+      "page" $cfg.guidesPage
+      "linkLabel" "Open Guides →"
+    ) -}}
+
+    {{- if or $cfg.competitorsPage (gt $cfg.competitorsCount 0) }}
+    {{- partial "country-section-card.html" (dict
+      "title" "Competitors"
+      "text" $cfg.hubCompetitorsText
+      "count" $cfg.competitorsCount
+      "page" $cfg.competitorsPage
+      "linkLabel" "Open Competitors →"
+    ) -}}
+    {{- end }}
+
+    {{- if gt $cfg.infographicsCount 0 }}
+    {{- partial "country-section-card.html" (dict
+      "title" "Infographics"
+      "text" $cfg.hubInfographicsText
+      "count" $cfg.infographicsCount
+      "page" $cfg.infographicsPage
+      "linkLabel" "Open Infographics →"
+    ) -}}
+    {{- else }}
+    {{- partial "country-section-card.html" (dict
+      "title" "Infographics"
+      "text" $cfg.hubInfographicsText
+      "comingSoon" true
+    ) -}}
+    {{- end }}
+  </div>
+</section>
+{{- end }}

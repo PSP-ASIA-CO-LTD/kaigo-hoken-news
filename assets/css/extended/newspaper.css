@@ -212,6 +212,7 @@ body {
   .list .main:has(.start-here-box) > header,
   .list .main:has(.start-here-box) > .home-info,
   .list .main:has(.start-here-box) > .start-here-box,
+  .list .main:has(.start-here-box) > .country-home-grid,
   .list .main:has(.start-here-box) > section,
   .list .main:has(.start-here-box) > .first-entry,
   .list .main:has(.first-entry) > .page-header,
@@ -249,6 +250,16 @@ body {
 /* Reduce start-here-box margins */
 .start-here-box {
   margin: var(--space-4) 0;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.country-home-grid,
+.country-home-block,
+.deep-dive-card,
+.post-entry {
+  min-width: 0;
+  max-width: 100%;
 }
 
 /* ============================================

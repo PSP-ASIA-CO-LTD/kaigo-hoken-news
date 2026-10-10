@@ -1,0 +1,130 @@
+{{/*
+  Resolve Japan or Thailand hub/homepage data into the caller's scratch.
+
+  Input: dict with
+    key     = "japan" | "thailand"
+    scratch = a Scratch (newScratch)
+  Sets scratch "cfg" to the resolved dict.
+*/}}
+{{- $key := .key | lower -}}
+{{- $scratch := .scratch -}}
+
+{{- $name := "" -}}
+{{- $intro := "" -}}
+{{- $startHereTitle := "" -}}
+{{- $startHereText := "" -}}
+{{- $startHerePrimaryLabel := "" -}}
+{{- $startHereSecondaryLabel := "" -}}
+{{- $startHerePages := slice -}}
+{{- $startHereFirst := false -}}
+{{- $startHereOverview := false -}}
+{{- $hubStartHereText := "" -}}
+{{- $postsPage := false -}}
+{{- $postsCount := 0 -}}
+{{- $postsText := "" -}}
+{{- $guidesPage := false -}}
+{{- $guidesCount := 0 -}}
+{{- $guidesText := "" -}}
+{{- $hubGuidesText := "" -}}
+{{- $competitorsPage := false -}}
+{{- $competitorsCount := 0 -}}
+{{- $competitorsText := "" -}}
+{{- $hubCompetitorsText := "" -}}
+{{- $infographicsPage := false -}}
+{{- $infographicsCount := 0 -}}
+{{- $infographicsText := "" -}}
+{{- $hubInfographicsText := "" -}}
+
+{{- if eq $key "japan" -}}
+  {{- $name = "Japan" -}}
+  {{- $intro = "Japan's long-term care insurance (介護保険, kaigo hoken): the series, posts, guides, competitor profiles, and infographics." -}}
+  {{- $seriesName := "Japan LTC Basics" -}}
+  {{- $startHerePages = (where site.RegularPages "Params.series" $seriesName).ByParam "series_order" -}}
+  {{- if gt (len $startHerePages) 0 -}}
+    {{- $startHereFirst = index $startHerePages 0 -}}
+  {{- end -}}
+  {{- $startHereOverview = site.GetPage (printf "/series/%s" ($seriesName | urlize)) -}}
+  {{- $startHereTitle = "📚 New to Japan's Long-Term Care System?" -}}
+  {{- $startHereText = printf "Our <strong>%d-part introductory series</strong> covers everything a Thai care-software company needs to know about 介護保険 (kaigo hoken)." (len $startHerePages) -}}
+  {{- $startHerePrimaryLabel = "Start with the Executive Summary →" -}}
+  {{- $startHereSecondaryLabel = "View Series Overview" -}}
+  {{- $hubStartHereText = "The introductory series on Japan's long-term care insurance." -}}
+  {{- $postsPage = site.GetPage "/posts" -}}
+  {{- $posts := where (where site.RegularPages "Section" "posts") "Params.countries" "intersect" (slice "Japan") -}}
+  {{- $postsCount = len $posts -}}
+  {{- $postsText = "Dated briefings on how the system works, providers, technology, and the budget." -}}
+  {{- $guidesPage = site.GetPage "/guides" -}}
+  {{- with $guidesPage }}{{ $guidesCount = len .RegularPages }}{{ end -}}
+  {{- $guidesText = "Living reference guides to LIFE, the Care Plan Data Exchange, monthly billing cycles, and more." -}}
+  {{- $hubGuidesText = "Living reference guides to the national systems care software has to work with." -}}
+  {{- $competitorsPage = site.GetPage "/competitors" -}}
+  {{- with $competitorsPage }}{{ $competitorsCount = len .RegularPages }}{{ end -}}
+  {{- $competitorsText = "Profiles of Kaipoke, Honobono, Wiseman, and other Japanese care-software products." -}}
+  {{- $hubCompetitorsText = "Profiles of Japanese care-software products and the feature matrix." -}}
+  {{- $infographicsPage = site.GetPage "/infographics" -}}
+  {{- with $infographicsPage }}{{ $infographicsCount = len .RegularPages }}{{ end -}}
+  {{- $infographicsText = "Interactive diagrams of the system, claims flow, competitors, and a worked example." -}}
+  {{- $hubInfographicsText = "Interactive diagrams of the system, claims flow, competitors, and a worked example." -}}
+
+{{- else if eq $key "thailand" -}}
+  {{- $name = "Thailand" -}}
+  {{- $intro = "Elderly long-term care in Thailand: licensing, who pays, providers, caregiver training, data and IT, and ageing numbers." -}}
+  {{- $thaiSection := site.GetPage "/thailand" -}}
+  {{- with $thaiSection -}}
+    {{- $startHerePages = .RegularPages.ByWeight -}}
+  {{- end -}}
+  {{- if gt (len $startHerePages) 0 -}}
+    {{- $startHereFirst = index $startHerePages 0 -}}
+  {{- end -}}
+  {{- $startHereOverview = $thaiSection -}}
+  {{- $startHereTitle = "📚 New to elderly care in Thailand?" -}}
+  {{- $startHereText = printf "A <strong>%d-guide reading order</strong> covering the licensing law, who pays, providers, caregiver training, data and IT, and the ageing numbers." (len $startHerePages) -}}
+  {{- $startHerePrimaryLabel = "Start with Licensing →" -}}
+  {{- $startHereSecondaryLabel = "View Thailand Overview" -}}
+  {{- $hubStartHereText = "The six-guide reading order for elderly long-term care in Thailand." -}}
+  {{- $postsPage = site.GetPage "/posts" -}}
+  {{- $posts := where (where site.RegularPages "Section" "posts") "Params.countries" "intersect" (slice "Thailand") -}}
+  {{- $postsCount = len $posts -}}
+  {{- $postsText = "Dated briefings on elderly long-term care in Thailand." -}}
+  {{- $guidesPage = $thaiSection -}}
+  {{- $guidesCount = len $startHerePages -}}
+  {{- $guidesText = "Licensing, who pays, public and private providers, caregiver training, data and IT, and ageing statistics." -}}
+  {{- $hubGuidesText = "Licensing, who pays, public and private providers, caregiver training, data and IT, and ageing statistics." -}}
+  {{- $competitorsPage = site.GetPage "/thailand/competitors" -}}
+  {{- with $competitorsPage }}{{ $competitorsCount = len .RegularPages }}{{ end -}}
+  {{- $competitorsText = "Profiles of Thai care-software products and the landscape overview." -}}
+  {{- $hubCompetitorsText = "Profiles of Thai care-software products and the landscape overview." -}}
+  {{- $infographicsPage = site.GetPage "/thailand/infographics" -}}
+  {{- with $infographicsPage }}{{ $infographicsCount = len .RegularPages }}{{ end -}}
+  {{- $infographicsText = "Interactive diagrams of elderly care in Thailand." -}}
+  {{- $hubInfographicsText = "Interactive diagrams of elderly care in Thailand." -}}
+{{- end -}}
+
+{{- $scratch.Set "cfg" (dict
+  "key" $key
+  "name" $name
+  "intro" $intro
+  "startHereTitle" $startHereTitle
+  "startHereText" $startHereText
+  "startHerePages" $startHerePages
+  "startHereFirst" $startHereFirst
+  "startHereOverview" $startHereOverview
+  "startHerePrimaryLabel" $startHerePrimaryLabel
+  "startHereSecondaryLabel" $startHereSecondaryLabel
+  "hubStartHereText" $hubStartHereText
+  "postsPage" $postsPage
+  "postsCount" $postsCount
+  "postsText" $postsText
+  "guidesPage" $guidesPage
+  "guidesCount" $guidesCount
+  "guidesText" $guidesText
+  "hubGuidesText" $hubGuidesText
+  "competitorsPage" $competitorsPage
+  "competitorsCount" $competitorsCount
+  "competitorsText" $competitorsText
+  "hubCompetitorsText" $hubCompetitorsText
+  "infographicsPage" $infographicsPage
+  "infographicsCount" $infographicsCount
+  "infographicsText" $infographicsText
+  "hubInfographicsText" $hubInfographicsText
+) -}}

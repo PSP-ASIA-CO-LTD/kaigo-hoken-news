@@ -1,52 +1,84 @@
-{{- $startHereSeries := "Japan LTC Basics" }}
-{{- $seriesPages := where site.RegularPages "Params.series" $startHereSeries }}
-{{- $sortedPages := $seriesPages.ByParam "series_order" }}
-{{- $totalParts := len $sortedPages }}
-{{- $firstPost := index $sortedPages 0 }}
+<section class="country-home-grid" aria-label="Japan and Thailand">
+  {{- range slice "japan" "thailand" }}
+  {{- $scratch := newScratch }}
+  {{- partial "country-config.html" (dict "key" . "scratch" $scratch) }}
+  {{- $cfg := $scratch.Get "cfg" }}
+  {{- if $cfg.name }}
+  <div class="country-home-block" data-country="{{ $cfg.key }}">
+    <h2 class="country-home-title">{{ $cfg.name }}</h2>
+    <p class="country-home-intro">{{ $cfg.intro }}</p>
 
-{{- if gt $totalParts 0 }}
-<section class="start-here-box" aria-label="Start here">
-  <div class="start-here-content">
-    <h2 class="start-here-title">📚 New to Japan's Long-Term Care System?</h2>
-    <p class="start-here-text">
-      Our <strong>{{ $totalParts }}-part introductory series</strong> covers everything a Thai care-software company needs to know about 介護保険 (kaigo hoken).
-    </p>
-    <div class="start-here-actions">
-      {{- if $firstPost }}
-      <a href="{{ $firstPost.Permalink }}" class="start-here-btn primary">
-        Start with the Executive Summary →
-      </a>
+    {{- $totalParts := len $cfg.startHerePages }}
+    {{- if gt $totalParts 0 }}
+    <section class="start-here-box" aria-label="{{ $cfg.name }} start here">
+      <div class="start-here-content">
+        <h3 class="start-here-title">{{ $cfg.startHereTitle }}</h3>
+        <p class="start-here-text">{{ $cfg.startHereText | safeHTML }}</p>
+        <div class="start-here-actions">
+          {{- if $cfg.startHereFirst }}
+          <a href="{{ $cfg.startHereFirst.RelPermalink }}" class="start-here-btn primary">
+            {{ $cfg.startHerePrimaryLabel }}
+          </a>
+          {{- end }}
+          {{- if $cfg.startHereOverview }}
+          <a href="{{ $cfg.startHereOverview.RelPermalink }}" class="start-here-btn secondary">
+            {{ $cfg.startHereSecondaryLabel }}
+          </a>
+          {{- end }}
+        </div>
+        <div class="start-here-series-preview">
+          <h4>Reading Path:</h4>
+          <ol class="start-here-toc">
+            {{- range $cfg.startHerePages }}
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+            {{- end }}
+          </ol>
+        </div>
+      </div>
+    </section>
+    {{- end }}
+
+    <div class="deep-dive-grid country-home-cards" aria-label="{{ $cfg.name }} research sections">
+      {{- partial "country-section-card.html" (dict
+        "title" "📖 Guides"
+        "text" $cfg.guidesText
+        "count" $cfg.guidesCount
+        "page" $cfg.guidesPage
+        "linkLabel" "Browse Guides →"
+        "showCount" true
+      ) -}}
+
+      {{- if or $cfg.competitorsPage (gt $cfg.competitorsCount 0) }}
+      {{- partial "country-section-card.html" (dict
+        "title" "🏢 Competitors"
+        "text" $cfg.competitorsText
+        "count" $cfg.competitorsCount
+        "page" $cfg.competitorsPage
+        "linkLabel" "View Competitors →"
+        "showCount" true
+      ) -}}
       {{- end }}
-      <a href="{{ (site.GetPage (printf "/series/%s" ($startHereSeries | urlize))).Permalink }}" class="start-here-btn secondary">
-        View Series Overview
-      </a>
-    </div>
-    <div class="start-here-series-preview">
-      <h3>Reading Path:</h3>
-      <ol class="start-here-toc">
-        {{- range $sortedPages }}
-        <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </li>
-        {{- end }}
-      </ol>
-    </div>
-  </div>
-</section>
-{{- end }}
 
-{{/* Deep-dive sections: Guides and Competitors */}}
-<section class="deep-dive-sections" aria-label="Research sections">
-  <div class="deep-dive-grid">
-    <div class="deep-dive-card guides-card">
-      <h3 class="deep-dive-title">📖 Guides</h3>
-      <p class="deep-dive-text">Living reference guides to LIFE, the Care Plan Data Exchange, monthly billing cycles, and more.</p>
-      <a href="{{ "guides/" | relURL }}" class="deep-dive-link">Browse Guides →</a>
-    </div>
-    <div class="deep-dive-card competitors-card">
-      <h3 class="deep-dive-title">🏢 Competitors</h3>
-      <p class="deep-dive-text">Profiles of Kaipoke, Honobono, Wiseman, and other Japanese care-software products.</p>
-      <a href="{{ "competitors/" | relURL }}" class="deep-dive-link">View Competitors →</a>
+      {{- if gt $cfg.infographicsCount 0 }}
+      {{- partial "country-section-card.html" (dict
+        "title" "📊 Infographics"
+        "text" $cfg.infographicsText
+        "count" $cfg.infographicsCount
+        "page" $cfg.infographicsPage
+        "linkLabel" "View Infographics →"
+        "showCount" true
+      ) -}}
+      {{- else }}
+      {{- partial "country-section-card.html" (dict
+        "title" "📊 Infographics"
+        "text" $cfg.infographicsText
+        "comingSoon" true
+      ) -}}
+      {{- end }}
     </div>
   </div>
+  {{- end }}
+  {{- end }}
 </section>

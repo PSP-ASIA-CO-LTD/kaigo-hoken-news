@@ -1,0 +1,24 @@
+{{/*
+  One Guides / Competitors / Infographics / Posts / Start Here card.
+
+  title, text, count (optional), page (optional), href (optional),
+  linkLabel (optional), comingSoon (optional), showCount (optional)
+*/}}
+{{- $comingSoon := .comingSoon | default false -}}
+{{- $showCount := .showCount | default false -}}
+<div class="deep-dive-card{{ if $comingSoon }} is-coming-soon{{ end }}">
+  <h3 class="deep-dive-title">
+    {{ .title }}
+    {{- if and $showCount (not $comingSoon) (isset . "count") }}
+    <span class="page-count">{{ .count }}</span>
+    {{- end }}
+  </h3>
+  <p class="deep-dive-text">{{ .text }}</p>
+  {{- if $comingSoon }}
+  <span class="coming-soon-label">Coming soon</span>
+  {{- else if .page }}
+  <a href="{{ .page.RelPermalink }}" class="deep-dive-link">{{ .linkLabel | default (printf "Open %s →" .title) }}</a>
+  {{- else if .href }}
+  <a href="{{ .href }}" class="deep-dive-link">{{ .linkLabel | default (printf "Open %s →" .title) }}</a>
+  {{- end }}
+</div>
