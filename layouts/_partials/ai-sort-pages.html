@@ -1,0 +1,15 @@
+{{- /* Sort pages by series_order (missing last), then date. Input: Pages or slice of Pages. */ -}}
+{{- $decorated := slice -}}
+{{- range . -}}
+  {{- $ord := 9999 -}}
+  {{- with .Params.series_order -}}
+    {{- $ord = . -}}
+  {{- end -}}
+  {{- $decorated = $decorated | append (dict "ord" $ord "ts" .Date.Unix "page" .) -}}
+{{- end -}}
+{{- $sorted := sort (sort $decorated "ts") "ord" -}}
+{{- $out := slice -}}
+{{- range $sorted -}}
+  {{- $out = $out | append .page -}}
+{{- end -}}
+{{- return $out -}}

@@ -1,0 +1,34 @@
+{{/*
+  Start Here pages for a country: the country's series (by series_order)
+  if any posts have Params.series, otherwise that country's guides.
+
+  Input: dict with key = "japan" | "thailand"
+  Returns: pages, series (name or ""), kind ("series"|"guides"), overview (Page or false)
+*/}}
+{{- $key := .key | lower -}}
+{{- $country := cond (eq $key "japan") "Japan" "Thailand" -}}
+{{- $posts := where (where site.RegularPages "Section" "posts") "Params.countries" "intersect" (slice $country) -}}
+{{- $withSeries := where $posts "Params.series" "!=" nil -}}
+{{- $withSeries = where $withSeries "Params.series" "!=" "" -}}
+{{- $pages := slice -}}
+{{- $series := "" -}}
+{{- $kind := "guides" -}}
+{{- $overview := false -}}
+{{- if gt (len $withSeries) 0 -}}
+  {{- $sorted := $withSeries.ByParam "series_order" -}}
+  {{- $series = (index $sorted 0).Params.series -}}
+  {{- $pages = (where site.RegularPages "Params.series" $series).ByParam "series_order" -}}
+  {{- $kind = "series" -}}
+  {{- $overview = site.GetPage (printf "/series/%s" ($series | urlize)) -}}
+{{- else if eq $country "Thailand" -}}
+  {{- with site.GetPage "/thailand" -}}
+    {{- $pages = .RegularPages.ByWeight -}}
+    {{- $overview = . -}}
+  {{- end -}}
+{{- else -}}
+  {{- with site.GetPage "/guides" -}}
+    {{- $pages = .RegularPages -}}
+    {{- $overview = . -}}
+  {{- end -}}
+{{- end -}}
+{{- return (dict "pages" $pages "series" $series "kind" $kind "overview" $overview) -}}

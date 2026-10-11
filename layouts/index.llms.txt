@@ -1,39 +1,59 @@
 {{- /* Catalog of every regular page, generated from content/front matter at build time. */ -}}
+{{- $jScratch := newScratch -}}
+{{- partial "country-config.html" (dict "key" "japan" "scratch" $jScratch) -}}
+{{- $jcfg := $jScratch.Get "cfg" -}}
+{{- $tScratch := newScratch -}}
+{{- partial "country-config.html" (dict "key" "thailand" "scratch" $tScratch) -}}
+{{- $tcfg := $tScratch.Get "cfg" -}}
+
 {{- $japanStart := slice -}}
-{{- $japanPosts := slice -}}
-{{- $japanGuides := slice -}}
-{{- $japanCompetitors := slice -}}
-{{- $japanInfographics := slice -}}
-{{- $thaiStart := slice -}}
-{{- $thaiPosts := slice -}}
-{{- $thaiGuides := slice -}}
-{{- $thaiCompetitors := slice -}}
-{{- $thaiInfographics := slice -}}
-{{- $shared := slice -}}
-{{- range (where site.RegularPages "Params.series" "Japan LTC Basics").ByParam "series_order" -}}
+{{- range $jcfg.startHerePages -}}
   {{- if partial "ai-include-page.html" . -}}
     {{- $japanStart = $japanStart | append (partial "ai-page-info.html" .) -}}
   {{- end -}}
 {{- end -}}
-{{- with site.GetPage "/thailand" -}}
-  {{- range .RegularPages.ByWeight -}}
-    {{- if partial "ai-include-page.html" . -}}
-      {{- $thaiStart = $thaiStart | append (partial "ai-page-info.html" .) -}}
-    {{- end -}}
+{{- $thaiStart := slice -}}
+{{- range $tcfg.startHerePages -}}
+  {{- if partial "ai-include-page.html" . -}}
+    {{- $thaiStart = $thaiStart | append (partial "ai-page-info.html" .) -}}
   {{- end -}}
 {{- end -}}
+
+{{- $japanPostPages := where (where site.RegularPages "Section" "posts") "Params.countries" "intersect" (slice "Japan") -}}
+{{- $thaiPostPages := where (where site.RegularPages "Section" "posts") "Params.countries" "intersect" (slice "Thailand") -}}
+{{- $japanPostPages = partial "ai-sort-pages.html" $japanPostPages -}}
+{{- $thaiPostPages = partial "ai-sort-pages.html" $thaiPostPages -}}
+
+{{- $japanPosts := slice -}}
+{{- range $japanPostPages -}}
+  {{- if partial "ai-include-page.html" . -}}
+    {{- $japanPosts = $japanPosts | append (partial "ai-page-info.html" .) -}}
+  {{- end -}}
+{{- end -}}
+{{- $thaiPosts := slice -}}
+{{- range $thaiPostPages -}}
+  {{- if partial "ai-include-page.html" . -}}
+    {{- $thaiPosts = $thaiPosts | append (partial "ai-page-info.html" .) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $japanGuides := slice -}}
+{{- $japanCompetitors := slice -}}
+{{- $japanInfographics := slice -}}
+{{- $thaiGuides := slice -}}
+{{- $thaiCompetitors := slice -}}
+{{- $thaiInfographics := slice -}}
+{{- $shared := slice -}}
 {{- range site.RegularPages -}}
   {{- if partial "ai-include-page.html" . -}}
     {{- $info := partial "ai-page-info.html" . -}}
     {{- if eq $info.country "Japan" -}}
-      {{- if eq $info.section "posts" -}}{{- $japanPosts = $japanPosts | append $info -}}
-      {{- else if eq $info.section "guides" -}}{{- $japanGuides = $japanGuides | append $info -}}
+      {{- if eq $info.section "guides" -}}{{- $japanGuides = $japanGuides | append $info -}}
       {{- else if eq $info.section "competitors" -}}{{- $japanCompetitors = $japanCompetitors | append $info -}}
       {{- else if eq $info.section "infographics" -}}{{- $japanInfographics = $japanInfographics | append $info -}}
       {{- end -}}
     {{- else if eq $info.country "Thailand" -}}
-      {{- if eq $info.section "posts" -}}{{- $thaiPosts = $thaiPosts | append $info -}}
-      {{- else if eq $info.section "guides" -}}{{- $thaiGuides = $thaiGuides | append $info -}}
+      {{- if eq $info.section "guides" -}}{{- $thaiGuides = $thaiGuides | append $info -}}
       {{- else if eq $info.section "competitors" -}}{{- $thaiCompetitors = $thaiCompetitors | append $info -}}
       {{- else if eq $info.section "infographics" -}}{{- $thaiInfographics = $thaiInfographics | append $info -}}
       {{- end -}}
@@ -42,14 +62,27 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
+
+{{- $japanBullet := "" -}}
+{{- if and (eq $jcfg.startHereKind "series") $jcfg.startHereSeries -}}
+  {{- $japanBullet = printf "Start Here is the %d-part *%s* series. Then posts (the same dated briefings), living guides, competitor profiles, and infographics." (len $japanStart) $jcfg.startHereSeries -}}
+{{- else -}}
+  {{- $japanBullet = "Start Here is the reading-order guides. Then posts (if any), those guides, competitor profiles, and infographics." -}}
+{{- end -}}
+{{- $thaiBullet := "" -}}
+{{- if and (eq $tcfg.startHereKind "series") $tcfg.startHereSeries -}}
+  {{- $thaiBullet = printf "Start Here is the %d-part *%s* series. Then posts (the same dated briefings), living guides, competitor profiles, and infographics." (len $thaiStart) $tcfg.startHereSeries -}}
+{{- else -}}
+  {{- $thaiBullet = "Start Here is the reading-order guides under Thailand. Then posts (if any), those guides, Thai competitor profiles, and Thai infographics." -}}
+{{- end -}}
 # {{ site.Title }}
 
 > {{ site.Params.description }}. Published by {{ site.Params.author }}, a Thai care-software company studying Japan's long-term care insurance (介護保険, kaigo hoken) and elderly long-term care in Thailand. Every factual claim is footnoted to a source we opened. Opinions are labelled "Tako-San's take" or "Tako-San's view".
 
 **How this site is organised.** Split by country — Japan and Thailand. For each country: a Start Here series, posts, guides, competitor profiles, and infographics. Shared across both countries: the glossary and the about page.
 
-- **Japan** — Start Here is the 5-part *Japan LTC Basics* series. Then posts (the same dated briefings), living guides, competitor profiles, and infographics.
-- **Thailand** — Start Here is the reading-order guides under Thailand. Then posts (if any), those guides, Thai competitor profiles, and Thai infographics.
+- **Japan** — {{ $japanBullet }}
+- **Thailand** — {{ $thaiBullet }}
 - **Shared** — glossary of Japanese (Hepburn) and Thai (RTGS) terms, and about.
 
 Prefer the Markdown copy of a page when one is linked. Machine-readable catalogs are listed at the end.

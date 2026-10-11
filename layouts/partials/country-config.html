@@ -18,6 +18,8 @@
 {{- $startHerePages := slice -}}
 {{- $startHereFirst := false -}}
 {{- $startHereOverview := false -}}
+{{- $startHereSeries := "" -}}
+{{- $startHereKind := "guides" -}}
 {{- $hubStartHereText := "" -}}
 {{- $postsPage := false -}}
 {{- $postsCount := 0 -}}
@@ -38,12 +40,14 @@
 {{- if eq $key "japan" -}}
   {{- $name = "Japan" -}}
   {{- $intro = "Japan's long-term care insurance (介護保険, kaigo hoken): the series, posts, guides, competitor profiles, and infographics." -}}
-  {{- $seriesName := "Japan LTC Basics" -}}
-  {{- $startHerePages = (where site.RegularPages "Params.series" $seriesName).ByParam "series_order" -}}
+  {{- $sh := partial "country-start-here.html" (dict "key" "japan") -}}
+  {{- $startHerePages = $sh.pages -}}
+  {{- $startHereSeries = $sh.series -}}
+  {{- $startHereKind = $sh.kind -}}
   {{- if gt (len $startHerePages) 0 -}}
     {{- $startHereFirst = index $startHerePages 0 -}}
   {{- end -}}
-  {{- $startHereOverview = site.GetPage (printf "/series/%s" ($seriesName | urlize)) -}}
+  {{- $startHereOverview = $sh.overview -}}
   {{- $startHereTitle = "📚 New to Japan's Long-Term Care System?" -}}
   {{- $startHereText = printf "Our <strong>%d-part introductory series</strong> covers everything a Thai care-software company needs to know about 介護保険 (kaigo hoken)." (len $startHerePages) -}}
   {{- $startHerePrimaryLabel = "Start with the Executive Summary →" -}}
@@ -74,23 +78,21 @@
   {{- with $thaiSection -}}
     {{- $thaiGuides = .RegularPages.ByWeight -}}
   {{- end -}}
-  {{- $seriesName := "Thailand LTC Basics" -}}
-  {{- $startHerePages = (where site.RegularPages "Params.series" $seriesName).ByParam "series_order" -}}
+  {{- $sh := partial "country-start-here.html" (dict "key" "thailand") -}}
+  {{- $startHerePages = $sh.pages -}}
+  {{- $startHereSeries = $sh.series -}}
+  {{- $startHereKind = $sh.kind -}}
+  {{- $startHereOverview = $sh.overview -}}
   {{- if gt (len $startHerePages) 0 -}}
     {{- $startHereFirst = index $startHerePages 0 -}}
-    {{- $startHereOverview = site.GetPage (printf "/series/%s" ($seriesName | urlize)) -}}
-    {{- $startHereTitle = "📚 New to elderly care in Thailand?" -}}
+  {{- end -}}
+  {{- $startHereTitle = "📚 New to elderly care in Thailand?" -}}
+  {{- if eq $sh.kind "series" -}}
     {{- $startHereText = printf "Our <strong>%d-part introductory series</strong> covers what a care-software company needs to know about elderly long-term care in Thailand." (len $startHerePages) -}}
     {{- $startHerePrimaryLabel = "Start with Part 1 →" -}}
     {{- $startHereSecondaryLabel = "View Series Overview" -}}
     {{- $hubStartHereText = "The introductory series on elderly long-term care in Thailand." -}}
   {{- else -}}
-    {{- $startHerePages = $thaiGuides -}}
-    {{- if gt (len $startHerePages) 0 -}}
-      {{- $startHereFirst = index $startHerePages 0 -}}
-    {{- end -}}
-    {{- $startHereOverview = $thaiSection -}}
-    {{- $startHereTitle = "📚 New to elderly care in Thailand?" -}}
     {{- $startHereText = printf "A <strong>%d-guide reading order</strong> covering the licensing law, who pays, providers, caregiver training, data and IT, and the ageing numbers." (len $startHerePages) -}}
     {{- $startHerePrimaryLabel = "Start with Licensing →" -}}
     {{- $startHereSecondaryLabel = "View Thailand Overview" -}}
@@ -99,7 +101,11 @@
   {{- $postsPage = site.GetPage "/posts" -}}
   {{- $posts := where (where site.RegularPages "Section" "posts") "Params.countries" "intersect" (slice "Thailand") -}}
   {{- $postsCount = len $posts -}}
-  {{- $postsText = "The Thailand LTC Basics series and dated briefings on elderly long-term care in Thailand." -}}
+  {{- if eq $sh.kind "series" -}}
+    {{- $postsText = printf "The %s series and dated briefings on elderly long-term care in Thailand." $sh.series -}}
+  {{- else -}}
+    {{- $postsText = "Dated briefings on elderly long-term care in Thailand." -}}
+  {{- end -}}
   {{- $guidesPage = $thaiSection -}}
   {{- $guidesCount = len $thaiGuides -}}
   {{- $guidesText = "Licensing, who pays, providers, caregiver training, data and IT, ageing statistics, the NHSO care cycle, who does what, and how public bodies buy software." -}}
@@ -123,6 +129,8 @@
   "startHerePages" $startHerePages
   "startHereFirst" $startHereFirst
   "startHereOverview" $startHereOverview
+  "startHereSeries" $startHereSeries
+  "startHereKind" $startHereKind
   "startHerePrimaryLabel" $startHerePrimaryLabel
   "startHereSecondaryLabel" $startHereSecondaryLabel
   "hubStartHereText" $hubStartHereText
