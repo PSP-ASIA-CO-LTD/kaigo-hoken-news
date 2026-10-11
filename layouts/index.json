@@ -1,16 +1,21 @@
+{{- $included := slice -}}
+{{- range site.RegularPages -}}
+  {{- if partial "ai-include-page.html" . -}}
+    {{- $included = $included | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $included = partial "ai-sort-pages.html" $included -}}
 {{- $pages := slice -}}
 {{- $byCountry := dict -}}
 {{- $bySection := dict -}}
 {{- $n := 0 -}}
-{{- range site.RegularPages -}}
-  {{- if partial "ai-include-page.html" . -}}
-    {{- $info := partial "ai-page-info.html" . -}}
-    {{- $pages = $pages | append $info -}}
-    {{- $n = add $n 1 -}}
-    {{- $ck := $info.country | default "shared" -}}
-    {{- $byCountry = merge $byCountry (dict $ck (add (index $byCountry $ck | default 0) 1)) -}}
-    {{- $bySection = merge $bySection (dict $info.section (add (index $bySection $info.section | default 0) 1)) -}}
-  {{- end -}}
+{{- range $included -}}
+  {{- $info := partial "ai-page-info.html" . -}}
+  {{- $pages = $pages | append $info -}}
+  {{- $n = add $n 1 -}}
+  {{- $ck := $info.country | default "shared" -}}
+  {{- $byCountry = merge $byCountry (dict $ck (add (index $byCountry $ck | default 0) 1)) -}}
+  {{- $bySection = merge $bySection (dict $info.section (add (index $bySection $info.section | default 0) 1)) -}}
 {{- end -}}
 {{- $counts := dict "pages" $n "by_country" $byCountry "by_section" $bySection -}}
 {{- $out := dict
