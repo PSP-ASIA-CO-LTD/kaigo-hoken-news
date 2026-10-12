@@ -1,7 +1,7 @@
 ---
 title: "Kanamic (Kanamic Network Co., Ltd.): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-12T07:00:00+07:00
 tags: ["japan", "competitors", "kanamic", "software"]
 summary: "Kanamic's cloud service: its pricing model, features, customers and published scale, its approval as an equivalent to the Care Plan Data Exchange, and how it handles LIFE and claims."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 3
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 12 Oct 2026*
 
 Kanamic ({{< ja "カナミック" "kanamikku" "Kanamic" >}}) is a cloud service for medical and care offices, run by Kanamic Network Co., Ltd. ({{< ja "株式会社カナミックネットワーク" "kabushiki-gaisha kanamikku nettowāku" "Kanamic Network Co., Ltd." >}}). The company was founded on 20 October 2000 and is listed on the Prime market of the Tokyo Stock Exchange (code 3939).[^1] Its pages describe the service as covering daily care records through to management reporting, with information sharing across organisations.[^2]
 
@@ -43,6 +43,7 @@ Kanamic's marketing page says customers pay an "initial installation fee" and a 
   - support for writing home-visit-care monitoring reports (announced 7 April 2026)
   - AI meeting minutes
   - AI-OCR that reads care-insurance cards and fills in the data automatically
+- **AI records from intercom speech.** On 24 September 2026, Kanamic launched an AI function in Kanamic Cloud Service that creates care records from what staff say on the intercom apps Buddycom (Science Arts, Inc.) and LINE WORKS Radjar (LINE WORKS Corp.); staff can check, edit and save the AI-created record on a smartphone.[^9]
 
 ## Target customers
 
@@ -79,6 +80,7 @@ Tako-San's view: Kanamic sells the network as much as the record. Its pitch is i
 
 ## Changelog
 
+- 12 Oct 2026: added the AI care-record function from Buddycom and LINE WORKS Radjar speech (24 September 2026)
 - 9 Oct 2026: first published
 
 ---
@@ -100,3 +102,5 @@ Tako-San's view: Kanamic sells the network as much as the record. Its pitch is i
 [^7]: Kanamic Network Co., Ltd. "Release of 'Kanamic Easy AI Visit Route' (「カナミックかんたんAI訪問ルート」のリリース開始)." PR TIMES, 11 July 2024. https://prtimes.jp/main/html/rd/p/000000059.000050437.html
 
 [^8]: Kanamic Network Co., Ltd. "Kanamic Cloud Service Adopted by MHLW as the Only Private-Sector System Meeting the Care-Management Fee II Requirement (『カナミッククラウドサービス』が厚生労働省より、居宅介護支援費Ⅱの算定要件対応システムとして民間企業で唯一採択されました)." PR TIMES, 8 April 2025. https://prtimes.jp/main/html/rd/p/000000069.000050437.html
+
+[^9]: Kanamic Network Co., Ltd. Release, 24 September 2026. TDnet PDF. https://www.nikkei.com/markets/ir/irftp/data/tdnr/tdnetg3/20260924/g5ac4q/140120260924539178.pdf See also PR TIMES: https://prtimes.jp/main/html/rd/p/000000095.000050437.html

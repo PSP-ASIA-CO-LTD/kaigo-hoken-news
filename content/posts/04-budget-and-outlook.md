@@ -1,6 +1,7 @@
 ---
 title: "The money, the workforce, and what 2027 and 2040 look like"
 date: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-12T07:00:00+07:00
 tags: ["japan", "long-term-care", "budget", "workforce"]
 summary: "What Japan spends on long-term care, the fiscal 2026 wage package, the path to the 2027 fee revision, and the 2040 population squeeze."
 series: "Japan LTC Basics"
@@ -51,6 +52,8 @@ Still open in the December 2023 cabinet reform roadmap, as reprinted in that ove
 
 Home-visit care's base fee is a known sore point going into 2027. Industry coverage in 2026 describes providers asking for a higher base rate while the finance ministry looks at cases where many users live in one building and the visit is cheaper to deliver. That debate is not restated here as a decided cut or a decided rise. The decided 2026 action is the mid-cycle ＋2.03 percent package above, which is a wage and food-cost measure, not a rewrite of the visit-care base table.
 
+> **Update, 12 Oct 2026:** At its 268th meeting on 30 September 2026, the Social Security Council Long-Term Care Benefits Subcommittee ({{< ja "社会保障審議会介護給付費分科会" "shakai hoshō shingikai kaigo kyūfuhi bunkakai" "Social Security Council, Long-Term Care Benefits Subcommittee" >}}) discussed a draft of five basic viewpoints for the fiscal 2027 care fee revision: (1) rising prices and wages, and staff pay; (2) service provision that fits population decline and changing demand, including the new specific-area services ({{< ja "特定地域サービス" "tokutei chiiki sābisu" "specific-area services" >}}); (3) deepening community-based integrated care; (4) workplaces and productivity, including AI and other care technology in home-based services; (5) stability and sustainability, including organising and simplifying the fee structure ({{< ja "報酬体系の整理・簡素化" "hōshū taikei no seiri, kanso-ka" "organising and simplifying the fee structure" >}}). The same paper says that in the FY2025 survey of care business management (overview survey) about 40% of operators across all services were in deficit.[^7] Those viewpoints were not decided at that meeting; MHLW said they will be reflected in the subcommittee's final review report ({{< ja "審議報告" "shingi hōkoku" "review report" >}}) after members' opinions.[^8] The 269th meeting, on 9 October 2026, tabled the first per-service directions, including a proposal to create a new fee evaluation in regular-visit/on-call care type (III) for offices that secure a 24-hour call and consultation function and provide daytime support. These are proposals for discussion, not decisions.[^9]
+
 ## People: the constraint that drives the software agenda
 
 MHLW summed the care-worker numbers that prefectures built from the 9th municipal plans:[^6]
@@ -83,6 +86,10 @@ This is the public mood that matters commercially, more than a social-media inde
 The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone) reshapes the buyer landscape. Survivors are consolidating into multi-site operators who need *headquarters-level* dashboards — staff utilisation across branches, LIFE compliance rates by site, add-on capture analytics. PSP should design for this from day one: multi-facility data models, role-based access, and reporting that a regional manager can act on. The productivity add-on (up to 100 units/month) is under-claimed precisely because small offices lack the systems to prove eligibility. A product that *demonstrates* productivity gains — documented task splits, tech-use logs, committee minutes — and auto-generates the evidence could pay for itself in captured add-ons. Position PSP not as "cheaper software" but as "the system that unlocks the wage and productivity add-ons your staff deserve."
 {{< /analysis >}}
 
+## Changelog
+
+- 12 Oct 2026: Added an update note on the fiscal 2027 revision draft viewpoints (268th meeting) and the first per-service proposals (269th meeting).
+
 ---
 
 ## References
@@ -98,3 +105,9 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 [^5]: Tokyo Shoko Research. "Elderly Welfare and Care Business Bankruptcies Hit Record in 2025 (2025年「老人福祉・介護事業」の倒産状況)." 9 January 2026. https://www.tsr-net.co.jp/data/detail/1202283_1527.html
 
 [^6]: Ministry of Health, Labour and Welfare. "Care Worker Demand Projections Based on 9th Municipal Plans (第9期介護保険事業計画に基づく介護職員の必要数について)." https://www.mhlw.go.jp/content/12004000/001274769.pdf
+
+[^7]: Ministry of Health, Labour and Welfare. "Basic viewpoints for the FY2027 care fee revision (draft) (令和９年度介護報酬改定に向けた基本的な視点（案）)." Social Security Council Long-Term Care Benefits Subcommittee (268th meeting), Material 1, 30 September 2026. https://www.mhlw.go.jp/content/12300000/001753962.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76281.html
+
+[^8]: Shakai Hoken Kenkyujo (media.shaho.co.jp). Article on the 268th meeting of the Social Security Council Long-Term Care Benefits Subcommittee. Secondary source. https://media.shaho.co.jp/n/n75dee89457b8
+
+[^9]: Ministry of Health, Labour and Welfare. Material 1, Social Security Council Long-Term Care Benefits Subcommittee (269th meeting), 9 October 2026. https://www.mhlw.go.jp/content/12300000/001758324.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76456.html
