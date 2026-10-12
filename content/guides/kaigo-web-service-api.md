@@ -1,7 +1,7 @@
 ---
 title: "Kaigo WEB Service and its API: what vendors must build for 2027"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-12T09:00:00+07:00
+lastmod: 2026-10-12T07:00:00+07:00
 tags: ["japan", "long-term-care", "care-information-platform", "api", "care-plan", "software", "guide"]
 summary: "The Kaigo WEB Service is the website through which care offices reach Japan's care information platform, and from January 2027 it also carries care plans. This guide covers who runs it, the dated timeline, what API version 1.0 requires (standard 5.0, certificates, tokens, permissions), the vendor tests, costs, and the open questions."
 categories: ["Guides"]
@@ -49,7 +49,7 @@ What a given login can see depends on two settings. One is the service type the 
 - **From 1 April 2026:** municipalities that have finished can start.
 - **By 1 April 2028:** MHLW aims for every municipality to be using the platform.
 - **Status at 10 July 2026:** 1,545 municipalities had fixed start dates. Of these, 416 were due to start in fiscal 2026 and 1,129 in fiscal 2027. Another 196 were still being arranged.[^5]
-- **Status at 1 Oct 2026:** usable in 3 cities (Ōita City and Beppu City, Ōita Prefecture; Ibusuki City, Kagoshima Prefecture); start dates published for 1,558 municipalities (89% of all municipalities); 42 still scheduling; 138 undecided. The previous update (15 September 2026, status as of 10 September) was usable in 2 cities (Ōita, Beppu); 1,548 published; 58 scheduling; 133 undecided. The 1 October update notes Ibusuki's status is as of 1 October, i.e. Ibusuki became the third city.[^17][^18]
+- **Status at 1 Oct 2026:** usable in 3 cities (Ōita City and Beppu City, Ōita Prefecture; Ibusuki City, Kagoshima Prefecture); start dates published for 1,558 municipalities (89% of all municipalities); 42 still scheduling; 138 undecided. Ibusuki City's start date was 1 October 2026, and it is first listed as usable in the update dated 1 October 2026; the 15 September update (status as of 10 September) listed 2 cities (Ōita, Beppu).[^17][^18]
 - **Checking a municipality:** each municipality's start date can be checked on the Kaigo Kiban Portal.[^5]
 
 The care-plan exchange function does not have to wait for the municipality. It can be used even before a municipality starts using the platform.[^5]
@@ -245,6 +245,6 @@ Tako-San's view: for a vendor, the 2027 change is bigger than "the exchange move
 
 [^16]: National Health Insurance Central Association. "Notice of Vendor Tests (Offline and Online) for Care DX (Linking with the Care Information Platform) (介護DX（介護情報基盤との連携）に伴うベンダテスト（オフライン・オンライン）実施のお知らせ)." April 2026. https://www.kokuho.or.jp/system/care/lib/260401_5313_kaigodx_vendortest_info.pdf
 
-[^17]: National Health Insurance Central Association. "Update history of municipalities' status." Kaigo Kiban Portal PDF, update dated 6 October 2026 (status as of 1 October 2026). https://www.kaigo-kiban-portal.jp/assets/pdf/taioujyoukyou_rireki.pdf
+[^17]: National Health Insurance Central Association. "Update history of municipalities' status." Kaigo Kiban Portal PDF, updates dated 6 October 2026 (status as of 1 October) and 1 October 2026. https://www.kaigo-kiban-portal.jp/assets/pdf/taioujyoukyou_rireki.pdf
 
 [^18]: National Health Insurance Central Association. Kaigo Kiban Portal notice, 5 October 2026. https://www.kaigo-kiban-portal.jp/notice/detail/89

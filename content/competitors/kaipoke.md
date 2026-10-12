@@ -1,7 +1,7 @@
 ---
 title: "Kaipoke (SMS Co., Ltd.): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-12T09:00:00+07:00
+lastmod: 2026-10-12T07:00:00+07:00
 tags: ["japan", "competitors", "kaipoke", "software"]
 summary: "Kaipoke's published per-office prices, its features, who it targets, SMS's own scale and share figures, and how it handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]

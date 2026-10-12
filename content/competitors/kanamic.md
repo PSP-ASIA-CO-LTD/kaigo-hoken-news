@@ -1,7 +1,7 @@
 ---
 title: "Kanamic (Kanamic Network Co., Ltd.): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-12T09:00:00+07:00
+lastmod: 2026-10-12T07:00:00+07:00
 tags: ["japan", "competitors", "kanamic", "software"]
 summary: "Kanamic's cloud service: its pricing model, features, customers and published scale, its approval as an equivalent to the Care Plan Data Exchange, and how it handles LIFE and claims."
 categories: ["Competitors"]
