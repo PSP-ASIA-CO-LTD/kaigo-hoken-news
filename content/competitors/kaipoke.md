@@ -1,7 +1,7 @@
 ---
 title: "Kaipoke (SMS Co., Ltd.): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-12T09:00:00+07:00
 tags: ["japan", "competitors", "kaipoke", "software"]
 summary: "Kaipoke's published per-office prices, its features, who it targets, SMS's own scale and share figures, and how it handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 1
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 12 Oct 2026*
 
 Kaipoke ({{< ja "カイポケ" "kaipoke" "Kaipoke" >}}) is cloud-based management-support software for care and disability-welfare offices. It is run by SMS Co., Ltd. ({{< ja "株式会社エス・エム・エス" "kabushiki-gaisha esu emu esu" "SMS Co., Ltd." >}}), which is listed on the Prime market of the Tokyo Stock Exchange (code 2175).[^1]
 
@@ -54,6 +54,7 @@ Several services at the same address can be bundled at a special price, quoted o
   - AI for creating forms and other paperwork
   - RPA that automatically transfers AI-generated data into Kaipoke
 - **"Kaipoke Connect".** In its April 2026 value-creation roadmap, SMS describes a plan to turn Kaipoke into a network hub linking offices, other vendors' software and medical institutions.[^9]
+- **AI records from conversations (Stand LM).** On 17 September 2026, SMS announced a strategic partnership with ENBASE Inc. ENBASE's AI assistant Stand LM ({{< ja "スタンドLM" "sutando eru emu" "Stand LM" >}}) creates records from conversations during care; after a review screen, records are sent to Kaipoke with one tap. It starts with home-visit nursing stations (nursing record II) and is to expand in turn to home-visit care, care management and welfare-equipment rental offices. Stand LM launched in June 2025.[^11]
 
 ## Target customers
 
@@ -86,6 +87,7 @@ Tako-San's view: Kaipoke competes on published, low, flat prices for home-based 
 
 ## Changelog
 
+- 12 Oct 2026: added the ENBASE / Stand LM partnership (17 September 2026)
 - 9 Oct 2026: first published
 
 ---
@@ -111,3 +113,5 @@ Tako-San's view: Kaipoke competes on published, low, flat prices for home-based 
 [^9]: SMS Co., Ltd. "Corporate Value Creation Roadmap." 28 April 2026, pp. 17–19. https://global.bm-sms.com/wp-content/uploads/2026/04/roadmap_to_FY30_E.pdf
 
 [^10]: SMS Co., Ltd. "Kaipoke Home-Visit Nursing Passes 7,000 Offices (「カイポケ訪問看護」導入事業所数が7,000件を突破)." Press release, 4 March 2026. https://www.bm-sms.co.jp/news-press/prs_20260304_kaipoke-houmonkango_7000/
+
+[^11]: SMS Co., Ltd. Release, 17 September 2026. TDnet PDF. https://www.nikkei.com/markets/ir/irftp/data/tdnr/tdnetg3/20260917/g4vauc/140120260917537668.pdf
