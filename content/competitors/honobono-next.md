@@ -1,7 +1,7 @@
 ---
 title: "Honobono NEXT (ND Software, SOMPO group): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-15T07:00:00+07:00
 tags: ["japan", "competitors", "honobono", "sompo", "software"]
 summary: "ND Software's Honobono NEXT: its five-year licence model, features, customers, SOMPO's 2023 share estimates, and how it handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 2
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 15 Oct 2026*
 
 Honobono NEXT ({{< ja "ほのぼのNEXT" "honobono nekusuto" "Honobono NEXT" >}}) is a care software package from ND Software Co., Ltd. ({{< ja "エヌ・デーソフトウェア株式会社" "enu dē sofutowea kabushiki-gaisha" "ND Software Co., Ltd." >}}), based in Nan'yō, Yamagata Prefecture.[^2] Its product page describes it as linking care records through to care-insurance claims.[^1] SOMPO Holdings made ND Software a wholly owned subsidiary on **28 February 2023**.[^2]
 
@@ -39,11 +39,11 @@ The product page and an ND Software release list these features:[^1][^6]
 - **AI and sensors.** An AI care plan tool, and an IoT cloud that links bed and monitoring sensors to records.[^1]
 - **Cloud and family app.** A cloud version ("online platform"), and a family app ("Tsunagaru Kazoku", {{< ja "つながる家族" "tsunagaru kazoku" "connected family" >}}) for sharing bills and notices.[^1]
 - **Honobono ONE, coming in late 2026.** On 19 June 2026, ND Software announced three cloud products called "Honobono ONE" ({{< ja "ほのぼのONE" "honobono wan" "Honobono ONE" >}}). They run alongside Honobono NEXT on its online platform:[^6]
-  - a care-manager tool for browser and tablet
-  - Care Palette PRO for recording on iOS
-  - a facility operations management tool
+  - a care-manager tool for browser and tablet ({{< ja "どこでもケアマネ" "dokodemo keamane" "care manager anywhere" >}})
+  - Care Palette PRO ({{< ja "ケアパレット プロ" "kea paretto puro" "Care Palette PRO" >}}) for recording on iOS
+  - a facility operations management tool ({{< ja "施設運営マネジメント" "shisetsu un'ei manejimento" "facility operations management" >}})
 
-  Sales are planned to start around autumn 2026, with formal shipping in autumn to winter 2026. Prices have not been announced.[^6]
+  Sales are planned to start around autumn 2026, with formal shipping in autumn to winter 2026. Prices have not been announced.[^6] On 28 August 2026 ND Software said launch is planned for November 2026. Care Palette PRO will use account licences; the other two will use concurrent-login licences, capped by the number of online-platform usage rights. Prices are still to be announced.[^7]
 
 ## Target customers
 
@@ -79,6 +79,7 @@ Tako-San's view: on SOMPO's own estimates, Honobono is strongest in facilities, 
 
 ## Changelog
 
+- 15 Oct 2026: Honobono ONE launch planned November 2026; account licences for Care Palette PRO, concurrent-login for the other two (prices TBA)
 - 9 Oct 2026: first published
 
 ---
@@ -96,3 +97,5 @@ Tako-San's view: on SOMPO's own estimates, Honobono is strongest in facilities, 
 [^5]: National Health Insurance Central Association. "Care Plan Data Exchange System Vendor Test (V4) Completion Results (「ケアプランデータ連携システム」ベンダ試験（Ｖ４対応版）の完了結果について)." Accessed 9 October 2026. https://www.kokuho.or.jp/system/care/careplan/lib/261006_5113_cp-vender_4.pdf
 
 [^6]: ND Software Co., Ltd. "Release Plans for Three 'Honobono ONE Series' Products (新商品「ほのぼのONEシリーズ」3商品のリリース予定をご案内)." Press release, 19 June 2026. https://www.ndsoft.jp/info/press-release/399934
+
+[^7]: ND Software Co., Ltd. "Licence structure, supported devices and launch of the new Honobono ONE series (新商品「ほのぼのONEシリーズ」ライセンス体系・対応機種の詳細・発売について)." Press release, 28 August 2026. https://www.ndsoft.jp/info/press-release/405384

@@ -1,7 +1,7 @@
 ---
 title: "Thai elderly-care providers and the licensing system"
 date: 2026-10-11T04:16:57+07:00
-lastmod: 2026-10-11T04:16:57+07:00
+lastmod: 2026-10-15T07:00:00+07:00
 tags: ["thailand", "long-term-care", "licensing", "dhss", "nursing-homes"]
 summary: "State welfare centres, licensed private care homes and the community scheme; the Health Establishment Act, its three service types and three licences, the record-keeping standards, and how many homes are licensed. Part 3 of the Thailand LTC Basics series."
 series: "Thailand LTC Basics"
@@ -61,7 +61,7 @@ The standards regulation covers premises, safety and service.[^10] The service r
 - confidentiality of client data
 - for type 3, no more than five clients per caregiver
 
-In October 2026 DHSS said its inspections focus on premises, safety and service, and warned that care homes must not take patients too complex for them or give treatment they have no power to give.[^3]
+In October 2026 DHSS said its inspections focus on premises, safety and service, and warned that care homes must not take patients too complex for them or give treatment they have no power to give.[^3] On 11 October 2026 the government said DHSS, its 12 regional centres and provincial health offices had been ordered to inspect all 1,203 licensed homes within two months.[^12]
 
 ## Applying
 
@@ -77,6 +77,7 @@ Tako-San's view: the licensing rules create a ready-made list of records for a c
 
 ## Changelog
 
+- 15 Oct 2026: noted the two-month nationwide inspection drive ordered on 11 October 2026
 - 11 Oct 2026: first published
 
 ---
@@ -104,3 +105,5 @@ Tako-San's view: the licensing rules create a ready-made list of records for a c
 [^10]: Ministerial Regulation on standards of premises, safety and service in health establishments of the elderly or dependent-person care type B.E. 2563 (กฎกระทรวงกำหนดมาตรฐานด้านสถานที่ ความปลอดภัย และการให้บริการ ในสถานประกอบการเพื่อสุขภาพประเภทกิจการการดูแลผู้สูงอายุหรือผู้มีภาวะพึ่งพิง พ.ศ. ๒๕๖๓), Royal Gazette vol. 137, part 61 Kor, 31 July 2020, pp. 10 to 15. Copy of the Gazette pages: https://download.asa.or.th/03media/04law/swfa/mr63-02.pdf
 
 [^11]: Office of the Public Sector Development Commission, Government Information Center (info.go.th). "Applying for a health establishment business licence, elderly or dependent-person care type (การขออนุญาตประกอบกิจการสถานประกอบการเพื่อสุขภาพ ประเภทกิจการการดูแลผู้สูงอายุหรือผู้มีภาวะพึ่งพิง)," citizen's guide, responsible agency Department of Health Service Support. https://info.go.th/procedure/95ffd337-23ac-48e2-84eb-04e6cea59253/view
+
+[^12]: Royal Thai Government. News, 11 October 2026. https://www.thaigov.go.th/th/news/170046
