@@ -1,7 +1,7 @@
 ---
 title: "The monthly cycle: from care plan to payment, and why cash arrives two months later"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-15T07:00:00+07:00
 tags: ["japan", "long-term-care", "claims", "kokuho-ren", "care-plan", "guide"]
 summary: "Step by step, the rules that move a home-care user from assessment to care plan, service, records, the kokuho-ren claim and payment, with the legal deadlines and the two-month payment lag."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 3
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 15 Oct 2026*
 
 A home-care office in Japan is paid for a month of service about two months after that month starts. The steps in between are set by ministerial ordinances and by the prefectural federation that pays the claims ({{< ja "国保連" "kokuho-ren" "prefectural National Health Insurance federation" >}}). This guide follows one user through the cycle for home-based services. It names the deadline at each step and the record each step leaves behind, because those records are what care software has to produce.
 
@@ -108,12 +108,15 @@ The national ordinances require a home-visit care office and a care-management o
 
 Municipalities can set longer periods in their own ordinances. Kawasaki City, for example, requires **five years**. It warns that missing records can mean the service is treated as not provided, and fees already received may have to be repaid.[^11] Kawasaki also counts the period from the first day of the third month after the service month, not from the service date.[^11]
 
+> **Update, 15 Oct 2026:** If adopted at the fiscal 2027 revision, three proposals from the 270th meeting of the Long-Term Care Benefits Subcommittee would change claim logic: a sudden cancellation after pickup staff arrive would no longer trigger the transport reduction ({{< ja "送迎減算" "sōgei gensan" "transport reduction" >}}); the 12–14 hour extension bands (ニ and ホ) would be abolished; and the comprehensive medical-management add-on ({{< ja "総合医学管理加算" "sōgō igaku kanri kasan" "comprehensive medical-management add-on" >}}) in short-stay medical care would no longer count toward the category benefit limit ({{< ja "区分支給限度基準額" "kubun shikyū gendo kijun-gaku" "category benefit limit" >}}). These are discussion proposals, not decisions.[^12][^13]
+
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: the cycle is mostly a matching exercise. The care manager's plan, the provider's visit records, the actuals table, the benefit-management form and the claim all describe the same visits, and each one is checked against the next. Most of the money lost in this cycle, through returns, re-reviews and repayments after inspection, comes from those documents disagreeing. Software that keeps one record of each visit and generates every downstream document from it attacks the real problem. The two-month lag also matters commercially. A small office that is growing pays its staff for two months before the first payment arrives, so anything that prevents a return, and with it another month of delay, is worth more to the office than it first appears.
 {{< /analysis >}}
 
 ## Changelog
 
+- 15 Oct 2026: noted three 270th-meeting proposals that, if adopted, would change claim logic (transport-reduction cancellation rule, extension-band abolition, medical-management add-on leaving the benefit cap)
 - 9 Oct 2026: first published
 
 ---
@@ -141,3 +144,7 @@ Tako-San's view: the cycle is mostly a matching exercise. The care manager's pla
 [^10]: Miyagi National Health Insurance Federation. "Returns from the Federation (国保連合会からの返戻)." Accessed 9 October 2026. https://www.miyagi-kokuho.or.jp/kaigo/haraimodoshi.html
 
 [^11]: Kawasaki City. "Keeping and Retaining Records (記録の整備・保存)." Guidance for care providers. Accessed 9 October 2026. https://www.city.kawasaki.jp/350/cmsfiles/contents/0000105/105693/kirokunoseibi_hozon.pdf
+
+[^12]: Ministry of Health, Labour and Welfare. Material 1 (day care, community-based day care, dementia day care), Social Security Council Long-Term Care Benefits Subcommittee (270th meeting), 14 October 2026. https://www.mhlw.go.jp/content/12300000/001759344.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76633.html
+
+[^13]: Ministry of Health, Labour and Welfare. Material 5 (short-stay medical care), 270th meeting, 14 October 2026. https://www.mhlw.go.jp/content/12300000/001758863.pdf

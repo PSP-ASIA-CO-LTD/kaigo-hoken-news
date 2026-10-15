@@ -1,7 +1,7 @@
 ---
 title: "The money, the workforce, and what 2027 and 2040 look like"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-12T07:00:00+07:00
+lastmod: 2026-10-15T07:00:00+07:00
 tags: ["japan", "long-term-care", "budget", "workforce"]
 summary: "What Japan spends on long-term care, the fiscal 2026 wage package, the path to the 2027 fee revision, and the 2040 population squeeze."
 series: "Japan LTC Basics"
@@ -54,6 +54,8 @@ Home-visit care's base fee is a known sore point going into 2027. Industry cover
 
 > **Update, 12 Oct 2026:** At its 268th meeting on 30 September 2026, the Social Security Council Long-Term Care Benefits Subcommittee ({{< ja "社会保障審議会介護給付費分科会" "shakai hoshō shingikai kaigo kyūfuhi bunkakai" "Social Security Council, Long-Term Care Benefits Subcommittee" >}}) discussed a draft of five basic viewpoints for the fiscal 2027 care fee revision: (1) rising prices and wages, and staff pay; (2) service provision that fits population decline and changing demand, including the new specific-area services ({{< ja "特定地域サービス" "tokutei chiiki sābisu" "specific-area services" >}}); (3) deepening community-based integrated care; (4) workplaces and productivity, including AI and other care technology in home-based services; (5) stability and sustainability, including organising and simplifying the fee structure ({{< ja "報酬体系の整理・簡素化" "hōshū taikei no seiri, kanso-ka" "organising and simplifying the fee structure" >}}). The same paper says that in the FY2025 survey of care business management (overview survey) about 40% of operators across all services were in deficit.[^7] Those viewpoints were not decided at that meeting; MHLW said they will be reflected in the subcommittee's final review report ({{< ja "審議報告" "shingi hōkoku" "review report" >}}) after members' opinions.[^8] The 269th meeting, on 9 October 2026, tabled the first per-service directions, including a proposal to create a new fee evaluation in regular-visit/on-call care type (III) for offices that secure a 24-hour call and consultation function and provide daytime support. These are proposals for discussion, not decisions.[^9]
 
+> **Update, 15 Oct 2026:** The 270th meeting, on 14 October 2026, tabled day-care and short-stay proposals for the fiscal 2027 revision. For day care ({{< ja "通所介護" "tsūsho kaigo" "day care" >}}), they include a bath-only short-visit exception in mountainous and remote areas ({{< ja "中山間地域" "chūsankan chiiki" "mountainous and remote areas" >}}), a video home-bathroom check for the bathing-assistance add-on ({{< ja "入浴介助加算" "nyūyoku kaijo kasan" "bathing-assistance add-on" >}}) type II, dropping the transport reduction ({{< ja "送迎減算" "sōgei gensan" "transport reduction" >}}) when a sudden cancellation happens after pickup staff arrive, abolishing extension bands ニ (12–13 h) and ホ (13–14 h), and replacing the same-building reduction ({{< ja "同一建物減算" "dōitsu tatemono gensan" "same-building reduction" >}}) with travel-cost fee categories.[^10] For short-stay daily-life care ({{< ja "短期入所生活介護" "tanki nyūsho seikatsu kaigo" "short-stay daily-life care" >}}), the long-stay reduction ({{< ja "長期利用減算" "chōki riyō gensan" "long-stay reduction" >}}) from day 31 would be set at the day-61 level, with a possible seasonal exemption, and the transport add-on ({{< ja "送迎加算" "sōgei kasan" "transport add-on" >}}) would follow actual costs.[^11] For short-stay medical care ({{< ja "短期入所療養介護" "tanki nyūsho ryōyō kaigo" "short-stay medical care" >}}), the comprehensive medical-management add-on ({{< ja "総合医学管理加算" "sōgō igaku kanri kasan" "comprehensive medical-management add-on" >}}) would no longer count toward the category benefit limit ({{< ja "区分支給限度基準額" "kubun shikyū gendo kijun-gaku" "category benefit limit" >}}).[^12] These are discussion proposals, not decisions.
+
 ## People: the constraint that drives the software agenda
 
 MHLW summed the care-worker numbers that prefectures built from the 9th municipal plans:[^6]
@@ -88,6 +90,7 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 
 ## Changelog
 
+- 15 Oct 2026: Added an update note on the 270th meeting day-care and short-stay proposals.
 - 12 Oct 2026: Added an update note on the fiscal 2027 revision draft viewpoints (268th meeting) and the first per-service proposals (269th meeting).
 
 ---
@@ -111,3 +114,9 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 [^8]: Shakai Hoken Kenkyujo (media.shaho.co.jp). Article on the 268th meeting of the Social Security Council Long-Term Care Benefits Subcommittee. Secondary source. https://media.shaho.co.jp/n/n75dee89457b8
 
 [^9]: Ministry of Health, Labour and Welfare. Material 1, Social Security Council Long-Term Care Benefits Subcommittee (269th meeting), 9 October 2026. https://www.mhlw.go.jp/content/12300000/001758324.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76456.html
+
+[^10]: Ministry of Health, Labour and Welfare. Material 1 (day care, community-based day care, dementia day care), Social Security Council Long-Term Care Benefits Subcommittee (270th meeting), 14 October 2026. https://www.mhlw.go.jp/content/12300000/001759344.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76633.html
+
+[^11]: Ministry of Health, Labour and Welfare. Material 4 (short-stay daily-life care), 270th meeting, 14 October 2026. https://www.mhlw.go.jp/content/12300000/001758862.pdf
+
+[^12]: Ministry of Health, Labour and Welfare. Material 5 (short-stay medical care), 270th meeting, 14 October 2026. https://www.mhlw.go.jp/content/12300000/001758863.pdf

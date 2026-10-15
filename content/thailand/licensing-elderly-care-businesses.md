@@ -1,7 +1,7 @@
 ---
 title: "Licensing elderly-care businesses in Thailand: the Health Establishment Act and DHSS"
 date: 2026-10-10T00:00:00+07:00
-lastmod: 2026-10-11T02:56:00+07:00
+lastmod: 2026-10-15T07:00:00+07:00
 tags: ["thailand", "long-term-care", "regulation", "licensing", "nursing-homes", "guide"]
 summary: "How Thailand regulates private elderly-care and dependent-care businesses: the Health Establishment Act B.E. 2559 (2016), the two 2020 ministerial regulations that brought care homes under it, the three licences (business, operator, caregiver registration), the standards, inspection and penalties, how to apply online, and the count of licensed homes (1,203 in October 2026)."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 1
 countries: ["Thailand"]
 ---
 
-*Last updated: 11 Oct 2026*
+*Last updated: 15 Oct 2026*
 
 In Thailand, a private business that looks after older or dependent people is licensed as a "health establishment", the same legal category as spas and massage shops. The law is the Health Establishment Act B.E. 2559 (2016), พระราชบัญญัติสถานประกอบการเพื่อสุขภาพ (Phraratchabanyat Sathan Prakop Kan Phuea Sukkhaphap, Health Establishment Act).[^1] A 2020 ministerial regulation, กฎกระทรวง (kot krasuang, ministerial regulation), added "elderly or dependent-person care" to the businesses that the Act covers.[^2] A second 2020 regulation sets the standards for premises, safety and service.[^3]
 
@@ -88,6 +88,10 @@ Competent officials, พนักงานเจ้าหน้าที่ (pha
 
 Where a company commits an offence, its directors or managers responsible may be punished too (s. 47). The licensing authority may settle offences by fine under rules set by the Director-General (s. 48).[^1]
 
+On 11 October 2026 a Thai government spokesperson said the Minister of Public Health had ordered DHSS, its 12 regional Health Service Support Centres and provincial public health offices to inspect all 1,203 registered elder-care homes within two months, under the Health Establishment Act B.E. 2559 and the 2020 ministerial regulation on premises, safety and service.[^12] The same statement cited the Act's penalty for unlicensed operation (up to six months or 50,000 baht) and the Sanatorium Act B.E. 2541 penalty for treating psychiatric patients without a clinic licence (up to five years or 100,000 baht).[^12]
+
+On 12 October 2026, Thai PBS reported (secondary) that DHSS had revoked both the business licence and the operator licence of Baan Soem Suk (บ้านเสริมสุข), a home on Soi Rewadee 22, Mueang Nonthaburi, Nonthaburi, with effect from that day. The report said an 8 October inspection found 14 beds against nine licensed, and 59 psychiatric or drug-related psychiatric patients on the second and third floors without a clinic licence.[^13]
+
 ## How to apply
 
 The government's citizen guide for this licence sets out the steps.[^4]
@@ -120,9 +124,10 @@ Tako-San's view: the Thai rules ask a licensed home to keep a client register in
 
 ## Changelog
 
-- 10 Oct 2026: first published
+- 15 Oct 2026: added the 11 October nationwide two-month inspection order (thaigov) and the 12 October Baan Soem Suk licence revocation as a worked example (Thai PBS, secondary)
 - 11 Oct 2026: licence fee clarified: the citizen guide's "no fee" field conflicts with its own payment steps; DHSS's 2020 announcement gives the fees (new note 8) and the Act's fee caps are added from note 1
 - 11 Oct 2026: effective date explained. The regulation applies "when 180 days have passed" from publication on 31 July 2020. DHSS gives 27 January 2021 (new note 9), which follows the Council of State's way of counting; the courts' way under Civil and Commercial Code s. 193/3 would give 28 January 2021 (new notes 10 and 11). The page now gives both, uses 27 January 2021, and adds DHSS's 27 January to 25 July 2021 window for existing businesses
+- 10 Oct 2026: first published
 
 ---
 
@@ -149,3 +154,7 @@ Tako-San's view: the Thai rules ask a licensed home to keep a client register in
 [^10]: วรชัย แสนสีระ, legal officer, Legal Office (สำนักกฎหมาย). "Counting the effective date of an Act that takes effect when a period has passed (การนับระยะเวลาวันใช้บังคับของพระราชบัญญัติกรณีกำหนดให้มีผลใช้บังคับเมื่อพ้นช่วงระยะเวลาหนึ่ง)," Chunlanit (จุลนิติ), file hosted on the Senate website,, September–October 2017, pp. 137–141, summarising Council of State opinions 363/2525 and 290/2543 and Supreme Court judgment 5470/2538. https://www.senate.go.th/assets/portals/93/fileups/272/files/Sub_Jun/9legal/legal57.pdf
 
 [^11]: อานนท์ มาเม้า. "The confusion in counting the date a law takes effect: the marriage-equality case (ความน่าสับสนในการนับวันที่กฎหมายมีผล กรณี 'สมรสเท่าเทียม')," The Standard, 7 January 2025. Opinion article by a law academic. https://thestandard.co/opinion-marriage-equality-law-effective-date/
+
+[^12]: Royal Thai Government. News, 11 October 2026. https://www.thaigov.go.th/th/news/170046
+
+[^13]: Thai PBS. News report, 12 October 2026. Secondary source. https://www.thaipbs.or.th/news/content/570906
