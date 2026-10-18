@@ -1,7 +1,7 @@
 ---
 title: "The M3 group in care: Wiseman, Care-wing, Elan and the CUC companies"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T09:00:00+07:00
+lastmod: 2026-10-18T07:00:00+07:00
 tags: ["japan", "competitors", "m3", "wiseman", "care-wing", "elan", "m-and-a"]
 summary: "What M3 owns in Japan's care market and when it bought each company, the deal terms on public record (including what M3 has said about closing the Wiseman deal), M3's strategy in its own words, the group's scale on M3's numbers, where the group touches each care segment, and the open questions."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 11
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 18 Oct 2026*
 
 M3, Inc. ({{< ja "エムスリー株式会社" "emu surī kabushiki-gaisha" "M3, Inc." >}}, TSE Prime 2413) runs "m3.com", a website for medical professionals. M3 says more than 350,000 doctors in Japan, over 90% of the country's physicians, are registered.[^1] Since 2022 it has bought three companies that sell to care providers: **Logic** (Care-wing records software, 2022), **Elan** (the "CS set" of clothing and daily supplies for hospital patients and care residents, 2024) and **Wiseman** (care and medical software, 2026).[^2][^3][^1] M3's listed subsidiary **CUC** also runs home-visit nursing, hospices and housing for people who need care.[^4]
 
@@ -150,6 +150,7 @@ This table lists where an M3 group company sells to, or itself runs, each type o
 
 ## Open questions
 
+- **MR-kun unauthorized-access notice (15 Oct 2026).** On 15 October 2026 M3, Inc. said it confirmed unauthorized access on 14 October to the system of {{< ja "MR君" "MR-kun" "MR-kun (M3's pharma sales-rep service)" >}}, its service for pharmaceutical companies. Leaked data include names, workplaces and some email addresses of some physician members (under 10% of physician members) and of several hundred pharma-company staff. Login passwords and m3 points were not included. No public posting or misuse has been confirmed so far; investigation continues. The notice names only MR-kun and does not mention M3's care businesses.[^16]
 - **Wiseman's closing date and price.** M3 says it consolidated Wiseman from July 2026, but the documents we opened do not give the exact day. The price is undisclosed. The goodwill M3 books may show the scale of the deal when its next results are published.[^1][^4]
 - **Where Wiseman sits in M3's segments.** The investor report lists "care-site DX" under Medical Platform with a note on Wiseman.[^4] The first segment figures that include Wiseman have not yet been published.
 - **Care-wing and Wiseman.** Both sell to home-visit care offices.[^15][^8] M3 has not said how the two will be positioned against each other. Care-wing also links to billing software from M3's competitors.[^15]
@@ -167,6 +168,7 @@ For a newcomer such as PSP, the overlap is widest in facilities, where M3 claims
 
 ## Changelog
 
+- 18 Oct 2026: added 15 Oct 2026 MR-kun unauthorized-access notice.
 - 9 Oct 2026: first published
 
 ---
@@ -202,3 +204,5 @@ For a newcomer such as PSP, the overlap is widest in facilities, where M3 claims
 [^14]: Logic Inc. "Notice of Joining the M3 Group (エムスリーグループインのお知らせ)." Press release, 1 March 2022. https://logic-is.co.jp/news/detail/254/
 
 [^15]: Logic Inc. "Care-wing: Home-Visit Care Software (訪問介護ソフトならケアウイング)." Home page, and "Linked Software (連携ソフト一覧)" https://care-wing.jp/linkage/. Accessed 9 October 2026. https://care-wing.jp/
+
+[^16]: M3, Inc. 不正アクセスによる個人情報漏えいに関するお詫びとお知らせ (apology and notice regarding a personal-data leak due to unauthorized access), 15 October 2026. https://assets.ctfassets.net/1pwj74siywcy/4YBQ3JACTocGVgQmIVkSHe/c7865f094fe436292d7c81e1116a9c7f/20261015_Public_J.pdf  News page: https://corporate.m3.com/news/
