@@ -1,7 +1,7 @@
 ---
 title: "Who does what: the 13 roles around a home-care user, and the records each one creates"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-10-18T07:00:00+07:00
 tags: ["japan", "long-term-care", "roles", "care-manager", "home-visit-care", "guide"]
 summary: "The people and bodies involved in Japanese home care, from the user and family to the care manager, service coordinator, helpers, nurses, doctors, the municipality, the kokuho-ren and MHLW: their legal duties, and the records and data those duties create."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 4
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 18 Oct 2026*
 
 Japanese long-term care is a chain of people and bodies, each with duties set in law. A care-software product does not serve "a care office". It serves particular roles inside and around that office, and each role has a legal job to do and leaves records behind. This guide lists 13 roles around a user of home-based services. For each one it gives what the rules require and the records or data that requirement creates. The [monthly cycle guide]({{< relref "monthly-cycle-plan-to-payment" >}}) shows how these roles hand work to each other over a month.
 
@@ -46,12 +46,15 @@ Japanese long-term care is a chain of people and bodies, each with duties set in
 | **12. Kokuho-ren** ({{< ja "国保連" "kokuho-ren" "prefectural National Health Insurance federation" >}}) | Reviews and pays claims for the municipalities that delegate the work.[^2] Accepts claims until the 10th of the month after service and pays the provider at the end of the month after that.[^12] | Review results, returns and payment notices[^12] |
 | **13. MHLW** ({{< ja "厚生労働省" "kōsei rōdō-shō" "Ministry of Health, Labour and Welfare" >}}) | Issues the staffing and operating standards above.[^2][^3] Funds the care-technology subsidy, which prefectures run.[^13] Publishes the care-software function survey that subsidy decisions rely on.[^13][^14] | Standards, fee tables, subsidy rules, software survey results[^13][^14] |
 
+Providers report business information (revenue, costs and other items set by ministerial ordinance) to the prefectural governor ({{< ja "都道府県知事" "todōfuken chiji" "prefectural governor" >}}) via the national care-provider business-information database ({{< ja "介護サービス事業者経営情報データベースシステム" "kaigo sābisu jigyōsha keiei jōhō dētabēsu shisutemu" "care-provider business-information database system" >}}), which reopens on 26 October 2026 — with deadlines of 31 December 2026 for fiscal years ending March 2025 to February 2026, 31 March 2027 for years ending March to December 2026, and within three months of year end for years ending January 2027 onward — and with new total-floor-area ({{< ja "延べ床面積" "nobe yuka menseki" "total floor area" >}}) items for care, medical and disability-welfare services.[^15]
+
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: read down the right-hand column and the software brief writes itself. The care manager and service coordinator produce plans that must stay consistent with each other. The helper produces one record per visit that becomes the claim, so it has to be quick to enter on a phone by a workforce whose average age is over 54. Foreign workers now need the same app in their own language, plus an emergency channel. The family has no legal record of its own, but it is in the assessment and the meetings. A product that gives the family a read-only view is useful, though not required. The kokuho-ren and the municipality are not customers, but their formats and deadlines decide whether the office gets paid. In my view the two roles that decide whether a new product wins are the service coordinator, who carries the rostering and the plan, and the helper, who has to put up with the app every day.
 {{< /analysis >}}
 
 ## Changelog
 
+- 18 Oct 2026: added business-information reporting restart (Vol.1546).
 - 9 Oct 2026: first published
 
 ---
@@ -85,3 +88,5 @@ Tako-San's view: read down the right-hand column and the software brief writes i
 [^13]: Ministry of Health, Labour and Welfare, Director-General of the Health and Welfare Bureau for the Elderly. "Implementation of the FY2026 (carried over from FY2025) Care Technology Adoption, Collaboration and Management Improvement Support Programme (「令和８年度（令和７年度からの繰越分）介護テクノロジー導入・協働化・経営改善等支援事業」の実施について)." Notice 老発0407第3号, 7 April 2026, as republished by Iwate Prefecture. https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/099/125/kuniyoukou_zenbun.pdf
 
 [^14]: Ministry of Health, Labour and Welfare. "Promoting the Use of Care Technology (介護テクノロジーの利用促進)." Care record software function survey results, 24 August 2026 edition. Accessed 9 October 2026. https://www.mhlw.go.jp/stf/kaigo-ict.html
+
+[^15]: Ministry of Health, Labour and Welfare, Health and Welfare Bureau for the Elderly. 介護保険最新情報 Vol.1546 (operation restart of the care-provider business-information database system, etc.), 15 October 2026 (notices 老認発1015第1号 and 第2号). https://www.mhlw.go.jp/content/001760203.pdf  Listing page: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/index_00010.html

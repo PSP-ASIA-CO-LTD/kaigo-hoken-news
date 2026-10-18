@@ -1,7 +1,7 @@
 ---
 title: "Care Plan Data Exchange: Japan's care-plan pipe and the 2027 move to the Kaigo WEB Service"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T09:00:00+07:00
+lastmod: 2026-10-18T07:00:00+07:00
 tags: ["japan", "long-term-care", "care-plan", "software", "guide"]
 summary: "How care plans move between care managers and service providers as data, the fees and add-ons tied to it, and the January 2027 move into the Kaigo WEB Service."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 2
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 18 Oct 2026*
 
 Every month, a care manager's office and the service providers it works with exchange care plans ({{< ja "ケアプラン" "kea puran" "care plan" >}}) and provision tables ({{< ja "サービス提供票" "sābisu teikyō-hyō" "service provision table" >}}). The Care Plan Data Exchange ({{< ja "ケアプランデータ連携システム" "kea puran dēta renkei shisutemu" "care plan data exchange system" >}}) lets them send these documents as data instead of on paper or by fax. The National Health Insurance Central Association ({{< ja "国保中央会" "kokuho chūō-kai" "Kokuho Chūōkai" >}}) runs it.[^1] This guide explains how it works, what money depends on it, and what changes when it moves into the Kaigo WEB Service in 2027.
 
@@ -43,6 +43,8 @@ MHLW announced on 29 July 2026 that the exchange will be merged into the care in
 - A vendor test for the API will be announced separately. The API link function itself will go live only after the merger.[^6][^7]
 
 What the API requires of care software is covered in our separate guide, [Kaigo WEB Service and its API]({{< relref "kaigo-web-service-api" >}}). It explains standard 5.0, certificates and login, the enhanced and API vendor tests, and the open questions.
+
+On 16 October 2026 the Care Plan Data Exchange Help Desk posted the archive video of that day's seminar, where provider users shared tips on making the system stick after adoption; the seminar also explained the January 2027 move to the Kaigo WEB Service. A Q&A extract PDF was posted with the video.[^16]
 
 ## Vendor tests: what "compatible" means
 
@@ -123,6 +125,7 @@ Tako-San's view: the exchange has turned from an optional fax replacement into a
 
 ## Changelog
 
+- 18 Oct 2026: added 16 Oct 2026 seminar archive video and Q&A.
 - 9 Oct 2026: added a link to the new guide on the Kaigo WEB Service API
 - 9 Oct 2026: first published
 
@@ -159,3 +162,5 @@ Tako-San's view: the exchange has turned from an optional fax replacement into a
 [^14]: Ministry of Health, Labour and Welfare, Director-General of the Health and Welfare Bureau for the Elderly. "Implementation of the FY2026 (carried over from FY2025) Care Technology Adoption, Collaboration and Management Improvement Support Programme (「令和８年度（令和７年度からの繰越分）介護テクノロジー導入・協働化・経営改善等支援事業」の実施について)." Notice 老発0407第3号, 7 April 2026, as republished by Iwate Prefecture. https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/099/125/kuniyoukou_zenbun.pdf
 
 [^15]: Ministry of Health, Labour and Welfare. "Promoting the Use of Care Technology (介護テクノロジーの利用促進)." Care record software function survey results, 24 August 2026 edition (介護記録ソフト機能調査結果（令和８年８月24日版）). Accessed 9 October 2026. https://www.mhlw.go.jp/stf/kaigo-ict.html
+
+[^16]: Care Plan Data Exchange Help Desk. Notice of seminar archive video and materials, 16 October 2026. https://www.careplan-renkei-support.jp/  Archive video: https://www.youtube.com/watch?v=7qq2dWWiq6w  Q&A extract: https://www.careplan-renkei-support.jp/wp-content/uploads/sites/2/2026/10/%E3%82%B1%E3%82%A2%E3%83%97%E3%83%BC%E6%B4%BB%E7%94%A8%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BCQ%26A.pdf
