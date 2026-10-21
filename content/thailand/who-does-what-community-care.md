@@ -1,7 +1,7 @@
 ---
 title: "Who does what in Thai community long-term care"
 date: 2026-10-11T00:00:00+07:00
-lastmod: 2026-10-11T02:56:00+07:00
+lastmod: 2026-10-21T07:00:00+07:00
 tags: ["thailand", "long-term-care", "care-manager", "caregiver", "village-health-volunteers", "local-government", "guide"]
 summary: "The people and bodies in Thailand's community long-term care: care managers (mostly nurses at sub-district health promoting hospitals, trained on a 70-hour course, about 13,600 of them), caregivers (70- or 420-hour courses, mostly village health volunteers), local care volunteers, village health volunteers (อสม.), local governments and their LTC subcommittees, sub-district health promoting hospitals (รพ.สต.) and their transfer to provincial governments, the service units that receive the money, and the Department of Older Persons' separate community caregivers."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 8
 countries: ["Thailand"]
 ---
 
-*Last updated: 11 Oct 2026*
+*Last updated: 21 Oct 2026*
 
 Thai community long-term care has no single provider. A dependent older person at home may see a care manager from the local health centre, a caregiver from the village, a village health volunteer, and, in some districts, a separate community caregiver paid by the Department of Older Persons. The money comes through the local government. This guide sets out who each of them is, how they are trained and paid, and which records they keep. The step-by-step process is in [The NHSO long-term care cycle]({{< relref "/thailand/nhso-ltc-cycle" >}}).
 
@@ -98,6 +98,7 @@ In 2019 the Ministry of Interior told every local government to hire at least tw
 Village health volunteers, อาสาสมัครสาธารณสุขประจำหมู่บ้าน (asasamak satharanasuk pracham muban, abbreviated อสม.), are the oldest community health workforce in Thailand. They are supported by the Department of Health Service Support (DHSS), กรมสนับสนุนบริการสุขภาพ (Krom Sanapsanun Borikan Sukkhaphap, สบส.).
 
 - **Pay.** DHSS announced that the stipend, ค่าป่วยการ (kha puai kan, stipend), at the new rate of 2,000 baht a month, would be paid for the April 2024 round on 15 May 2024, together with 6,000 baht of back pay.[^8]
+- **Quota.** On 19 October 2026 DHSS said its committee allocating the stipend quota, at its meeting 1/2569, kept the number of village health volunteers entitled to the stipend in FY2027 (B.E. 2570) at 1,075,163, unchanged, and would add measures to supervise, follow up and assess their work.[^17]
 - **App.** DHSS's 2022 manual for "Smart อสม." trains volunteers to use the Smart อสม. app to work and report. Its first function is the monthly อสม. 1 report, which replaces the paper form.[^9] See [Government systems]({{< relref "/thailand/competitors/government-systems" >}}).
 - **Link to long-term care.** Most LTC-fund caregivers are village health volunteers who took the caregiver course.[^3] The NHSO designed the fund to use existing volunteers: village health volunteers, elderly-care volunteers and disability-care volunteers.[^4]
 
@@ -181,7 +182,7 @@ Tako-San's view: the person at the centre of Thai community care, the care manag
 
 - **Details of the 3C program.** The Department of Health's 3C report could not be reopened while this guide was written, so only its basic workflow is used. How accounts are approved, and its survey of care managers in health region 8, are left out until they can be checked.
 - **Current number of care managers and caregivers.** The care-manager count is from a 2021 study using 2020 data; the 2026 caregiver count is a news report of a spoken figure. The Department of Health's open dataset (see [Data and IT reporting]({{< relref "/thailand/data-and-it-reporting" >}})) was not reopened for this guide.
-- **Number of village health volunteers** receiving the 2,000-baht stipend. The source we opened gives the rate and timing, not the count.
+- **Number of village health volunteers actually paid** the 2,000-baht stipend. DHSS gives the FY2027 quota of those entitled (1,075,163), not the number paid each month.
 - **Legal definitions of "service unit" and "service facility".** These come from the National Health Security Act, which we did not open for this guide.
 - **The "บสส." abbreviation** for DOP community caregivers. Not found in official sources.
 - **Effect of the hospital transfers on care managers.** No source found.
@@ -189,6 +190,7 @@ Tako-San's view: the person at the centre of Thai community care, the care manag
 
 ## Changelog
 
+- 21 Oct 2026: added the FY2027 village health volunteer stipend quota (DHSS, 19 Oct 2026).
 - 11 Oct 2026: first published
 
 ---
@@ -226,3 +228,5 @@ Tako-San's view: the person at the centre of Thai community care, the care manag
 [^15]: Nong Tao Sub-district Administrative Organisation, Ban Mi district, Lop Buri. "Operating manual: using the long-term care programme for dependent older people and other dependent persons (LTC)," January 2024, including the NHSO's 2023 workflow chart. https://www.nongtaobanmi.go.th/wp-content/uploads/2024/01/6.%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%ADLTC2567%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1.pdf
 
 [^16]: Hfocus. "MOPH pushes Long Term Care system, highlights 135,000 caregivers (สธ.เดินหน้าระบบ Long Term Care ชู Caregiver 1.35 แสนคน ดูแลผู้สูงอายุ)," 10 October 2026, quoting the Director-General of the Department of Health. News report, not a primary source. https://www.hfocus.org/content/2026/10/39855
+
+[^17]: Department of Health Service Support, Ministry of Public Health. "DHSS confirms stipend quota for 1,075,163 village health volunteers in FY2027 (กรม สบส. ยืนยันใช้โควตาค่าป่วยการ อสม. จำนวน 1,075,163 คน ในปีงบประมาณ พ.ศ. 2570)," 19 October 2026. https://hcpr.hss.moph.go.th/archives/hss-news/19610/
