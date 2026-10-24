@@ -1,7 +1,7 @@
 ---
 title: "Wiseman (M3 group): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T09:00:00+07:00
+lastmod: 2026-10-24T07:00:00+07:00
 tags: ["japan", "competitors", "wiseman", "m3", "software"]
 summary: "Wiseman's five-year licence model, its care and medical products, M3's June 2026 acquisition and M3's share claims, and how Wiseman handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 4
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 24 Oct 2026*
 
 Wiseman ({{< ja "ワイズマン" "waizuman" "Wiseman" >}}) is a software company based in Morioka, Iwate Prefecture. Founded in June 1983, it develops, sells and supports systems for care and welfare offices, medical institutions and local governments.[^1] On **5 June 2026**, M3, Inc. ({{< ja "エムスリー株式会社" "emu surī kabushiki-gaisha" "M3, Inc." >}}, TSE Prime 2413) signed an agreement to buy all of Wiseman's shares. The transfer was scheduled for **1 July 2026**.[^1][^2] M3's Report for Investors 2026, dated 30 September 2026, says Wiseman was consolidated as a subsidiary "from July" 2026. None of the documents we opened gives the exact day.[^7] Our page on [the M3 group in care]({{< relref "m3-group" >}}) covers the deal terms and M3's other care companies.
 
@@ -97,12 +97,15 @@ Wiseman told customers that current services, support and contracts would not ch
 
 M3's notice says two M3 subsidiaries, Logic and CUC, already had transactions with Wiseman relating to consignment of product sales.[^8] In its August 2026 results presentation, M3 described Wiseman, in M3's words, as "positioned as the platform for realising the 'one person, one yen' mission in the care field as well".[^9]
 
+> **Update, 24 Oct 2026:** On 22 October 2026 Wiseman said that, for a serious PHP security vulnerability published on 21 October, it had finished safety checks and necessary measures on the cloud servers that hold customer data. It said no information leak or unauthorized access caused by that vulnerability had been confirmed.[^10]
+
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: going by their owners' own share claims, Wiseman and Honobono are both facility-heavy, licence-based packages. Wiseman now has a parent with an AI and medical-records business, and with other care services in its group (Logic and Elan, per M3). That combination could make the M3 group a stronger all-round competitor than Wiseman alone, especially for links between medical and care providers. The share figures come from the buyer's acquisition deck. I would cite them only as M3's claim. M3's own investor report says the deal took effect in July 2026, but I have not seen the exact day confirmed.
 {{< /analysis >}}
 
 ## Changelog
 
+- 24 Oct 2026: noted Wiseman's 22 Oct PHP-vulnerability notice; no leak or unauthorized access confirmed
 - 9 Oct 2026: added M3's statement that Wiseman was consolidated from July 2026, Wiseman's three-year results from M3's notice, and links to the new M3 group and Care-wing pages
 - 9 Oct 2026: first published
 
@@ -127,3 +130,5 @@ Tako-San's view: going by their owners' own share claims, Wiseman and Honobono a
 [^8]: M3, Inc. "Notice Concerning the Acquisition of Shares of Wiseman Co., Ltd. (Making It a Consolidated Subsidiary) (株式会社ワイズマンの株式の取得（連結子会社化）に関するお知らせ)." TDnet, 5 June 2026. https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/MJMNRxFaXgUzIhVE6ntNJ/af03939f1f9877029dc23b71caf9c06c/20260605_Public_J.pdf
 
 [^9]: M3, Inc. "Company Presentation, Q1 Results for the Year Ending March 2027 (会社説明資料)." 6 August 2026, slide 29. https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/5QE1BL4hbahSXLuoXH8riz/a3ad90dbfebe33f0adb4da773f9c058d/20260806_Presentation_J.pdf
+
+[^10]: Wiseman Co., Ltd. "Important: response to a PHP vulnerability in our services (重要：弊社サービスにおけるPHPの脆弱性への対応について)." 22 October 2026. https://www.wiseman.co.jp/news/corp/php-security-update-20261022/
