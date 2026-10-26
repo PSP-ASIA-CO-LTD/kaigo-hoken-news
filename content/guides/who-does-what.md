@@ -1,7 +1,7 @@
 ---
 title: "Who does what: the 13 roles around a home-care user, and the records each one creates"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-21T07:00:00+07:00
+lastmod: 2026-10-24T07:00:00+07:00
 tags: ["japan", "long-term-care", "roles", "care-manager", "home-visit-care", "guide"]
 summary: "The people and bodies involved in Japanese home care, from the user and family to the care manager, service coordinator, helpers, nurses, doctors, the municipality, the kokuho-ren and MHLW: their legal duties, and the records and data those duties create."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 4
 countries: ["Japan"]
 ---
 
-*Last updated: 21 Oct 2026*
+*Last updated: 24 Oct 2026*
 
 Japanese long-term care is a chain of people and bodies, each with duties set in law. A care-software product does not serve "a care office". It serves particular roles inside and around that office, and each role has a legal job to do and leaves records behind. This guide lists 13 roles around a user of home-based services. For each one it gives what the rules require and the records or data that requirement creates. The [monthly cycle guide]({{< relref "monthly-cycle-plan-to-payment" >}}) shows how these roles hand work to each other over a month.
 
@@ -50,12 +50,15 @@ Providers report business information (revenue, costs and other items set by min
 
 > **Update, 21 Oct 2026:** Care-manager proposals for the fiscal 2027 revision (271st meeting of the Long-Term Care Benefits Subcommittee, 19 October 2026): the manager of a care-management office would no longer have to be a chief care manager ({{< ja "主任介護支援専門員" "shunin kaigo shien senmon'in" "chief care manager" >}}), but a care manager ({{< ja "介護支援専門員" "kaigo shien senmon'in" "care manager" >}}) with five years' practical experience or similar; consent steps for online monitoring could be handled more flexibly; and, because the June 2026 amendment of the LTC Insurance Act abolished licence renewal tied to training and requires periodic training instead, offices would have to staff care managers who take that training, managers would have to encourage it, and a reduction ({{< ja "減算" "gensan" "reduction" >}}) would apply where an office staffs care managers who have not taken it without good reason. Offices could also take preventive care management ({{< ja "介護予防ケアマネジメント" "kaigo yobō kea manejimento" "preventive care management" >}}) directly from municipalities, counted at one third per user in caseload limits. These are discussion proposals, not decisions.[^16]
 
+> **Update, 24 Oct 2026:** Two 21 October 2026 notices change what municipalities and the kokuho-ren collect. Vol.1548: MHLW will build a unified {{< ja "介護現場における事故情報報告システム" "kaigo genba ni okeru jiko jōhō hōkoku shisutemu" "care-site accident information reporting system" >}} as a subsystem of the {{< ja "介護サービス情報公表システム" "kaigo sābisu jōhō kōhyō shisutemu" "care-service information publication system" >}}, planned to start around April 2027; a draft form (still being adjusted) is attached, and first reports still go to the municipality within about five days.[^17] Vol.1547: {{< ja "特定福祉用具販売" "tokutei fukushi yōgu hanbai" "specific welfare-equipment sales" >}} and {{< ja "住宅改修" "jūtaku kaishū" "housing renovation" >}} payments often never reach the {{< ja "介護保険総合データベース" "kaigo hoken sōgō dētabēsu" "LTC insurance comprehensive database" >}} unless the insurer has delegated payment to the kokuho-ren; MHLW plans to consider making it a required function for insurer systems to send those payment records to the kokuho-ren, without making payment-delegation itself mandatory. Tentative schedule: November 2026 discussion, January 2027 spec revision, fiscal 2027 system work, operation from April 2028 (currently assumed for applications from April 2028 onward).[^18]
+
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: read down the right-hand column and the software brief writes itself. The care manager and service coordinator produce plans that must stay consistent with each other. The helper produces one record per visit that becomes the claim, so it has to be quick to enter on a phone by a workforce whose average age is over 54. Foreign workers now need the same app in their own language, plus an emergency channel. The family has no legal record of its own, but it is in the assessment and the meetings. A product that gives the family a read-only view is useful, though not required. The kokuho-ren and the municipality are not customers, but their formats and deadlines decide whether the office gets paid. In my view the two roles that decide whether a new product wins are the service coordinator, who carries the rostering and the plan, and the helper, who has to put up with the app every day.
 {{< /analysis >}}
 
 ## Changelog
 
+- 24 Oct 2026: added Vol.1548 (national accident-reporting system, around April 2027) and Vol.1547 (welfare-equipment sales and housing-renovation payment records to the kokuho-ren / national database, planned from April 2028).
 - 21 Oct 2026: added 271st-meeting care-manager proposals (office manager requirement, online monitoring, mandatory training and reduction, preventive care management caseload).
 - 18 Oct 2026: added business-information reporting restart (Vol.1546).
 - 9 Oct 2026: first published
@@ -95,3 +98,7 @@ Tako-San's view: read down the right-hand column and the software brief writes i
 [^15]: Ministry of Health, Labour and Welfare, Health and Welfare Bureau for the Elderly. 介護保険最新情報 Vol.1546 (operation restart of the care-provider business-information database system, etc.), 15 October 2026 (notices 老認発1015第1号 and 第2号). https://www.mhlw.go.jp/content/001760203.pdf  Listing page: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/index_00010.html
 
 [^16]: Ministry of Health, Labour and Welfare. Material 6 (care management and preventive care support), Social Security Council Long-Term Care Benefits Subcommittee (271st meeting), 19 October 2026. https://www.mhlw.go.jp/content/12300000/001760887.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76626.html
+
+[^17]: Ministry of Health, Labour and Welfare, Health and Welfare Bureau for the Elderly. 介護保険最新情報 Vol.1548 (reporting when an accident occurs at a care site), 21 October 2026. https://www.mhlw.go.jp/content/001761586.pdf  Listing page: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/index_00010.html
+
+[^18]: Ministry of Health, Labour and Welfare, Health and Welfare Bureau for the Elderly. 介護保険最新情報 Vol.1547 (considering a revision of the LTC insurance system standard specification for analysis of specific welfare-equipment sales and housing-renovation benefits), 21 October 2026. https://www.mhlw.go.jp/content/001761469.pdf

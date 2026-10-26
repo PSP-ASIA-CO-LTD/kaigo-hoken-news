@@ -1,7 +1,7 @@
 ---
 title: "The monthly cycle: from care plan to payment, and why cash arrives two months later"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-21T07:00:00+07:00
+lastmod: 2026-10-24T07:00:00+07:00
 tags: ["japan", "long-term-care", "claims", "kokuho-ren", "care-plan", "guide"]
 summary: "Step by step, the rules that move a home-care user from assessment to care plan, service, records, the kokuho-ren claim and payment, with the legal deadlines and the two-month payment lag."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 3
 countries: ["Japan"]
 ---
 
-*Last updated: 21 Oct 2026*
+*Last updated: 24 Oct 2026*
 
 A home-care office in Japan is paid for a month of service about two months after that month starts. The steps in between are set by ministerial ordinances and by the prefectural federation that pays the claims ({{< ja "国保連" "kokuho-ren" "prefectural National Health Insurance federation" >}}). This guide follows one user through the cycle for home-based services. It names the deadline at each step and the record each step leaves behind, because those records are what care software has to produce.
 
@@ -112,12 +112,15 @@ Municipalities can set longer periods in their own ordinances. Kawasaki City, fo
 
 > **Update, 21 Oct 2026:** Two 271st-meeting proposals would also touch claim logic if adopted for fiscal 2027: home-visit care ({{< ja "訪問介護" "hōmon kaigo" "home-visit care" >}}) would move from the current reduction-based approach to fee categories that reflect travel costs and visit patterns,[^14] and home-visit nursing could claim the early-morning/night and late-night add-ons on the month's first night visit even when the emergency home-nursing add-on ({{< ja "緊急時訪問看護加算" "kinkyūji hōmon kango kasan" "emergency home-nursing add-on" >}}) is claimed.[^15] These are discussion proposals, not decisions.
 
+> **Update, 24 Oct 2026:** Accident records stay on the two-year retention list above. Separately, Vol.1548 (21 October 2026) said MHLW will build a unified {{< ja "介護現場における事故情報報告システム" "kaigo genba ni okeru jiko jōhō hōkoku shisutemu" "care-site accident information reporting system" >}} as a subsystem of the {{< ja "介護サービス情報公表システム" "kaigo sābisu jōhō kōhyō shisutemu" "care-service information publication system" >}}, planned to start around April 2027. A draft reporting form is attached; the form is still being adjusted, but after go-live its items are expected to become the system's input fields. First reports still go to the municipality promptly, within about five days, covering at least items 1–6.[^16]
+
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: the cycle is mostly a matching exercise. The care manager's plan, the provider's visit records, the actuals table, the benefit-management form and the claim all describe the same visits, and each one is checked against the next. Most of the money lost in this cycle, through returns, re-reviews and repayments after inspection, comes from those documents disagreeing. Software that keeps one record of each visit and generates every downstream document from it attacks the real problem. The two-month lag also matters commercially. A small office that is growing pays its staff for two months before the first payment arrives, so anything that prevents a return, and with it another month of delay, is worth more to the office than it first appears.
 {{< /analysis >}}
 
 ## Changelog
 
+- 24 Oct 2026: noted the planned national accident-information reporting system (Vol.1548; around April 2027) and the draft reporting form
 - 21 Oct 2026: noted two 271st-meeting proposals that, if adopted, would change claim logic (home-visit care travel-cost fee categories replacing reductions; night add-ons with the emergency home-nursing add-on)
 - 15 Oct 2026: noted three 270th-meeting proposals that, if adopted, would change claim logic (transport-reduction cancellation rule, extension-band abolition, medical-management add-on leaving the benefit cap)
 - 9 Oct 2026: first published
@@ -155,3 +158,5 @@ Tako-San's view: the cycle is mostly a matching exercise. The care manager's pla
 [^14]: Ministry of Health, Labour and Welfare. Material 1 (home-visit care), Social Security Council Long-Term Care Benefits Subcommittee (271st meeting), 19 October 2026. https://www.mhlw.go.jp/content/12300000/001760459.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76626.html
 
 [^15]: Ministry of Health, Labour and Welfare. Material 3 (home-visit nursing), 271st meeting, 19 October 2026. https://www.mhlw.go.jp/content/12300000/001760335.pdf
+
+[^16]: Ministry of Health, Labour and Welfare, Health and Welfare Bureau for the Elderly. 介護保険最新情報 Vol.1548 (reporting when an accident occurs at a care site), 21 October 2026. https://www.mhlw.go.jp/content/001761586.pdf  Listing page: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/index_00010.html

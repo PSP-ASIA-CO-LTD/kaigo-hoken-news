@@ -1,7 +1,7 @@
 ---
 title: "Honobono NEXT (ND Software, SOMPO group): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-15T07:00:00+07:00
+lastmod: 2026-10-24T07:00:00+07:00
 tags: ["japan", "competitors", "honobono", "sompo", "software"]
 summary: "ND Software's Honobono NEXT: its five-year licence model, features, customers, SOMPO's 2023 share estimates, and how it handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 2
 countries: ["Japan"]
 ---
 
-*Last updated: 15 Oct 2026*
+*Last updated: 24 Oct 2026*
 
 Honobono NEXT ({{< ja "ほのぼのNEXT" "honobono nekusuto" "Honobono NEXT" >}}) is a care software package from ND Software Co., Ltd. ({{< ja "エヌ・デーソフトウェア株式会社" "enu dē sofutowea kabushiki-gaisha" "ND Software Co., Ltd." >}}), based in Nan'yō, Yamagata Prefecture.[^2] Its product page describes it as linking care records through to care-insurance claims.[^1] SOMPO Holdings made ND Software a wholly owned subsidiary on **28 February 2023**.[^2]
 
@@ -73,12 +73,15 @@ The product page describes Honobono NEXT as linking care records to care-insuran
 
 Kokuho Chūōkai's V4 vendor-test list shows Honobono NEXT as having completed all seven patterns, D1–D7. It also lists ND Software's community support centre system, which completed D4–D7.[^5] "Honobono mini2" from Nippon Care Communications completed D1–D3.[^5] SOMPO's 2023 release names Nippon Care Communications as an affiliated company of ND Software.[^2]
 
+> **Update, 24 Oct 2026:** On 22 October 2026 ND Software posted an emergency-maintenance notice for a PHP remote-code-execution vulnerability it named CVE-2026-109618 / CVE-2026-109619 ("php2shell"). As of 18:00 JST that day, portals including the online platform, CarePalette Home/Nurse, Tsunagaru Kazoku, the receivables system and Honobono Voice were done; Honobono more notices, core-system notices and the downloader were still in progress. ND Software said no damage from the vulnerability had been confirmed and customers need do nothing.[^8]
+
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: on SOMPO's own estimates, Honobono is strongest in facilities, especially special nursing homes. That is the opposite of Kaipoke's home-care focus. The five-year licence and the dealer-led sales model are signs of an on-premise heritage. "Honobono ONE" looks like ND Software's answer to cloud-first rivals, and it is built to sit alongside NEXT rather than replace it. The 2023 share estimates are now more than three years old and come from the acquirer, so they should be treated as positioning, not current market data.
 {{< /analysis >}}
 
 ## Changelog
 
+- 24 Oct 2026: noted ND Software's 22 Oct PHP (php2shell) emergency maintenance; no damage confirmed
 - 15 Oct 2026: Honobono ONE launch planned November 2026; account licences for Care Palette PRO, concurrent-login for the other two (prices TBA)
 - 9 Oct 2026: first published
 
@@ -99,3 +102,5 @@ Tako-San's view: on SOMPO's own estimates, Honobono is strongest in facilities, 
 [^6]: ND Software Co., Ltd. "Release Plans for Three 'Honobono ONE Series' Products (新商品「ほのぼのONEシリーズ」3商品のリリース予定をご案内)." Press release, 19 June 2026. https://www.ndsoft.jp/info/press-release/399934
 
 [^7]: ND Software Co., Ltd. "Licence structure, supported devices and launch of the new Honobono ONE series (新商品「ほのぼのONEシリーズ」ライセンス体系・対応機種の詳細・発売について)." Press release, 28 August 2026. https://www.ndsoft.jp/info/press-release/405384
+
+[^8]: ND Software Co., Ltd. "Notice of emergency maintenance: response to a serious PHP vulnerability (progress report) (緊急メンテナンスのお知らせ　PHPにおける重大な脆弱性への対応（経過報告）)." 22 October 2026 (updated 18:00 JST). https://www.ndsoft.jp/info/news/419599
