@@ -1,7 +1,7 @@
 ---
 title: "The money, the workforce, and what 2027 and 2040 look like"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-21T07:00:00+07:00
+lastmod: 2026-10-27T07:00:00+07:00
 tags: ["japan", "long-term-care", "budget", "workforce"]
 summary: "What Japan spends on long-term care, the fiscal 2026 wage package, the path to the 2027 fee revision, and the 2040 population squeeze."
 series: "Japan LTC Basics"
@@ -58,6 +58,8 @@ Home-visit care's base fee is a known sore point going into 2027. Industry cover
 
 > **Update, 21 Oct 2026:** The 271st meeting, on 19 October 2026, tabled proposals for home-visit services and care management for the fiscal 2027 revision. For home-visit care ({{< ja "訪問介護" "hōmon kaigo" "home-visit care" >}}), the first-visit add-on ({{< ja "初回加算" "shokai kasan" "first-visit add-on" >}}), claimed by 52.0% of offices, would also count a visit by the service coordinator ({{< ja "サービス提供責任者" "sābisu teikyō sekininsha" "service coordinator" >}}) to assess the user when a new home-visit care plan is written; an online check by the coordinator during a helper's visit could also be counted; and fee categories that reflect travel costs and visit patterns would replace the current reduction-based approach.[^13] For home-visit nursing ({{< ja "訪問看護" "hōmon kango" "home-visit nursing" >}}), proposals include allowing the early-morning/night and late-night add-ons on the month's first night visit even when the emergency home-nursing add-on ({{< ja "緊急時訪問看護加算" "kinkyūji hōmon kango kasan" "emergency home-nursing add-on" >}}) is claimed, a new fee when nurses assist a doctor's online consultation at the patient's side, and a fee for ICT information-sharing with local medical institutions.[^14] For care management ({{< ja "居宅介護支援" "kyotaku kaigo shien" "care management (care-plan services)" >}}), MHLW proposed abolishing specific-office add-on ({{< ja "特定事業所加算" "tokutei jigyōsho kasan" "specific-office add-on" >}}) (A) with a one-year transition, and dropping the requirement in add-on (I) that at least 40% of users are at care levels 3 to 5.[^15] These are discussion proposals, not decisions.
 
+> **Update, 27 Oct 2026:** At the 137th meeting of the {{< ja "社会保障審議会介護保険部会" "shakai hoshō shingikai kaigo hoken bukai" "Social Security Council, LTC Insurance Committee" >}} on 26 October 2026, MHLW put up for discussion revising the {{< ja "一定以上所得" "ittei ijō shotoku" "'certain income or more'" >}} threshold for 20% co-pay, and how to reflect {{< ja "金融所得" "kin'yū shotoku" "financial income" >}} that escapes when withholding tax ends without a tax return. These are discussion points, not decisions.[^16]
+
 ## People: the constraint that drives the software agenda
 
 MHLW summed the care-worker numbers that prefectures built from the 9th municipal plans:[^6]
@@ -92,6 +94,7 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 
 ## Changelog
 
+- 27 Oct 2026: Added an update note on the 137th LTC Insurance Committee discussion of the 20% co-pay threshold and financial income.
 - 21 Oct 2026: Added an update note on the 271st meeting home-visit care, home-visit nursing and care-management proposals.
 - 15 Oct 2026: Added an update note on the 270th meeting day-care and short-stay proposals.
 - 12 Oct 2026: Added an update note on the fiscal 2027 revision draft viewpoints (268th meeting) and the first per-service proposals (269th meeting).
@@ -129,3 +132,5 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 [^14]: Ministry of Health, Labour and Welfare. Material 3 (home-visit nursing), 271st meeting, 19 October 2026. https://www.mhlw.go.jp/content/12300000/001760335.pdf
 
 [^15]: Ministry of Health, Labour and Welfare. Material 6 (care management and preventive care support), 271st meeting, 19 October 2026. https://www.mhlw.go.jp/content/12300000/001760887.pdf
+
+[^16]: Ministry of Health, Labour and Welfare. Material 1, Social Security Council LTC Insurance Committee (137th meeting), 26 October 2026. https://www.mhlw.go.jp/content/12300000/001762518.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76887.html
