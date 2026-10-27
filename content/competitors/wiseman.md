@@ -1,7 +1,7 @@
 ---
 title: "Wiseman (M3 group): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-24T07:00:00+07:00
+lastmod: 2026-10-27T07:00:00+07:00
 tags: ["japan", "competitors", "wiseman", "m3", "software"]
 summary: "Wiseman's five-year licence model, its care and medical products, M3's June 2026 acquisition and M3's share claims, and how Wiseman handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 4
 countries: ["Japan"]
 ---
 
-*Last updated: 24 Oct 2026*
+*Last updated: 27 Oct 2026*
 
 Wiseman ({{< ja "ワイズマン" "waizuman" "Wiseman" >}}) is a software company based in Morioka, Iwate Prefecture. Founded in June 1983, it develops, sells and supports systems for care and welfare offices, medical institutions and local governments.[^1] On **5 June 2026**, M3, Inc. ({{< ja "エムスリー株式会社" "emu surī kabushiki-gaisha" "M3, Inc." >}}, TSE Prime 2413) signed an agreement to buy all of Wiseman's shares. The transfer was scheduled for **1 July 2026**.[^1][^2] M3's Report for Investors 2026, dated 30 September 2026, says Wiseman was consolidated as a subsidiary "from July" 2026. None of the documents we opened gives the exact day.[^7] Our page on [the M3 group in care]({{< relref "m3-group" >}}) covers the deal terms and M3's other care companies.
 
@@ -99,12 +99,15 @@ M3's notice says two M3 subsidiaries, Logic and CUC, already had transactions wi
 
 > **Update, 24 Oct 2026:** On 22 October 2026 Wiseman said that, for a serious PHP security vulnerability published on 21 October, it had finished safety checks and necessary measures on the cloud servers that hold customer data. It said no information leak or unauthorized access caused by that vulnerability had been confirmed.[^10]
 
+> **Update, 27 Oct 2026:** On 24 October 2026 a third party accessed the cloud environment that runs MeLL+professional. Wiseman detected it the same day and stopped MeLL+professional, MeLL+community, MeLL+family (office system and family app), the voice-record AI option, the SOIN link, the {{< ja "ケアリポ" "kearipo" "Care-Repo" >}} care portal and second-line. It revoked the misused credentials, blocked the intrusion route and reported to regulators including the Personal Information Protection Commission. As of 26 October no leak of personal data held in the service was confirmed. Services will restart in stages once safety is confirmed.[^11]
+
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: going by their owners' own share claims, Wiseman and Honobono are both facility-heavy, licence-based packages. Wiseman now has a parent with an AI and medical-records business, and with other care services in its group (Logic and Elan, per M3). That combination could make the M3 group a stronger all-round competitor than Wiseman alone, especially for links between medical and care providers. The share figures come from the buyer's acquisition deck. I would cite them only as M3's claim. M3's own investor report says the deal took effect in July 2026, but I have not seen the exact day confirmed.
 {{< /analysis >}}
 
 ## Changelog
 
+- 27 Oct 2026: noted Wiseman's 26 Oct notice of unauthorized access to MeLL+professional on 24 Oct; related services stopped; no personal-data leak confirmed as of 26 Oct
 - 24 Oct 2026: noted Wiseman's 22 Oct PHP-vulnerability notice; no leak or unauthorized access confirmed
 - 9 Oct 2026: added M3's statement that Wiseman was consolidated from July 2026, Wiseman's three-year results from M3's notice, and links to the new M3 group and Care-wing pages
 - 9 Oct 2026: first published
@@ -132,3 +135,5 @@ Tako-San's view: going by their owners' own share claims, Wiseman and Honobono a
 [^9]: M3, Inc. "Company Presentation, Q1 Results for the Year Ending March 2027 (会社説明資料)." 6 August 2026, slide 29. https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/5QE1BL4hbahSXLuoXH8riz/a3ad90dbfebe33f0adb4da773f9c058d/20260806_Presentation_J.pdf
 
 [^10]: Wiseman Co., Ltd. "Important: response to a PHP vulnerability in our services (重要：弊社サービスにおけるPHPの脆弱性への対応について)." 22 October 2026. https://www.wiseman.co.jp/news/corp/php-security-update-20261022/
+
+[^11]: Wiseman Co., Ltd. 「MeLL+professional（メルタス プロフェッショナル）」への不正アクセスの発生に関するお詫びとお知らせ, 26 October 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261026/ PDF: https://www.wiseman.co.jp/wp-content/uploads/2026/10/release_20261026.pdf
