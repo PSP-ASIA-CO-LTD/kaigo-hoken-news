@@ -1,7 +1,7 @@
 ---
 title: "Private elderly housing in Japan: paid homes, serviced housing and who pays for care"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T09:00:00+07:00
+lastmod: 2026-11-02T07:00:00+07:00
 tags: ["japan", "long-term-care", "paid-homes", "serviced-housing", "policy", "guide"]
 summary: "Fee-charging homes for older people (care-included, residential and healthy-living types) and serviced housing for older people: the law and regulator behind each, how many there are, what insurance pays and what residents pay, the 'enclosure' problem, the 2026 registration law, operators on public data, and what it means for care software."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 9
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 2 Nov 2026*
 
 In Japan, many older people who need care live in private, fee-charging housing rather than at home or in a public care facility. Paid homes alone had capacity for about 950,000 people in mid-2024.[^9] Two legal forms cover this housing:
 
@@ -120,6 +120,8 @@ The standard guidance has said since fiscal 2015 that homes must not limit or st
 
 MHLW's timetable in the same document shows a 10th meeting around October 2026, a report to the Long-Term Care Insurance Subcommittee in the autumn, and the cabinet and ministerial orders planned for promulgation within 2026.[^11]
 
+> **Update, 2 Nov 2026:** At the 272nd meeting of the Social Security Council Long-Term Care Benefits Subcommittee on 28 October 2026, MHLW tabled FY2027 drafts for registered-facility care support and its preventive version. Staffing would follow home-care support (a care manager) plus a community life counsellor ({{< ja "地域生活相談員" "chiiki seikatsu sōdan'in" "community life counsellor" >}}), with dual-hat allowed; existing home-care-support offices could count staff together. The {{< ja "登録施設サービス計画" "tōroku shisetsu sābisu keikaku" "registered-facility service plan" >}} would use information from the registered home as well as the usual assessment, and would record community-life consultation. The basic fee would use the home-care-support framework, adjusted for community-life consultation and congregate housing; the diminishing-returns rule would use the combined user count with home-care support, spread across registered-facility users so co-pays do not differ person by person. Start is assumed after the paid-home registration transition ends.[^19] For specified-facility daily-life care, MHLW proposed surveying residential-home conversions and studying which add-ons the external-service type cannot claim.[^20] These are discussion proposals, not decisions.
+
 ## Operators on public data
 
 No MHLW or MLIT source opened for this guide ranks paid-home operators. MHLW's care-service information system publishes open data on insurance-designated offices, by service type, twice a year.[^16] The files cover specified facilities in paid homes, care houses and serviced housing, including the external-service and community-based forms. They have no file for residential paid homes or for serviced housing without a designation.[^16]
@@ -151,6 +153,7 @@ Tako-San's view: private housing operators need software that public facilities 
 
 ## Changelog
 
+- 2 Nov 2026: added the 272nd meeting drafts for registered-facility care-support staffing, plan items and fees, and for specified-facility conversion from residential homes.
 - 9 Oct 2026: first published
 
 ---
@@ -192,3 +195,7 @@ Tako-San's view: private housing operators need software that public facilities 
 [^17]: Charm Care Corporation. "Consolidated Financial Results for the Fiscal Year Ended June 2026 (2026年６月期 決算短信〔日本基準〕（連結）)," 6 August 2026. https://www2.jpx.co.jp/disc/60620/140120260806512019.pdf
 
 [^18]: Ministry of Health, Labour and Welfare, Care Service Information Publication System. "What services are there? Home care support (どんなサービスがあるの？ - 居宅介護支援)." https://www.kaigokensaku.mhlw.go.jp/publish/group1.html
+
+[^19]: Ministry of Health, Labour and Welfare. Material 2 (registered-facility care support and preventive support), Social Security Council Long-Term Care Benefits Subcommittee (272nd meeting), 28 October 2026. https://www.mhlw.go.jp/content/12300000/001763609.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76726.html
+
+[^20]: Ministry of Health, Labour and Welfare. Material 1 (specified-facility daily-life care), 272nd meeting, 28 October 2026. https://www.mhlw.go.jp/content/12300000/001763608.pdf

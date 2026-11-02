@@ -1,7 +1,7 @@
 ---
 title: "Who does what in Thai community long-term care"
 date: 2026-10-11T00:00:00+07:00
-lastmod: 2026-10-24T07:00:00+07:00
+lastmod: 2026-11-02T07:00:00+07:00
 tags: ["thailand", "long-term-care", "care-manager", "caregiver", "village-health-volunteers", "local-government", "guide"]
 summary: "The people and bodies in Thailand's community long-term care: care managers (mostly nurses at sub-district health promoting hospitals, trained on a 70-hour course, about 13,600 of them), caregivers (70- or 420-hour courses, mostly village health volunteers), local care volunteers, village health volunteers (อสม.), local governments and their LTC subcommittees, sub-district health promoting hospitals (รพ.สต.) and their transfer to provincial governments, the service units that receive the money, and the Department of Older Persons' separate community caregivers."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 8
 countries: ["Thailand"]
 ---
 
-*Last updated: 24 Oct 2026*
+*Last updated: 2 Nov 2026*
 
 Thai community long-term care has no single provider. A dependent older person at home may see a care manager from the local health centre, a caregiver from the village, a village health volunteer, and, in some districts, a separate community caregiver paid by the Department of Older Persons. The money comes through the local government. This guide sets out who each of them is, how they are trained and paid, and which records they keep. The step-by-step process is in [The NHSO long-term care cycle]({{< relref "/thailand/nhso-ltc-cycle" >}}).
 
@@ -99,7 +99,7 @@ Village health volunteers, อาสาสมัครสาธารณสุ�
 
 - **Pay.** DHSS announced that the stipend, ค่าป่วยการ (kha puai kan, stipend), at the new rate of 2,000 baht a month, would be paid for the April 2024 round on 15 May 2024, together with 6,000 baht of back pay.[^8]
 - **Quota.** On 19 October 2026 DHSS said its committee allocating the stipend quota, at its meeting 1/2569, kept the number of village health volunteers entitled to the stipend in FY2027 (B.E. 2570) at 1,075,163, unchanged, and would add measures to supervise, follow up and assess their work.[^17]
-- **App.** DHSS's 2022 manual for "Smart อสม." trains volunteers to use the Smart อสม. app to work and report. Its first function is the monthly อสม. 1 report, which replaces the paper form.[^9] See [Government systems]({{< relref "/thailand/competitors/government-systems" >}}).
+- **App.** DHSS's 2022 manual for "Smart อสม." trains volunteers to use the Smart อสม. app to work and report. Its first function is the monthly อสม. 1 report, which replaces the paper form.[^9] On 27 October 2026 DHSS said the successor, Smart อสม. Plus, and a Work Report information system are available from October 2026 on the App Store and Google Play, with province and district staff to confirm the data before stipend and indicator use; the old app is to close on 30 November 2026.[^19] See [Government systems]({{< relref "/thailand/competitors/government-systems" >}}).
 - **Link to long-term care.** Most LTC-fund caregivers are village health volunteers who took the caregiver course.[^3] The NHSO designed the fund to use existing volunteers: village health volunteers, elderly-care volunteers and disability-care volunteers.[^4]
 
 > **Update, 24 Oct 2026:** On 22 October 2026 DHSS said the first 437 {{< th "อาสาพยาบาลชุมชน (อสพ.)" "asasamak phayaban chumchon" "community nurse volunteers" >}} from the licensed-professional group (nurses and community-public-health practitioners) had finished DHSS training and were ready to start in November 2026, working with village health volunteers, sub-district health promoting hospitals, caregivers and local governments on monitoring, observation and referral of patients and vulnerable groups. More than 6,000 selected trainees started training in October in three groups (general bachelor's, health bachelor's, licensed professionals). A demand heat map is being prepared for the other two groups, expected to start December 2026–January 2027. The 22 October notice does not give pay, training hours, a legal status, or say that อสพ. replace caregivers.[^18]
@@ -193,6 +193,7 @@ Tako-San's view: the person at the centre of Thai community care, the care manag
 
 ## Changelog
 
+- 2 Nov 2026: added DHSS 27 Oct notice on Smart อสม. Plus / Work Report and the 30 Nov 2026 close of the old app.
 - 24 Oct 2026: added the first 437 licensed-professional community nurse volunteers (อสพ.) ready for November 2026 (DHSS, 22 Oct 2026).
 - 21 Oct 2026: added the FY2027 village health volunteer stipend quota (DHSS, 19 Oct 2026).
 - 11 Oct 2026: first published
@@ -236,3 +237,5 @@ Tako-San's view: the person at the centre of Thai community care, the care manag
 [^17]: Department of Health Service Support, Ministry of Public Health. "DHSS confirms stipend quota for 1,075,163 village health volunteers in FY2027 (กรม สบส. ยืนยันใช้โควตาค่าป่วยการ อสม. จำนวน 1,075,163 คน ในปีงบประมาณ พ.ศ. 2570)," 19 October 2026. https://hcpr.hss.moph.go.th/archives/hss-news/19610/
 
 [^18]: Department of Health Service Support, Ministry of Public Health. "DHSS says the first community nurse volunteers are ready to start community health work in November 2026 (สบส. เผย อสพ. ลอตแรกพร้อมลงดูแลสุขภาพชุมชน พ.ย. 69)," 22 October 2026. https://hcpr.hss.moph.go.th/archives/hss-news/19684/
+
+[^19]: Department of Health Service Support, Ministry of Public Health. "DHSS goes digital: Smart อสม. Plus and Work Report are ready (สบส. ลุยดิจิทัล! ดัน “Smart อสม. Plus และ Work Report” เสริมพลัง อสม. ทำงานไว รายงานครบ พร้อมใช้งานแล้ว)," 27 October 2026. https://hcpr.hss.moph.go.th/archives/hss-news/19743/

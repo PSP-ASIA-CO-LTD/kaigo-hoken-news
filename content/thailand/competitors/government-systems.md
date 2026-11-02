@@ -1,7 +1,7 @@
 ---
 title: "Thai government care systems: 3C, the NHSO LTC programme, Thai COC, Blue Book, Smart อสม. and the NEC Mimamori trial"
 date: 2026-10-11T00:00:00+07:00
-lastmod: 2026-10-11T02:56:00+07:00
+lastmod: 2026-11-02T07:00:00+07:00
 tags: ["thailand", "competitors", "government", "3c", "nhso", "thai-coc", "blue-book", "smart-osm", "nec"]
 summary: "The free state systems that sit around Thai community and elderly care: the Department of Health's 3C program for care managers, caregivers and care plans; the NHSO's LTC programme (ltcnew) for projects, payments and caregiver pay; Thai COC, a hospital-to-community referral and home-visit system; the Department of Health's Blue Book elderly-screening app; DHSS's Smart อสม. app for village health volunteers; and NEC's 2022 Mimamori nursing-home trial in Chiang Mai. What each does, who uses it, and what is known about links between them."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 7
 countries: ["Thailand"]
 ---
 
-*Last updated: 11 Oct 2026*
+*Last updated: 2 Nov 2026*
 
 Thailand's community long-term care runs on systems built by the state. For the staff and volunteers who use them, using them is usually part of the job. Any private product sold to a local government, a primary-care unit or a care manager will sit beside them. This page profiles five of them, plus one foreign trial. NSTDA's Nirun, the other major government system, has its own [profile]({{< relref "/thailand/competitors/nirun" >}}). For how the money and records flow between these systems, see [The NHSO long-term care cycle]({{< relref "/thailand/nhso-ltc-cycle" >}}).
 
@@ -92,6 +92,8 @@ The Google Play listing names the intended users as older people, health workers
 
 **Pricing.** No price is shown on the store listing.[^10]
 
+> **Update, 2 Nov 2026:** On 27 October 2026 DHSS said a successor app, Smart อสม. Plus, and a Work Report information system are available from October 2026 on the App Store and Google Play. Province- and district-level staff are to follow up, check and confirm the data before it is used for indicator reports and for administering the village-health-volunteer stipend. The old Smart อสม. app is to close on 30 November 2026.[^16]
+
 ## NEC Mimamori (past trial)
 
 **What it was.** In June 2022 NEC Corporation (Thailand) ran a month-long proof of concept of its "Mimamori" system at an elderly-care facility in Chiang Mai.[^12] The trial combined:[^12]
@@ -126,12 +128,13 @@ Tako-San's view: the Thai state has built a tool for almost every step of commun
 - **3C details beyond the basic workflow.** The Department of Health's 3C report could not be reopened on 11 October 2026; account approval and survey figures are left out.
 - **Current Thai COC coverage.** Latest figure found is from October 2018.
 - **Blue Book and Smart อสม. usage counts.** Counts appear in Department documents we did not open.
-- **Smart อสม. on iOS.** We did not check the App Store.
+- **Smart อสม. on iOS.** The 27 October 2026 DHSS notice says Smart อสม. Plus is on the App Store; we did not reopen the store listing.
 - **3C PLUS.** News report only.
 - **What happened to the NEC trial and memorandum** after 2023.
 
 ## Changelog
 
+- 2 Nov 2026: DHSS 27 Oct notice: Smart อสม. Plus and Work Report available from October 2026; old Smart อสม. app to close 30 November 2026
 - 11 Oct 2026: first published
 
 ---
@@ -167,3 +170,5 @@ Tako-San's view: the Thai state has built a tool for almost every step of commun
 [^14]: Human Resources for Health Research and Development Office (สำนักงานวิจัยและพัฒนากำลังคนด้านสุขภาพ). "Care manager (CM) (ผู้จัดการการดูแล (care manager: CM))," LTC fact sheet 02, synthesised from its 2021 study; uploaded October 2024. https://hrpo.info/wp-content/uploads/2024/10/LTC_fact-sheet-02-CM.pdf
 
 [^15]: Hfocus. "MOPH pushes Long Term Care system, highlights 135,000 caregivers (สธ.เดินหน้าระบบ Long Term Care ชู Caregiver 1.35 แสนคน ดูแลผู้สูงอายุ)," 10 October 2026. News report, not a primary source. https://www.hfocus.org/content/2026/10/39855
+
+[^16]: Department of Health Service Support, Ministry of Public Health. "DHSS goes digital: Smart อสม. Plus and Work Report are ready (สบส. ลุยดิจิทัล! ดัน “Smart อสม. Plus และ Work Report” เสริมพลัง อสม. ทำงานไว รายงานครบ พร้อมใช้งานแล้ว)," 27 October 2026. https://hcpr.hss.moph.go.th/archives/hss-news/19743/
