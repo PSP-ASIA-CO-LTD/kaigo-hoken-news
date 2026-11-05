@@ -1,7 +1,7 @@
 ---
 title: "The money, the workforce, and what 2027 and 2040 look like"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-21T07:00:00+07:00
+lastmod: 2026-11-05T07:00:00+07:00
 tags: ["japan", "long-term-care", "budget", "workforce"]
 summary: "What Japan spends on long-term care, the fiscal 2026 wage package, the path to the 2027 fee revision, and the 2040 population squeeze."
 series: "Japan LTC Basics"
@@ -58,6 +58,8 @@ Home-visit care's base fee is a known sore point going into 2027. Industry cover
 
 > **Update, 21 Oct 2026:** The 271st meeting, on 19 October 2026, tabled proposals for home-visit services and care management for the fiscal 2027 revision. For home-visit care ({{< ja "訪問介護" "hōmon kaigo" "home-visit care" >}}), the first-visit add-on ({{< ja "初回加算" "shokai kasan" "first-visit add-on" >}}), claimed by 52.0% of offices, would also count a visit by the service coordinator ({{< ja "サービス提供責任者" "sābisu teikyō sekininsha" "service coordinator" >}}) to assess the user when a new home-visit care plan is written; an online check by the coordinator during a helper's visit could also be counted; and fee categories that reflect travel costs and visit patterns would replace the current reduction-based approach.[^13] For home-visit nursing ({{< ja "訪問看護" "hōmon kango" "home-visit nursing" >}}), proposals include allowing the early-morning/night and late-night add-ons on the month's first night visit even when the emergency home-nursing add-on ({{< ja "緊急時訪問看護加算" "kinkyūji hōmon kango kasan" "emergency home-nursing add-on" >}}) is claimed, a new fee when nurses assist a doctor's online consultation at the patient's side, and a fee for ICT information-sharing with local medical institutions.[^14] For care management ({{< ja "居宅介護支援" "kyotaku kaigo shien" "care management (care-plan services)" >}}), MHLW proposed abolishing specific-office add-on ({{< ja "特定事業所加算" "tokutei jigyōsho kasan" "specific-office add-on" >}}) (A) with a one-year transition, and dropping the requirement in add-on (I) that at least 40% of users are at care levels 3 to 5.[^15] These are discussion proposals, not decisions.
 
+> **Update, 5 Nov 2026:** The 272nd meeting, on 28 October 2026, tabled specified-facility, registered-facility care support and regional-classification proposals. For specified-facility care ({{< ja "特定施設入居者生活介護" "tokutei shisetsu nyūkyosha seikatsu kaigo" "daily-life care for residents of specified facilities" >}}), MHLW proposed evaluating per-resident excretion-support plans and improvement, and promoting a shift from residential paid homes via case studies and a look at add-ons the external-service form cannot currently claim.[^16] For registered-facility care support ({{< ja "登録施設介護支援" "tōroku shisetsu kaigo shien" "registered-facility care support" >}}), the draft staffing is one full-time care manager per 44 users (49 if the office uses the Care Plan Data Exchange), plus a community-life counsellor who may be the same person; start after the paid-home registration transition ends.[^17] For regional classification ({{< ja "地域区分" "chiiki kubun" "regional classification (unit-price area)" >}}), the principle stays civil-servant regional allowance, with a municipal-choice transition through the end of fiscal 2029.[^18] The 273rd meeting, on 2 November 2026, tabled facility proposals: rewrite the special-nursing-home special outpatient-transport add-on ({{< ja "特別通院送迎加算" "tokubetsu tsūin sōgei kasan" "special outpatient-transport add-on" >}}) as a full dialysis-support evaluation, and count discharges to special nursing homes in the geriatric-health-facility home-return rate.[^19][^20] These are discussion proposals, not decisions.
+
 ## People: the constraint that drives the software agenda
 
 MHLW summed the care-worker numbers that prefectures built from the 9th municipal plans:[^6]
@@ -92,6 +94,7 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 
 ## Changelog
 
+- 5 Nov 2026: Added an update note on the 272nd meeting specified-facility, registered-facility care support and regional-classification proposals, and the 273rd meeting facility dialysis and home-return proposals.
 - 21 Oct 2026: Added an update note on the 271st meeting home-visit care, home-visit nursing and care-management proposals.
 - 15 Oct 2026: Added an update note on the 270th meeting day-care and short-stay proposals.
 - 12 Oct 2026: Added an update note on the fiscal 2027 revision draft viewpoints (268th meeting) and the first per-service proposals (269th meeting).
@@ -129,3 +132,13 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 [^14]: Ministry of Health, Labour and Welfare. Material 3 (home-visit nursing), 271st meeting, 19 October 2026. https://www.mhlw.go.jp/content/12300000/001760335.pdf
 
 [^15]: Ministry of Health, Labour and Welfare. Material 6 (care management and preventive care support), 271st meeting, 19 October 2026. https://www.mhlw.go.jp/content/12300000/001760887.pdf
+
+[^16]: Ministry of Health, Labour and Welfare. Material 1 (specified-facility daily-life care), Social Security Council Long-Term Care Benefits Subcommittee (272nd meeting), 28 October 2026. https://www.mhlw.go.jp/content/12300000/001763608.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76726.html
+
+[^17]: Ministry of Health, Labour and Welfare. Material 2 (registered-facility care support), 272nd meeting, 28 October 2026. https://www.mhlw.go.jp/content/12300000/001763609.pdf
+
+[^18]: Ministry of Health, Labour and Welfare. Material 3 (regional classification), 272nd meeting, 28 October 2026. https://www.mhlw.go.jp/content/12300000/001763384.pdf
+
+[^19]: Ministry of Health, Labour and Welfare. Material 1 (special nursing homes), Social Security Council Long-Term Care Benefits Subcommittee (273rd meeting), 2 November 2026. https://www.mhlw.go.jp/content/12300000/001765516.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76900.html
+
+[^20]: Ministry of Health, Labour and Welfare. Material 2 (geriatric health facilities), 273rd meeting, 2 November 2026. https://www.mhlw.go.jp/content/12300000/001765517.pdf
