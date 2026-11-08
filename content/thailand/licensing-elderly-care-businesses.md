@@ -1,15 +1,15 @@
 ---
 title: "Licensing elderly-care businesses in Thailand: the Health Establishment Act and DHSS"
 date: 2026-10-10T00:00:00+07:00
-lastmod: 2026-10-15T07:00:00+07:00
+lastmod: 2026-11-08T07:00:00+07:00
 tags: ["thailand", "long-term-care", "regulation", "licensing", "nursing-homes", "guide"]
-summary: "How Thailand regulates private elderly-care and dependent-care businesses: the Health Establishment Act B.E. 2559 (2016), the two 2020 ministerial regulations that brought care homes under it, the three licences (business, operator, caregiver registration), the standards, inspection and penalties, how to apply online, and the count of licensed homes (1,203 in October 2026)."
+summary: "How Thailand regulates private elderly-care and dependent-care businesses: the Health Establishment Act B.E. 2559 (2016), the two 2020 ministerial regulations that brought care homes under it, the three licences (business, operator, caregiver registration), the standards, inspection and penalties, how to apply online, and the count of licensed homes (1,203 in October 2026; a 2 November DHSS release says 1,204)."
 categories: ["Guides"]
 weight: 1
 countries: ["Thailand"]
 ---
 
-*Last updated: 15 Oct 2026*
+*Last updated: 8 Nov 2026*
 
 In Thailand, a private business that looks after older or dependent people is licensed as a "health establishment", the same legal category as spas and massage shops. The law is the Health Establishment Act B.E. 2559 (2016), พระราชบัญญัติสถานประกอบการเพื่อสุขภาพ (Phraratchabanyat Sathan Prakop Kan Phuea Sukkhaphap, Health Establishment Act).[^1] A 2020 ministerial regulation, กฎกระทรวง (kot krasuang, ministerial regulation), added "elderly or dependent-person care" to the businesses that the Act covers.[^2] A second 2020 regulation sets the standards for premises, safety and service.[^3]
 
@@ -92,6 +92,8 @@ On 11 October 2026 a Thai government spokesperson said the Minister of Public He
 
 On 12 October 2026, Thai PBS reported (secondary) that DHSS had revoked both the business licence and the operator licence of Baan Soem Suk (บ้านเสริมสุข), a home on Soi Rewadee 22, Mueang Nonthaburi, Nonthaburi, with effect from that day. The report said an 8 October inspection found 14 beds against nine licensed, and 59 psychiatric or drug-related psychiatric patients on the second and third floors without a clinic licence.[^13]
 
+On 2 November 2026 DHSS said it had post-audited 206 licensed elder-care homes as of 26 October 2026 and aims to cover all 1,204 by 30 November 2026. Problems found included unlicensed extra beds, poor waste handling, and admitting psychiatric patients without assessment. The 11 October government-spokesperson figure on this page is 1,203 homes; this 2 November DHSS/MOPH release says 1,204.[^14]
+
 ## How to apply
 
 The government's citizen guide for this licence sets out the steps.[^4]
@@ -110,8 +112,9 @@ The guide describes this procedure for Bangkok. For other provinces it names DHS
 |---|---|---|
 | List published 2 April 2025 (undated data) | 927: 5 of type 1, 17 of type 2, 905 of type 3. Bangkok 307, Nonthaburi 112, Chiang Mai 60, Chon Buri 50, Pathum Thani 41. 60 provinces listed | Department of Older Persons compilation of DHSS licences[^6] |
 | 10 October 2026 | 1,203 nationwide | DHSS Director-General, MOPH press release[^5] |
+| 2 November 2026 | 1,204 nationwide | DHSS news; one higher than the 1,203 figure given on 10 and 11 October 2026[^14] |
 
-The two counts come from different sources and may not be counted the same way. The 2025 list's own summary line gives 4 type 1 and 16 type 2 establishments and 888 type 3, against its table total of 5, 17 and 905.[^6] DHSS also runs a public search of licensed establishments on the same system ("ตรวจสอบสถานประกอบการที่ได้รับอนุญาต", check licensed establishments).[^7] We could not open it from our network on 10 October 2026 (the connection was refused), so we have not checked the 1,203 figure against it.
+The two 2025 and 10 October counts come from different sources and may not be counted the same way. The 2025 list's own summary line gives 4 type 1 and 16 type 2 establishments and 888 type 3, against its table total of 5, 17 and 905.[^6] DHSS also runs a public search of licensed establishments on the same system ("ตรวจสอบสถานประกอบการที่ได้รับอนุญาต", check licensed establishments).[^7] We could not open it from our network on 10 October 2026 (the connection was refused), so we have not checked the 1,203 figure against it. A 2 November 2026 DHSS/MOPH release gives 1,204 licensed homes, one higher than the 1,203 figure of 10–11 October 2026; this page keeps both.[^14]
 
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: the Thai rules ask a licensed home to keep a client register in a set form, repeat a needs assessment every three months, record health changes, and keep a staff register, all checked at inspection. Those are the same building blocks as a Japanese care record, though Thailand does not yet ask for electronic claims the way Japan does. With 1,203 licensed homes, mostly small type 3 homes concentrated around Bangkok, the market is small but easy to map. The licence count is also rising: 927 on the April 2025 list against 1,203 in October 2026, though the two counts may not be like for like. An inspection-ready record pack (the three-monthly reassessment, the client register, the staff register with each caregiver's สพส.14 number) is a concrete product idea. It should be checked with a few operators and a regional Health Service Support Centre before any build.
@@ -124,6 +127,7 @@ Tako-San's view: the Thai rules ask a licensed home to keep a client register in
 
 ## Changelog
 
+- 8 Nov 2026: added DHSS post-audit progress (206 of 1,204 homes as of 26 Oct 2026; target 30 Nov 2026).
 - 15 Oct 2026: added the 11 October nationwide two-month inspection order (thaigov) and the 12 October Baan Soem Suk licence revocation as a worked example (Thai PBS, secondary)
 - 11 Oct 2026: licence fee clarified: the citizen guide's "no fee" field conflicts with its own payment steps; DHSS's 2020 announcement gives the fees (new note 8) and the Act's fee caps are added from note 1
 - 11 Oct 2026: effective date explained. The regulation applies "when 180 days have passed" from publication on 31 July 2020. DHSS gives 27 January 2021 (new note 9), which follows the Council of State's way of counting; the courts' way under Civil and Commercial Code s. 193/3 would give 28 January 2021 (new notes 10 and 11). The page now gives both, uses 27 January 2021, and adds DHSS's 27 January to 25 July 2021 window for existing businesses
@@ -158,3 +162,5 @@ Tako-San's view: the Thai rules ask a licensed home to keep a client register in
 [^12]: Royal Thai Government. News, 11 October 2026. https://www.thaigov.go.th/th/news/170046
 
 [^13]: Thai PBS. News report, 12 October 2026. Secondary source. https://www.thaipbs.or.th/news/content/570906
+
+[^14]: Ministry of Public Health, Thailand (DHSS news). "สบส. เผยผลตรวจสถานดูแลผู้สูงอายุ พบ 3 จุดเสี่ยง! เร่งตรวจครบ 1,204 แห่ง ภายใน พ.ย. 69 ย้ำฝ่าฝืนกฎหมายดำเนินการเด็ดขาด," 2 November 2026. https://pr.moph.go.th/online/index/news/350092
