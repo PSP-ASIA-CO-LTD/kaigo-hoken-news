@@ -1,7 +1,7 @@
 ---
 title: "Kaigo WEB Service and its API: what vendors must build for 2027"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-27T07:00:00+07:00
+lastmod: 2026-11-02T07:00:00+07:00
 tags: ["japan", "long-term-care", "care-information-platform", "api", "care-plan", "software", "guide"]
 summary: "The Kaigo WEB Service is the website through which care offices reach Japan's care information platform, and from January 2027 it also carries care plans. This guide covers who runs it, the dated timeline, what API version 1.0 requires (standard 5.0, certificates, tokens, permissions), the vendor tests, costs, and the open questions."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 6
 countries: ["Japan"]
 ---
 
-*Last updated: 27 Oct 2026*
+*Last updated: 2 Nov 2026*
 
 Japan is building a national care information platform ({{< ja "介護情報基盤" "kaigo jōhō kiban" "care information platform" >}}). Care offices reach it through a website called the Kaigo WEB Service ({{< ja "介護保険資格確認等WEBサービス" "kaigo hoken shikaku kakunin tō webu sābisu" "care-insurance eligibility check web service" >}}). In January 2027 the Care Plan Data Exchange is due to become one of the service's functions. On 31 August 2026, MHLW announced version 1.0 of an API through which care software can talk to the service directly.[^1][^2]
 
@@ -51,6 +51,7 @@ What a given login can see depends on two settings. One is the service type the 
 - **Status at 10 July 2026:** 1,545 municipalities had fixed start dates. Of these, 416 were due to start in fiscal 2026 and 1,129 in fiscal 2027. Another 196 were still being arranged.[^5]
 - **Status at 1 Oct 2026:** usable in 3 cities (Ōita City and Beppu City, Ōita Prefecture; Ibusuki City, Kagoshima Prefecture); start dates published for 1,558 municipalities (89% of all municipalities); 42 still scheduling; 138 undecided. Ibusuki City's start date was 1 October 2026, and it is first listed as usable in the update dated 1 October 2026; the 15 September update (status as of 10 September) listed 2 cities (Ōita, Beppu).[^17][^18]
 - **Status at 8 Oct 2026** (portal update 13 October): still usable in the same 3 cities; start dates published for 1,558 municipalities (89%); 41 still scheduling; 139 undecided. Kagoshima City moved from a published start date (1 April 2027) to scheduling.[^17]
+- **Status at 29 Oct 2026:** Kyōtango City, Kyoto Prefecture, has some functions usable from 29 October (which functions: see the Kyoto page footnote on the portal). Other municipalities in that update are as of 22 October. The 29 October notice does not restate the national usable-city or published-date totals.[^20]
 - **Checking a municipality:** each municipality's start date can be checked on the Kaigo Kiban Portal.[^5]
 
 The care-plan exchange function does not have to wait for the municipality. It can be used even before a municipality starts using the platform.[^5]
@@ -209,6 +210,7 @@ Tako-San's view: for a vendor, the 2027 change is bigger than "the exchange move
 
 ## Changelog
 
+- 2 Nov 2026: portal notice of 29 October: Kyōtango City some functions usable from 29 October; other municipalities as of 22 October
 - 27 Oct 2026: Vol.1550 restates 1 April 2028 full operation of the care information platform; insurers asked to use it to drop limit-amount certificates
 - 15 Oct 2026: portal update of 13 October (status as of 8 October): still 3 cities live; 1,558 with dates; scheduling 41; undecided 139; Kagoshima City moved to scheduling
 - 12 Oct 2026: added municipality rollout status as of 1 October 2026 (3 cities live; start dates published for 1,558 municipalities)
@@ -255,3 +257,5 @@ Tako-San's view: for a vendor, the 2027 change is bigger than "the exchange move
 [^18]: National Health Insurance Central Association. Kaigo Kiban Portal notice, 5 October 2026. https://www.kaigo-kiban-portal.jp/notice/detail/89
 
 [^19]: Ministry of Health, Labour and Welfare. 介護保険最新情報 Vol.1550, 26 October 2026. https://www.mhlw.go.jp/content/001763099.pdf
+
+[^20]: National Health Insurance Central Association. Kaigo Kiban Portal notice, "Updating municipalities' status on 29 October (10/29「市町村(保険者)の対応状況」を更新いたします)," 29 October 2026. Kyōtango City some functions usable from 29 October; other municipalities as of 22 October. https://www.kaigo-kiban-portal.jp/notice/detail/89  Kyoto prefecture status page: https://www.kaigo-kiban-portal.jp/introduction-map/kyoto
