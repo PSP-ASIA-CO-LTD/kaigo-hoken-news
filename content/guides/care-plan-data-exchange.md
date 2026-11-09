@@ -46,7 +46,9 @@ What the API requires of care software is covered in our separate guide, [Kaigo 
 
 On 16 October 2026 the Care Plan Data Exchange Help Desk posted the archive video of that day's seminar, where provider users shared tips on making the system stick after adoption; the seminar also explained the January 2027 move to the Kaigo WEB Service. A Q&A extract PDF was posted with the video.[^16]
 
-From about 09:00 JST on 2 November 2026 users had trouble connecting to the Care Plan Data Exchange; the help desk's 6 November 17:00 update said it was fixed, with no cause given.[^17]
+On 2 November 2026 the same help desk said its enquiry desk is moving to the Kaigo Kiban Portal. From January 2027, care-plan questions go to the Kaigo Kiban call centre (0120-697-312); the current help-desk number stops then, with the exact cut-over date still to be announced. Through November 2026 the existing desk widens hours (weekdays 8:00–18:00, Saturdays 8:00–16:00) and the web form moves to the portal. The help-desk site itself is due to close after the January 2027 move.[^17]
+
+From about 09:00 JST on 2 November 2026 users had trouble connecting to the Care Plan Data Exchange; the help desk's 6 November 17:00 update said it was fixed, with no cause given.[^18]
 
 ## Vendor tests: what "compatible" means
 
@@ -128,6 +130,7 @@ Tako-San's view: the exchange has turned from an optional fax replacement into a
 ## Changelog
 
 - 8 Nov 2026: added the 2–6 Nov 2026 connection trouble and its reported fix.
+- 5 Nov 2026: added 2 Nov 2026 help-desk move to the Kaigo Kiban Portal (call centre 0120-697-312 from January 2027; November hours and form change).
 - 18 Oct 2026: added 16 Oct 2026 seminar archive video and Q&A.
 - 9 Oct 2026: added a link to the new guide on the Kaigo WEB Service API
 - 9 Oct 2026: first published
@@ -168,4 +171,6 @@ Tako-San's view: the exchange has turned from an optional fax replacement into a
 
 [^16]: Care Plan Data Exchange Help Desk. Notice of seminar archive video and materials, 16 October 2026. https://www.careplan-renkei-support.jp/  Archive video: https://www.youtube.com/watch?v=7qq2dWWiq6w  Q&A extract: https://www.careplan-renkei-support.jp/wp-content/uploads/sites/2/2026/10/%E3%82%B1%E3%82%A2%E3%83%97%E3%83%BC%E6%B4%BB%E7%94%A8%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BCQ%26A.pdf
 
-[^17]: Care Plan Data Exchange Help Desk. 「ケアプランデータ連携システムに接続しづらい事象について」, posted 2 November 2026 10:20, updated 6 November 2026 17:00 (JST). https://www.careplan-renkei-support.jp/
+[^17]: Care Plan Data Exchange Help Desk. "Notice of a change to the Care Plan Data Exchange Help Desk enquiry window (ケアプランデータ連携システム ヘルプデスクお問い合わせ窓口変更のお知らせ)," 2 November 2026. https://www.careplan-renkei-support.jp/
+
+[^18]: Care Plan Data Exchange Help Desk. 「ケアプランデータ連携システムに接続しづらい事象について」, posted 2 November 2026 10:20, updated 6 November 2026 17:00 (JST). https://www.careplan-renkei-support.jp/

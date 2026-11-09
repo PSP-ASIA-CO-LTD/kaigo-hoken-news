@@ -1,7 +1,7 @@
 ---
 title: "Kaipoke (SMS Co., Ltd.): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-12T07:00:00+07:00
+lastmod: 2026-11-02T07:00:00+07:00
 tags: ["japan", "competitors", "kaipoke", "software"]
 summary: "Kaipoke's published per-office prices, its features, who it targets, SMS's own scale and share figures, and how it handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 1
 countries: ["Japan"]
 ---
 
-*Last updated: 12 Oct 2026*
+*Last updated: 2 Nov 2026*
 
 Kaipoke ({{< ja "カイポケ" "kaipoke" "Kaipoke" >}}) is cloud-based management-support software for care and disability-welfare offices. It is run by SMS Co., Ltd. ({{< ja "株式会社エス・エム・エス" "kabushiki-gaisha esu emu esu" "SMS Co., Ltd." >}}), which is listed on the Prime market of the Tokyo Stock Exchange (code 2175).[^1]
 
@@ -22,7 +22,7 @@ Kaipoke ({{< ja "カイポケ" "kaipoke" "Kaipoke" >}}) is cloud-based managemen
 | Published price range | ¥1,000–¥25,000 a month per service, excluding tax[^2] |
 | Free trial | 2 months[^3] |
 | Focus | Home-based services. SMS says Kaipoke's management-support product does not cover facility-type services such as group homes.[^1] |
-| Customer count | 62,300 offices and 27,600 corporations at the end of June 2026 (Kaipoke and Kabenashi Cloud ({{< ja "かべなしクラウド" "kabenashi kuraudo" "Kabenashi Cloud" >}}) combined, SMS figures)[^1] |
+| Customer count | 63,900 offices and 28,300 corporations at the end of September 2026 (Kaipoke and Kabenashi Cloud ({{< ja "かべなしクラウド" "kabenashi kuraudo" "Kabenashi Cloud" >}}) combined, SMS figures, reported 29 October 2026)[^12] |
 | LIFE | Outputs CSV that can be imported into LIFE (day-care functional-training documents)[^4] |
 | Claims to kokuho-ren | Electronic claim transmission included at no extra charge[^2] |
 | Care Plan Data Exchange | Supports standard 4.1, both import and export[^5]. Completed V4 vendor-test patterns D1–D7.[^6] |
@@ -64,8 +64,8 @@ SMS says Kaipoke's management-support product covers home-based offices: care ma
 
 All figures in this section are SMS's own. None is an independent market share.
 
-- **Customers.** At the end of June 2026, Kaipoke and Kabenashi Cloud together had **27,600** customer corporations and **62,300** customer offices. ARPA (average revenue per account) was **¥121,000** and ARR (annual recurring revenue) was **¥13.5 billion**.[^1]
-- **Segment results.** SMS's care and disability-welfare management-support segment had first-quarter revenue of **¥3,474 million**, up 9% on the year before.[^1]
+- **Customers.** At the end of September 2026, Kaipoke and Kabenashi Cloud together had **28,300** customer corporations and **63,900** customer offices (year-on-year +9% and +10%). ARPA (average revenue per account) was **¥123,000** (+4%) and ARR (annual recurring revenue) was **¥14.0 billion** (+14%). SMS reported these figures on 29 October 2026.[^12] At the end of June 2026 the same pair had 27,600 corporations and 62,300 offices, ARPA ¥121,000 and ARR ¥13.5 billion.[^1]
+- **Segment results.** SMS's care and disability-welfare management-support segment had first-half revenue of **¥7,193 million**, up 11% on the year before, and first-quarter revenue of **¥3,474 million**, up 9%.[^12][^1] SMS said new Kaipoke memberships were slower because care-office openings had slowed, and that it is still investing in Kaipoke Connect.[^12]
 - **SMS-defined shares.** SMS reports a "paid membership share" of **14%** among elderly-care and disability-care offices. It also reports a "home-care connection share" of **62%**, which it defines as paid plus free members among home-care offices. Its target for the year to March 2031 is **90% or more**. Both shares are SMS's own calculations.[^9]
 - **Home-visit nursing.** In March 2026, SMS said "Kaipoke Home-Visit Nursing" had passed **7,000** offices, which it described as more than a third of home-visit nursing stations nationwide.[^10]
 
@@ -87,6 +87,7 @@ Tako-San's view: Kaipoke competes on published, low, flat prices for home-based 
 
 ## Changelog
 
+- 2 Nov 2026: SMS H1 results (29 Oct 2026): 63,900 offices and 28,300 corporations at end-September; ARPA ¥123,000; ARR ¥14.0 billion; management-support H1 revenue ¥7,193 million
 - 12 Oct 2026: added the ENBASE / Stand LM partnership (17 September 2026)
 - 9 Oct 2026: first published
 
@@ -115,3 +116,5 @@ Tako-San's view: Kaipoke competes on published, low, flat prices for home-based 
 [^10]: SMS Co., Ltd. "Kaipoke Home-Visit Nursing Passes 7,000 Offices (「カイポケ訪問看護」導入事業所数が7,000件を突破)." Press release, 4 March 2026. https://www.bm-sms.co.jp/news-press/prs_20260304_kaipoke-houmonkango_7000/
 
 [^11]: SMS Co., Ltd. Release, 17 September 2026. TDnet PDF. https://www.nikkei.com/markets/ir/irftp/data/tdnr/tdnetg3/20260917/g4vauc/140120260917537668.pdf
+
+[^12]: SMS Co., Ltd. "FY Ending March 2027 First-Half Results Presentation (2027年3月期 上期 決算資料)." 29 October 2026. KPI slide (63,900 offices, 28,300 corporations, ARPA ¥123,000, ARR ¥14.0 billion) and management-support segment slide (revenue ¥7,193 million). https://www.bm-sms.co.jp/wp-content/uploads/2026/10/FY26_1H_presentation.pdf  Results notice: https://www.bm-sms.co.jp/wp-content/uploads/2026/10/FY26_1H_tanshin.pdf
