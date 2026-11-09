@@ -99,7 +99,11 @@ M3's notice says two M3 subsidiaries, Logic and CUC, already had transactions wi
 
 > **Update, 24 Oct 2026:** On 22 October 2026 Wiseman said that, for a serious PHP security vulnerability published on 21 October, it had finished safety checks and necessary measures on the cloud servers that hold customer data. It said no information leak or unauthorized access caused by that vulnerability had been confirmed.[^10]
 
-> **Update, 5 Nov 2026:** On 24 October 2026 a third party accessed the cloud environment for MeLL+professional ({{< ja "メルタス プロフェッショナル" "merutasu purofesshonaru" "MeLL+professional" >}}). Wiseman said it detected the access the same day, stopped that service and related products, invalidated the stolen credentials, blocked the path in, and reported to the Personal Information Protection Commission and other supervisors. It said no leak of personal information held in the service had been confirmed.[^11] A 4 November 2026 status note lists MeLL+professional back on 27 October, second-line and SOIN linkage on 29 October, MeLL+community on 30 October, and MeLL+family office and family apps on 31 October. Voice-record AI and the CareRepo portal were still in maintenance.[^12]
+> **Update, 27 Oct 2026:** On 24 October 2026 a third party accessed the cloud environment that runs MeLL+professional. Wiseman detected it the same day and stopped MeLL+professional, MeLL+community, MeLL+family (office system and family app), the voice-record AI option, the SOIN link, the {{< ja "ケアリポ" "kearipo" "Care-Repo" >}} care portal and second-line. It revoked the misused credentials, blocked the intrusion route and reported to regulators including the Personal Information Protection Commission. As of 26 October no leak of personal data held in the service was confirmed. Services will restart in stages once safety is confirmed.[^11]
+
+> **Update, 2 Nov 2026:** After the 24 October unauthorized access to MeLL+professional, Wiseman restarted MeLL+professional on 27 October, second-line and the SOIN link on 29 October, MeLL+community on 30 October, and MeLL+family (office system and family app) on 31 October. As of the 31 October notice, the voice-record AI option and the Care-Repo portal were still stopped.[^12][^13][^14][^15]
+
+> **Update, 5 Nov 2026:** On 24 October 2026 a third party accessed the cloud environment for MeLL+professional ({{< ja "メルタス プロフェッショナル" "merutasu purofesshonaru" "MeLL+professional" >}}). Wiseman said it detected the access the same day, stopped that service and related products, invalidated the stolen credentials, blocked the path in, and reported to the Personal Information Protection Commission and other supervisors. It said no leak of personal information held in the service had been confirmed.[^11] A 4 November 2026 status note lists MeLL+professional back on 27 October, second-line and SOIN linkage on 29 October, MeLL+community on 30 October, and MeLL+family office and family apps on 31 October. Voice-record AI and the CareRepo portal were still in maintenance.[^16]
 
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: going by their owners' own share claims, Wiseman and Honobono are both facility-heavy, licence-based packages. Wiseman now has a parent with an AI and medical-records business, and with other care services in its group (Logic and Elan, per M3). That combination could make the M3 group a stronger all-round competitor than Wiseman alone, especially for links between medical and care providers. The share figures come from the buyer's acquisition deck. I would cite them only as M3's claim. M3's own investor report says the deal took effect in July 2026, but I have not seen the exact day confirmed.
@@ -108,6 +112,8 @@ Tako-San's view: going by their owners' own share claims, Wiseman and Honobono a
 ## Changelog
 
 - 5 Nov 2026: noted the 24 Oct MeLL+professional unauthorized access, Wiseman's statement that no personal-information leak was confirmed, and the 4 Nov service-resumption list (voice-record AI and CareRepo still down)
+- 2 Nov 2026: noted staged MeLL+ restarts 27–31 Oct; voice-record AI and Care-Repo still down as of 31 Oct
+- 27 Oct 2026: noted Wiseman's 26 Oct notice of unauthorized access to MeLL+professional on 24 Oct; related services stopped; no personal-data leak confirmed as of 26 Oct
 - 24 Oct 2026: noted Wiseman's 22 Oct PHP-vulnerability notice; no leak or unauthorized access confirmed
 - 9 Oct 2026: added M3's statement that Wiseman was consolidated from July 2026, Wiseman's three-year results from M3's notice, and links to the new M3 group and Care-wing pages
 - 9 Oct 2026: first published
@@ -136,6 +142,14 @@ Tako-San's view: going by their owners' own share claims, Wiseman and Honobono a
 
 [^10]: Wiseman Co., Ltd. "Important: response to a PHP vulnerability in our services (重要：弊社サービスにおけるPHPの脆弱性への対応について)." 22 October 2026. https://www.wiseman.co.jp/news/corp/php-security-update-20261022/
 
-[^11]: Wiseman Co., Ltd. "Apology and notice concerning unauthorized access to MeLL+professional (「MeLL+professional（メルタス プロフェッショナル）」への不正アクセスの発生に関するお詫びとお知らせ)." 26 October 2026, covering an incident on 24 October 2026. Notice: https://www.wiseman.co.jp/news/corp/security-incident-20261026/  PDF: https://www.wiseman.co.jp/wp-content/uploads/2026/10/release_20261026.pdf
+[^11]: Wiseman Co., Ltd. 「MeLL+professional（メルタス プロフェッショナル）」への不正アクセスの発生に関するお詫びとお知らせ, 26 October 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261026/ PDF: https://www.wiseman.co.jp/wp-content/uploads/2026/10/release_20261026.pdf
 
-[^12]: Wiseman Co., Ltd. "Important: resumption of various services (updated 4 November 2026) (重要：各種サービスの再開について（2026年11月4日更新）)." 4 November 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261104/
+[^12]: Wiseman Co., Ltd. "Important: restart of MeLL+professional (重要：「MeLL+professional（メルタス プロフェッショナル）」のサービス再開について)." 27 October 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261027-2/
+
+[^13]: Wiseman Co., Ltd. "Important: restart of second-line and SOIN (重要：「second-line」及び「SOIN（そわん）連携」のサービス再開について)." 29 October 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261029/
+
+[^14]: Wiseman Co., Ltd. "Important: restart of MeLL+community (重要：「MeLL+community（メルタス コミュニティ）」のサービス再開について)." 30 October 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261030-2/
+
+[^15]: Wiseman Co., Ltd. "Important: restart of MeLL+family (重要：「MeLL+family（メルタス ファミリー）」のサービス再開について)." 31 October 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261031/
+
+[^16]: Wiseman Co., Ltd. "Important: resumption of various services (updated 4 November 2026) (重要：各種サービスの再開について（2026年11月4日更新）)." 4 November 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261104/
