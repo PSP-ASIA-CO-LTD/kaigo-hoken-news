@@ -1,7 +1,7 @@
 ---
 title: "The money, the workforce, and what 2027 and 2040 look like"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-05T07:00:00+07:00
+lastmod: 2026-11-08T07:00:00+07:00
 tags: ["japan", "long-term-care", "budget", "workforce"]
 summary: "What Japan spends on long-term care, the fiscal 2026 wage package, the path to the 2027 fee revision, and the 2040 population squeeze."
 series: "Japan LTC Basics"
@@ -64,6 +64,8 @@ Home-visit care's base fee is a known sore point going into 2027. Industry cover
 
 > **Update, 5 Nov 2026:** The 272nd meeting, on 28 October 2026, tabled specified-facility, registered-facility care support and regional-classification proposals. For specified-facility care ({{< ja "特定施設入居者生活介護" "tokutei shisetsu nyūkyosha seikatsu kaigo" "daily-life care for residents of specified facilities" >}}), MHLW proposed evaluating per-resident excretion-support plans and improvement, and promoting a shift from residential paid homes via case studies and a look at add-ons the external-service form cannot currently claim.[^22] For registered-facility care support ({{< ja "登録施設介護支援" "tōroku shisetsu kaigo shien" "registered-facility care support" >}}), the draft staffing is one full-time care manager per 44 users (49 if the office uses the Care Plan Data Exchange), plus a community-life counsellor who may be the same person; start after the paid-home registration transition ends.[^17] For regional classification ({{< ja "地域区分" "chiiki kubun" "regional classification (unit-price area)" >}}), the principle stays civil-servant regional allowance, with a municipal-choice transition through the end of fiscal 2029.[^18] The 273rd meeting, on 2 November 2026, tabled facility proposals: rewrite the special-nursing-home special outpatient-transport add-on ({{< ja "特別通院送迎加算" "tokubetsu tsūin sōgei kasan" "special outpatient-transport add-on" >}}) as a full dialysis-support evaluation, and count discharges to special nursing homes in the geriatric-health-facility home-return rate.[^23][^24] These are discussion proposals, not decisions.
 
+> **Update, 8 Nov 2026:** On 6 November 2026 the 274th Social Security Council Long-Term Care Benefits Subcommittee ({{< ja "介護給付費分科会" "kaigo kyūfuhī bunkakai" "Long-Term Care Benefits Subcommittee" >}}) tabled discussion proposals (not decisions) for FY2027: specified-area services ({{< ja "特定地域サービス" "tokutei chiiki sābisu" "specified-area services" >}}) in prefecture-designated depopulating areas, with municipal pre-registration expected, looser staffing rules, and fees the municipality may set;[^25] an optional bundled (flat-rate) monthly home-help fee ({{< ja "包括報酬" "hōkatsu hōshū" "bundled (flat-rate) fee" >}}) by care level, service content and visit frequency;[^26] new travel-cost add-ons for home help (only if the office stays on per-visit billing), home bathing, day care and care management, for offices not subject to the same-building reduction ({{< ja "同一建物減算" "dōitsu tatemono gensan" "same-building reduction" >}});[^26] extending the special-area add-on ({{< ja "特別地域加算" "tokubetsu chiiki kasan" "special-area add-on" >}}) and the small-office add-on to day services;[^27] formally recognising care-management satellite offices ({{< ja "サテライト事業所" "sateraito jigyōsho" "satellite office" >}}) with an add-on, and no separate files if records are kept electronically at the main office through a cloud system;[^27] accident-prevention duties for home-service offices (guideline, reporting and analysis, regular training, named officer; committee not compulsory; one-year transition);[^28] physical-restraint measures for day services, with a base-fee cut if missing;[^28] abolishing the reduction for having no BCP while keeping the duty to write a BCP;[^29] adding customer harassment to operating standards.[^30]
+
 ## People: the constraint that drives the software agenda
 
 MHLW summed the care-worker numbers that prefectures built from the 9th municipal plans:[^6]
@@ -98,6 +100,7 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 
 ## Changelog
 
+- 8 Nov 2026: Added an update note on the 274th meeting proposals on specified-area services, the bundled home-help fee, safety, BCP and harassment.
 - 5 Nov 2026: Added an update note on the 272nd meeting specified-facility, registered-facility care support and regional-classification proposals, and the 273rd meeting facility dialysis and home-return proposals.
 - 2 Nov 2026: Added an update note on the 272nd meeting registered-facility care-support and regional-grade drafts, and the 273rd meeting facility-add-on and dialysis drafts.
 - 27 Oct 2026: Added an update note on the 137th LTC Insurance Committee discussion of the 20% co-pay threshold and financial income.
@@ -156,3 +159,15 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 [^23]: Ministry of Health, Labour and Welfare. Material 1 (special nursing homes), Social Security Council Long-Term Care Benefits Subcommittee (273rd meeting), 2 November 2026. https://www.mhlw.go.jp/content/12300000/001765516.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76900.html
 
 [^24]: Ministry of Health, Labour and Welfare. Material 2 (geriatric health facilities), 273rd meeting, 2 November 2026. https://www.mhlw.go.jp/content/12300000/001765517.pdf
+
+[^25]: Ministry of Health, Labour and Welfare. Material 1-1, 人口減少・サービス需要の変化に応じたサービス提供体制の構築（改正法に基づく新たなサービスの枠組み） (new service framework under the amended law), Social Security Council Long-Term Care Benefits Subcommittee (274th meeting), 6 November 2026, p.9. https://www.mhlw.go.jp/content/12300000/001766774.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_77057.html
+
+[^26]: Ministry of Health, Labour and Welfare. Material 1-2 (new service framework: issues and draft responses), 274th meeting, 6 November 2026, pp.73 and 83. https://www.mhlw.go.jp/content/12300000/001766775.pdf
+
+[^27]: Ministry of Health, Labour and Welfare. Material 2 (add-ons for mountainous and other areas, efficiency, staff shortages), 274th meeting, 6 November 2026, pp.13 and 43. https://www.mhlw.go.jp/content/12300000/001766773.pdf
+
+[^28]: Ministry of Health, Labour and Welfare. Material 3 (elder-abuse prevention, safety and risk management), 274th meeting, 6 November 2026, pp.28 and 51. https://www.mhlw.go.jp/content/12300000/001766540.pdf
+
+[^29]: Ministry of Health, Labour and Welfare. Material 4 (business continuity in disasters), 274th meeting, 6 November 2026, p.20. https://www.mhlw.go.jp/content/12300000/001766541.pdf
+
+[^30]: Ministry of Health, Labour and Welfare. Material 5 (harassment at care sites), 274th meeting, 6 November 2026, p.18. https://www.mhlw.go.jp/content/12300000/001766559.pdf
