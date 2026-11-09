@@ -1,7 +1,7 @@
 ---
 title: "Private elderly housing in Japan: paid homes, serviced housing and who pays for care"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-02T07:00:00+07:00
+lastmod: 2026-11-05T07:00:00+07:00
 tags: ["japan", "long-term-care", "paid-homes", "serviced-housing", "policy", "guide"]
 summary: "Fee-charging homes for older people (care-included, residential and healthy-living types) and serviced housing for older people: the law and regulator behind each, how many there are, what insurance pays and what residents pay, the 'enclosure' problem, the 2026 registration law, operators on public data, and what it means for care software."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 9
 countries: ["Japan"]
 ---
 
-*Last updated: 2 Nov 2026*
+*Last updated: 5 Nov 2026*
 
 In Japan, many older people who need care live in private, fee-charging housing rather than at home or in a public care facility. Paid homes alone had capacity for about 950,000 people in mid-2024.[^9] Two legal forms cover this housing:
 
@@ -122,6 +122,8 @@ MHLW's timetable in the same document shows a 10th meeting around October 2026, 
 
 > **Update, 2 Nov 2026:** At the 272nd meeting of the Social Security Council Long-Term Care Benefits Subcommittee on 28 October 2026, MHLW tabled FY2027 drafts for registered-facility care support and its preventive version. Staffing would follow home-care support (a care manager) plus a community life counsellor ({{< ja "地域生活相談員" "chiiki seikatsu sōdan'in" "community life counsellor" >}}), with dual-hat allowed; existing home-care-support offices could count staff together. The {{< ja "登録施設サービス計画" "tōroku shisetsu sābisu keikaku" "registered-facility service plan" >}} would use information from the registered home as well as the usual assessment, and would record community-life consultation. The basic fee would use the home-care-support framework, adjusted for community-life consultation and congregate housing; the diminishing-returns rule would use the combined user count with home-care support, spread across registered-facility users so co-pays do not differ person by person. Start is assumed after the paid-home registration transition ends.[^19] For specified-facility daily-life care, MHLW proposed surveying residential-home conversions and studying which add-ons the external-service type cannot claim.[^20] These are discussion proposals, not decisions.
 
+> **Update, 5 Nov 2026:** The 272nd meeting of the Long-Term Care Benefits Subcommittee, on 28 October 2026, tabled fiscal 2027 fee-revision proposals for both sides of this split. For specified-facility care, MHLW proposed evaluating per-resident excretion-support plans and improvement, collecting and publicising cases of residential paid homes that moved to a specified-facility designation, and reviewing add-ons the external-service form cannot currently claim.[^20] For registered-facility care support, the draft is one full-time care manager per 44 users (49 if the office uses the Care Plan Data Exchange), plus a community-life counsellor ({{< ja "地域生活相談員" "chiiki seikatsu sōdan-in" "community-life counsellor" >}}) who may be the same person; the care plan would have to use information from the home and record community-life counselling. Basic fees would follow care-management fees, adjusted for the counselling duty and for congregate housing. Start is assumed after the paid-home registration transition ends, not necessarily in April 2027. These are discussion proposals, not decisions.[^19]
+
 ## Operators on public data
 
 No MHLW or MLIT source opened for this guide ranks paid-home operators. MHLW's care-service information system publishes open data on insurance-designated offices, by service type, twice a year.[^16] The files cover specified facilities in paid homes, care houses and serviced housing, including the external-service and community-based forms. They have no file for residential paid homes or for serviced housing without a designation.[^16]
@@ -153,6 +155,7 @@ Tako-San's view: private housing operators need software that public facilities 
 
 ## Changelog
 
+- 5 Nov 2026: added 272nd-meeting proposals for specified-facility excretion evaluation and residential-home shift, and for registered-facility care support staffing, records and start timing.
 - 2 Nov 2026: added the 272nd meeting drafts for registered-facility care-support staffing, plan items and fees, and for specified-facility conversion from residential homes.
 - 9 Oct 2026: first published
 
