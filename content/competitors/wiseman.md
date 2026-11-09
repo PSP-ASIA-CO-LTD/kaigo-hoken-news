@@ -99,6 +99,8 @@ M3's notice says two M3 subsidiaries, Logic and CUC, already had transactions wi
 
 > **Update, 24 Oct 2026:** On 22 October 2026 Wiseman said that, for a serious PHP security vulnerability published on 21 October, it had finished safety checks and necessary measures on the cloud servers that hold customer data. It said no information leak or unauthorized access caused by that vulnerability had been confirmed.[^10]
 
+> **Update, 27 Oct 2026:** On 24 October 2026 a third party accessed the cloud environment that runs MeLL+professional. Wiseman detected it the same day and stopped MeLL+professional, MeLL+community, MeLL+family (office system and family app), the voice-record AI option, the SOIN link, the {{< ja "ケアリポ" "kearipo" "Care-Repo" >}} care portal and second-line. It revoked the misused credentials, blocked the intrusion route and reported to regulators including the Personal Information Protection Commission. As of 26 October no leak of personal data held in the service was confirmed. Services will restart in stages once safety is confirmed.[^11]
+
 > **Update, 2 Nov 2026:** After the 24 October unauthorized access to MeLL+professional, Wiseman restarted MeLL+professional on 27 October, second-line and the SOIN link on 29 October, MeLL+community on 30 October, and MeLL+family (office system and family app) on 31 October. As of the 31 October notice, the voice-record AI option and the Care-Repo portal were still stopped.[^12][^13][^14][^15]
 
 {{< analysis title="Tako-San's take" >}}
@@ -108,6 +110,7 @@ Tako-San's view: going by their owners' own share claims, Wiseman and Honobono a
 ## Changelog
 
 - 2 Nov 2026: noted staged MeLL+ restarts 27–31 Oct; voice-record AI and Care-Repo still down as of 31 Oct
+- 27 Oct 2026: noted Wiseman's 26 Oct notice of unauthorized access to MeLL+professional on 24 Oct; related services stopped; no personal-data leak confirmed as of 26 Oct
 - 24 Oct 2026: noted Wiseman's 22 Oct PHP-vulnerability notice; no leak or unauthorized access confirmed
 - 9 Oct 2026: added M3's statement that Wiseman was consolidated from July 2026, Wiseman's three-year results from M3's notice, and links to the new M3 group and Care-wing pages
 - 9 Oct 2026: first published
@@ -135,6 +138,8 @@ Tako-San's view: going by their owners' own share claims, Wiseman and Honobono a
 [^9]: M3, Inc. "Company Presentation, Q1 Results for the Year Ending March 2027 (会社説明資料)." 6 August 2026, slide 29. https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/5QE1BL4hbahSXLuoXH8riz/a3ad90dbfebe33f0adb4da773f9c058d/20260806_Presentation_J.pdf
 
 [^10]: Wiseman Co., Ltd. "Important: response to a PHP vulnerability in our services (重要：弊社サービスにおけるPHPの脆弱性への対応について)." 22 October 2026. https://www.wiseman.co.jp/news/corp/php-security-update-20261022/
+
+[^11]: Wiseman Co., Ltd. 「MeLL+professional（メルタス プロフェッショナル）」への不正アクセスの発生に関するお詫びとお知らせ, 26 October 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261026/ PDF: https://www.wiseman.co.jp/wp-content/uploads/2026/10/release_20261026.pdf
 
 [^12]: Wiseman Co., Ltd. "Important: restart of MeLL+professional (重要：「MeLL+professional（メルタス プロフェッショナル）」のサービス再開について)." 27 October 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261027-2/
 
