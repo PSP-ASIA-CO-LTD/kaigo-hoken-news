@@ -1,7 +1,7 @@
 ---
 title: "The money, the workforce, and what 2027 and 2040 look like"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-08T07:00:00+07:00
+lastmod: 2026-11-11T07:00:00+07:00
 tags: ["japan", "long-term-care", "budget", "workforce"]
 summary: "What Japan spends on long-term care, the fiscal 2026 wage package, the path to the 2027 fee revision, and the 2040 population squeeze."
 series: "Japan LTC Basics"
@@ -9,6 +9,8 @@ series_order: 5
 categories: ["Budget & Policy"]
 countries: ["Japan"]
 ---
+
+*Last updated: 11 Nov 2026*
 
 The care system is already one of the largest public programmes in Japan, and the official view is that it gets harder from here: more people over 85, fewer workers, and a fee schedule that cannot rise as fast as wages in other industries.
 
@@ -66,6 +68,8 @@ Home-visit care's base fee is a known sore point going into 2027. Industry cover
 
 > **Update, 8 Nov 2026:** On 6 November 2026 the 274th Social Security Council Long-Term Care Benefits Subcommittee ({{< ja "介護給付費分科会" "kaigo kyūfuhī bunkakai" "Long-Term Care Benefits Subcommittee" >}}) tabled discussion proposals (not decisions) for FY2027: specified-area services ({{< ja "特定地域サービス" "tokutei chiiki sābisu" "specified-area services" >}}) in prefecture-designated depopulating areas, with municipal pre-registration expected, looser staffing rules, and fees the municipality may set;[^25] an optional bundled (flat-rate) monthly home-help fee ({{< ja "包括報酬" "hōkatsu hōshū" "bundled (flat-rate) fee" >}}) by care level, service content and visit frequency;[^26] new travel-cost add-ons for home help (only if the office stays on per-visit billing), home bathing, day care and care management, for offices not subject to the same-building reduction ({{< ja "同一建物減算" "dōitsu tatemono gensan" "same-building reduction" >}});[^26] extending the special-area add-on ({{< ja "特別地域加算" "tokubetsu chiiki kasan" "special-area add-on" >}}) and the small-office add-on to day services;[^27] formally recognising care-management satellite offices ({{< ja "サテライト事業所" "sateraito jigyōsho" "satellite office" >}}) with an add-on, and no separate files if records are kept electronically at the main office through a cloud system;[^27] accident-prevention duties for home-service offices (guideline, reporting and analysis, regular training, named officer; committee not compulsory; one-year transition);[^28] physical-restraint measures for day services, with a base-fee cut if missing;[^28] abolishing the reduction for having no BCP while keeping the duty to write a BCP;[^29] adding customer harassment to operating standards.[^30]
 
+> **Update, 11 Nov 2026:** On 9 November 2026 the 138th {{< ja "社会保障審議会介護保険部会" "shakai hoshō shingikai kaigo hoken bukai" "Social Security Council, LTC Insurance Committee" >}} was shown criteria for specified areas ({{< ja "特定地域" "tokutei chiiki" "specified areas" >}}). (1) Areas covered by the special-area add-on or by remote-island-equivalent services, whether the designation covers the whole municipality or part of it. (2) Otherwise, a whole municipality where people aged 75 or over number fewer than 5 per km², or fewer than 1,000 and falling, or part of a municipality (a former municipality, a ward or a local autonomous district) under 5 per km². (3) Otherwise, areas where services on the designated-provider basis can no longer be maintained, for example where there is no office of a service type, or a sole office is planning to close.[^31] MHLW's reference count is 356 municipalities (20.5%) that meet the criteria on a whole-municipality basis: 299 wholly in special-add-on areas, 40 newly on the density test and 17 newly on the population test.[^32] Prefectures list the qualifying municipalities, municipalities decide whether they want designation, and the prefecture designates by rule, reports to the national government and publishes the designation. Designation may happen part-way through the 10th plan period and is reviewed when the plan is revised.[^33] The specified-area home-service project ({{< ja "特定地域居宅サービス等事業" "tokutei chiiki kyotaku sābisu-tō jigyō" "specified-area home-service project" >}}) starts in April 2027.[^34] Its funding cap would be set separately from other community support projects ({{< ja "地域支援事業" "chiiki shien jigyō" "community support projects" >}}). The cap might take account of benefit spending before the project is introduced, extra costs in remote areas, and change in the older population. The method is still under consideration, with individual consultation for special cases such as remote islands.[^35]
+
 ## People: the constraint that drives the software agenda
 
 MHLW summed the care-worker numbers that prefectures built from the 9th municipal plans:[^6]
@@ -100,6 +104,7 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 
 ## Changelog
 
+- 11 Nov 2026: specified-area criteria, designation process and project-fund cap approach from the 138th Long-Term Care Insurance Subcommittee.
 - 8 Nov 2026: Added an update note on the 274th meeting proposals on specified-area services, the bundled home-help fee, safety, BCP and harassment.
 - 5 Nov 2026: Added an update note on the 272nd meeting specified-facility, registered-facility care support and regional-classification proposals, and the 273rd meeting facility dialysis and home-return proposals.
 - 2 Nov 2026: Added an update note on the 272nd meeting registered-facility care-support and regional-grade drafts, and the 273rd meeting facility-add-on and dialysis drafts.
@@ -171,3 +176,13 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 [^29]: Ministry of Health, Labour and Welfare. Material 4 (business continuity in disasters), 274th meeting, 6 November 2026, p.20. https://www.mhlw.go.jp/content/12300000/001766541.pdf
 
 [^30]: Ministry of Health, Labour and Welfare. Material 5 (harassment at care sites), 274th meeting, 6 November 2026, p.18. https://www.mhlw.go.jp/content/12300000/001766559.pdf
+
+[^31]: Ministry of Health, Labour and Welfare. Material 1, 特定地域の基準案について（報告） (draft criteria for specified areas), Social Security Council LTC Insurance Committee (138th meeting), 9 November 2026, p.16. https://www.mhlw.go.jp/content/12300000/001766402.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_77213.html
+
+[^32]: Ministry of Health, Labour and Welfare. Material 1 (as above), p.13. https://www.mhlw.go.jp/content/12300000/001766402.pdf
+
+[^33]: Ministry of Health, Labour and Welfare. Material 1 (as above), p.17. https://www.mhlw.go.jp/content/12300000/001766402.pdf
+
+[^34]: Ministry of Health, Labour and Welfare. Material 2, 特定地域居宅サービス等事業について (specified-area home-service project), 138th meeting, 9 November 2026, p.22. https://www.mhlw.go.jp/content/12300000/001766403.pdf
+
+[^35]: Ministry of Health, Labour and Welfare. Material 2 (as above), p.21. https://www.mhlw.go.jp/content/12300000/001766403.pdf
