@@ -1,7 +1,7 @@
 ---
 title: "Kaipoke (SMS Co., Ltd.): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-02T07:00:00+07:00
+lastmod: 2026-11-11T07:00:00+07:00
 tags: ["japan", "competitors", "kaipoke", "software"]
 summary: "Kaipoke's published per-office prices, its features, who it targets, SMS's own scale and share figures, and how it handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 1
 countries: ["Japan"]
 ---
 
-*Last updated: 2 Nov 2026*
+*Last updated: 11 Nov 2026*
 
 Kaipoke ({{< ja "カイポケ" "kaipoke" "Kaipoke" >}}) is cloud-based management-support software for care and disability-welfare offices. It is run by SMS Co., Ltd. ({{< ja "株式会社エス・エム・エス" "kabushiki-gaisha esu emu esu" "SMS Co., Ltd." >}}), which is listed on the Prime market of the Tokyo Stock Exchange (code 2175).[^1]
 
@@ -55,6 +55,7 @@ Several services at the same address can be bundled at a special price, quoted o
   - RPA that automatically transfers AI-generated data into Kaipoke
 - **"Kaipoke Connect".** In its April 2026 value-creation roadmap, SMS describes a plan to turn Kaipoke into a network hub linking offices, other vendors' software and medical institutions.[^9]
 - **AI records from conversations (Stand LM).** On 17 September 2026, SMS announced a strategic partnership with ENBASE Inc. ENBASE's AI assistant Stand LM ({{< ja "スタンドLM" "sutando eru emu" "Stand LM" >}}) creates records from conversations during care; after a review screen, records are sent to Kaipoke with one tap. It starts with home-visit nursing stations (nursing record II) and is to expand in turn to home-visit care, care management and welfare-equipment rental offices. Stand LM launched in June 2025.[^11]
+- **User community study sessions (November 2026).** On 6 November 2026 SMS said Kaipoke's user community "Kaipoke Growth Partners" ({{< ja "カイポケグロースパートナーズ" "kaipoke gurōsu pātonāzu" "Kaipoke Growth Partners" >}}), founded in 2025, would hold study sessions and meet-ups nationwide, co-planned with members. The sessions start with BCP (business continuity) and later cover AI for efficiency. An online BCP session on 1 October 2026 drew 114 care providers, and a BCP workshop for home-visit nursing stations in Hachioji, Tokyo was set for 12 November 2026.[^13]
 
 ## Target customers
 
@@ -87,6 +88,7 @@ Tako-San's view: Kaipoke competes on published, low, flat prices for home-based 
 
 ## Changelog
 
+- 11 Nov 2026: Kaipoke Growth Partners nationwide study sessions, starting with BCP.
 - 2 Nov 2026: SMS H1 results (29 Oct 2026): 63,900 offices and 28,300 corporations at end-September; ARPA ¥123,000; ARR ¥14.0 billion; management-support H1 revenue ¥7,193 million
 - 12 Oct 2026: added the ENBASE / Stand LM partnership (17 September 2026)
 - 9 Oct 2026: first published
@@ -118,3 +120,5 @@ Tako-San's view: Kaipoke competes on published, low, flat prices for home-based 
 [^11]: SMS Co., Ltd. Release, 17 September 2026. TDnet PDF. https://www.nikkei.com/markets/ir/irftp/data/tdnr/tdnetg3/20260917/g4vauc/140120260917537668.pdf
 
 [^12]: SMS Co., Ltd. "FY Ending March 2027 First-Half Results Presentation (2027年3月期 上期 決算資料)." 29 October 2026. KPI slide (63,900 offices, 28,300 corporations, ARPA ¥123,000, ARR ¥14.0 billion) and management-support segment slide (revenue ¥7,193 million). https://www.bm-sms.co.jp/wp-content/uploads/2026/10/FY26_1H_presentation.pdf  Results notice: https://www.bm-sms.co.jp/wp-content/uploads/2026/10/FY26_1H_tanshin.pdf
+
+[^13]: SMS Co., Ltd. "Kaipoke to hold study sessions for care providers nationwide through its user community 'Kaipoke Growth Partners' (カイポケ、ユーザーコミュニティ「カイポケグロースパートナーズ」を通じ、介護事業者向け勉強会を全国で順次開催)." Press release, PR TIMES, 6 November 2026. https://prtimes.jp/main/html/rd/p/000000486.000013298.html
