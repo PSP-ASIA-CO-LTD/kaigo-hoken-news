@@ -1,7 +1,7 @@
 ---
 title: "Foreign care workers in Japan and multilingual care software"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-10T20:30:00+07:00
+lastmod: 2026-11-14T07:00:00+07:00
 tags: ["japan", "long-term-care", "workforce", "foreign-workers", "multilingual", "policy", "guide"]
 summary: "The four visa routes into Japanese care work (EPA, the care residence status, Technical Intern Training and Specified Skilled Worker (i)), the move to the Employment for Skill Development system in April 2027, numbers by route and country (including Thailand), Japanese-language rules, what foreign staff may do, MHLW money for translation tools and multilingual care-record software, and which profiled vendors show a multilingual staff screen."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 10
 countries: ["Japan"]
 ---
 
-*Last updated: 10 Oct 2026*
+*Last updated: 14 Nov 2026*
 
 Japan admits foreign care workers through four routes. MHLW lists them as the Economic Partnership Agreement (EPA) route, the care residence status ({{< ja "在留資格「介護」" "zairyū shikaku 'kaigo'" "residence status 'care'" >}}), Technical Intern Training ({{< ja "技能実習" "ginō jisshū" "Technical Intern Training" >}}) and Specified Skilled Worker (i) ({{< ja "特定技能1号" "tokutei ginō ichi-gō" "Specified Skilled Worker (i)" >}}).[^1] A fifth system, Employment for Skill Development ({{< ja "育成就労" "ikusei shūrō" "Employment for Skill Development" >}}), replaces Technical Intern Training on 1 April 2027.[^7][^8]
 
@@ -156,10 +156,12 @@ The table records what each vendor's own site or release says. A "not found" ent
 | Honobono NEXT (ND Software) | Yes, as an option. The Care Palette record app, used with Honobono NEXT, has an optional multilingual app that translates Japanese input into Vietnamese, Myanmar, Chinese and English, with example sentences. A hiragana display of screen items is available without the option[^17] | Japanese plus 4[^17] | Current product page[^17] |
 | Kanamic | Announced. A 2 April 2018 release says Kanamic's tablet care-record system for residential settings added Japanese, English, Chinese, Vietnamese and Burmese, shown side by side with Japanese[^18] | Japanese plus 4[^18] | 2018; current status not confirmed on today's product pages[^18][^24] |
 | Wiseman | Not found. Wiseman instead offers a foreign-worker referral and retention service, with the SSW referral operated by PERSOL Global Workforce[^19], and held a webinar on ICT for foreign staff on 21 Aug 2025[^25] | — | Current pages[^19][^25] |
-| Kaipoke (SMS) | Not found[^20] | — | Current product site[^20] |
+| Kaipoke (SMS) | Not found.[^20] SMS instead launched a referral service for SSW care workers, "Kaigo Job Global", on 13 November 2026[^28] | — | Current product site[^20]; release of 13 Nov 2026[^28] |
 | Rehab Cloud | Not found[^21] | — | Current product site[^21] |
 | ZEST | Not found[^22] | — | Current product site[^22] |
 | Care-wing (Logic) | Not found. The site shows smartphone and IC-tag recording and voice input[^23] | — | Current product site[^23] |
+
+**Recruitment services from software vendors.** On 13 November 2026 SMS, the company behind Kaipoke, launched "Kaigo Job Global" ({{< ja "カイゴジョブグローバル" "kaigo jobu gurōbaru" "Kaigo Job Global" >}}), a referral service for Specified Skilled Worker care staff.[^28] It starts in Tokyo and the three neighbouring prefectures and covers two groups: foreign staff already working in Japanese care who want to change jobs, and people trained in Japanese and care abroad, starting with an Indonesian school.[^28] Support after hiring, which the law requires for SSW (i) workers, is provided through partner registered support organisations ({{< ja "登録支援機関" "tōroku shien kikan" "registered support organisation" >}}). SMS says it plans to register as one itself.[^28] SMS also links the service to its own school for care qualifications, up to the national certified care worker exam.[^28] Wiseman runs a similar referral service with a partner (see the table).[^19]
 
 For a full profile of each vendor, see the [Competitors]({{< relref "competitors" >}}) section. The [feature matrix]({{< relref "competitors/feature-matrix" >}}) has a "Multilingual staff app" row.
 
@@ -169,6 +171,7 @@ Tako-San's view: for a Thai vendor, this topic matters more for the product than
 
 ## Changelog
 
+- 14 Nov 2026: SMS (Kaipoke) launches the Kaigo Job Global referral service for SSW care workers
 - 10 Oct 2026: transitional measure now runs to FY2031 graduates; link to the care-worker training guide
 - 9 Oct 2026: first published
 
@@ -229,3 +232,5 @@ Tako-San's view: for a Thai vendor, this topic matters more for the product than
 [^26]: Social Welfare Promotion and Examination Center. "Transitional registration for graduates of training schools from 1 April 2017 to 31 March 2032 (【経過措置登録】平成29年4月1日から令和14年3月31日までに介護福祉士養成施設を卒業した方の介護福祉士経過措置登録について)." https://www.sssc.or.jp/touroku/info/info_keika.html
 
 [^27]: Ministry of Health, Labour and Welfare. "Overview of the Act amending the Social Welfare Act and related laws (社会福祉法等の一部を改正する法律の概要について)," item 2(2), pp. 1 and 12. https://www.mhlw.go.jp/content/001717214.pdf
+
+[^28]: SMS Co., Ltd. "SMS launches 'Kaigo Job Global', a referral service for foreign care workers (エス・エム・エス、介護分野の外国人材紹介「カイゴジョブグローバル」提供開始～国内外の外国人材の紹介から入職後の定着までワンストップで支援～)." Press release, 13 November 2026. https://www.bm-sms.co.jp/news-press/prs_20261113_kaigojob_global/
