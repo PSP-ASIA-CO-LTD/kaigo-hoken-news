@@ -1,7 +1,7 @@
 ---
 title: "Care Plan Data Exchange: Japan's care-plan pipe and the 2027 move to the Kaigo WEB Service"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-08T07:00:00+07:00
+lastmod: 2026-11-17T07:00:00+07:00
 tags: ["japan", "long-term-care", "care-plan", "software", "guide"]
 summary: "How care plans move between care managers and service providers as data, the fees and add-ons tied to it, and the January 2027 move into the Kaigo WEB Service."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 2
 countries: ["Japan"]
 ---
 
-*Last updated: 8 Nov 2026*
+*Last updated: 17 Nov 2026*
 
 Every month, a care manager's office and the service providers it works with exchange care plans ({{< ja "ケアプラン" "kea puran" "care plan" >}}) and provision tables ({{< ja "サービス提供票" "sābisu teikyō-hyō" "service provision table" >}}). The Care Plan Data Exchange ({{< ja "ケアプランデータ連携システム" "kea puran dēta renkei shisutemu" "care plan data exchange system" >}}) lets them send these documents as data instead of on paper or by fax. The National Health Insurance Central Association ({{< ja "国保中央会" "kokuho chūō-kai" "Kokuho Chūōkai" >}}) runs it.[^1] This guide explains how it works, what money depends on it, and what changes when it moves into the Kaigo WEB Service in 2027.
 
@@ -105,6 +105,8 @@ Home-visit care is an example of what the upper tier is worth:[^13]
 - tier Ⅰイ: **27.0%**; tier Ⅰロ: **28.7%**
 - tier Ⅱイ: **24.9%**; tier Ⅱロ: **26.6%**
 
+MHLW's fiscal 2026 survey of care workers' pay, released on 16 November 2026, asked offices such as home nursing, home rehabilitation and care management why they had not applied for the fiscal 2025 wage and workplace subsidy. Among the top three answers, 20.2% said they had not joined the exchange, or did not know that a pledge to join was enough to apply (multiple answers).[^19] For fiscal 2027, MHLW proposed (a proposal, not a decision) to list the exchange among the tools that would earn a new reward for home, day and care-management offices, alongside care-record software, AI document tools and tablets for visiting staff. It also proposed to spread the exchange further and to study AI support for writing care plans.[^20]
+
 ### 3. Software subsidies
 
 Under the fiscal 2026 care-technology adoption subsidy, home-care software qualifies only if both Kokuho Chūōkai's vendor test results and MHLW's care-software function survey show two things: CSV input and output under the care-plan standard, and a support system for using the exchange.[^14] MHLW publishes the survey results on its care-technology page. The current edition is dated 24 August 2026.[^15]
@@ -129,6 +131,7 @@ Tako-San's view: the exchange has turned from an optional fax replacement into a
 
 ## Changelog
 
+- 17 Nov 2026: added the 16 Nov 2026 pay-survey finding on offices that had not joined the exchange, and the FY2027 proposal listing the exchange among tools for a new home and day services reward.
 - 8 Nov 2026: added the 2–6 Nov 2026 connection trouble and its reported fix.
 - 5 Nov 2026: added 2 Nov 2026 help-desk move to the Kaigo Kiban Portal (call centre 0120-697-312 from January 2027; November hours and form change).
 - 18 Oct 2026: added 16 Oct 2026 seminar archive video and Q&A.
@@ -174,3 +177,7 @@ Tako-San's view: the exchange has turned from an optional fax replacement into a
 [^17]: Care Plan Data Exchange Help Desk. "Notice of a change to the Care Plan Data Exchange Help Desk enquiry window (ケアプランデータ連携システム ヘルプデスクお問い合わせ窓口変更のお知らせ)," 2 November 2026. https://www.careplan-renkei-support.jp/
 
 [^18]: Care Plan Data Exchange Help Desk. 「ケアプランデータ連携システムに接続しづらい事象について」, posted 2 November 2026 10:20, updated 6 November 2026 17:00 (JST). https://www.careplan-renkei-support.jp/
+
+[^19]: Ministry of Health, Labour and Welfare. Material 3, 令和８年度介護従事者処遇状況等調査結果のポイント（案） (FY2026 survey on care workers' pay: key points, draft), 45th meeting of the Survey Committee on Care Business Management, 16 November 2026, PDF p.5. https://www.mhlw.go.jp/content/12300000/001769458.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_77357.html
+
+[^20]: Ministry of Health, Labour and Welfare. Material 2, 介護現場における生産性向上等の推進 (promoting productivity in care settings), Social Security Council Long-Term Care Benefit Costs Subcommittee (275th meeting), 16 November 2026, PDF pp.37–38. https://www.mhlw.go.jp/content/12300000/001769518.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_77279.html
