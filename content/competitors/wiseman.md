@@ -1,7 +1,7 @@
 ---
 title: "Wiseman (M3 group): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-05T07:00:00+07:00
+lastmod: 2026-11-20T07:00:00+07:00
 tags: ["japan", "competitors", "wiseman", "m3", "software"]
 summary: "Wiseman's five-year licence model, its care and medical products, M3's June 2026 acquisition and M3's share claims, and how Wiseman handles LIFE, claims and the Care Plan Data Exchange."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 4
 countries: ["Japan"]
 ---
 
-*Last updated: 5 Nov 2026*
+*Last updated: 20 Nov 2026*
 
 Wiseman ({{< ja "ワイズマン" "waizuman" "Wiseman" >}}) is a software company based in Morioka, Iwate Prefecture. Founded in June 1983, it develops, sells and supports systems for care and welfare offices, medical institutions and local governments.[^1] On **5 June 2026**, M3, Inc. ({{< ja "エムスリー株式会社" "emu surī kabushiki-gaisha" "M3, Inc." >}}, TSE Prime 2413) signed an agreement to buy all of Wiseman's shares. The transfer was scheduled for **1 July 2026**.[^1][^2] M3's Report for Investors 2026, dated 30 September 2026, says Wiseman was consolidated as a subsidiary "from July" 2026. None of the documents we opened gives the exact day.[^7] Our page on [the M3 group in care]({{< relref "m3-group" >}}) covers the deal terms and M3's other care companies.
 
@@ -105,12 +105,15 @@ M3's notice says two M3 subsidiaries, Logic and CUC, already had transactions wi
 
 > **Update, 5 Nov 2026:** On 24 October 2026 a third party accessed the cloud environment for MeLL+professional ({{< ja "メルタス プロフェッショナル" "merutasu purofesshonaru" "MeLL+professional" >}}). Wiseman said it detected the access the same day, stopped that service and related products, invalidated the stolen credentials, blocked the path in, and reported to the Personal Information Protection Commission and other supervisors. It said no leak of personal information held in the service had been confirmed.[^11] A 4 November 2026 status note lists MeLL+professional back on 27 October, second-line and SOIN linkage on 29 October, MeLL+community on 30 October, and MeLL+family office and family apps on 31 October. Voice-record AI and the CareRepo portal were still in maintenance.[^16]
 
+> **Update, 20 Nov 2026:** Wiseman's 17 November status note says the voice-record AI option restarted that day. The {{< ja "ケアリポ" "kearipo" "Care-Repo" >}} portal was still in maintenance.[^17]
+
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: going by their owners' own share claims, Wiseman and Honobono are both facility-heavy, licence-based packages. Wiseman now has a parent with an AI and medical-records business, and with other care services in its group (Logic and Elan, per M3). That combination could make the M3 group a stronger all-round competitor than Wiseman alone, especially for links between medical and care providers. The share figures come from the buyer's acquisition deck. I would cite them only as M3's claim. M3's own investor report says the deal took effect in July 2026, but I have not seen the exact day confirmed.
 {{< /analysis >}}
 
 ## Changelog
 
+- 20 Nov 2026: noted that voice-record AI restarted on 17 Nov; Care-Repo still in maintenance.
 - 5 Nov 2026: noted the 24 Oct MeLL+professional unauthorized access, Wiseman's statement that no personal-information leak was confirmed, and the 4 Nov service-resumption list (voice-record AI and CareRepo still down)
 - 2 Nov 2026: noted staged MeLL+ restarts 27–31 Oct; voice-record AI and Care-Repo still down as of 31 Oct
 - 27 Oct 2026: noted Wiseman's 26 Oct notice of unauthorized access to MeLL+professional on 24 Oct; related services stopped; no personal-data leak confirmed as of 26 Oct
@@ -153,3 +156,5 @@ Tako-San's view: going by their owners' own share claims, Wiseman and Honobono a
 [^15]: Wiseman Co., Ltd. "Important: restart of MeLL+family (重要：「MeLL+family（メルタス ファミリー）」のサービス再開について)." 31 October 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261031/
 
 [^16]: Wiseman Co., Ltd. "Important: resumption of various services (updated 4 November 2026) (重要：各種サービスの再開について（2026年11月4日更新）)." 4 November 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261104/
+
+[^17]: Wiseman Co., Ltd. "Important: resumption of various services (updated 17 November 2026) (重要：各種サービスの再開について（2026年11月17日更新）)." 17 November 2026. https://www.wiseman.co.jp/news/corp/security-incident-20261104/

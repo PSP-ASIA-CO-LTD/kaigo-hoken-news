@@ -1,7 +1,7 @@
 ---
 title: "Who does what: the 13 roles around a home-care user, and the records each one creates"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-05T07:00:00+07:00
+lastmod: 2026-11-20T07:00:00+07:00
 tags: ["japan", "long-term-care", "roles", "care-manager", "home-visit-care", "guide"]
 summary: "The people and bodies involved in Japanese home care, from the user and family to the care manager, service coordinator, helpers, nurses, doctors, the municipality, the kokuho-ren and MHLW: their legal duties, and the records and data those duties create."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 4
 countries: ["Japan"]
 ---
 
-*Last updated: 5 Nov 2026*
+*Last updated: 20 Nov 2026*
 
 Japanese long-term care is a chain of people and bodies, each with duties set in law. A care-software product does not serve "a care office". It serves particular roles inside and around that office, and each role has a legal job to do and leaves records behind. This guide lists 13 roles around a user of home-based services. For each one it gives what the rules require and the records or data that requirement creates. The [monthly cycle guide]({{< relref "monthly-cycle-plan-to-payment" >}}) shows how these roles hand work to each other over a month.
 
@@ -54,12 +54,15 @@ Providers report business information (revenue, costs and other items set by min
 
 > **Update, 5 Nov 2026:** Vol.1549 (26 October 2026, 老高発1026第1号) amends the 31 January 2000 notice on what welfare equipment and housing renovation insurance will pay, from **1 February 2027**. Where a comms function cannot be split from the device: alerts that help maintain, repair or track listed power-assist standard wheelchairs, ordinary powered wheelchairs, electric-assist attachments, special beds and dementia wander-alert devices stay payable; a wander-alert device that sends location to family or neighbours via a dedicated portable receiver also stays payable; a product whose comms function notifies health-status changes is non-payable as a whole. Comms fees, receiver costs and network setup stay outside the benefit. MHLW may hear makers and rental offices on products with a monthly average of 100 or more rentals about prices that fold in those private comms costs.[^19]
 
+> **Update, 20 Nov 2026:** At the 276th meeting MHLW proposed, for FY2027, that every insurer, including those that have not delegated payment, send {{< ja "特定福祉用具販売" "tokutei fukushi yōgu hanbai" "specific welfare-equipment sales" >}} benefit records to the kokuho-ren, so the rental-or-sale choice system can be analysed nationwide, and that extra items be considered only after that analysis.[^20] A product whose average monthly rentals fall below 100 would keep its current price cap, with no further revision.[^21] Monitoring at least every six months would cover rental items outside the choice system, and, after a transition period, one welfare-equipment adviser would have a cap on users. The cap number was not set.[^22] For the {{< ja "ターミナルケアマネジメント加算" "tāminaru kea manejimento kasan" "terminal care-management add-on" >}}, MHLW proposed at least one home visit, plus sharing what was found and doing the needed coordination, in place of two visits timed to the day of death.[^23] These are proposals, not decisions.
+
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: read down the right-hand column and the software brief writes itself. The care manager and service coordinator produce plans that must stay consistent with each other. The helper produces one record per visit that becomes the claim, so it has to be quick to enter on a phone by a workforce whose average age is over 54. Foreign workers now need the same app in their own language, plus an emergency channel. The family has no legal record of its own, but it is in the assessment and the meetings. A product that gives the family a read-only view is useful, though not required. The kokuho-ren and the municipality are not customers, but their formats and deadlines decide whether the office gets paid. In my view the two roles that decide whether a new product wins are the service coordinator, who carries the rostering and the plan, and the helper, who has to put up with the app every day.
 {{< /analysis >}}
 
 ## Changelog
 
+- 20 Nov 2026: added 276th-meeting proposals on welfare-equipment sales records, price caps under 100 rentals a month, six-month monitoring, an adviser caseload cap, and the terminal care-management visit rule.
 - 5 Nov 2026: added Vol.1549 (welfare-equipment comms-function rules from 1 February 2027).
 - 24 Oct 2026: added Vol.1548 (national accident-reporting system, around April 2027) and Vol.1547 (welfare-equipment sales and housing-renovation payment records to the kokuho-ren / national database, planned from April 2028).
 - 21 Oct 2026: added 271st-meeting care-manager proposals (office manager requirement, online monitoring, mandatory training and reduction, preventive care management caseload).
@@ -107,3 +110,11 @@ Tako-San's view: read down the right-hand column and the software brief writes i
 [^18]: Ministry of Health, Labour and Welfare, Health and Welfare Bureau for the Elderly. 介護保険最新情報 Vol.1547 (considering a revision of the LTC insurance system standard specification for analysis of specific welfare-equipment sales and housing-renovation benefits), 21 October 2026. https://www.mhlw.go.jp/content/001761469.pdf
 
 [^19]: Ministry of Health, Labour and Welfare, Health and Welfare Bureau for the Elderly, Elderly Support Division. 「介護保険の給付対象となる福祉用具及び住宅改修の取扱いについて」の一部改正について, 老高発1026第1号, Care Insurance Latest Information Vol.1549, 26 October 2026, applies from 1 February 2027. https://www.mhlw.go.jp/content/001762862.pdf  Listing page: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/index_00010.html
+
+[^20]: Ministry of Health, Labour and Welfare. Material 1, 福祉用具・住宅改修 (welfare equipment and housing renovation), Social Security Council Long-Term Care Benefit Costs Subcommittee (276th meeting), 20 November 2026, PDF p.16. https://www.mhlw.go.jp/content/12300000/001771221.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_77201.html
+
+[^21]: Ministry of Health, Labour and Welfare. Material 1 (as above), PDF p.22. https://www.mhlw.go.jp/content/12300000/001771221.pdf
+
+[^22]: Ministry of Health, Labour and Welfare. Material 1 (as above), PDF p.37. https://www.mhlw.go.jp/content/12300000/001771221.pdf
+
+[^23]: Ministry of Health, Labour and Welfare. Material 2, 医療・介護連携、人生の最終段階の医療・介護 (medical-care coordination and end-of-life care), 276th meeting, 20 November 2026, PDF p.58. https://www.mhlw.go.jp/content/12300000/001771220.pdf

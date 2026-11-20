@@ -1,7 +1,7 @@
 ---
 title: "Care-wing (Logic, M3 group): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T09:00:00+07:00
+lastmod: 2026-11-20T07:00:00+07:00
 tags: ["japan", "competitors", "care-wing", "logic", "m3", "home-visit-care", "software"]
 summary: "Care-wing, the smartphone-and-IC-tag records system for home-visit care and nursing that M3 bought in 2022: how it is priced, what it does, the billing software it links to, its office count, and its LIFE and Care Plan Data Exchange status."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 10
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 20 Nov 2026*
 
 Care-wing ({{< ja "Care-wing 介護の翼" "kea uingu kaigo no tsubasa" "Care-wing, 'wings of care'" >}}) is a records and office-management system for home-visit care and home-visit nursing offices. Staff touch a smartphone to an IC tag at the user's home to confirm the day's tasks and create the care record without typing.[^1][^2] It is a **records** system. Care-wing does not make insurance claims itself; it passes actuals to linked billing software.[^3] The vendor is Logic Inc. ({{< ja "株式会社ロジック" "kabushiki-gaisha rojikku" "Logic Inc." >}}) of Kanazawa, Ishikawa Prefecture. Logic has been a subsidiary of M3, Inc. since **1 April 2022**.[^4][^5] For the wider group, see our page on [the M3 group in care]({{< relref "m3-group" >}}).
 
@@ -54,6 +54,8 @@ Logic's FAQ says Care-wing "on its own cannot make long-term care insurance clai
 
 ZEST, the rostering and routing tool, lists Care-wing among the systems it links with.[^16]
 
+> **Update, 20 Nov 2026:** ZEST said that, from 18 November 2026, meetings, training and other non-visit bookings made in ZEST also appear as Care-wing work bookings, and that instructions already written in Care-wing stay attached when ZEST reassigns the visit. This is ZEST's description of the link.[^19]
+
 ## Target customers
 
 Logic's FAQ says Care-wing covers home-visit care and home-visit nursing under long-term care insurance, the comprehensive community programme, and several disability services (home care, severe-disability home visits, accompanied outings, behavioural support). Offices for mobility support, care taxis, home-visit bathing and home-visit rehabilitation also use it.[^3] The Care-wing site has separate pages for serviced housing and paid homes ({{< ja "サ高住・有料老人ホーム" "sa-kō-jū, yūryō rōjin hōmu" "serviced housing for older people and paid homes" >}}) and for 24-hour regular-visit services. Both pages stress records for self-pay and in-house services as well as insurance services.[^12][^9]
@@ -90,6 +92,7 @@ Tako-San's view: Care-wing is a records-first product for the home-visit workflo
 
 ## Changelog
 
+- 20 Nov 2026: noted ZEST's 18 Nov claim that meetings and training now sync to Care-wing, and that care instructions survive a reassignment.
 - 9 Oct 2026: first published
 
 ---
@@ -131,3 +134,5 @@ Tako-San's view: Care-wing is a records-first product for the home-visit workflo
 [^17]: M3, Inc. "Making Wiseman a Consolidated Subsidiary (ワイズマンの連結子会社化について)." Supplementary presentation, 5 June 2026, slides 6–7. https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/7B6ADxKAZqfvmozuTDV8W7/fe4bf3fe90c695bee95c0b445cb30dc3/20260605_Presentation_J.pdf
 
 [^18]: M3, Inc. "Notice Concerning the Acquisition of Shares of Wiseman Co., Ltd. (Making It a Consolidated Subsidiary) (株式会社ワイズマンの株式の取得（連結子会社化）に関するお知らせ)." TDnet, 5 June 2026, section 2(8). https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/MJMNRxFaXgUzIhVE6ntNJ/af03939f1f9877029dc23b71caf9c06c/20260605_Public_J.pdf
+
+[^19]: ZEST Inc. "ZEST strengthens its link with Care-wing (ZEST×Care-wing連携を強化。よりシームレスな連携で現場の業務効率化を実現、在宅医療・介護業界の人手不足解消へ)." Press release, 18 November 2026. https://zest.jp/corporate/news/20261118
