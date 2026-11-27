@@ -1,7 +1,7 @@
 ---
 title: "Subsidies and how care offices buy software: the fiscal 2026 rules"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-17T07:00:00+07:00
+lastmod: 2026-11-27T07:00:00+07:00
 tags: ["japan", "long-term-care", "subsidy", "software", "care-plan", "guide"]
 summary: "The fiscal 2026 care-technology subsidy at four fifths of cost, what software and offices must do to qualify, how it links to the Care Plan Data Exchange and the wage add-on, and the separate METI subsidy that some vendors use instead."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 5
 countries: ["Japan"]
 ---
 
-*Last updated: 17 Nov 2026*
+*Last updated: 27 Nov 2026*
 
 Most Japanese care offices are small, and many buy care software with help from a public subsidy. Which subsidy applies, and at what rate, depends on the programme. Vendor sites sometimes quote figures from different programmes or from earlier years. This guide sets out the fiscal 2026 rules from the primary documents. It covers the main care-technology subsidy, the conditions it places on software and on offices, its link to the Care Plan Data Exchange and the wage add-on, and a separate programme run under METI.
 
@@ -109,6 +109,10 @@ Kokuho Chūōkai's claim software was updated in June 2026 for the new add-on ru
 - **A committee duty for home and day services.** Home-visit, day and care-management offices would have to set up a committee on user safety, care quality and staff workload, with regard to the burden on small offices.[^14]
 - **A simpler pay add-on.** The workplace-environment requirements and career-path requirements II and V would be taken out of the pay add-on, with the workplace and training items moved toward the service-provision add-on ({{< ja "サービス提供体制強化加算" "sābisu teikyō taisei kyōka kasan" "service-provision system add-on" >}}).[^15]
 
+**Update, 20 Nov 2026: one grant, two connections.** A separate fiscal 2026 subsidy, for building infrastructure to use care-related data ({{< ja "介護関連データ利活用に係る基盤構築事業の助成金" "kaigo kanren dēta rikatsuyō ni kakaru kiban kōchiku jigyō no joseikin" "subsidy for building infrastructure to use care-related data" >}}), can cover platform connection support and Care Plan Data Exchange connection support when they are bought together. Exchange connection support on its own does not qualify. The deadline is **12 March 2027**, and the budget may close sooner.[^16] This is not the care-technology retention subsidy above. See [Care Plan Data Exchange]({{< relref "care-plan-data-exchange" >}}).
+
+**Update, 23 Nov 2026: finance-council recommendation.** On 20 November 2026 the {{< ja "財政制度等審議会" "zaisei seido-tō shingikai" "Fiscal System Council" >}} compared the fiscal 2023 and fiscal 2025 surveys on the general condition of care businesses ({{< ja "介護事業経営概況調査" "kaigo jigyō keiei gaikyō chōsa" "survey on the general condition of care businesses" >}}). It found no statistically significant link between adopting care technology and either productivity, defined there as users per care worker, or wages.[^17] It said the fiscal 2027 fee revision should look again at making actual use of the Care Plan Data Exchange a condition of the add-on.[^17] It also said staffing add-ons should be smaller and easier to meet, so that keeping headcount does not cancel a gain from technology.[^18] This is a recommendation to the finance minister. The health ministry has not adopted it. It does not change the subsidy rule further up this page, which already requires an actual record of data exchange for the fiscal 2026 care-technology subsidy.[^12]
+
 ## A separate route: METI's digital and AI subsidy
 
 Some care-software vendors are registered under a different programme, the **Digital and AI Adoption Subsidy 2026** ({{< ja "デジタル化・AI導入補助金" "dejitaru-ka, AI dōnyū hojokin" "digital and AI adoption subsidy" >}}). It was formerly called the IT Adoption Subsidy. It is open to small and medium businesses in general, not only care offices. Under its normal track:[^8]
@@ -138,6 +142,7 @@ Tako-San's view: for a vendor, the fiscal 2026 rules turn two public lists into 
 - 9 Oct 2026: described the August 2026 survey edition as 53 entries rather than 53 products, added its 1 April 2026 start label, and linked the new function survey guide
 - 9 Oct 2026: added MHLW's fiscal 2026 Q&A on multi-year payments and the data-exchange record, and linked the new METI and MHLW comparison guide
 - 17 Nov 2026: added the FY2027 proposals of 16 Nov 2026 (new reward for software in home and day services, committee duty, simpler pay add-on).
+- 27 Nov 2026: fiscal 2026 care-data grant only when platform and exchange connection support are bought together (deadline 12 March 2027). Fiscal System Council finding of no significant link from care technology to productivity or wages, its recommendation to make actual exchange use an add-on condition, and smaller staffing add-ons.
 
 ---
 
@@ -172,3 +177,9 @@ Tako-San's view: for a vendor, the fiscal 2026 rules turn two public lists into 
 [^14]: Ministry of Health, Labour and Welfare. Material 2 (as above), PDF p.17. https://www.mhlw.go.jp/content/12300000/001769518.pdf
 
 [^15]: Ministry of Health, Labour and Welfare. Material 1, 介護人材確保に向けた処遇改善等 (pay improvement to secure care workers), 275th meeting, 16 November 2026, PDF p.15. https://www.mhlw.go.jp/content/12300000/001769472.pdf
+
+[^16]: National Health Insurance Central Association. Kaigo Kiban Portal notice, 「令和8年度 介護関連データ利活用に係る基盤構築事業の助成金」の活用について (using the FY2026 subsidy for building infrastructure to use care-related data), 19 November 2026. https://www.kaigo-kiban-portal.jp/notice/detail/qneasut2kio2jwlvixjaby2a
+
+[^17]: Ministry of Finance, Fiscal System Council. 令和９年度予算の編成等に関する建議 (Recommendations on the compilation of the FY2027 budget and related matters), 20 November 2026, p.40. Productivity is defined there as 介護職員１人当たり延べ利用者数 (users per care worker). The surveys are the FY2023 and FY2025 介護事業経営概況調査. https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/01.pdf Index page: https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/index.html
+
+[^18]: Ministry of Finance, Fiscal System Council. Same recommendation, p.41. https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/01.pdf
