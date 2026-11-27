@@ -1,7 +1,7 @@
 ---
 title: "Private elderly housing in Japan: paid homes, serviced housing and who pays for care"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-05T07:00:00+07:00
+lastmod: 2026-11-11T07:00:00+07:00
 tags: ["japan", "long-term-care", "paid-homes", "serviced-housing", "policy", "guide"]
 summary: "Fee-charging homes for older people (care-included, residential and healthy-living types) and serviced housing for older people: the law and regulator behind each, how many there are, what insurance pays and what residents pay, the 'enclosure' problem, the 2026 registration law, operators on public data, and what it means for care software."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 9
 countries: ["Japan"]
 ---
 
-*Last updated: 5 Nov 2026*
+*Last updated: 11 Nov 2026*
 
 In Japan, many older people who need care live in private, fee-charging housing rather than at home or in a public care facility. Paid homes alone had capacity for about 950,000 people in mid-2024.[^9] Two legal forms cover this housing:
 
@@ -103,6 +103,8 @@ The standard guidance has said since fiscal 2015 that homes must not limit or st
 
 **When the changes start.** Most of the Act applies from 1 April 2027. The registration system and the specified-facility definition change start on a date set by cabinet order within two years of promulgation. The registered-facility care support service starts within three years.[^10] MHLW's bill summary says it expects most existing paid homes to fall under registration, apart from homes that require residents to move out once their care needs become moderate or severe.[^9]
 
+> **Update, 11 Nov 2026:** At the 138th meeting of the Long-Term Care Insurance Subcommittee ({{< ja "介護保険部会" "kaigo hoken bukai" "Long-Term Care Insurance Subcommittee" >}}) on 9 November 2026, MHLW set out a planned timetable for this registration system. Registration of paid homes would start on 1 December 2027, with a one-year transition for existing homes ending on 30 November 2028.[^21] Registered-facility care support ({{< ja "登録施設介護支援" "tōroku shisetsu kaigo shien" "registered-facility care support" >}}) would start on 1 December 2028, when that transition ends.[^22] Government and ministerial ordinances are planned to be promulgated within 2026.[^23] A new registration system would handle application, review and public listing in one place, and the listing for registered homes would build on an upgraded care service information publication system ({{< ja "介護サービス情報公表システム" "kaigo sābisu jōhō kōhyō shisutemu" "care service information publication system" >}}).[^24] Draft operating standards include giving the registered-facility care-support provider the information it needs for care plans, measures to keep the residence contract and the care-management contract independent, and keeping the home's accounts separate from related care businesses' accounts.[^25] MHLW marks these as subject to change.[^26]
+
 **The draft standards (September 2026).** At its 9th meeting on 18 September 2026, the study group discussed MHLW's draft registration standards. MHLW marked them as subject to change.[^11]
 
 - **Contract terms.** The following would count as unfair contract terms:
@@ -155,6 +157,7 @@ Tako-San's view: private housing operators need software that public facilities 
 
 ## Changelog
 
+- 11 Nov 2026: planned dates from the 138th Long-Term Care Insurance Subcommittee (9 Nov 2026): registration from 1 Dec 2027, transition to 30 Nov 2028, registered-facility care support from 1 Dec 2028; one system for registration and listing.
 - 5 Nov 2026: added 272nd-meeting proposals for specified-facility excretion evaluation and residential-home shift, and for registered-facility care support staffing, records and start timing.
 - 2 Nov 2026: added the 272nd meeting drafts for registered-facility care-support staffing, plan items and fees, and for specified-facility conversion from residential homes.
 - 9 Oct 2026: first published
@@ -202,3 +205,15 @@ Tako-San's view: private housing operators need software that public facilities 
 [^19]: Ministry of Health, Labour and Welfare. Material 2 (registered-facility care support and preventive support), Social Security Council Long-Term Care Benefits Subcommittee (272nd meeting), 28 October 2026. https://www.mhlw.go.jp/content/12300000/001763609.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_76726.html
 
 [^20]: Ministry of Health, Labour and Welfare. Material 1 (specified-facility daily-life care), 272nd meeting, 28 October 2026. https://www.mhlw.go.jp/content/12300000/001763608.pdf
+
+[^21]: Ministry of Health, Labour and Welfare. Material 3, 有料老人ホームに係る登録制の施行に向けた対応について（報告） (preparing to implement registration of fee-charging homes), Social Security Council Long-Term Care Insurance Subcommittee (138th meeting), 9 November 2026, pp.10–11. https://www.mhlw.go.jp/content/12300000/001766404.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_77213.html
+
+[^22]: Ministry of Health, Labour and Welfare. Material 3 (as above), p.11. https://www.mhlw.go.jp/content/12300000/001766404.pdf
+
+[^23]: Ministry of Health, Labour and Welfare. Material 3 (as above), p.1 ('年内（予定）'). https://www.mhlw.go.jp/content/12300000/001766404.pdf
+
+[^24]: Ministry of Health, Labour and Welfare. Material 3 (as above), p.7. https://www.mhlw.go.jp/content/12300000/001766404.pdf
+
+[^25]: Ministry of Health, Labour and Welfare. Material 3 (as above), p.5. https://www.mhlw.go.jp/content/12300000/001766404.pdf
+
+[^26]: Ministry of Health, Labour and Welfare. Material 3 (as above). The draft pages note: 今後の検討等により政省令等における具体的な規定ぶりについては変更となる可能性がある (the specific wording in government and ministerial ordinances may change as consideration continues). https://www.mhlw.go.jp/content/12300000/001766404.pdf

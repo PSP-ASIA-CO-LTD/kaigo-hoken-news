@@ -1,7 +1,7 @@
 ---
 title: "ZEST (ZEST Inc.): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T09:00:00+07:00
+lastmod: 2026-11-11T07:00:00+07:00
 tags: ["japan", "competitors", "zest", "scheduling", "software"]
 summary: "ZEST, a visit-scheduling and route-optimisation cloud for home-visit nursing and care that sits beside billing software rather than replacing it: its usage-based pricing, its links to Kaipoke, CAREKARTE and others, its AI plans and its subsidy route."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 7
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 11 Nov 2026*
 
 ZEST ({{< ja "ゼスト" "zesuto" "ZEST" >}}) is a cloud service that builds and manages schedules and routes for home visits. It serves home-visit nursing, home-visit care, home-visit medical care, and residential homes.[^1] It is not a claims system. ZEST imports users from electronic medical records and care-billing software, and sends the schedules it builds back to them.[^1] It is run by ZEST Inc. ({{< ja "株式会社ゼスト" "kabushiki-gaisha zesuto" "ZEST Inc." >}}), based in Shinjuku, Tokyo.[^2]
 
@@ -45,6 +45,7 @@ ZEST charges by usage according to the size of the office, with no initial, base
   - suggesting visit slots for new users, taking travel time into account
 
   ZEST says the assistant is built on Google Cloud using Gemini and that input data is not used for model training. It is free during a trial period.[^8]
+- **Smart Allocation engine rebuilt (November 2026).** On 10 November 2026 ZEST said it had rebuilt the optimisation engine behind Smart Allocation ({{< ja "スマート割当" "sumāto wariate" "Smart Allocation" >}}), its automatic visit-allocation feature, using AI coding agents, and that it took part in the early access programme for Google Cloud's AlphaEvolve.[^12] New conditions: visits that only a few qualified staff can take are secured first; main-carer priority ({{< ja "主担当優先" "shutantō yūsen" "main-carer priority" >}}); and, for home-visit nursing, same-nurse priority for users visited several times a day.[^12] ZEST says calculation is about 20 times faster than before, based on its own benchmark in a development environment. The new engine is in beta.[^12]
 - **Security.** ISO/IEC 27001:2022 certification, and compliance with the government guidelines for medical information systems.[^1]
 
 ## Links to care software
@@ -85,6 +86,7 @@ Tako-San's view: ZEST is the clearest sign that rostering and routing, the job t
 
 ## Changelog
 
+- 11 Nov 2026: Smart Allocation engine rebuild (beta), new allocation conditions, ZEST-reported ~20x speed-up.
 - 9 Oct 2026: linked the listed systems to our Kaipoke, Wiseman, Care-wing and CAREKARTE profiles
 - 9 Oct 2026: first published
 
@@ -113,3 +115,5 @@ Tako-San's view: ZEST is the clearest sign that rostering and routing, the job t
 [^10]: ZEST Inc. "News (ニュース)." List of press releases, including "ZEST × Synchro Shift link begins" (25 March 2026). Accessed 9 October 2026. https://zest.jp/corporate/news
 
 [^11]: ZEST Inc. "Results of the MHLW-Promoted Effect Measurement Project on Productivity through Care Technology (厚生労働省推進「介護テクノロジー等による生産性向上」効果測定事業結果を発表)." Press release, 28 May 2026. https://zest.jp/corporate/news/20260528
+
+[^12]: ZEST Inc. "ZEST rebuilds its core automatic schedule-allocation engine (株式会社ゼスト、中核技術の予定自動割り当てエンジンを刷新し、現場のこだわりと従来比約20倍の計算速度を両立)." Press release, PR TIMES, 10 November 2026. https://prtimes.jp/main/html/rd/p/000000085.000056654.html
