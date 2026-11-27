@@ -1,7 +1,7 @@
 ---
 title: "The money, the workforce, and what 2027 and 2040 look like"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-11T07:00:00+07:00
+lastmod: 2026-11-27T07:00:00+07:00
 tags: ["japan", "long-term-care", "budget", "workforce"]
 summary: "What Japan spends on long-term care, the fiscal 2026 wage package, the path to the 2027 fee revision, and the 2040 population squeeze."
 series: "Japan LTC Basics"
@@ -10,7 +10,7 @@ categories: ["Budget & Policy"]
 countries: ["Japan"]
 ---
 
-*Last updated: 11 Nov 2026*
+*Last updated: 27 Nov 2026*
 
 The care system is already one of the largest public programmes in Japan, and the official view is that it gets harder from here: more people over 85, fewer workers, and a fee schedule that cannot rise as fast as wages in other industries.
 
@@ -70,6 +70,10 @@ Home-visit care's base fee is a known sore point going into 2027. Industry cover
 
 > **Update, 11 Nov 2026:** On 9 November 2026 the 138th {{< ja "社会保障審議会介護保険部会" "shakai hoshō shingikai kaigo hoken bukai" "Social Security Council, LTC Insurance Committee" >}} was shown criteria for specified areas ({{< ja "特定地域" "tokutei chiiki" "specified areas" >}}). (1) Areas covered by the special-area add-on or by remote-island-equivalent services, whether the designation covers the whole municipality or part of it. (2) Otherwise, a whole municipality where people aged 75 or over number fewer than 5 per km², or fewer than 1,000 and falling, or part of a municipality (a former municipality, a ward or a local autonomous district) under 5 per km². (3) Otherwise, areas where services on the designated-provider basis can no longer be maintained, for example where there is no office of a service type, or a sole office is planning to close.[^31] MHLW's reference count is 356 municipalities (20.5%) that meet the criteria on a whole-municipality basis: 299 wholly in special-add-on areas, 40 newly on the density test and 17 newly on the population test.[^32] Prefectures list the qualifying municipalities, municipalities decide whether they want designation, and the prefecture designates by rule, reports to the national government and publishes the designation. Designation may happen part-way through the 10th plan period and is reviewed when the plan is revised.[^33] The specified-area home-service project ({{< ja "特定地域居宅サービス等事業" "tokutei chiiki kyotaku sābisu-tō jigyō" "specified-area home-service project" >}}) starts in April 2027.[^34] Its funding cap would be set separately from other community support projects ({{< ja "地域支援事業" "chiiki shien jigyō" "community support projects" >}}). The cap might take account of benefit spending before the project is introduced, extra costs in remote areas, and change in the older population. The method is still under consideration, with individual consultation for special cases such as remote islands.[^35]
 
+> **Update, 23 Nov 2026:** On 20 November 2026 the {{< ja "財政制度等審議会" "zaisei seido-tō shingikai" "Fiscal System Council" >}} recommended, for the fiscal 2027 budget, that the fee revision pay less for {{< ja "集中提供型" "shūchū teikyō-gata" "concentrated provision" >}}: care from an office inside or next to one housing block.[^36] For care management it named the {{< ja "同一建物減算" "dōitsu tatemono gensan" "same-building reduction" >}}, the {{< ja "特定事業所集中減算" "tokutei jigyōsho shūchū gensan" "specified-office concentration reduction" >}} and the {{< ja "特定事業所加算" "tokutei jigyōsho kasan" "specified-office add-on" >}}, or one lower fee table that already includes them.[^36] The same cut covers home help, day care, home rehabilitation, home medical-management guidance and home-visit nursing.[^36] Comparing the fiscal 2023 and fiscal 2025 surveys on the general condition of care businesses, the council found no statistically significant link between adopting care technology and either productivity (users per care worker) or wages, and said the revision should look again at making actual use of the {{< ja "ケアプランデータ連携システム" "kea puran dēta renkei shisutemu" "Care Plan Data Exchange" >}} a condition of the add-on.[^37] It said widen the 20 percent user charge, unchanged since 2018, citing pension income of **2.3–2.6 million yen**, and that care management should carry a user charge.[^38] A user charge for {{< ja "登録施設介護支援" "tōroku shisetsu kaigo shien" "registered-facility care support" >}} is already planned within fiscal 2028.[^39] This is a recommendation to the finance minister. The health ministry has not adopted it. See [private-pay housing]({{< relref "guides/private-pay-elderly-housing" >}}) and [Care Plan Data Exchange]({{< relref "guides/care-plan-data-exchange" >}}).
+
+> **Update, 26 Nov 2026:** Papers for the 139th {{< ja "介護保険部会" "kaigo hoken bukai" "Long-Term Care Insurance Subcommittee" >}} on 26 November 2026 set out a draft direction to look again at the standard stages of the {{< ja "第１号保険料" "dai-ichigō hokenryō" "Type 1 premium, for people aged 65 and over" >}}, including the higher-income multiplier. Band amounts and multipliers for the 10th plan period are to be set later, from the distribution of insured people.[^40] Where a household moves from everyone non-taxable to personally non-taxable (with a taxable household member) or to personally taxable, and the stage jump exceeds the rise in ability to pay, an insurer could, in principle, charge a premium that cuts the increase in the multiplier by half for one year. That reduction is planned from fiscal 2028 ({{< ja "令和10年度" "Reiwa 10-nendo" "fiscal 2028" >}}), to leave time for system changes.[^41] These are proposals, not decisions. No new rates are set.
+
 ## People: the constraint that drives the software agenda
 
 MHLW summed the care-worker numbers that prefectures built from the 9th municipal plans:[^6]
@@ -104,6 +108,7 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 
 ## Changelog
 
+- 27 Nov 2026: Fiscal System Council recommendation of 20 Nov 2026 (lower fees for care inside one housing block, actual use of the Care Plan Data Exchange as an add-on condition, a wider 20 percent user charge, a user charge on care management). 139th subcommittee draft to revisit Type 1 premium stages, and a one-year half-rise in the multiplier from fiscal 2028.
 - 11 Nov 2026: specified-area criteria, designation process and project-fund cap approach from the 138th Long-Term Care Insurance Subcommittee.
 - 8 Nov 2026: Added an update note on the 274th meeting proposals on specified-area services, the bundled home-help fee, safety, BCP and harassment.
 - 5 Nov 2026: Added an update note on the 272nd meeting specified-facility, registered-facility care support and regional-classification proposals, and the 273rd meeting facility dialysis and home-return proposals.
@@ -186,3 +191,15 @@ The wave of small-office bankruptcies (176 in 2025, 91 in home-visit care alone)
 [^34]: Ministry of Health, Labour and Welfare. Material 2, 特定地域居宅サービス等事業について (specified-area home-service project), 138th meeting, 9 November 2026, p.22. https://www.mhlw.go.jp/content/12300000/001766403.pdf
 
 [^35]: Ministry of Health, Labour and Welfare. Material 2 (as above), p.21. https://www.mhlw.go.jp/content/12300000/001766403.pdf
+
+[^36]: Ministry of Finance, Fiscal System Council. 令和９年度予算の編成等に関する建議 (Recommendations on the compilation of the FY2027 budget and related matters), 20 November 2026, pp.38–40. https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/01.pdf Index page: https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/index.html
+
+[^37]: Ministry of Finance, Fiscal System Council. Same recommendation, p.40. Productivity is defined there as 介護職員１人当たり延べ利用者数 (users per care worker). The surveys are the FY2023 and FY2025 介護事業経営概況調査 (survey on the general condition of care businesses). https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/01.pdf
+
+[^38]: Ministry of Finance, Fiscal System Council. Same recommendation, pp.42–43. https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/01.pdf
+
+[^39]: Ministry of Finance, Fiscal System Council. Same recommendation, p.41. https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/01.pdf
+
+[^40]: Ministry of Health, Labour and Welfare. Material 1, 第１号保険料の在り方について（報告） (on the shape of the Type 1 premium), Social Security Council LTC Insurance Committee (139th meeting), 26 November 2026, PDF p.6. https://www.mhlw.go.jp/content/12300000/001772488.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_77651.html
+
+[^41]: Ministry of Health, Labour and Welfare. Material 1 (as above), PDF p.7. The special reduction is planned from 令和10年度. https://www.mhlw.go.jp/content/12300000/001772488.pdf

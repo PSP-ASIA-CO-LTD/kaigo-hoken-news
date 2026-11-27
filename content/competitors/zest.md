@@ -1,7 +1,7 @@
 ---
 title: "ZEST (ZEST Inc.): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-11T07:00:00+07:00
+lastmod: 2026-11-27T07:00:00+07:00
 tags: ["japan", "competitors", "zest", "scheduling", "software"]
 summary: "ZEST, a visit-scheduling and route-optimisation cloud for home-visit nursing and care that sits beside billing software rather than replacing it: its usage-based pricing, its links to Kaipoke, CAREKARTE and others, its AI plans and its subsidy route."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 7
 countries: ["Japan"]
 ---
 
-*Last updated: 11 Nov 2026*
+*Last updated: 27 Nov 2026*
 
 ZEST ({{< ja "ゼスト" "zesuto" "ZEST" >}}) is a cloud service that builds and manages schedules and routes for home visits. It serves home-visit nursing, home-visit care, home-visit medical care, and residential homes.[^1] It is not a claims system. ZEST imports users from electronic medical records and care-billing software, and sends the schedules it builds back to them.[^1] It is run by ZEST Inc. ({{< ja "株式会社ゼスト" "kabushiki-gaisha zesuto" "ZEST Inc." >}}), based in Shinjuku, Tokyo.[^2]
 
@@ -58,10 +58,11 @@ ZEST's site shows six linked systems as examples:[^1]
 - the home-medical EHR "Movacal.net"
 - [CAREKARTE]({{< relref "carekarte" >}})
 
-Two of these links are described in detail:
+Three of these links are described in detail:
 
 - **Kaipoke.** ZEST announced a two-way link with Kaipoke on 7 April 2022, following a business partnership that began in January 2021. ZEST imports users, staff and provision tables from Kaipoke and writes its optimised schedules back to Kaipoke as planned visits.[^7]
 - **CAREKARTE.** Care Connect Japan's link page says users no longer need to be registered twice, and that schedules assigned in ZEST flow into CAREKARTE. The link covers home-visit nursing, home-visit care (including disability welfare), 24-hour visiting services and visiting rehabilitation.[^9]
+- **Care-wing.** On 18 November 2026 ZEST said meetings, training and other non-visit bookings made in ZEST also appear as [Care-wing]({{< relref "care-wing" >}}) work bookings, and that care instructions already written in Care-wing stay attached when ZEST reassigns the visit. This is ZEST's description of the link.[^13]
 
 ZEST also announced a link with the shift-planning tool "Synchro Shift" in March 2026.[^10] The sources we opened do not say whether each link uses an API, file exchange or another method.
 
@@ -86,6 +87,7 @@ Tako-San's view: ZEST is the clearest sign that rostering and routing, the job t
 
 ## Changelog
 
+- 27 Nov 2026: ZEST's 18 Nov 2026 claim that meetings and training now sync into Care-wing, and that care instructions stay attached if the visit is reassigned.
 - 11 Nov 2026: Smart Allocation engine rebuild (beta), new allocation conditions, ZEST-reported ~20x speed-up.
 - 9 Oct 2026: linked the listed systems to our Kaipoke, Wiseman, Care-wing and CAREKARTE profiles
 - 9 Oct 2026: first published
@@ -117,3 +119,5 @@ Tako-San's view: ZEST is the clearest sign that rostering and routing, the job t
 [^11]: ZEST Inc. "Results of the MHLW-Promoted Effect Measurement Project on Productivity through Care Technology (厚生労働省推進「介護テクノロジー等による生産性向上」効果測定事業結果を発表)." Press release, 28 May 2026. https://zest.jp/corporate/news/20260528
 
 [^12]: ZEST Inc. "ZEST rebuilds its core automatic schedule-allocation engine (株式会社ゼスト、中核技術の予定自動割り当てエンジンを刷新し、現場のこだわりと従来比約20倍の計算速度を両立)." Press release, PR TIMES, 10 November 2026. https://prtimes.jp/main/html/rd/p/000000085.000056654.html
+
+[^13]: ZEST Inc. "ZEST strengthens its link with Care-wing (ZEST×Care-wing連携を強化。よりシームレスな連携で現場の業務効率化を実現、在宅医療・介護業界の人手不足解消へ)." Press release, 18 November 2026. https://zest.jp/corporate/news/20261118

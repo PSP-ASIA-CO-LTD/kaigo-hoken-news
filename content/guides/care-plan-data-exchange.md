@@ -1,7 +1,7 @@
 ---
 title: "Care Plan Data Exchange: Japan's care-plan pipe and the 2027 move to the Kaigo WEB Service"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-17T07:00:00+07:00
+lastmod: 2026-11-27T07:00:00+07:00
 tags: ["japan", "long-term-care", "care-plan", "software", "guide"]
 summary: "How care plans move between care managers and service providers as data, the fees and add-ons tied to it, and the January 2027 move into the Kaigo WEB Service."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 2
 countries: ["Japan"]
 ---
 
-*Last updated: 17 Nov 2026*
+*Last updated: 27 Nov 2026*
 
 Every month, a care manager's office and the service providers it works with exchange care plans ({{< ja "ケアプラン" "kea puran" "care plan" >}}) and provision tables ({{< ja "サービス提供票" "sābisu teikyō-hyō" "service provision table" >}}). The Care Plan Data Exchange ({{< ja "ケアプランデータ連携システム" "kea puran dēta renkei shisutemu" "care plan data exchange system" >}}) lets them send these documents as data instead of on paper or by fax. The National Health Insurance Central Association ({{< ja "国保中央会" "kokuho chūō-kai" "Kokuho Chūōkai" >}}) runs it.[^1] This guide explains how it works, what money depends on it, and what changes when it moves into the Kaigo WEB Service in 2027.
 
@@ -24,16 +24,16 @@ MHLW's overview gives two estimates of the benefit:[^1]
 
 These are the ministry's own estimates, not measured results.
 
-**Fee.** The licence fee is **¥21,000 a year** per office.[^1] Under a "free pass" campaign that has since been extended, the fee is waived for all of fiscal 2026.[^3][^4]
+**Fee.** The licence fee is **¥21,000 a year** per office.[^1] Under a "free pass" campaign that has since been extended, the fee is waived for all of fiscal 2026.[^3][^4] A flyer issued with the 25 November 2026 migration notice puts valid licences above **60 percent** of offices counted in the care database ({{< ja "介護DB" "kaigo DB" "care database" >}}) at the end of October 2026.[^21]
 
-## The move into the Kaigo WEB Service (January 2027, planned)
+## The move into the Kaigo WEB Service (13 January 2027)
 
 MHLW announced on 29 July 2026 that the exchange will be merged into the care information platform ({{< ja "介護情報基盤" "kaigo jōhō kiban" "care information platform" >}}). It will then become a function of the Kaigo WEB Service ({{< ja "介護保険資格確認等WEBサービス" "kaigo hoken shikaku kakunin tō webu sābisu" "care-insurance eligibility check web service" >}}), with the move planned for **January 2027**.[^3] The notice and the help-desk page set out the details:[^3][^5]
 
 - **Web instead of client software.** After the move, offices use the web service in place of the current client software.
 - **Registration needed.** Offices must register for the Kaigo WEB Service whether or not their municipality has started using the platform.
 - **Preparation window.** Offices have from July to December 2026 to prepare. The help desk warns that offices which have not completed the move will lose access to the exchange function.
-- **Old system retired.** The current system will shut down some time after the move.
+- **Old system retired.** The July 2026 notice said the current system would shut down some time after the move. The 25 November 2026 notice sets that close at around March 2027. See the update below.[^3][^22]
 - **No fee.** The Kaigo WEB Service charges offices no direct fee, so the ¥21,000 annual licence ends.
 
 **What this means for vendors.** After the merger, only care software that supports **version 4.1** (current) or **version 5.0** (new) of the standard can use the exchange function.[^6][^7] On 31 August 2026, MHLW announced the final API standard for linking care software to the Kaigo WEB Service, version 1.0. Kokuho Chūōkai wrote it, and it is published on WAM NET.[^7] Three further points from the ministry's notices:
@@ -49,6 +49,8 @@ On 16 October 2026 the Care Plan Data Exchange Help Desk posted the archive vide
 On 2 November 2026 the same help desk said its enquiry desk is moving to the Kaigo Kiban Portal. From January 2027, care-plan questions go to the Kaigo Kiban call centre (0120-697-312); the current help-desk number stops then, with the exact cut-over date still to be announced. Through November 2026 the existing desk widens hours (weekdays 8:00–18:00, Saturdays 8:00–16:00) and the web form moves to the portal. The help-desk site itself is due to close after the January 2027 move.[^17]
 
 From about 09:00 JST on 2 November 2026 users had trouble connecting to the Care Plan Data Exchange; the help desk's 6 November 17:00 update said it was fixed, with no cause given.[^18]
+
+> **Update, 26 Nov 2026:** On 25 November 2026 MHLW confirmed **13 January 2027** as the start date for care-plan sending on the Kaigo WEB Service, with use scheduled from **08:00**.[^23] Offices are asked to try one send and one receive with a usual partner between 13 and 19 January.[^23] A plan can be received only on the system it was sent from. The old exchange and the web service cannot exchange with each other.[^22] Once the web service is steady, the old exchange is due to close around March 2027. Login, history and downloads then stop.[^22] A YouTube briefing, with no signup, is on 7 December 2026 at 14:00.[^24] {{< ja "国保中央会" "kokuho chūō-kai" "Kokuho Chūōkai" >}} has added servers for the month-end rush.[^25] A 24 November notice on the Kaigo Kiban Portal posts a registration-guide video for offices already using the exchange. That notice still calls the move "planned for January 2027".[^26] See [Kaigo WEB Service and its API]({{< relref "kaigo-web-service-api" >}}).
 
 ## Vendor tests: what "compatible" means
 
@@ -107,6 +109,10 @@ Home-visit care is an example of what the upper tier is worth:[^13]
 
 MHLW's fiscal 2026 survey of care workers' pay, released on 16 November 2026, asked offices such as home nursing, home rehabilitation and care management why they had not applied for the fiscal 2025 wage and workplace subsidy. Among the top three answers, 20.2% said they had not joined the exchange, or did not know that a pledge to join was enough to apply (multiple answers).[^19] For fiscal 2027, MHLW proposed (a proposal, not a decision) to list the exchange among the tools that would earn a new reward for home, day and care-management offices, alongside care-record software, AI document tools and tablets for visiting staff. It also proposed to spread the exchange further and to study AI support for writing care plans.[^20]
 
+The 25 November 2026 migration notice tells offices to keep screenshots of send and receive history. That screenshot is what an office shows, if asked, for the fiscal 2026 special requirement of the pay add-on. How the add-on treats the old exchange and the web service is still to be announced.[^27]
+
+On 20 November 2026 the {{< ja "財政制度等審議会" "zaisei seido-tō shingikai" "Fiscal System Council" >}}, comparing the fiscal 2023 and fiscal 2025 surveys on the general condition of care businesses, found no statistically significant link between adopting care technology and either productivity (users per care worker) or wages. It said the fiscal 2027 revision should look again at making actual use of the exchange a condition of the add-on.[^28] This is a recommendation to the finance minister. The health ministry has not adopted it.
+
 ### 3. Software subsidies
 
 Under the fiscal 2026 care-technology adoption subsidy, home-care software qualifies only if both Kokuho Chūōkai's vendor test results and MHLW's care-software function survey show two things: CSV input and output under the care-plan standard, and a support system for using the exchange.[^14] MHLW publishes the survey results on its care-technology page. The current edition is dated 24 August 2026.[^15]
@@ -125,12 +131,15 @@ Other contract types have a flat ¥2.5 million base amount, or ¥2.65 million wi
 - home-care service offices
 - care-management offices
 
+**Update, 20 Nov 2026: one grant, two connections.** A separate fiscal 2026 subsidy, for building infrastructure to use care-related data ({{< ja "介護関連データ利活用に係る基盤構築事業の助成金" "kaigo kanren dēta rikatsuyō ni kakaru kiban kōchiku jigyō no joseikin" "subsidy for building infrastructure to use care-related data" >}}), can cover platform connection support and Care Plan Data Exchange connection support when they are bought together. Exchange connection support on its own does not qualify. The deadline is **12 March 2027**, and the budget may close sooner.[^29] See [subsidies and software buying]({{< relref "subsidies-and-software-buying" >}}).
+
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: the exchange has turned from an optional fax replacement into a requirement that several payments now depend on: a higher fee tier for care managers, a higher pay add-on for visit and day services, and access to subsidies. The January 2027 move removes the fee and the client software, so the main remaining barrier to using it is the care software itself. For a new vendor, passing the V4 vendor test (and the enhanced test once results are published) looks like a basic requirement for selling to home-care offices, not a selling point. The API v1.0 is the more interesting opening. Software that reads eligibility and care information directly from the platform would compete on an equal footing with the incumbents, because they have to build the same API connection too.
 {{< /analysis >}}
 
 ## Changelog
 
+- 27 Nov 2026: care-plan sending confirmed for 13 January 2027 from 08:00; old exchange not interoperable and due to close around March 2027; screenshot rule for the fiscal 2026 pay-add-on special requirement; valid licences above 60 percent of care-database offices at end of October 2026; 7 December briefing; registration video that still says "planned for January 2027". Fiscal System Council recommendation to make actual use of the exchange an add-on condition. Fiscal 2026 care-data grant only when platform and exchange connection support are bought together (deadline 12 March 2027).
 - 17 Nov 2026: added the 16 Nov 2026 pay-survey finding on offices that had not joined the exchange, and the FY2027 proposal listing the exchange among tools for a new home and day services reward.
 - 8 Nov 2026: added the 2–6 Nov 2026 connection trouble and its reported fix.
 - 5 Nov 2026: added 2 Nov 2026 help-desk move to the Kaigo Kiban Portal (call centre 0120-697-312 from January 2027; November hours and form change).
@@ -181,3 +190,21 @@ Tako-San's view: the exchange has turned from an optional fax replacement into a
 [^19]: Ministry of Health, Labour and Welfare. Material 3, 令和８年度介護従事者処遇状況等調査結果のポイント（案） (FY2026 survey on care workers' pay: key points, draft), 45th meeting of the Survey Committee on Care Business Management, 16 November 2026, PDF p.5. https://www.mhlw.go.jp/content/12300000/001769458.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_77357.html
 
 [^20]: Ministry of Health, Labour and Welfare. Material 2, 介護現場における生産性向上等の推進 (promoting productivity in care settings), Social Security Council Long-Term Care Benefit Costs Subcommittee (275th meeting), 16 November 2026, PDF pp.37–38. https://www.mhlw.go.jp/content/12300000/001769518.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_77279.html
+
+[^21]: Ministry of Health, Labour and Welfare. Care Insurance Latest Information Vol.1552, Annex 1 (flyer), PDF pp.6–7. The 60 percent figure is the share of offices with a valid licence among offices counted in the care database (介護DB), as of the end of October 2026 (令和8年10月末). https://www.mhlw.go.jp/content/001772420.pdf
+
+[^22]: Ministry of Health, Labour and Welfare, Health and Welfare Bureau for the Elderly (高齢者支援課, 介護保険計画課, 認知症施策・地域介護推進課 and 老人保健課). Care Insurance Latest Information Vol.1552, ケアプランデータ連携システムの介護保険資格確認等WEBサービスへの移行について（その２） (migration of the Care Plan Data Exchange to the care-insurance eligibility web service, part 2), administrative notice, 25 November 2026, PDF pp.3–4. https://www.mhlw.go.jp/content/001772420.pdf Listing: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/index_00010.html
+
+[^23]: Ministry of Health, Labour and Welfare. Vol.1552 (as above), PDF pp.2–3. https://www.mhlw.go.jp/content/001772420.pdf
+
+[^24]: Ministry of Health, Labour and Welfare. Vol.1552, PDF p.4 and Annex 3, PDF p.9. YouTube: https://youtube.com/live/n8tpLAXNlXk
+
+[^25]: Ministry of Health, Labour and Welfare. Vol.1552, PDF p.4. https://www.mhlw.go.jp/content/001772420.pdf
+
+[^26]: National Health Insurance Central Association. Kaigo Kiban Portal notice, "A registration-guide video for the Kaigo WEB Service, for care offices already using the Care Plan Data Exchange (介護WEBサービス登録ガイド動画（ケアプランデータ連携システムをご利用中の介護事業所向け）公開のお知らせ)," 24 November 2026. https://www.kaigo-kiban-portal.jp/notice/detail/uob7ovijc4b33yvvj3aq1xh4 Video: https://www.youtube.com/watch?v=VrqRDeMG7pI
+
+[^27]: Ministry of Health, Labour and Welfare. Vol.1552, PDF p.4 (add-on treatment to follow) and PDF p.8 (screenshots of send/receive history as proof of the fiscal 2026 special requirement, 令和８年度特例要件). https://www.mhlw.go.jp/content/001772420.pdf
+
+[^28]: Ministry of Finance, Fiscal System Council. 令和９年度予算の編成等に関する建議 (Recommendations on the compilation of the FY2027 budget and related matters), 20 November 2026, p.40. Productivity is defined there as 介護職員１人当たり延べ利用者数 (users per care worker). The surveys are the FY2023 and FY2025 介護事業経営概況調査 (survey on the general condition of care businesses). https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/01.pdf Index page: https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/index.html
+
+[^29]: National Health Insurance Central Association. Kaigo Kiban Portal notice, 「令和8年度 介護関連データ利活用に係る基盤構築事業の助成金」の活用について (using the FY2026 subsidy for building infrastructure to use care-related data), 19 November 2026. https://www.kaigo-kiban-portal.jp/notice/detail/qneasut2kio2jwlvixjaby2a

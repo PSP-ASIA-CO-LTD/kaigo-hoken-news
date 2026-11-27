@@ -1,7 +1,7 @@
 ---
 title: "Private elderly housing in Japan: paid homes, serviced housing and who pays for care"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-11T07:00:00+07:00
+lastmod: 2026-11-27T07:00:00+07:00
 tags: ["japan", "long-term-care", "paid-homes", "serviced-housing", "policy", "guide"]
 summary: "Fee-charging homes for older people (care-included, residential and healthy-living types) and serviced housing for older people: the law and regulator behind each, how many there are, what insurance pays and what residents pay, the 'enclosure' problem, the 2026 registration law, operators on public data, and what it means for care software."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 9
 countries: ["Japan"]
 ---
 
-*Last updated: 11 Nov 2026*
+*Last updated: 27 Nov 2026*
 
 In Japan, many older people who need care live in private, fee-charging housing rather than at home or in a public care facility. Paid homes alone had capacity for about 950,000 people in mid-2024.[^9] Two legal forms cover this housing:
 
@@ -126,6 +126,8 @@ MHLW's timetable in the same document shows a 10th meeting around October 2026, 
 
 > **Update, 5 Nov 2026:** The 272nd meeting of the Long-Term Care Benefits Subcommittee, on 28 October 2026, tabled fiscal 2027 fee-revision proposals for both sides of this split. For specified-facility care, MHLW proposed evaluating per-resident excretion-support plans and improvement, collecting and publicising cases of residential paid homes that moved to a specified-facility designation, and reviewing add-ons the external-service form cannot currently claim.[^20] For registered-facility care support, the draft is one full-time care manager per 44 users (49 if the office uses the Care Plan Data Exchange), plus a community-life counsellor ({{< ja "地域生活相談員" "chiiki seikatsu sōdan-in" "community-life counsellor" >}}) who may be the same person; the care plan would have to use information from the home and record community-life counselling. Basic fees would follow care-management fees, adjusted for the counselling duty and for congregate housing. Start is assumed after the paid-home registration transition ends, not necessarily in April 2027. These are discussion proposals, not decisions.[^19]
 
+> **Update, 23 Nov 2026:** On 20 November 2026 the {{< ja "財政制度等審議会" "zaisei seido-tō shingikai" "Fiscal System Council" >}} recommended that the fiscal 2027 fee revision pay less for {{< ja "集中提供型" "shūchū teikyō-gata" "concentrated provision" >}}: care from an office inside or next to one housing block.[^27] The services named are care management, home help, day care, home rehabilitation, home medical-management guidance and home-visit nursing. For care management the council named the {{< ja "同一建物減算" "dōitsu tatemono gensan" "same-building reduction" >}}, the {{< ja "特定事業所集中減算" "tokutei jigyōsho shūchū gensan" "specified-office concentration reduction" >}} and the {{< ja "特定事業所加算" "tokutei jigyōsho kasan" "specified-office add-on" >}}, or one lower fee table that already includes them.[^27] The same recommendation says care management should carry a user charge, and that a user charge for {{< ja "登録施設介護支援" "tōroku shisetsu kaigo shien" "registered-facility care support" >}} is already planned within fiscal 2028.[^28] This is a recommendation to the finance minister. The health ministry has not adopted it. See [the money and 2027]({{< relref "posts/04-budget-and-outlook" >}}).
+
 ## Operators on public data
 
 No MHLW or MLIT source opened for this guide ranks paid-home operators. MHLW's care-service information system publishes open data on insurance-designated offices, by service type, twice a year.[^16] The files cover specified facilities in paid homes, care houses and serviced housing, including the external-service and community-based forms. They have no file for residential paid homes or for serviced housing without a designation.[^16]
@@ -157,6 +159,7 @@ Tako-San's view: private housing operators need software that public facilities 
 
 ## Changelog
 
+- 27 Nov 2026: Fiscal System Council recommendation of 20 Nov 2026 to cut fees for care inside one housing block, and its note that a user charge on registered-facility care support is already planned within fiscal 2028.
 - 11 Nov 2026: planned dates from the 138th Long-Term Care Insurance Subcommittee (9 Nov 2026): registration from 1 Dec 2027, transition to 30 Nov 2028, registered-facility care support from 1 Dec 2028; one system for registration and listing.
 - 5 Nov 2026: added 272nd-meeting proposals for specified-facility excretion evaluation and residential-home shift, and for registered-facility care support staffing, records and start timing.
 - 2 Nov 2026: added the 272nd meeting drafts for registered-facility care-support staffing, plan items and fees, and for specified-facility conversion from residential homes.
@@ -217,3 +220,7 @@ Tako-San's view: private housing operators need software that public facilities 
 [^25]: Ministry of Health, Labour and Welfare. Material 3 (as above), p.5. https://www.mhlw.go.jp/content/12300000/001766404.pdf
 
 [^26]: Ministry of Health, Labour and Welfare. Material 3 (as above). The draft pages note: 今後の検討等により政省令等における具体的な規定ぶりについては変更となる可能性がある (the specific wording in government and ministerial ordinances may change as consideration continues). https://www.mhlw.go.jp/content/12300000/001766404.pdf
+
+[^27]: Ministry of Finance, Fiscal System Council. 令和９年度予算の編成等に関する建議 (Recommendations on the compilation of the FY2027 budget and related matters), 20 November 2026, pp.38–40. https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/01.pdf Index page: https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/index.html
+
+[^28]: Ministry of Finance, Fiscal System Council. Same recommendation, p.41. https://www.mof.go.jp/about_mof/councils/fiscal_system_council/sub-of_fiscal_system/report/zaiseia20261120/01.pdf

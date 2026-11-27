@@ -1,17 +1,17 @@
 ---
 title: "Kaigo WEB Service and its API: what vendors must build for 2027"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-11-14T07:00:00+07:00
+lastmod: 2026-11-27T07:00:00+07:00
 tags: ["japan", "long-term-care", "care-information-platform", "api", "care-plan", "software", "guide"]
-summary: "The Kaigo WEB Service is the website through which care offices reach Japan's care information platform, and from January 2027 it also carries care plans. This guide covers who runs it, the dated timeline, what API version 1.0 requires (standard 5.0, certificates, tokens, permissions), the vendor tests, costs, and the open questions."
+summary: "The Kaigo WEB Service is the website through which care offices reach Japan's care information platform, and from 13 January 2027 it also carries care plans. This guide covers who runs it, the dated timeline, what API version 1.0 requires (standard 5.0, certificates, tokens, permissions), the vendor tests, costs, and the open questions."
 categories: ["Guides"]
 weight: 6
 countries: ["Japan"]
 ---
 
-*Last updated: 14 Nov 2026*
+*Last updated: 27 Nov 2026*
 
-Japan is building a national care information platform ({{< ja "介護情報基盤" "kaigo jōhō kiban" "care information platform" >}}). Care offices reach it through a website called the Kaigo WEB Service ({{< ja "介護保険資格確認等WEBサービス" "kaigo hoken shikaku kakunin tō webu sābisu" "care-insurance eligibility check web service" >}}). In January 2027 the Care Plan Data Exchange is due to become one of the service's functions. On 31 August 2026, MHLW announced version 1.0 of an API through which care software can talk to the service directly.[^1][^2]
+Japan is building a national care information platform ({{< ja "介護情報基盤" "kaigo jōhō kiban" "care information platform" >}}). Care offices reach it through a website called the Kaigo WEB Service ({{< ja "介護保険資格確認等WEBサービス" "kaigo hoken shikaku kakunin tō webu sābisu" "care-insurance eligibility check web service" >}}). From **13 January 2027**, with use scheduled from 08:00, the Care Plan Data Exchange becomes one of the service's functions.[^23] On 31 August 2026, MHLW announced version 1.0 of an API through which care software can talk to the service directly.[^1][^2]
 
 This guide is for vendors. It covers four things:
 
@@ -54,6 +54,8 @@ What a given login can see depends on two settings. One is the service type the 
 - **Status at 29 Oct 2026:** Kyōtango City, Kyoto Prefecture, has some functions usable from 29 October (which functions: see the Kyoto page footnote on the portal). Other municipalities in that update are as of 22 October. The 29 October notice does not restate the national usable-city or published-date totals.[^20]
 - **Status at 29 Oct 2026** (portal update 29 October; history PDF as of 4 November): usable in 4 cities after Kyōtango City, Kyoto Prefecture, moved from a published start date (29 October 2026) to usable; start dates published for 1,552 municipalities (89%); 48 still scheduling; 137 undecided. The 4 November 2026 history update, still using the 29 October snapshot except for later municipality-level moves, lists the same 4 cities, 1,542 with dates, 57 scheduling and 138 undecided.[^17]
 - **Status at 5 Nov 2026** (portal update 10 November): still usable in the same 4 cities; start dates published for 1,523 municipalities (87%); 73 still scheduling; 141 undecided.[^21][^22] Eleven Hokkaido municipalities that had a published start date of 13 November 2026 moved back to scheduling: Nakafurano, Atsuma, Abira, Erimo, Shikaoi, Shintoku, Sarabetsu, Hamanaka, Shibecha, Betsukai and Nakashibetsu. Some other municipalities moved the other way, for example Abiko City (Chiba) now has 17 November 2027 and Izu City (Shizuoka) 21 January 2028.[^21]
+- **Status at 12 Nov 2026** (portal update 17 November): still usable in 4 cities; start dates published for **1,509** municipalities; **83** still scheduling; **145** undecided.[^24]
+- **Status at 19 Nov 2026** (portal update 24 November): usable in **5** municipalities. {{< ja "浜中町" "Hamanaka-chō" "Hamanaka Town, Hokkaido" >}} moved from a 20 November start date to usable. Start dates published for **1,507** municipalities, down from 1,509 in the 17 November update. **81** still scheduling; **148** undecided.[^25] These figures supersede the 12 November counts.
 - **Checking a municipality:** each municipality's start date can be checked on the Kaigo Kiban Portal.[^5]
 
 The care-plan exchange function does not have to wait for the municipality. It can be used even before a municipality starts using the platform.[^5]
@@ -73,7 +75,8 @@ The care-plan exchange function does not have to wait for the municipality. It c
 | 1 Sep 2026 | MHLW asks vendors to cut import errors; announces an "enhanced vendor test" for standard 4.1[^10] |
 | 30 Sep 2026 | Enhanced vendor test opens for applications[^11] |
 | 1 Jan 2027 | Conformance date for municipalities' long-term care insurance systems[^5] |
-| Jan 2027 | Care Plan Data Exchange merged into the Kaigo WEB Service (exact date to be announced)[^8] |
+| 13 Jan 2027 | Care-plan sending on the Kaigo WEB Service starts. Use is scheduled from 08:00. The old exchange and the web service cannot exchange with each other[^23] |
+| Around Mar 2027 | The old Care Plan Data Exchange is due to close. Login, history and downloads then stop[^23] |
 | Late Mar 2027 | Planned release of the care-plan standard in the new environment[^2] |
 | From Apr 2027 | Care-plan exchange by API from care software (software changes needed)[^5] |
 | Apr–Sep 2027 | Viewing of LIFE information planned (first half of fiscal 2027)[^5] |
@@ -81,7 +84,7 @@ The care-plan exchange function does not have to wait for the municipality. It c
 
 MHLW's 26 October 2026 interim summary on checking savings for the {{< ja "補足給付" "hosoku kyūfu" "supplementary benefit" >}} ({{< ja "介護保険最新情報" "kaigo hoken saishin jōhō" "LTC insurance 'latest information' notice" >}} Vol.1550) restates that the {{< ja "介護情報基盤" "kaigo jōhō kiban" "care information platform" >}} is scheduled for full operation from 1 April 2028, and records insurers' request to use it to abolish issuing limit-amount certificates, which MHLW will consider while watching platform operation.[^19]
 
-The two notices differ slightly on the release date of the care-plan function. The 31 August notice says late March 2027.[^2] MHLW's slide to the 18 September 2026 committee says API exchange of care plans becomes possible from April 2027.[^5]
+The two notices differ slightly on the release date of the care-plan function. The 31 August notice says late March 2027.[^2] MHLW's slide to the 18 September 2026 committee says API exchange of care plans becomes possible from April 2027.[^5] Vol.1552, on 25 November 2026, sets the date for care-plan sending on the web service: 13 January 2027, from 08:00.[^23]
 
 ## What API version 1.0 covers
 
@@ -187,7 +190,7 @@ The test manual named in the plan refers to the "Kaigo WEB Service, care-plan st
 
 | | Vendors | Care offices |
 |---|---|---|
-| Care-plan exchange | Support 4.1 (browser CSV route) or 5.0 (API route); version 3 alone stops working after the move[^10][^4] | Register on the Kaigo WEB Service by December 2026 to keep using the exchange[^8] |
+| Care-plan exchange | Support 4.1 (browser CSV route) or 5.0 (API route); version 3 alone stops working after the move[^10][^4] | Register during the July–December 2026 preparation window.[^8] Care-plan sending on the web service starts 13 January 2027, from 08:00. The old exchange is due to close around March 2027[^23] |
 | Eligibility and certification data | Optional API to read card, certification and allowance data inside the software[^4][^7] | Can view in the browser once the municipality has started[^5] |
 | Security | Store per-office certificates, credentials and tokens safely; manage permissions[^4] | Install the office certificate; issue staff IDs; set up My Number card reading[^4] |
 | Tests | Enhanced 4.1 test now; API test to be announced[^11][^2] | None |
@@ -195,16 +198,18 @@ The test manual named in the plan refers to the "Kaigo WEB Service, care-plan st
 
 ## Open questions
 
-These are points the sources we opened leave unanswered:
+The exact start date is now set. Care-plan sending on the Kaigo WEB Service starts on **13 January 2027**, with use scheduled from 08:00. The old exchange is due to close around March 2027. The two systems cannot exchange with each other.[^23] Office-side rules, including the screenshot to keep for the fiscal 2026 pay add-on, are in the [Care Plan Data Exchange guide]({{< relref "care-plan-data-exchange" >}}).
 
-- **The exact merger date** in January 2027 has not yet been announced.[^8]
+**Municipal go-live at 19 November 2026** (portal update 24 November): usable in 5 municipalities, including Hamanaka Town; start dates published for 1,507; 81 still scheduling; 148 undecided.[^25] This supersedes the 17 November update (status as of 12 November): 4 cities usable, 1,509 with dates, 83 scheduling, 145 undecided.[^24]
+
+These points the sources we opened still leave unanswered:
+
 - **API vendor test:** its start date, method and fee are not yet published.[^2]
 - **The browser CSV route for 4.1** is allowed "for a certain period", but no end date is given.[^4]
 - **The existing V4 test** is open "until MHLW issues the next version". It is not stated whether issuing standard 5.0 in August 2026 closes it.[^14][^12]
-- **Add-on rules after the move.** The move flyer says MHLW will give guidance later on how fee add-ons treat the move.[^8] This matters because care-management fee type II and the wage add-on depend on using the exchange.
+- **Add-on rules after the move.** Vol.1552 (25 November 2026) still says how the add-on treats the old exchange and the web service will be announced later.[^23] The July move flyer had already said guidance would follow.[^8] This matters because care-management fee type II and the wage add-on depend on using the exchange.
 - **Release date:** late March 2027 or April 2027, as the two notices differ.[^2][^5]
 - **Cloud software and certificates.** The specification allows calls from "a client application or a web application". It puts certificate storage on the care software.[^4] It does not spell out how a cloud vendor should hold many offices' certificates.
-- **Municipal go-live at 5 November 2026:** usable in 4 cities (Ōita, Beppu, Ibusuki, Kyōtango); start dates published for 1,523 municipalities (87%), down from 1,542 in the 4 November history update.[^17][^21]
 
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: for a vendor, the 2027 change is bigger than "the exchange moves to a website". Standard 5.0 is JSON over a REST API with certificate-based login, so the old export-a-CSV approach becomes the transitional route, not the main one. Every incumbent has to build the same login, token handling, permission mapping and version handling. That narrows the head start that years of V4 test passes gave them. Two parts of 5.0 point further ahead. Registering confirmed plans, and the planned Mynaportal consent, would make the platform the place where plans and consent records live. Software that does this well could change how care managers collect signatures. The risks are timing and detail. The API test is not yet announced, the release date differs between notices, and municipalities join one by one until 2028. A sensible order for a new product: build to 5.0 and the API from day one, keep 4.1 CSV export for partners, and design certificate storage for a multi-office cloud before writing the rest.
@@ -212,6 +217,7 @@ Tako-San's view: for a vendor, the 2027 change is bigger than "the exchange move
 
 ## Changelog
 
+- 27 Nov 2026: Vol.1552 sets care-plan sending for 13 January 2027 from 08:00, and the old exchange to close around March 2027 (the two systems cannot exchange). Portal update of 24 November (as of 19 November): 5 municipalities usable, including Hamanaka Town; 1,507 with start dates; scheduling 81; undecided 148. This supersedes the 17 November update (as of 12 November): 4 cities, 1,509 with dates, scheduling 83, undecided 145.
 - 14 Nov 2026: portal update of 10 November (status as of 5 November): still 4 cities live; 1,523 with dates (87%); scheduling 73; undecided 141; eleven Hokkaido municipalities due to start on 13 November moved to scheduling
 - 5 Nov 2026: Kyōtango City live from 29 October (4 cities); portal history of 4 November (status as of 29 October, plus later municipality-level moves): 1,542–1,552 with dates; scheduling 48–57; undecided 137–138
 - 2 Nov 2026: portal notice of 29 October: Kyōtango City some functions usable from 29 October; other municipalities as of 22 October
@@ -267,3 +273,9 @@ Tako-San's view: for a vendor, the 2027 change is bigger than "the exchange move
 [^21]: National Health Insurance Central Association. "Update history of municipalities' status (市町村(保険者)の対応状況の更新履歴について)." Kaigo Kiban Portal PDF, update dated 10 November 2026 (status as of 5 November 2026). https://www.kaigo-kiban-portal.jp/assets/pdf/taioujyoukyou_rireki.pdf
 
 [^22]: National Health Insurance Central Association. Kaigo Kiban Portal notice, "Updating municipalities' status on 10 November (11/10「市町村(保険者)の対応状況」を更新いたします)," published 9 November 2026; the update shows status as of 5 November 2026. https://www.kaigo-kiban-portal.jp/notice/detail/89
+
+[^23]: Ministry of Health, Labour and Welfare, Health and Welfare Bureau for the Elderly (高齢者支援課, 介護保険計画課, 認知症施策・地域介護推進課 and 老人保健課). Care Insurance Latest Information Vol.1552, ケアプランデータ連携システムの介護保険資格確認等WEBサービスへの移行について（その２） (migration of the Care Plan Data Exchange to the care-insurance eligibility web service, part 2), administrative notice, 25 November 2026, PDF pp.2–4. https://www.mhlw.go.jp/content/001772420.pdf Listing: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/index_00010.html
+
+[^24]: National Health Insurance Central Association. "Update history of municipalities' status (市町村(保険者)の対応状況の更新履歴について)." Kaigo Kiban Portal PDF, update dated 17 November 2026 (status as of 12 November 2026). https://www.kaigo-kiban-portal.jp/assets/pdf/taioujyoukyou_rireki.pdf Notice: https://www.kaigo-kiban-portal.jp/notice/detail/89
+
+[^25]: National Health Insurance Central Association. "Update history of municipalities' status (市町村(保険者)の対応状況の更新履歴について)." Kaigo Kiban Portal PDF, update dated 24 November 2026 (status as of 19 November 2026), including the 17 November block. https://www.kaigo-kiban-portal.jp/assets/pdf/taioujyoukyou_rireki.pdf Notice: "Updating municipalities' status on 24 November (11/24「市町村(保険者)の対応状況」を更新いたします)," 24 November 2026. https://www.kaigo-kiban-portal.jp/notice/detail/89
