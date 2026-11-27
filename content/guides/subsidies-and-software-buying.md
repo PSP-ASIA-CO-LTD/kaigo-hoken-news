@@ -1,7 +1,7 @@
 ---
 title: "Subsidies and how care offices buy software: the fiscal 2026 rules"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T09:00:00+07:00
+lastmod: 2026-11-17T07:00:00+07:00
 tags: ["japan", "long-term-care", "subsidy", "software", "care-plan", "guide"]
 summary: "The fiscal 2026 care-technology subsidy at four fifths of cost, what software and offices must do to qualify, how it links to the Care Plan Data Exchange and the wage add-on, and the separate METI subsidy that some vendors use instead."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 5
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 17 Nov 2026*
 
 Most Japanese care offices are small, and many buy care software with help from a public subsidy. Which subsidy applies, and at what rate, depends on the programme. Vendor sites sometimes quote figures from different programmes or from earlier years. This guide sets out the fiscal 2026 rules from the primary documents. It covers the main care-technology subsidy, the conditions it places on software and on offices, its link to the Care Plan Data Exchange and the wage add-on, and a separate programme run under METI.
 
@@ -103,6 +103,12 @@ For home-visit care, the add-on rates are:[^6]
 
 Kokuho Chūōkai's claim software was updated in June 2026 for the new add-on rules.[^7]
 
+**Update, 17 Nov 2026: FY2027 proposals.** At the 275th meeting of the Long-Term Care Benefit Costs Subcommittee on 16 November 2026, MHLW tabled proposals for the fiscal 2027 fee revision. These are proposals, not decisions.
+
+- **A new reward for home, day and care-management offices.** Offices would qualify if they hold a committee, take safety measures, adopt tools that make work more efficient and keep improving work under the productivity guideline. The listed tools are care-record software or smartphones that support records from input through to storage, the Care Plan Data Exchange, AI document tools, and (for home-visit and care-management offices) tablets or similar devices for every visiting worker. Facilities could also count AI document tools toward the productivity add-on ({{< ja "生産性向上推進体制加算" "seisansei kōjō suishin taisei kasan" "productivity improvement add-on" >}}), and the time-study report would no longer be required for its type I.[^13]
+- **A committee duty for home and day services.** Home-visit, day and care-management offices would have to set up a committee on user safety, care quality and staff workload, with regard to the burden on small offices.[^14]
+- **A simpler pay add-on.** The workplace-environment requirements and career-path requirements II and V would be taken out of the pay add-on, with the workplace and training items moved toward the service-provision add-on ({{< ja "サービス提供体制強化加算" "sābisu teikyō taisei kyōka kasan" "service-provision system add-on" >}}).[^15]
+
 ## A separate route: METI's digital and AI subsidy
 
 Some care-software vendors are registered under a different programme, the **Digital and AI Adoption Subsidy 2026** ({{< ja "デジタル化・AI導入補助金" "dejitaru-ka, AI dōnyū hojokin" "digital and AI adoption subsidy" >}}). It was formerly called the IT Adoption Subsidy. It is open to small and medium businesses in general, not only care offices. Under its normal track:[^8]
@@ -131,6 +137,7 @@ Tako-San's view: for a vendor, the fiscal 2026 rules turn two public lists into 
 - 9 Oct 2026: first published
 - 9 Oct 2026: described the August 2026 survey edition as 53 entries rather than 53 products, added its 1 April 2026 start label, and linked the new function survey guide
 - 9 Oct 2026: added MHLW's fiscal 2026 Q&A on multi-year payments and the data-exchange record, and linked the new METI and MHLW comparison guide
+- 17 Nov 2026: added the FY2027 proposals of 16 Nov 2026 (new reward for software in home and day services, committee duty, simpler pay add-on).
 
 ---
 
@@ -159,3 +166,9 @@ Tako-San's view: for a vendor, the fiscal 2026 rules turn two public lists into 
 [^11]: Homenet Co., Ltd. "SmaCare Registered in the Welfare Equipment Information System (TAIS) (「スマケア」が福祉用具情報システム（TAIS）に登録されました)." Notice, 1 September 2026. https://www.smacare.jp/blog/notice/a586
 
 [^12]: Ministry of Health, Labour and Welfare, Office for Care Work Efficiency and Productivity. "Care Technology Retention Support Project Q&A (FY2026) (介護テクノロジー定着支援事業 Ｑ＆Ａ（令和８年度）)." Administrative notice, 15 June 2026, questions 9 and 12, as republished by Shimane Prefecture. https://www.pref.shimane.lg.jp/medical/fukushi/kourei/kaigo_hoken/hojokin/kaigo-tech.data/r8qa.pdf
+
+[^13]: Ministry of Health, Labour and Welfare. Material 2, 介護現場における生産性向上等の推進 (promoting productivity in care settings), Social Security Council Long-Term Care Benefit Costs Subcommittee (275th meeting), 16 November 2026, PDF p.37. https://www.mhlw.go.jp/content/12300000/001769518.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_77279.html
+
+[^14]: Ministry of Health, Labour and Welfare. Material 2 (as above), PDF p.17. https://www.mhlw.go.jp/content/12300000/001769518.pdf
+
+[^15]: Ministry of Health, Labour and Welfare. Material 1, 介護人材確保に向けた処遇改善等 (pay improvement to secure care workers), 275th meeting, 16 November 2026, PDF p.15. https://www.mhlw.go.jp/content/12300000/001769472.pdf
