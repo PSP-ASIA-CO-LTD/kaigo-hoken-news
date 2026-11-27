@@ -1,7 +1,7 @@
 ---
 title: "LIFE, Japan's scientific-care data system: a guide for software vendors"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T09:00:00+07:00
+lastmod: 2026-11-20T07:00:00+07:00
 tags: ["japan", "long-term-care", "LIFE", "software", "guide"]
 summary: "What LIFE is, who runs it since May 2026, which add-ons depend on it, and what a care-software vendor has to build to support it."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 1
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 20 Nov 2026*
 
 LIFE ({{< ja "科学的介護情報システム" "kagakuteki kaigo jōhō shisutemu" "scientific care information system" >}}, Long-term care Information system For Evidence) is the national database that care offices submit structured assessment data to in order to earn certain fee add-ons. It started in 2021. It merged two earlier collections: VISIT (rehabilitation data, run from 2017) and CHASE (health status and events, run from 2020).[^1] This guide covers the parts that matter to a software vendor: who operates LIFE now, which add-ons depend on it, and what the vendor-side interface looks like.
 
@@ -54,6 +54,8 @@ An office bills either type I or type II, not both, so the two rates should not 
 
 The same paper lists the "way forward" for LIFE as an open question for the subcommittee. It asks how LIFE-linked data submission and outcome evaluation should be handled. A working group on the items to be submitted was due to report to the subcommittee around autumn 2026.[^5] Vendors should therefore expect the item set to change again.
 
+> **Update, 20 Nov 2026:** At the 276th meeting MHLW proposed, for FY2027, abolishing the oral-and-nutrition screening add-on ({{< ja "口腔・栄養スクリーニング加算" "kōkū, eiyō sukurīningu kasan" "oral and nutrition screening add-on" >}}) and scoring that screening inside the scientific-care system add-on. When the screen says a professional should step in, the office would share the result with that professional and the care manager. The screening items would be reviewed for use on the floor.[^10] A second proposal would rebuild the rehabilitation-management plan-information add-on (I), note 7 on physical therapy, note 7 on occupational therapy, note 6 on speech-language-hearing therapy, rehabilitation-management add-on (c) and individual-function training add-on (III) into one reward for rehabilitation, nutrition and oral care carried out together. The reward would require the shared information to be used in the individual plan, not only exchanged.[^11] These are proposals, not decisions.
+
 ## What a vendor has to build
 
 **The CSV interface.** LIFE accepts CSV files that care software exports, so staff do not have to retype the care record. MHLW published version 3.10 of the external interface item list ({{< ja "外部インターフェース項目一覧" "gaibu intāfēsu kōmoku ichiran" "external interface item list" >}}) and of the CSV linkage specification in June 2025.[^6] When Kokuho Chūōkai took over, MHLW updated the version 3.10 CSV specification on 11 May 2026. Most changes were operational:[^7]
@@ -81,6 +83,7 @@ Tako-San's view: the May 2026 handover matters more to vendors than the CSV chan
 
 ## Changelog
 
+- 20 Nov 2026: added 276th-meeting proposals to fold oral and nutrition screening into the scientific-care add-on, and to replace several rehab add-ons with one reward that uses the shared notes in the individual plan.
 - 9 Oct 2026: added a link to the new guide on the Kaigo WEB Service API
 - 9 Oct 2026: first published
 
@@ -105,3 +108,7 @@ Tako-San's view: the May 2026 handover matters more to vendors than the CSV chan
 [^8]: Ministry of Health, Labour and Welfare. "Scientific Care (科学的介護)." LIFE information page, section "8 Materials for care software vendors" (CSV連携仕様書(LIFE) v0310, updated 11 May 2026). Accessed 9 October 2026. https://www.mhlw.go.jp/stf/shingi2/0000198094_00037.html
 
 [^9]: Ministry of Health, Labour and Welfare, Director-General of the Health and Welfare Bureau for the Elderly. "Implementation of the FY2026 (carried over from FY2025) Care Technology Adoption, Collaboration and Management Improvement Support Programme (「令和８年度（令和７年度からの繰越分）介護テクノロジー導入・協働化・経営改善等支援事業」の実施について)." Notice 老発0407第3号, 7 April 2026, as republished by Iwate Prefecture. https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/099/125/kuniyoukou_zenbun.pdf
+
+[^10]: Ministry of Health, Labour and Welfare. Material 3, 口腔・栄養、一体的取組 (oral health, nutrition and combined efforts), Social Security Council Long-Term Care Benefit Costs Subcommittee (276th meeting), 20 November 2026, PDF p.20. https://www.mhlw.go.jp/content/12300000/001771222.pdf Meeting materials page: https://www.mhlw.go.jp/stf/newpage_77201.html
+
+[^11]: Ministry of Health, Labour and Welfare. Material 3 (as above), PDF p.66. https://www.mhlw.go.jp/content/12300000/001771222.pdf
