@@ -1,7 +1,7 @@
 ---
 title: "Kanamic (Kanamic Network Co., Ltd.): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-12T07:00:00+07:00
+lastmod: 2026-11-14T07:00:00+07:00
 tags: ["japan", "competitors", "kanamic", "software"]
 summary: "Kanamic's cloud service: its pricing model, features, customers and published scale, its approval as an equivalent to the Care Plan Data Exchange, and how it handles LIFE and claims."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 3
 countries: ["Japan"]
 ---
 
-*Last updated: 12 Oct 2026*
+*Last updated: 14 Nov 2026*
 
 Kanamic ({{< ja "カナミック" "kanamikku" "Kanamic" >}}) is a cloud service for medical and care offices, run by Kanamic Network Co., Ltd. ({{< ja "株式会社カナミックネットワーク" "kabushiki-gaisha kanamikku nettowāku" "Kanamic Network Co., Ltd." >}}). The company was founded on 20 October 2000 and is listed on the Prime market of the Tokyo Stock Exchange (code 3939).[^1] Its pages describe the service as covering daily care records through to management reporting, with information sharing across organisations.[^2]
 
@@ -20,7 +20,7 @@ Kanamic ({{< ja "カナミック" "kanamikku" "Kanamic" >}}) is a cloud service 
 | Vendor | Kanamic Network Co., Ltd., TSE Prime 3939[^1] |
 | Pricing model | Initial setup fee plus a monthly fee. The monthly fee covers setup, phone support, server maintenance and law-change updates. Billed monthly per office, with unlimited accounts for some services.[^1] |
 | Published price | None found on the Kanamic pages we opened[^1][^2] |
-| Customer count | 57,763 offices and 376,972 user IDs (247,836 paid, 129,136 free), March 2026 (company figures)[^3][^4] |
+| Customer count | 62,684 offices and 406,879 user IDs (268,311 paid, 138,568 free), September 2026 (company figures)[^11]. March 2026: 57,763 offices and 376,972 IDs.[^3] |
 | Share claims | No market-share figure found. Kanamic reports its service in use in 1,420 "regions", which it says is 34.6% of all regions on its own definition.[^3] |
 | LIFE | Advertises LIFE support[^2] |
 | Claims to kokuho-ren | Claim data is downloaded in bulk and transmitted to the kokuho-ren; payments are reconciled automatically[^4] |
@@ -43,6 +43,7 @@ Kanamic's marketing page says customers pay an "initial installation fee" and a 
   - support for writing home-visit-care monitoring reports (announced 7 April 2026)
   - AI meeting minutes
   - AI-OCR that reads care-insurance cards and fills in the data automatically
+- **AI agents for back-office work.** In September 2026 Kanamic announced the "Kanamic Easy AI Robo" series ({{< ja "カナミックかんたんAIロボシリーズ" "kanamikku kantan ēai robo shirīzu" "Kanamic Easy AI Robo series" >}}). AI agents carry out care offices' billing and accounting tasks and staff only approve the result. The first two are a care-administration robot and an accounting robot. Kanamic engineers also work on site with customers to build agents for each company's own tasks.[^10]
 - **AI records from intercom speech.** On 24 September 2026, Kanamic launched an AI function in Kanamic Cloud Service that creates care records from what staff say on the intercom apps Buddycom (Science Arts, Inc.) and LINE WORKS Radjar (LINE WORKS Corp.); staff can check, edit and save the AI-created record on a smartphone.[^9]
 
 ## Target customers
@@ -53,10 +54,13 @@ Kanamic's service list covers community comprehensive support centres, care-mana
 
 All figures in this section are Kanamic's own.
 
+- **Full-year results (published 13 November 2026).** For the year to September 2026, consolidated revenue was **¥6,164 million**, up 12.1%. Operating profit was **¥2,057 million**, up 28.1%, and net profit ¥1,448 million, up 30.3%.[^10] Revenue from the Kanamic Cloud Service itself was ¥3,352 million, up 11.8%.[^10] For the year to September 2027, Kanamic forecasts revenue of ¥7,000 million (+13.6%) and operating profit of ¥2,400 million (+16.6%).[^10]
+- **Customers at September 2026.** 62,684 offices and 406,879 user IDs, of which 268,311 paid and 138,568 free. A year earlier the figures were 52,704 offices and 339,319 IDs.[^11]
+- **Dividend.** The year-end dividend was raised to ¥9.50 a share, from a forecast of ¥9.00 and ¥7.50 the year before. Kanamic forecasts ¥10.50 for the next year.[^12][^10]
 - **Half-year results.** For the six months to March 2026, consolidated revenue was **¥3,134 million**, up 17.8% on the year before. Operating profit was **¥1,000 million**.[^3]
 - **Customers.** Kanamic reports **57,763** offices and **376,972** user IDs. It attributes the large rise in users and offices to wider use of the Care Plan Data Exchange.[^3]
 - **Regions.** The cloud service is used in **1,420** of about 4,095 "regions". Kanamic defines a region as a junior-high-school district of about 30,000 people, the unit MHLW assumes for community-based integrated care.[^3]
-- **Overseas.** Kanamic completed a fiscal 2025 project for the Ministry of Internal Affairs and Communications. The project tested its health, medical and care information-sharing system in Singapore.[^3]
+- **Overseas.** Kanamic completed a fiscal 2025 project for the Ministry of Internal Affairs and Communications. The project tested its health, medical and care information-sharing system in Singapore.[^3] On 25 May 2026 it announced an MOU with two Singapore elder-care providers, Kwong Wai Shiu Hospital and Lions Befrienders, for a pilot to develop AI care solutions together. Kanamic says it wants to use Singapore as a base for ASEAN in the future.[^11][^10]
 
 ## LIFE handling
 
@@ -80,6 +84,7 @@ Tako-San's view: Kanamic sells the network as much as the record. Its pitch is i
 
 ## Changelog
 
+- 14 Nov 2026: full-year results to September 2026 (published 13 November), September 2026 customer figures, dividend increase, AI Robo series and the Singapore MOU
 - 12 Oct 2026: added the AI care-record function from Buddycom and LINE WORKS Radjar speech (24 September 2026)
 - 9 Oct 2026: first published
 
@@ -104,3 +109,9 @@ Tako-San's view: Kanamic sells the network as much as the record. Its pitch is i
 [^8]: Kanamic Network Co., Ltd. "Kanamic Cloud Service Adopted by MHLW as the Only Private-Sector System Meeting the Care-Management Fee II Requirement (『カナミッククラウドサービス』が厚生労働省より、居宅介護支援費Ⅱの算定要件対応システムとして民間企業で唯一採択されました)." PR TIMES, 8 April 2025. https://prtimes.jp/main/html/rd/p/000000069.000050437.html
 
 [^9]: Kanamic Network Co., Ltd. Release, 24 September 2026. TDnet PDF. https://www.nikkei.com/markets/ir/irftp/data/tdnr/tdnetg3/20260924/g5ac4q/140120260924539178.pdf See also PR TIMES: https://prtimes.jp/main/html/rd/p/000000095.000050437.html
+
+[^10]: Kanamic Network Co., Ltd. "Consolidated financial results for the fiscal year ended September 2026 (2026年９月期 決算短信〔日本基準〕（連結）)." 13 November 2026, pp. 1–3. https://www2.jpx.co.jp/disc/39390/140120261113579807.pdf
+
+[^11]: Kanamic Network Co., Ltd. "FY September 2026 (26th term) results and company briefing (2026年9月期（第26期）決算および会社説明資料)." 13 November 2026, p. 15 (user IDs and offices) and p. 28 (Singapore MOU). https://www2.jpx.co.jp/disc/39390/140120261113579427.pdf
+
+[^12]: Kanamic Network Co., Ltd. "Notice concerning dividends of surplus (dividend increase) (剰余金の配当（増配）に関するお知らせ)." 13 November 2026. https://www2.jpx.co.jp/disc/39390/140120261113579887.pdf

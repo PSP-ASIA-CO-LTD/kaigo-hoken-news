@@ -1,7 +1,7 @@
 ---
 title: "Care-worker training in Japan: Initial Training, Practitioner Training and certified care worker schools"
 date: 2026-10-10T00:00:00+07:00
-lastmod: 2026-10-10T20:30:00+07:00
+lastmod: 2026-11-14T07:00:00+07:00
 tags: ["japan", "long-term-care", "workforce", "training", "schools", "foreign-workers", "guide"]
 summary: "How Japan trains care workers who are not doctors or nurses: the 130-hour Initial Training, the 450-hour Practitioner Training (1,331 designated courses in April 2026), certified care worker training schools (266 member courses, 7,780 entrants, 60.6% foreign, in FY2026), the national exam (70.1% pass rate in 2026), the 2026 law change to the graduates' transitional measure, and what the rules say about online and software-based teaching."
 categories: ["Guides"]
@@ -9,7 +9,7 @@ weight: 11
 countries: ["Japan"]
 ---
 
-*Last updated: 10 Oct 2026*
+*Last updated: 14 Nov 2026*
 
 Japan trains care workers who are not doctors or nurses through three main steps. MHLW's 2011 review of care-worker training set the basic career path as Initial Training, then certified care worker, then accredited certified care worker. The same review renamed home-helper level 2 as Initial Training, and merged the older Basic Training for Care Workers into Practitioner Training.[^1]
 
@@ -117,6 +117,8 @@ The sources we opened say the following about software and online tools in care-
 - **Practitioner Training** is mostly offered as correspondence courses on MHLW's list (see above).[^3]
 - **MHLW's care-Japanese learning programme** (draft FY2026 guidelines, before the budget passed). The contractor must run web content for foreign care workers. Users must be able to track their own progress and study time, and get study advice based on their learning. The contractor must also analyse learning effects with experts in care, Japanese and e-learning, and report users, study time and use of each item to MHLW. The programme also funds translated study texts for the Specified Skilled Worker care tests, translated question-and-answer and terminology materials for foreign people aiming at the national exam, and video materials with a manual for prefectures running online training.[^9]
 
+- **MHLW's model project for ICT and Japanese teaching in schools (FY2026).** The {{< ja "介護福祉士養成施設における教育の充実モデル支援事業" "kaigo fukushishi yōsei shisetsu ni okeru kyōiku no jūjitsu moderu shien jigyō" "model support project to strengthen education at certified care worker training schools" >}} applies from 1 April 2026. Support teams help model schools chosen by MHLW. On the ICT side they analyse each school's situation, advise on choosing and using ICT equipment, and help write lesson plans that use it. On the Japanese side they link schools with Japanese-language schools and support foreign students towards the national exam. The results go into a casebook and training for teachers nationwide.[^10] After calls in March, July and September 2026,[^11] MHLW announced on 9 November 2026 that NTT Data Institute of Management Consulting ({{< ja "株式会社NTTデータ経営研究所" "kabushiki-gaisha enutitī dēta keiei kenkyūjo" "NTT Data Institute of Management Consulting, Inc." >}}) will run it.[^12] The sources we opened do not name the model schools.
+
 We found no source on which software, such as care-record systems, the training schools themselves use in class.
 
 {{< analysis title="Tako-San's take" >}}
@@ -125,6 +127,7 @@ Tako-San's view: the schools are shrinking in number (266 member courses, down 4
 
 ## Changelog
 
+- 14 Nov 2026: MHLW's FY2026 model project for ICT and Japanese teaching in training schools; operator chosen on 9 November 2026
 - 10 Oct 2026: first published
 
 ---
@@ -148,3 +151,9 @@ Tako-San's view: the schools are shrinking in number (266 member courses, down 4
 [^8]: Ministry of Health, Labour and Welfare. "Overview of the Act amending the Social Welfare Act and related laws (社会福祉法等の一部を改正する法律の概要について)," item 2(2), pp. 1 and 12. https://www.mhlw.go.jp/content/001717214.pdf
 
 [^9]: Ministry of Health, Labour and Welfare. "Implementation guidelines for the care-Japanese learning support programme (介護の日本語学習支援等事業実施要領)," draft, marked as prepared before the FY2026 budget was passed. https://www.mhlw.go.jp/content/12000000/001647249.pdf
+
+[^10]: Ministry of Health, Labour and Welfare, Social Welfare and War Victims' Relief Bureau. "Implementation of the model support project to strengthen education at certified care worker training schools (介護福祉士養成施設における教育の充実モデル支援事業の実施について)," notice 社援発0304第18号 of 4 March 2026, with the implementation guidelines (実施要綱), sections 1 and 3. https://www.mhlw.go.jp/content/12000000/001667362.pdf
+
+[^11]: Ministry of Health, Labour and Welfare. "Second re-call for the model support project (介護福祉士養成施設における教育の充実モデル支援事業の再公募について)," 29 September 2026, which records the earlier calls of 10–27 March and 21 July–5 August 2026. https://www.mhlw.go.jp/stf/newpage_76413.html
+
+[^12]: Ministry of Health, Labour and Welfare. "Result of the call for the model support project (介護福祉士養成施設における教育の充実モデル支援事業の公募結果について)," 9 November 2026. https://www.mhlw.go.jp/stf/newpage_77232.html

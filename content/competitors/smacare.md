@@ -1,7 +1,7 @@
 ---
 title: "SmaCare (Homenet): competitor profile"
 date: 2026-10-09T00:00:00+07:00
-lastmod: 2026-10-09T00:00:00+07:00
+lastmod: 2026-11-14T07:00:00+07:00
 tags: ["japan", "competitors", "smacare", "teiki-junkai", "software"]
 summary: "SmaCare, a records and call-handling system built for 24-hour regular-and-on-call home visiting, with a new AI option and a lighter home-care edition: its share claim, multilingual app, links to billing software, and Care Plan Data Exchange status."
 categories: ["Competitors"]
@@ -9,7 +9,7 @@ weight: 8
 countries: ["Japan"]
 ---
 
-*Last updated: 9 Oct 2026*
+*Last updated: 14 Nov 2026*
 
 SmaCare ({{< ja "スマケア" "sumakea" "SmaCare" >}}) is a business-support system for one service type: 24-hour regular and on-call home-visit care and nursing ({{< ja "定期巡回・随時対応型訪問介護看護" "teiki junkai zuiji taiō-gata hōmon kaigo kango" "regular-visit and on-call home care and nursing" >}}).[^1] It is a **records** system. Claims are made in separate billing software that links to it.[^2] It is provided by Homenet Co., Ltd. ({{< ja "ホームネット株式会社" "hōmunetto kabushiki-gaisha" "Homenet Co., Ltd." >}}) in Nakano, Tokyo. Homenet's group also runs regular-visit services of its own.[^3]
 
@@ -25,7 +25,7 @@ SmaCare ({{< ja "スマケア" "sumakea" "SmaCare" >}}) is a business-support sy
 | Share claims | "About 47.2%" of regular-visit offices that bill, Homenet's estimate from MHLW statistics[^1] |
 | LIFE | Not found in the sources we opened |
 | Claims to kokuho-ren | Not done in SmaCare. Actuals pass to linked billing software such as TriCare-Tops.[^5][^2] |
-| Care Plan Data Exchange | Passed the vendor test (notice of 29 June 2026)[^2]; completed V4 patterns D1–D7[^6] |
+| Care Plan Data Exchange | Passed the vendor test (notice of 29 June 2026)[^2]; completed V4 patterns D1–D7[^6]. SmaCare Lite: Home-Visit Care passed it too (notice of 13 November 2026)[^14] |
 
 ## Pricing
 
@@ -78,12 +78,15 @@ SmaCare does not make claims to the federation ({{< ja "国保連" "kokuho-ren" 
 
 On 29 June 2026, Homenet announced that SmaCare had passed Kokuho Chūōkai's vendor test for the exchange. The test confirmed that sending, receiving and importing data worked, and Homenet planned to release the function in July 2026.[^2] Kokuho Chūōkai's V4 vendor-test list shows Homenet's SmaCare as having completed patterns D1–D7.[^6] Because SmaCare's actuals lack billing codes, Homenet tells users to send the billing information needed by care-management offices from their billing system.[^2]
 
+On 13 November 2026, Homenet announced that **SmaCare Lite: Home-Visit Care** had also passed the vendor test. Sending and receiving through the exchange, and importing into SmaCare Lite, completed normally. Homenet says the link function is already released. Data moves by file: staff export the data from SmaCare Lite and upload it to the exchange, or download it from the exchange and import it. As with the main product, actuals carry no billing codes, and billing information must come from the billing system.[^14]
+
 {{< analysis title="Tako-San's take" >}}
 Tako-San's view: SmaCare shows what a single-service-type specialist looks like in Japan. It goes deep on one workflow (round-the-clock visits plus emergency calls) and leaves billing to partners. Its 47.2% claim is Homenet's own estimate. Even so, it suggests a small segment (around 1,500 offices by Homenet's count) can be covered by one focused vendor. Two moves are worth watching: the multilingual app, aimed at offices hiring foreign staff, and the push into ordinary home-visit care with SmaCare Lite. The split between records and billing is also a live issue for the Care Plan Data Exchange. Homenet's own notice says actuals from a records-only system cannot carry billing codes.
 {{< /analysis >}}
 
 ## Changelog
 
+- 14 Nov 2026: SmaCare Lite: Home-Visit Care passed the Care Plan Data Exchange vendor test (notice of 13 November 2026)
 - 9 Oct 2026: first published
 
 ---
@@ -116,3 +119,5 @@ Tako-San's view: SmaCare shows what a single-service-type specialist looks like 
 [^12]: Care Connect Japan Co., Ltd. "CAREKARTE Link: Homenet, SmaCare (ホームネット株式会社：スマケア)." Accessed 9 October 2026. https://www.carekarte.jp/carekartelink/visit-system/smacare/
 
 [^13]: Ministry of Health, Labour and Welfare. "Care Record Software Function Survey Results, 24 August 2026 Edition (介護記録ソフト機能調査結果（令和８年８月24日版）)." Spreadsheet. https://www.mhlw.go.jp/content/12300000/001741865.xlsx
+
+[^14]: Homenet Co., Ltd. "Notice: Report on the Care Plan Data Exchange System vendor test (【お知らせ】ケアプランデータ連携システム ベンダー試験のご報告)," SmaCare Lite: Home-Visit Care. Published 13 November 2026 (listed on the home page as 12 November). https://www.smacare.jp/blog/notice/a613
